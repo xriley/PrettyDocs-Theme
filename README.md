@@ -8,7 +8,7 @@ PrettyDocs is a free Bootstrap project documentation theme designed for develope
 
 Although the template is primarily designed for project documentation, you can also adapt it for other use as you see fit.
 
-We will update and improve the template based on user feedback so get in touch or leave a comment if you have any questions or suggestions. If you like the template and find it useful, **we’d appreciate your help in spreading the word on your networks**. You can also follow us on Twitter to be the first to know when we release new templates and other freebies
+We will update and improve the template based on user feedback so get in touch or leave a comment if you have any questions or suggestions. If you like the template and find it useful, **we'd appreciate your help in spreading the word on your networks**. You can also follow us on Twitter to be the first to know when we release new templates and other freebies
 
 ##Author & License
 
