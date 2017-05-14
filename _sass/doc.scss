@@ -1,7 +1,7 @@
 /* ======= Doc Styling ======= */
 .doc-wrapper {
     padding: 45px 0;
-    background: @smoky-grey;
+    background: $smoky-grey;
 }
 
 .doc-body {
@@ -11,33 +11,33 @@
 .doc-header {
     margin-bottom: 30px;
     .doc-title {
-        color: @color-primary;
+        color: $color-primary;
         margin-top: 0;
         font-size: 36px;
         .body-green & {
-            color: @color-green;
+            color: $color-green;
         }
         .body-blue & {
-            color: @color-blue;
+            color: $color-blue;
         }
         .body-orange & {
-            color: @color-orange;
+            color: $color-orange;
         }
         .body-red & {
-            color: @color-red;
+            color: $color-red;
         }
         .body-pink & {
-            color: @color-pink;
+            color: $color-pink;
         }
         .body-purple & {
-            color: @color-purple;
+            color: $color-purple;
         }
     }
     .icon {
         font-size: 30px;
     }
     .meta {
-        color: @grey;
+        color: $grey;
     }
 }
 
@@ -55,7 +55,7 @@
         margin-bottom: 0;
         font-weight: bold;
         padding-bottom: 10px;
-        border-bottom: 1px solid darken(@divider, 10%);
+        border-bottom: 1px solid darken($divider, 10%);
     }
 
     h1 {
@@ -106,24 +106,24 @@
 .question {
 
     font-weight: 400 !important;
-    color: darken(@color-primary, 5%);
+    color: darken($color-primary, 5%);
     .body-green {
-        color: darken(@color-green, 5%);
+        color: darken($color-green, 5%);
     }
     .body-blue & {
-        color: darken(@color-blue, 5%);
+        color: darken($color-blue, 5%);
     }
     .body-orange &{
-        color: darken(@color-orange, 5%);
+        color: darken($color-orange, 5%);
     }
     .body-pink &{
-        color: darken(@color-pink, 5%);
+        color: darken($color-pink, 5%);
     }
     .body-purple &{
-        color: darken(@color-purple, 5%);
+        color: darken($color-purple, 5%);
     }
     .fa {
-        .opacity(0.6);
+        @include opacity(0.6);
     }
     .label {
         font-size: 11px;
@@ -132,7 +132,7 @@
 }
 
 .answer {
-    color: @text-color-secondary;
+    color: $text-color-secondary;
 }
 
 .code-block {
@@ -142,7 +142,7 @@
 
 .callout-block {
     padding: 30px;
-    .border-radius(4px);
+    @include border-radius(4px);
     position: relative;
     margin-bottom: 30px;
     a {
@@ -174,41 +174,41 @@
 }
 
 .callout-info {
-    background: @color-blue;
+    background: $color-blue;
     color: #fff;
 }
 
 .callout-success {
-    background: @color-green;
+    background: $color-green;
     color: #fff;
 }
 
 .callout-warning {
-    background: @color-orange;
+    background: $color-orange;
     color: #fff;
 }
 
 .callout-danger {
-    background: @color-red;
+    background: $color-red;
     color: #fff;
 }
 
 .table>thead>tr>th {
-    border-bottom-color: lighten(@color-primary, 20%);
+    border-bottom-color: lighten($color-primary, 20%);
     .body-green & {
-        border-bottom-color: lighten(@color-green, 20%);
+        border-bottom-color: lighten($color-green, 20%);
     }
     .body-blue & {
-        border-bottom-color: lighten(@color-blue, 20%);
+        border-bottom-color: lighten($color-blue, 20%);
     }
     .body-orange & {
-        border-bottom-color: lighten(@color-orange, 20%);
+        border-bottom-color: lighten($color-orange, 20%);
     }
     .body-pink & {
-        border-bottom-color: lighten(@color-pink, 20%);
+        border-bottom-color: lighten($color-pink, 20%);
     }
     .body-purple & {
-        border-bottom-color: lighten(@color-purple, 20%);
+        border-bottom-color: lighten($color-purple, 20%);
     }
 }
 .table-bordered>thead>tr>th {
@@ -216,7 +216,7 @@
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: @smoky-white;
+    background-color: $smoky-white;
 }
 
 
@@ -226,7 +226,7 @@
     position: relative;
     text-align: center;
     img {
-        border: 1px solid @divider;
+        border: 1px solid $divider;
     }
     .mask {
         display: block;
@@ -276,7 +276,7 @@
 
 .speech-bubble {
     background: #fff;
-    .border-radius(4px);
+    @include border-radius(4px);
     padding: 30px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -291,7 +291,7 @@
         p {
             font-size: 14px;
             font-weight: normal;
-            color: @text-color-secondary;
+            color: $text-color-secondary;
         }
     }
 
@@ -313,8 +313,8 @@
 
 .card {
     text-align: center;
-    border: 1px solid darken(@divider, 5%);
-    .border-radius(4px);
+    border: 1px solid darken($divider, 5%);
+    @include border-radius(4px);
     margin-bottom: 30px;
     position: relative;
 
@@ -350,71 +350,71 @@
 /* Color Schemes */
 .body-green {
     .header {
-        border-color: @color-green;
+        border-color: $color-green;
     }
     a {
-        color: @color-green;
+        color: $color-green;
         &:hover {
-            color: darken(@color-green, 10%);
+            color: darken($color-green, 10%);
         }
     }
 }
 .body-blue {
     .header {
-        border-color: @color-blue;
+        border-color: $color-blue;
     }
     a {
-        color: @color-blue;
+        color: $color-blue;
         &:hover {
-            color: darken(@color-blue, 10%);
+            color: darken($color-blue, 10%);
         }
     }
 }
 
 .body-orange {
     .header {
-        border-color: @color-orange;
+        border-color: $color-orange;
     }
     a {
-        color: @color-orange;
+        color: $color-orange;
         &:hover {
-            color: darken(@color-orange, 10%);
+            color: darken($color-orange, 10%);
         }
     }
 }
 
 .body-pink {
     .header {
-        border-color: @color-pink;
+        border-color: $color-pink;
     }
     a {
-        color: @color-pink;
+        color: $color-pink;
         &:hover {
-            color: darken(@color-pink, 10%);
+            color: darken($color-pink, 10%);
         }
     }
 }
 
 .body-purple {
     .header {
-        border-color: @color-purple;
+        border-color: $color-purple;
     }
     a {
-        color: @color-purple;
+        color: $color-purple;
         &:hover {
-            color: darken(@color-purple, 10%);
+            color: darken($color-purple, 10%);
         }
     }
 }
 
 .body-red {
     .header {
-        border-color: @color-red;
+        border-color: $color-red;
     }
     a {
-        color: @color-red;
+        color: $color-red;
         &:hover {
-            color: darken(@color-red, 10%);
+            color: darken($color-red, 10%);
         }
     }
 }
@@ -439,60 +439,60 @@
             display: block;
             padding: 5px 15px;
             border-left: 4px solid transparent;
-            color: @text-color-secondary;
+            color: $text-color-secondary;
             &:hover, &:focus {
-                color: @color-primary;
+                color: $color-primary;
                 text-decoration: none;
                 background: none;
                 .body-green & {
-                    color: @color-green;
+                    color: $color-green;
                 }
                 .body-blue & {
-                    color: @color-blue;
+                    color: $color-blue;
                 }
                 .body-orange & {
-                    color: @color-orange;
+                    color: $color-orange;
                 }
                 .body-red & {
-                    color: @color-red;
+                    color: $color-red;
                 }
                 .body-pink & {
-                    color: @color-pink;
+                    color: $color-pink;
                 }
                 .body-purple & {
-                    color: @color-purple;
+                    color: $color-purple;
                 }
             }
         }
         &.active {
             & > a {
                 background: none;
-                border-left: 4px solid @color-primary;
-                color: @color-primary;
+                border-left: 4px solid $color-primary;
+                color: $color-primary;
                 font-weight: 600;
                 .body-green & {
-                    color: @color-green;
-                    border-color: @color-green;
+                    color: $color-green;
+                    border-color: $color-green;
                 }
                 .body-blue & {
-                    color: @color-blue;
-                    border-color: @color-blue;
+                    color: $color-blue;
+                    border-color: $color-blue;
                 }
                 .body-orange & {
-                    color: @color-orange;
-                    border-color: @color-orange;
+                    color: $color-orange;
+                    border-color: $color-orange;
                 }
                 .body-red & {
-                    color: @color-red;
-                    border-color: @color-red;
+                    color: $color-red;
+                    border-color: $color-red;
                 }
                 .body-pink & {
-                    color: @color-pink;
-                    border-color: @color-pink;
+                    color: $color-pink;
+                    border-color: $color-pink;
                 }
                 .body-purple & {
-                    color: @color-purple;
-                    border-color: @color-purple;
+                    color: $color-purple;
+                    border-color: $color-purple;
                 }
             }
 
@@ -511,31 +511,31 @@
         }
         & > a {
             display: block;
-            color: @text-color-secondary;
+            color: $text-color-secondary;
             padding: 0;
             padding-left: 34px;
             background: none;
             &:hover{
-                color: @color-primary;
+                color: $color-primary;
                 text-decoration: none;
                 background: none;
                 .body-green & {
-                    color: @color-green;
+                    color: $color-green;
                 }
                 .body-blue & {
-                    color: @color-blue;
+                    color: $color-blue;
                 }
                 .body-orange & {
-                    color: @color-orange;
+                    color: $color-orange;
                 }
                 .body-red & {
-                    color: @color-red;
+                    color: $color-red;
                 }
                 .body-pink & {
-                    color: @color-pink;
+                    color: $color-pink;
                 }
                 .body-purple & {
-                    color: @color-purple;
+                    color: $color-purple;
                 }
             }
             &:focus {
@@ -545,24 +545,24 @@
         &.active {
             & > a {
                 background: none;
-                color: @color-primary;
+                color: $color-primary;
                 .body-green & {
-                    color: @color-green;
+                    color: $color-green;
                 }
                 .body-blue & {
-                    color: @color-blue;
+                    color: $color-blue;
                 }
                 .body-orange & {
-                    color: @color-orange;
+                    color: $color-orange;
                 }
                 .body-red & {
-                    color: @color-red;
+                    color: $color-red;
                 }
                 .body-pink & {
-                    color: @color-pink;
+                    color: $color-pink;
                 }
                 .body-purple & {
-                    color: @color-purple;
+                    color: $color-purple;
                 }
             }
         }
@@ -590,21 +590,21 @@
 
 /* ===== Promo block ===== */
 .promo-block {
-    background: darken(@color-primary, 5%);
+    background: darken($color-primary, 5%);
     .body-green & {
-        background: darken(@color-green, 5%);
+        background: darken($color-green, 5%);
     }
     .body-blue & {
-        background: darken(@color-blue, 5%);
+        background: darken($color-blue, 5%);
     }
     .body-orange &{
-        background: darken(@color-orange, 5%);
+        background: darken($color-orange, 5%);
     }
     .body-pink &{
-        background: darken(@color-pink, 5%);
+        background: darken($color-pink, 5%);
     }
     .body-purple &{
-        background: darken(@color-purple, 5%);
+        background: darken($color-purple, 5%);
     }
 
 
@@ -617,7 +617,7 @@
     .promo-block-inner {
         padding: 45px;
         color: #fff;
-        .border-radius(4px);
+        @include border-radius(4px);
 
     }
     .promo-title {
@@ -658,7 +658,7 @@
                 top: 50%;
                 margin-top: -21px;
                 &.pink {
-                    color: @color-pink;
+                    color: $color-pink;
                 }
 
             }
