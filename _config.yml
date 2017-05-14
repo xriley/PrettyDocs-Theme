@@ -1,0 +1,86 @@
+#
+# Site settings
+#
+url: https://LeakyAbstractions.github.io
+baseurl: /PrettyDocs-Theme
+title: &site_title PrettyDocs
+description: &site_description Responsive website template for documentations
+branding:
+  icon:
+    name: icon_documents_alt
+  highlight: Pretty
+  bold: Docs
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input: GFM
+  hard_wrap: false
+  footnote_nr: 1
+  parse_block_html: true
+
+
+#
+# Owner
+#
+owner:
+  name: Guillermo Calvo
+  twitter: &site_owner_twitter gcalvo
+  copyright:
+    notice: "[Your Project](https://your-name.github.io/your-project/)"
+    author: "[Your Name](https://www.your-site.com/)"
+
+
+#
+# Social
+#
+open_graph:
+  title: *site_title
+  site_name: *site_title
+  description: *site_description
+  locale: en_US
+  image: /assets/images/thumb.png
+twitter_cards:
+  title: *site_title
+  description: *site_description
+  creator: *site_owner_twitter
+  card: summary_large_image
+  image: /assets/images/thumb.png
+share:
+  facebook:
+    class: fb-like
+    action: like
+    layout: button_count
+    show-faces: false
+    share: false
+  twitter:
+    via: *site_owner_twitter
+    text: PrettyDocs - A FREE #Bootstrap theme for project documentations #Responsive
+    title: Tweet
+
+
+# Google Analytics
+google_analytics: UA-12345678-1
+
+
+#
+# Collections
+#
+collections:
+  doc:
+    output: true
+    permalink: /:path.html
+
+
+#
+# Default values
+#
+defaults:
+  -
+    scope:
+      path: ""
+      type: doc
+    values:
+      layout: doc
