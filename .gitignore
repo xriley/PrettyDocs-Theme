@@ -1,2 +1,4 @@
 .DS_Store
 config.codekit
+_site
+.jekyll-metadata
