@@ -1,0 +1,28 @@
+
+{% if include.promo %}
+        <div id="promo-block" class="promo-block">
+            <div class="container">
+                <div class="promo-block-inner">
+                    <h3 class="promo-title text-center">{{ include.promo.title | markdownify }}</h3>
+                    <div class="row">
+                        <div class="figure-holder col-md-5 col-sm-6 col-xs-12">
+                            <div class="figure-holder-inner">
+                                <a href="{{ include.promo.link }}" target="_blank">
+                                    <img class="img-responsive" src="{{ include.promo.image.link }}" alt="{{ include.promo.image.alt }}" />
+                                </a>
+                                <a class="mask" href="{{ include.promo.link }}">{% include icon.html icon=include.promo.image.icon %}</a>
+                            </div>
+                        </div>
+                        <div class="content-holder col-md-7 col-sm-6 col-xs-12">
+                            <div class="content-holder-inner">
+                                <div class="desc">
+                                    <h4 class="content-title">{{ include.promo.content.title | markdownify }}</h4>
+                                    {{ include.promo.content.desc | markdownify }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endif %}
