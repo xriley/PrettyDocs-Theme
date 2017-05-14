@@ -55,6 +55,10 @@ layout: compress
                     <li class="active">{{ page.title }}</li>
                 </ol>
 
+                {% if site.share.github %}
+                  {% include github_forkme.html %}
+                {% endif %}
+
             </div>
         </header>
 

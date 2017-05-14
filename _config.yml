@@ -59,6 +59,10 @@ share:
     via: *site_owner_twitter
     text: PrettyDocs - A FREE #Bootstrap theme for project documentations #Responsive
     title: Tweet
+  github:
+    repo: username/repository
+    position: right
+    color: red
 
 
 # Google Analytics
