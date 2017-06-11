@@ -10,7 +10,7 @@
                                 {% if section.sections %}
                                 <ul class="nav doc-sub-menu">
                                   {% for subsection in section.sections %}
-								    <li class=""><a class="scrollto" href="#{{ subsection | slugify }}">{{ subsection }}</a></li>
+								    <li class=""><a class="scrollto" href="#{{ subsection | slugify: 'pretty' }}">{{ subsection }}</a></li>
                                   {% endfor %}
                                 </ul>
                                 {% endif %}
