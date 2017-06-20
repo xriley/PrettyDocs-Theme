@@ -1,0 +1,128 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+
+    <title>{{ site.title }} &bull; {{ page.title }}</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.owner.name }}">
+    <link rel="shortcut icon" href="{{ '/favicon.ico'                                                      | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <!-- Global CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/plugins/bootstrap/css/bootstrap.min.css'      | prepend: site.baseurl }}">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/plugins/font-awesome/css/font-awesome.css'    | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/plugins/lightbox/dist/ekko-lightbox.min.css'  | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/plugins/elegant_font/css/style.css'           | prepend: site.baseurl }}">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/highlight.css'                            | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css'                               | prepend: site.baseurl }}" id="theme-style">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    {% include open_graph.html %}
+    {% include twitter_cards.html %}
+
+    {% include google_analytics.html %}
+
+</head>
+
+<body class="body-{{ page.color }}">
+
+    <div class="page-wrapper">
+
+        <!-- HEADER -->
+        <header id="header" class="header">
+            <div class="container">
+
+                {% include branding.html %}
+
+                <!-- BREADCRUMB -->
+                <ol class="breadcrumb">
+                    <li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+                    <li class="active">{{ page.title }}</li>
+                </ol>
+
+                {% if site.share.github %}
+                  {% include github_forkme.html %}
+                {% endif %}
+
+            </div>
+        </header>
+
+        <div class="doc-wrapper">
+            <div class="container">
+
+                <!-- DOCUMENT HEADER -->
+                <div id="doc-header" class="doc-header text-center">
+
+                    <h1 class="doc-title">
+                        {% include icon.html icon=page.icon %}
+                        {{ page.title }}
+                    </h1>
+
+                    {% if page.date %}
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: {{ page.date | date: '%B %d, %Y' }}</div>
+                    {% endif %}
+
+                </div>
+
+                <!-- DOCUMENT BODY -->
+                <div id="{{ page.id | slugify }}" class="doc-body">
+
+                    <!-- CONTENT -->
+                    <div class="doc-content">
+                        <div class="content-inner">
+
+                            {{ content }}
+
+                          {% for id in page.sections %}
+                            {% assign section = site.doc | where: "id", id | first %}
+
+                            <section id="{{ section.title | slugify }}" class="doc-section">
+                                <h2 class="section-title">{{ section.title }}</h2>
+                                <div class="section-block">
+                                    {{ section.content | markdownify }}
+                                </div>
+                            </section>
+
+                          {% endfor %}
+
+                        </div>
+                    </div>
+
+                  {% include sidebar.html sections=page.sections %}
+
+                </div>
+
+            </div>
+        </div>
+
+        {% include promo.html promo=page.promo %}
+
+    </div>
+
+    {% include footer.html %}
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="{{ '/assets/plugins/jquery-1.12.3.min.js'                          | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ '/assets/plugins/bootstrap/js/bootstrap.min.js'                 | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ '/assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js'        | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ '/assets/plugins/lightbox/dist/ekko-lightbox.min.js'            | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ '/assets/plugins/jquery-match-height/jquery.matchHeight-min.js' | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/main.js'                                            | prepend: site.baseurl }}"></script>
+
+</body>
+</html>

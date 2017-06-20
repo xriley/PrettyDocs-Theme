@@ -1,0 +1,10 @@
+
+{% if site.twitter_cards %}
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="{{ site.twitter_cards.title }}">
+    <meta name="twitter:description" content="{{ site.twitter_cards.description }}">
+    {% if site.owner.twitter %}<meta name="twitter:site" content="{{ site.owner.twitter | prepend: '@' }}">{% endif %}
+    {% if site.twitter_cards.creator %}<meta name="twitter:creator" content="{{ site.twitter_cards.creator | prepend: '@' }}">{% endif %}
+    <meta name="twitter:card" content="{{ site.twitter_cards.card }}">
+    <meta name="twitter:image" content="{{ site.twitter_cards.image | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}

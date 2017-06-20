@@ -1,0 +1,19 @@
+
+{% if site.share.github.position == 'left' %}
+ {% assign forkme_position = 'left' %}
+{% else %}
+ {% assign forkme_position = 'right' %}
+{% endif %}
+
+{% case site.share.github.color %}
+ {% when 'red'      %}{% assign forkme_color = 'red_aa0000'      %}
+ {% when 'green'    %}{% assign forkme_color = 'green_007200'    %}
+ {% when 'darkblue' %}{% assign forkme_color = 'darkblue_121621' %}
+ {% when 'orange'   %}{% assign forkme_color = 'orange_ff7600'   %}
+ {% when 'gray'     %}{% assign forkme_color = 'gray_6d6d6d'     %}
+ {% else            %}{% assign forkme_color = 'white_ffffff'    %}
+{% endcase %}
+
+<a href="https://github.com/{{ site.share.github.repo }}">
+ <img style="position: absolute; top: 0; {{ forkme_position }}: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_{{ forkme_position }}_{{ forkme_color }}.png" alt="Fork me on GitHub">
+</a>

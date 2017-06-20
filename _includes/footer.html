@@ -1,0 +1,20 @@
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">
+{% if site.owner.copyright %}
+                {{ site.owner.copyright.notice | markdownify | remove: '<p>' | remove: '</p>' }}
+                &copy;
+                {{ site.time | date: '%Y' }}
+                {{ site.owner.copyright.author | markdownify | remove: '<p>' | remove: '</p>' }}
+                <br>
+{% endif %}
+                Theme <a href="http://themes.3rdwavemedia.com/website-templates/prettydocs-free-bootstrap-theme-developers-and-startups/" target="_blank" rel="nofollow">PrettyDocs</a>
+                designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com/" target="_blank" rel="nofollow">Xiaoying Riley</a> for developers
+                &bull;
+                Refactored by <a href="https://guillermo.in/" target="_blank" rel="nofollow">Guillermo Calvo</a>
+                to be used with <a href="https://jekyllrb.com/" target="_blank" rel="nofollow">Jekyll</a>
+            </small>
+        </div>
+    </footer>

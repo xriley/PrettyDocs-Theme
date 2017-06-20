@@ -1,0 +1,11 @@
+
+{% if site.open_graph %}
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ site.open_graph.title }}">
+    <meta property="og:description" content="{{ site.open_graph.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ '/' | prepend: site.baseurl | prepend: site.url }}">
+    {% if site.open_graph.site_name %}<meta property="og:site_name" content="{{ site.open_graph.site_name }}">{% endif %}
+    {% if site.open_graph.locale %}<meta property="og:locale" content="{{ site.open_graph.locale }}">{% endif %}
+    {% if site.open_graph.image %}<meta property="og:image" content="{{ site.open_graph.image | prepend: site.baseurl | prepend: site.url }}">{% endif %}
+{% endif %}

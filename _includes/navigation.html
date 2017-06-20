@@ -1,0 +1,17 @@
+
+				<!-- NAVIGATION -->
+                <div id="cards-wrapper" class="cards-wrapper row">
+                  {% for navigation in include.navigation %}
+                    {% assign post = site.doc | where: "id", navigation | first %}
+                    <div class="item item-{{ post.color }} col-md-4 col-sm-6 col-xs-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                              {% include icon.html icon=post.icon %}
+                            </div>
+                            <h3 class="title">{{ post.title }}</h3>
+                            <p class="intro">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                            <a class="link" href="{{ post.url | prepend: site.baseurl }}"><span></span></a>
+                        </div>
+                    </div>
+                  {% endfor %}
+                </div>
