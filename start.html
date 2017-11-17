@@ -61,23 +61,59 @@
                                 <h2 class="section-title">General</h2>
                                 <div id="wp-info-section"  class="section-block">
                                     <h3 class="block-title">Wordpress Information</h3>
-                                    <p>To install this theme you must have a working version of WordPress already installed. If you need help installing WordPress, follow the instructions in <a href="https://codex.wordpress.org/Installing_WordPress" target="_blank">WordPress Codex</a>. Below are all the useful links for WordPress information.</p>
+                                    <p>To install this theme you must have a working version of WordPress already installed. If you need help installing WordPress, follow the instructions in <a href="https://codex.wordpress.org/Installing_WordPress" target="_blank"><b>WordPress Codex</b></a>. Below are all the useful links for WordPress information.</p>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <ul class="list">
                                                 <li><a href="https://codex.wordpress.org/Installing_WordPress" target="_blank"><b>WordPress Codex</b></a>
-                                                General info about WordPress and how to install on your server.
+                                                - General info about WordPress and how to install on your server.
                                                 </li>
-                                                <li><a href="https://codex.wordpress.org/First_Steps_With_WordPress" target="_blank"><b>First Step With Wordpress</b></a>General info about multiple topics about WordPress.</li>
-                                                <li><a href="https://codex.wordpress.org/FAQ_New_To_WordPress" target="_blank"><b>FAQ New to Wordpress</b></a>The most popular FAQ’s regarding WordPress.</li>
+                                                <li><a href="https://codex.wordpress.org/First_Steps_With_WordPress" target="_blank"><b>First Step With Wordpress</b></a>- General info about multiple topics about WordPress.</li>
+                                                <li><a href="https://codex.wordpress.org/FAQ_New_To_WordPress" target="_blank"><b>FAQ New to Wordpress</b>
+                                                </a>- The most popular FAQ’s regarding WordPress.</li>
                                             </ul>
                                         </div>
                                 </div><!--//section-block-->
                                 <div id="requirements-section"  class="section-block">
                                     <h3 class="block-title">Requirements</h3>
+                                    <p>To use WPLMS, please make sure you are running <b>WordPress 4.6</b> or higher, <b>PHP 5.6</b> or higher, and MySQL 5.6 or higher <b>(for legacy environments also PHP versions 5.3.x will work but it is recommended to be on at least PHP 5.6 and preferably PHP 7.0. WordPress recommends PHP 7)</b>. We have tested it with Mac, Windows and Linux. Below is a list of items you should ensure your host can comply with.</p>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <ul class="list">
+                                                <li>Check to ensure that your web host has the <a href="https://wordpress.org/about/requirements/" target="_blank"><b>minimum requirements to run WordPress</b></a>.</li>
+                                                <li>Always make sure they are running the latest version of WordPress.</li>
+                                                <li>You can download the latest release of WordPress from the official <a href="https://wordpress.org/" target="_blank"><b>WordPress</b></a> website.</li>
+                                                <li>Always create secure passwords for FTP and Database.</li>
+                                            </ul>
+                                        </div><!--//col-md-6-->
+
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="callout-block callout-info">
+                                                <div class="icon-holder">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </div><!--//icon-holder-->
+                                                <div class="content">
+                                                    <p>Hosting is more secure when PHP applications, like WordPress, are run using your account’s username instead of the server’s default shared username (www or www-data). The most common way for hosting companies to do this is using suPHP. Just ask your potential host if they run suPHP or something similar. We recommend using <b><a href="http://theme-fusion.com/partners/wpengine/" target="_blank">WP Engine</b></a> or <a href="https://wefoster.co/wordpress-lms-hosting" target="_blank"><b>wefoster</b></a> for all your hosting needs.</p>
+                                                </div><!--//content-->
+                                            </div><!--//callout-block-->
+                                        </div><!--//col-md-6-->
+
+                                    </div><!--//row-->
                                 </div><!--//section-block-->
+
                                  <div id="imp-note-section"  class="section-block">
                                     <h3 class="block-title">Important Notes About WPLMS + PHP Versions</h3>
+                                        <p>Here is a summary of PHP version compatibility with WPLMS and our reasoning behind it. <b>WPLMS is fully compatible with PHP 5.3+ since many hosts are still using that PHP version</b>, however ThemeFusion and <a href="https://wordpress.org/about/requirements/" target="_blank"><b>WordPress recommends using PHP 7+.</b></a></p>
+
+                                        <p>We officially dropped support for PHP 5.2 because first and foremost it has reached the end of its life cycle and because of performance and functionality reasons. However, because we are dedicated to our customer base, we fixed some known issues with PHP 5.2.x so any WPLMS users on PHP 5.2.x can use WPLMS without issues. But again, please do update your PHP version.</p>
+
+                                        <p>Furthermore, and most important, <a href="https://wordpress.org/about/requirements/" target="_blank"><b>WordPress recommends PHP 7.0</b></a> and for good reason. Other PHP versions have reached the end of their life cycle and may expose your site to security vulnerabilities. There is a significant reason to no longer use old PHP versions, always update to the latest versions.</p>
+
+                                        <p>Also, PHP 5.3, 5.4 and 5.5 have reached end of their life cycle and shouldn’t be used at all. PHP 5.6 will reach end of active support by the end of this year as well. While those versions should not be used, we do support them and they will work with WPLMS. However, since they have reached the end of their life, issues that may arise can only be fixed to a certain extent. It’s good practice to always stay up to date with these things.</p>
+
+                                        <p>Issues that you may experience are because certain hosting plans do not care about such things, which causes a lot of issues for their customers and the themes they use. The themes are not to blame, it is the hosts who will not stay up to date with the latest PHP versions.</p>
+
+                                        <p>Since the only actively supported PHP versions from January 2017 onwards will be 7+, these should be the versions of choice and you should always look for a host who actively updates their PHP and MySQL versions. We regularly test the latest versions and ensure that WPLMS runs smoothly on them and does not face any issues.</p>
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
 
@@ -85,74 +121,115 @@
                                 <h2 class="section-title">Download</h2>
                                 <div id="download-purchase-code" class="section-block">
                                     <h3 class="block-title">Purchase Code</h3>
-                                    <p>Themeforest provides you with a purchase code for each item you purchase. This purchase code is used for verification so you can receive theme support and also fully register your product. Please read below for instructions on how to download your purchase code.</p><br>
+                                    <p>Themeforest provides you with a purchase code for each item you purchase. This purchase code is used for verification so you can receive theme support and also fully register your product. Please read below for instructions on how to download your purchase code. It is a vital piece of information which helps us to ensure that the theme is being downloaded and used legally by you on your site. We recommend users to note their purchase code and their buyer api key (?) to register the WPLMS and use its support.</p><br>
                                     <h4>How To Download Your Purchase Code From ThemeForest</h4>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <ul class="list">
+                                                    <li><b>Step 1</b> – Log into your ThemeForest account and click your username in the top right corner to access the dropdown. Select the “Downloads” link.</li>
+                                                    <li><b>Step 2</b> – Find the WPLMS Purchase in the list of items you have bought.</li>
+                                                    <li><b>Step 3</b> – Click the “Download” button to activate the dropdown menu. Select to download the license certificate and purchase code as a PDF or Text file. Open the file to find the purchase code. Example Purchase Code: 91d36x28-ddd5-4q70-a109-c9wc8aac6a16.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                        <div class="screenshot-holder"><a href="assets/images/demo/wplms_purchase_code.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_purchase_code.png" alt="screenshot" /></a></div> 
                                        <div class="screenshot-holder"><a href="assets/images/demo/wplms_purchase_code.gif" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_purchase_code.gif" alt="screenshot" /></a></div> 
                                 </div><!--//section-block-->
                                 <div id="download-full-package"  class="section-block">
                                     <h3 class="block-title">Full Package</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-                                    </p>
+                                    <p>When you download WPLMS from Themeforest, you get the full WPLMS package. This is the full package, which includes sample data zip file and this documentation.</p>
+                                    <p>Uploading the full package will give you an error of no stylesheet found.</p>
+                                    <p>You need to first unzip the package and locate the file <b>WPLMS.zip</b> and use only this file to upload in WordPress Appearance themes section.</p>
                                     <div class="code-block">
-                                        <h6>Default code example:</h6>
-                                        <p><code>bower install &lt;package&gt;</code></p>
-                                        <p><code>npm install &lt;package&gt;</code></p>
+                                        <h4>Included Files From Your Themeforest Purchase</h4>
+                                        <ul class="list">
+                                            <li><b>wplms.zip</b> – Located inside the WPLMS Theme folder, this is the installable WordPress file you’ll need to install or update wplms manually.</li>
+                                            <li><b>WPLMS-Child-Theme.zip</b> – Located inside the WPLMS Theme folder, this is a child theme you can use to make changes to WPLMS’s core theme files.</li>
+                                            <li><b>Documentation Folder</b> – Contains the developer documentation for all the features exist in wplms theme.</li>
+                                            <li><b>Help Folder</b> – This contains all the language files used in wplms.</li>
+                                        </ul>
                                     </div><!--//code-block-->
                                 </div><!--//section-block-->
                                 <div id="download-theme"  class="section-block">
                                     <h3 class="block-title">Theme</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <h6>Un-ordered list example</h6>
-                                            <ul class="list">
-        										<li>Lorem ipsum dolor sit amet.</li>
-        										<li>Aliquam tincidunt mauris.</li>
-        										<li>Ultricies eget vel aliquam libero.
-        											<ul>
-        												<li>Turpis pulvinar</li>
-        												<li>Feugiat scelerisque</li>
-        												<li>Ut tincidunt</li>
-        											</ul>
-        										</li>
-        										<li>Pellentesque habitant morbi.</li>
-        										<li>Praesent dapibus, neque id.</li>
-        									</ul>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <h6>Ordered list example</h6>
-                                            <ol class="list">
-        										<li>Lorem ipsum dolor sit amet.</li>
-        										<li>Aliquam tincidunt mauris.</li>
-        										<li>Ultricies eget vel aliquam libero.
-        											<ul>
-        												<li>Turpis pulvinar</li>
-        												<li>Feugiat scelerisque</li>
-        												<li>Ut tincidunt</li>
-        											</ul>
-        										</li>
-        										<li>Pellentesque habitant morbi.</li>
-        										<li>Praesent dapibus, neque id.</li>
-        									</ol>
-                                        </div>
-                                    </div><!--//row-->
+                                    <p>WPLMS child theme allows you to apply custom code changes to your site. Using a child theme ensures that all your customizations will not be overwritten even when you update the parent theme. Continue reading below to learn how to setup your own child theme.</p>
+                                    <p>A child theme is a theme that has all the functionality and styling of another theme called the parent theme, which in our case, is WPLMS. <b>Child themes are the recommended way of modifying the code of an existing theme because a child theme preserves all custom code changes and modifications even after a theme update.</b> If you modify code directly from a parent theme, then update the parent theme, your changes will be lost. Always use a child theme if you are modifying core code. Child themes can also be used for a number of things, such as custom CSS applications, template file modifications, and custom PHP functions and/or hooks. There are a couple of methods to modify a child theme. Child themes don’t guarantee that an update of custom code on the parent theme will not require further maintenance. This is especially true if you copy files from the parent theme to your child theme.</p>
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
 
                             <section id="upload-theme-section" class="doc-section">
                                 <h2 class="section-title">Upload Theme</h2>
                                 <div id="wp-upload"  class="section-block">
-                                    <h3 class="block-title">WP Upload</h3>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h3 class="block-title">How To Install WPLMS via WordPress</h3>
+                                            <ul class="list">
+                                                <li><b>Step 1</b> – Navigate to WordPress Dashboard > Appearance > Themes.</li>
+                                                <li><b>Step 2</b> – Click the ‘Add New’ button on top of the page, then the ‘Upload Theme’ button.</li>
+                                                <li><b>Step 3</b> – Click ‘Choose File’ and find the theme files you’ve just downloaded. If you’ve downloaded the installable WordPress file, then you do not need to unzip the file. If you’ve downloaded the Full Theme Package, you have to unzip the WPLMS_Package.zip file, and then unzip the wplms.zip file which will give a wplms folder this is the one you select to install.</li>
+                                                <li><b>Step 4</b> – Once the file has uploaded, we recommend our users to install a child theme for WPLMS.In WPLMS_Package folder you will see an wplms.zip file and an child themes folder. You must first install wplms.zip file because that is the parent theme. Once that’s done, you can then install the child theme which follows the exact process of installing the parent theme. Choose to install the theme zip files via <b>WP upload</b> or via <b>FTP upload.</b></li>
+                                                <li><b>Step 5</b> – To activate WPLMS go to WordPress Dashboard > Appearance > Themes and click the Activate button for the theme you wish to activate.Once you activate the theme, you will be redirected to our Welcome Screen.</li>
+                                            </ul>
+                                        </div><!--//col-md-6-->
+
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="callout-block callout-info">
+                                                <div class="icon-holder">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </div><!--//icon-holder-->
+                                                <div class="content">
+                                                    <h3>How To Make Code Customization?</h3>
+                                                    <p>Copying files from the parent theme to child theme is a common method to make code customizations. This is the easiest method available but there are limitations to it. Due to the limitations, we recommend only modifying the files inside the templates folder from the parent theme into the child theme.</p>
+                                                    <ul class="list">
+                                                        <li>You can only copy some files to the child theme. In WPLMS, we have made a decision to make sure that core logical code which can break the theme is not copied in the child theme. This includes the files inside the includes folder.</li>
+                                                        <li>It is not update-safe (sometimes). Whenever we make major changes to a certain file e.g. header.php in the parent theme, you’ll have to copy the theme file from parent theme again and apply the customizations again. If you don’t do this, there’s a chance that the related feature might not work anymore.</li>
+                                                    </ul>
+                                                </div><!--//content-->
+                                            </div><!--//callout-block-->
+                                        </div><!--//col-md-6-->
+                                    </div><!--//row-->
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="callout-block callout-success">
+                                                <div class="icon-holder">
+                                                    <i class="fa fa-thumbs-up"></i>
+                                                </div><!--//icon-holder-->
+                                                <div class="content">
+                                                    <h4 class="callout-title">Important Note:</h4>
+                                                    <p>After switching from child theme to parent theme, some of the widgets will be removed and some of the plugins will be deactivated.</p>
+                                                    <p>Whenever you want to make code customization in child theme, create a folder of same name presesnt in parent theme, then create a file of same name which is present in parent theme and customize your code in it.</p>
+                                                    <p>Refer tutorial to use child theme : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/how-to-use-child-theme/" target="_blank"><b>Tutorial</b></a></p>
+                                                </div><!--//content-->
+                                            </div><!--//callout-block-->
+                                        </div>
+                                    </div>
                                 </div><!--//section-block-->
-                                <div id="ftp-upload"  class="section-block">
-                                    <h3 class="block-title">FTP Upload</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-                                    </p>
+                                <div id="ftp-upload" class="section-block">
+                                    <h3 class="block-title">How To Install WPLMS via FTP</h3>
+                                     <ul class="list">
+                                        <li><b>Step 1</b> – Log into your server installation via FTP. You can use software such as Filezilla for this.</li>
+                                        <li><b>Step 2</b> – If you have downloaded the Full Theme Package from ThemeForest, please unzip the WPLMS_Package.zip file and then unzip the wplms.zip file which will give a wplms folder.</li>
+                                        <li><b>Step 3</b> – Upload the extracted wplms folder to the wp-content > themes folder on the server. Make sure the folder name is -> wplms.</li>
+                                        <li><b>Step 4</b> – Log in to your WordPress Dashboard and navigate to Appearance > Themes and clicking the ‘Activate’ button, for the WPLMS theme.</li>
+                                        <li><b>Step 5</b> – Once activated, you will be redirected to our Welcome Screen.</li>
+                                    </ul>
                                 </div><!--//section-block-->
-                                 <div id="cpanel-upload"  class="section-block">
-                                    <h3 class="block-title">CPanel Upload</h3>
+                                 <div id="cpanel-upload" class="section-block">
+                                    <h3 class="block-title">How To Install WPLMS via CPanel</h3>
+                                    <ul class="list">
+                                        <li><b>Step 1</b> – Log into your CPanel File Manager.</li>
+                                        <li><b>Step 2</b> – If you have downloaded the Full Theme Package from ThemeForest, please unzip the WPLMS_Package.zip file and then unzip the wplms.zip file which will give a wplms folder.</li>
+                                        <li><b>Step 3</b> – Upload the extracted WPLMS folder to the wp-content > themes folder on the server. Make sure the folder name is -> ‘wplms’.</li>
+                                        <li><b>Step 4</b> – Log in to your WordPress Dashboard and navigate to Appearance > Themes and clicking the ‘Activate’ button, for the WPLMS theme.</li>
+                                        <li><b>Step 5</b> – Once activated, you will be redirected to our Welcome Screen.</li>
+                                    </ul>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/hbcDjZVChIw" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><br><!--//row-->  
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
 
@@ -161,192 +238,222 @@
                                 <h2 class="section-title">Setup Wizard</h2>
                                 <div id="setup-wizard-config-check-section"  class="section-block">
                                     <h3 class="block-title">Configuration Check</h3>
-                                </div><!--//section-block-->
-                                <div id="setup-wizard-features-section"  class="section-block">
-                                    <h3 class="block-title">Features</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-                                    </p>
-                                </div><!--//section-block-->
-                                <div id="setup-wizard-plugins-section"  class="section-block">
-                                    <h3 class="block-title">Plugins</h3>
-                                </div><!--//section-block-->
-                                <div id="setup-wizard-style-section"  class="section-block">
-                                    <h3 class="block-title">Style</h3>
-                                </div><!--//section-block-->
-                                <div id="setup-wizard-content-section"  class="section-block">
-                                    <h3 class="block-title">Content</h3>
-                                </div><!--//section-block-->
-                            </section><!--//doc-section-->
-                           
-                            <section id="code-section" class="doc-section">
-                                <h2 class="section-title">Code</h2>
-                                <div class="section-block">
-                                    <p>
-                                        <a href="http://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.
-                                    </p>
-                                    
-                                </div><!--//section-block-->
-                                <div id="html" class="section-block">
-                                    
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="callout-block callout-info">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-info-circle"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h3>Recommended PHP Configuration Limits</h3>
+                                                <p>Many issues that you may run into such as: <a href="https://codex.wordpress.org/Common_WordPress_Errors#The_White_Screen_of_Death" target="_blank"><b>white screen</b></a>, your demo import fails, empty page content with Fusion Builder and other similar issues are all related to low PHP configuration limits. The solution is to increase the PHP limits. You can do this on your own, or contact your web host and ask them to increase those limits to a minimum as follows:</p>
+                                                <ul class="list">
+                                                    <li>PHP version : 5.3+</li>
+                                                    <li>PHP Memory limit : 128 m or more</li>
+                                                    <li>PHP Upload limit : 32mb or more</li>
+                                                    <li>PHP Max execution Time limit : 300s or more (only required for sample data setup)</li>
+                                                </ul>
+                                            </div><!--//content-->
+                                        </div><!--//callout-block-->
+                                    </div><!--//col-md-12-->
+                                    <p>To edit these php configurations, you need to modify .ini file and then restart your server. But some of the users do not have access to modify the file. Then, contact your webhost server to modify these files and make sure the server should be restarted after modifying the file.</p>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C0RQO3-tjAI" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><br>
+
                                     <div class="callout-block callout-success">
                                         <div class="icon-holder">
                                             <i class="fa fa-thumbs-up"></i>
                                         </div><!--//icon-holder-->
                                         <div class="content">
                                             <h4 class="callout-title">Useful Tip:</h4>
-                                            <p>You can use this online <a href="https://mothereff.in/html-entities" target="_blank">HTML entity encoder/decoder</a> to generate your code examples.</p>
+                                            <p><b>Slider Re-import : </b><a href="https://www.youtube.com/watch?v=fpJcOBV8gjY" target="_blank"> Tutorial</a>
+                                            </p>
+                                            <p><b>Change to different demo : </b><a href="https://www.youtube.com/watch?v=b0dBxtJ3gdM" target="_blank"> Tutorial</a>
+                                            </p>
+                                            <p><b>Menu Configuration : </b><a href="https://www.youtube.com/watch?v=JJRQ7l03nmo&list=PL8n4TGA_rwD-IdrZV4g0cEZJXgkPiX4Bu&index=4" target="_blank"> Tutorial
+                                            </a>
+                                            </p>
                                         </div><!--//content-->
                                     </div>
-                                    <div class="code-block">
-                                        <h6>HTML Code Example</h6>
-                                        <pre><code class="language-markup">&lt;!DOCTYPE html&gt; 
-&lt;html lang=&quot;en&quot;&gt; 
-    ...
-    &lt;div class=&quot;jumbotron&quot;&gt; 
-        &lt;h1&gt;Hello, world!&lt;/h1&gt; 
-        &lt;p&gt;...&lt;/p&gt; 
-        &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt; 
-    &lt;/div&gt;
-    &lt;div class=&quot;jumbotron&quot;&gt; 
-        &lt;h1&gt;Hello, world!&lt;/h1&gt; 
-        &lt;p&gt;...&lt;/p&gt; 
-        &lt;p&gt;&lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt; 
-    &lt;/div&gt;
-    ...
-&lt;/html&gt;</code></pre>
-                                    </div><!--//code-block-->
                                 </div><!--//section-block-->
-                                <div id="css" class="section-block">
-                                    <div class="code-block">
-                                        <h6>CSS Code Example</h6>
-                                        <pre><code class="language-css">/* ======= Base Styling ======= */
-body {
-    font-family: 'Open Sans', arial, sans-serif; 
-    color: #333; 
-    font-size: 16px; 
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
-}</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                                <div id="less" class="section-block">
-                                    <div class="code-block">
-                                        <h6>LESS Code Example</h6>
-                                        <pre><code class="language-css">/*
-* Template Name: prettyDocs - Responsive Website Template for documentations 
-* Version: 1.0 
-* Author: Xiaoying Riley 
-* License: Creative Commons Attribution 3.0 License 
-* Twitter: @3rdwave_themes 
-* Website: http://themes.3rdwavemedia.com/ 
-*/ 
-@import &quot;mixins.less&quot;; 
-@import &quot;theme-default.less&quot;; 
-@import &quot;base.less&quot;; 
-@import &quot;doc.less&quot;; 
-@import &quot;landing.less&quot;; 
-@import &quot;responsive.less&quot;;</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                                <div id="sass" class="section-block">
-                                    <div class="code-block">
-                                        <h6>Sass Code Example</h6>
-                                        <pre><code class="language-sass">#main {
-    $width: 5em; 
-    width: $width; 
-}
-
-#sidebar { 
-    width: $width; 
-}</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                                <div id="javascript" class="section-block">
-                                    <div class="code-block">
-                                        <h6>JavaScript Code Example</h6>
-                                        <pre><code class="language-javascript">&lt;script&gt; 
-    function myFunction(a, b) { 
-        return a * b; 
-    } 
-    
-    document.getElementById(&quot;demo&quot;).innerHTML = myFunction(4, 3); 
-&lt;/script&gt;</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                                <div id="python" class="section-block">
-                                    <div class="code-block">
-                                        <h6>Python Code Example</h6>
-                                        <pre><code class="language-python">&gt;&gt;&gt; x = int(input(&quot;
-Please enter an integer: &quot;)) Please enter an integer: 42 
-&gt;&gt;&gt; if x &lt; 0: 
-... x = 0 
-... print('Negative changed to zero') 
-... elif x == 0: 
-... print('Zero') 
-... elif x == 1: 
-... print('Single') 
-... else: 
-... print('More') 
-... More</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                                <div id="php" class="section-block">
-                                    <div class="code-block">
-                                        <h6>PHP Code Example</h6>
-                                        <pre><code class="language-php">&lt;?php 
-$txt = &quot;Hello world!&quot;; 
-$x = 5; 
-$y = 10.5; 
-
-echo $txt; 
-echo &quot;&lt;br&gt;&quot;; 
-echo $x; 
-echo &quot;&lt;br&gt;&quot;; 
-echo $y; 
-?&gt;</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                                <div id="handlebars" class="section-block">
-                                    <div class="code-block">
-                                        <h6>Handlebars Code Example</h6>
-                                        <pre><code class="language-handlebars">Handlebars.registerHelper('list', function(items, options) { 
-  var out = &quot;&lt;ul&gt;&quot;; 
-  
-  for(var i=0, l=items.length; i&lt;l; i++) { 
-    out = out + &quot;&lt;li&gt;&quot; + options.fn(items[i]) + &quot;&lt;/li&gt;&quot;; 
-  } 
-  
-  return out + &quot;&lt;/ul&gt;&quot;; 
-});</code></pre>
-                                    </div><!--//code-block-->
-                                    <div class="code-block">
-                                        <h6>Git Code Example</h6>
-                                        <pre><code class="language-git">$ git add Documentation.txt</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                            </section><!--//doc-section-->
-                            <section id="video-section" class="doc-section">
-                                <h2 class="section-title">Video</h2>
-                                <div class="section-block">
+                                <div id="setup-wizard-features-section"  class="section-block">
+                                    <h3 class="block-title">WPLMS Features</h3>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <h6>Responsive Video 16:9</h6>
-                                            <!-- 16:9 aspect ratio -->
-                                            <div class="embed-responsive embed-responsive-16by9">
-                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ejBkOjEG6F0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
+                                            <ul class="list">
+                                                <li>Front end Course Creation and Management</li>
+                                                <li>Front end Student Management</li>
+                                                <li>BuddyPress Integration</li>
+                                                <li>BBPress Integration</li>
+                                                <li>WooCommerce Integration</li>
+                                                <li>Notes and Discussions</li>
+                                                <li>User Dashboards with Statistics</li>
+                                                <li>Instructor Dashboards with Statistics</li>
+                                                <li>Download Statistics Course wise, site wise, module wise</li>
+                                                <li>User Notifications and Emails (email template)</li>
+                                                <li>Activity Tracking</li>
+                                                <li>Instructor Commissions</li>
+                                                <li>Instructor Payouts</li>
+                                                <li>Custom Registration forms</li>
+                                                <li>Wishlist</li>
+                                                <li>Course Ratings & Reviews</li>
+                                                <li>Course Prerequisites</li>
+                                                <li>Course Retakes</li>
+                                                <li>GradeBook</li>
+                                                <li>Content Drip</li>
+                                                <li>MyCred Addon</li>
+                                                <li>Random Quiz</li>
+                                                <li>Membership Integration(Pmpro)</li>
+                                                <li>Co-Instructors</li>
+                                                <li>Certificates</li>
+                                                <li>Custom Badges</li>
+                                                <li>Sort Answer questions</li>
+                                                <li>Fill Blank Questions</li>
+                                                <li>Sort Answer questions</li>
+                                                <li>Match Answer questions</li>
+                                                <li>Select Answer questions</li>
+                                                <li>Upload Assignments</li>
+                                                <li>Multiple Fillblank and Select questions</li>
+                                                <li>Essay Type questions</li>
+                                                <li>Survey questions</li>
+                                                <li>Manual Quiz evaluations</li>
+                                                <li>Quiz Retake with previous results</li>
+                                                <li>Quiz Reset</li>
+                                                <li>Independent Standalone Quizzes</li>
+                                                <li>Unit Locking</li>
+                                                <li>Unit Media Lock (Video completion)</li>
+                                                <li>Negative Marking in Quizzes</li>
+                                                <li>Course Start Date</li>
+                                                <li>Unit Start Date</li>
+                                                <li>Dynamic Drips (Unit duration, drip origin)</li>
+                                                <li>Unit Assignment Locking</li>
+                                                <li>Instructor manually, complete, units,courses,quizzes for students</li>
+                                                <li>Custom Profile fields</li>
+                                                <li>Student and Instructor specifc menus</li>
+                                                <li>Custom Profile fields</li>
+                                                <li>Course Codes for direct assignment</li>
+                                                <li>Apply for Course (manual approval in courses)</li>
+                                                <li>Custom Classes for Courses (sub-group class wise, training centers)</li>
+                                                <li>Variable Pricing for Courses (different price for certificates, badge etc)</li>  
+                                                <li>Certificates</li>
+                                                <li>Amazon S3 integration (with Instructor privacy)</li> 
+                                            </ul>
+                                        </div><!--//col-md-6-->
+
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <h6>Responsive Video 4:3</h6>
-                                            <!-- 4:3 aspect ratio -->
-                                            <div class="embed-responsive embed-responsive-4by3">
-                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ejBkOjEG6F0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                                            </div>
+                                            <ul class="list">
+                                                <li>Course groups</li>
+                                                <li>Course forums</li>
+                                                <li>Course evaluations & statistics</li>
+                                                <li>Quiz and test support</li>
+                                                <li>Test timer and timeline</li>
+                                                <li>Question bank</li>
+                                                <li>Auto evaluation</li>
+                                                <li>Full course statistics & per Student statistics</li>
+                                                <li>Administrative overview statistics</li>
+                                                <li>WooCommerce support (You can sell your courses!)</li>
+                                                <li>Header login</li>
+                                                <li>Custom BuddyPress support</li>
+                                                <li>bbPress support</li>
+                                                <li>Private groups and forums</li>
+                                                <li>Infinite scroll (on masonry layout)</li>
+                                                <li>Form generator</li>
+                                                <li>Popup generator</li>
+                                                <li>Google fonts integration</li>
+                                                <li>Google analytics support</li>
+                                                <li>Custom background options</li>
+                                                <li>Widget ready sidebar and footer</li>
+                                                <li>Custom widgets: courses, course instructors, course price filter</li>
+                                                <li>Custom shortcode generator</li>
+                                                <li>Built-in FlexSlider</li>
+                                                <li>Vibe options panel</li>
+                                                <li>Autoupdates</li>
+                                                <li>Translation ready</li>
+                                                <li>Cross-browser tested</li>
+                                                <li>Layer Slider plugin included</li>
+                                                <li>Drag & Drop page builder</li>
+                                                <li>Widget ready mega menu</li>
+                                            </ul>
                                         </div>
                                     </div><!--//row-->
-                                </div><!--//section-block-->                            
+                                </div><!--//section-block-->
+                                <div id="setup-wizard-plugins-section" class="section-block">
+                                    <h3 class="block-title">Plugins</h3>
+                                    <p>After the theme is installed and activated, you'll get notification to install plugins. Some of these plugins are required and some are recommended. Here is a list of plugins and their functions :</p>
+
+                                    <ul class="list">
+                                        <li><b>BuddyPress</b> : The main plugin required for theme to function as LMS.</li>
+                                        <li><b>BBPress</b> : Recommended plugin to enhance LMS experience.</li>
+                                        <li><b>WooCommerce</b> : The Required plugin if you want to sell courses in LMS.</li>
+                                        <li><b>Vibe Course Module</b> : The main plugin required for LMS to connect with BuddyPress. Contains all the necessary features of LMS.</li>
+                                        <li><b>Vibe Custom Types</b> : This is a Required plugin which is the backbone of LMS.</li>
+                                        <li><b>Vibe Shortcodes</b> : The Optional plugin is recommended if you want to use inbuilt shortcodes LMS.</li>
+                                        <li><b>WPLMS Events</b> : The Optional plugin is recommended if you want to use inbuilt Events in LMS. An Event supports physical location (Map), date, time and can be connected to a course. A Course can have its own events calendar.</li>
+                                        <li><b>WPLMS Assignments</b> : The Optional plugin is recommended if you want to use assignments functionality in your theme. An Assignment is like a question which allows students to upload their files and has time duration in hours/days. Assignments can be connected to a Unit or an Event and can be included in course evaluation. So when course percentage is calculated it takes into account, the assignment marks along with quiz marks.</li>
+                                        <li><b>WPLMS Front end</b> : The Optional plugin is recommended if you want to enable Front end Course creation in LMS.
+                                        Layerslider : The Optional plugin is recommended to build beautiful sliders. If you do not want any slider in your theme, then you need not install this plugin.</li>
+                                    </ul>
+                                    <b>There are other plugins which can be used to enhace the experience and useful for maintenance of system:</b>
+                                    <ul class="list">
+                                        <li><b>BuddyPress security check</b> : Maths Security Check placed at the bottom of registeration to keep a check on spam.</li>
+                                        <li><b>BuddyPress Group documents</b> : Useful for sharing documents in group.</li>
+                                        <li><b>WP FB Auto connect</b> : Adds a Login by FB link in Login panel.</li>
+                                    </ul>
+
+                                </div><!--//section-block-->
+                                <div id="setup-wizard-style-section" class="section-block">
+                                    <h3 class="block-title">Style</h3>
+                                </div><!--//section-block-->
+                                <div id="setup-wizard-content-section" class="section-block">
+                                    <h3 class="block-title">Content</h3>
+                                </div><!--//section-block-->
                             </section><!--//doc-section-->
 
+                            <section id="getting-started-section" class="doc-section">
+                                <h2 class="section-title">Getting Started</h2>
+                                <div id="creating-courses" class="section-block">
+                                    <h3 class="block-title">Creating Courses</h3>
+                                    <div class="section-block">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>WPLMS Course Creation(Front End)</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xkSeHimJGF8" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div><!--//row-->
+                                    </div><!--//section-block-->
+                                </div>
+
+                                <div id="testing-courses" class="section-block">
+                                    <h3 class="block-title">Testing Courses</h3>
+                                     <div class="section-block">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>WPLMS Student Userflow</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MFtX9ussRKk" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>WPLMS Non Logged In Userflow</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GO4JzUCLV5Q" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div><!--//row-->
+                                    </div><!--//section-block-->
+                                </div>
+
+                                <div id="student-management" class="section-block">
+                                    <h3 class="block-title">Student Management</h3>
+                                </div>
+                            </section>
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
                     <div class="doc-sidebar hidden-xs">
@@ -379,7 +486,7 @@ echo $y;
                                 <li>
                                     <a class="scrollto" href="#setup-wizard-section">Setup Wizard</a>
                                     <ul class="nav doc-sub-menu">
-                                        <li><a class="scrollto" href="#setup-wizard-config-check">Configuration Check</a></li>
+                                        <li><a class="scrollto" href="#setup-wizard-config-check-section">Configuration Check</a></li>
                                         <li><a class="scrollto" href="#setup-wizard-features-section">Features</a></li>
                                         <li><a class="scrollto" href="#setup-wizard-plugins-section">Plugins</a></li>
                                         <li><a class="scrollto" href="#setup-wizard-style-section">Style</a></li>
@@ -387,19 +494,13 @@ echo $y;
                                     </ul><!--//nav-->
                                 </li>
                                 <li>
-                                    <a class="scrollto" href="#code-section">Code</a>
+                                    <a class="scrollto" href="#getting-started-section">Getting Started</a>
                                     <ul class="nav doc-sub-menu">
-                                        <li><a class="scrollto" href="#html">HTML</a></li>
-                                        <li><a class="scrollto" href="#css">CSS</a></li>
-                                        <li><a class="scrollto" href="#less">LESS</a></li>
-                                        <li><a class="scrollto" href="#sass">Sass</a></li>
-                                        <li><a class="scrollto" href="#javascript">JavaScript</a></li>
-                                        <li><a class="scrollto" href="#python">Python</a></li>
-                                        <li><a class="scrollto" href="#php">PHP</a></li>
-                                        <li><a class="scrollto" href="#handlebars">Handlebars</a></li>
-                                    </ul><!--//nav-->
+                                        <li><a class="scrollto" href="#creating-courses">Creating Courses</a></li>
+                                        <li><a class="scrollto" href="#testing-courses">Testing Courses</a></li>
+                                        <li><a class="scrollto" href="#student-management">Student Management</a></li>
+                                    </ul>
                                 </li>
-                                <li><a class="scrollto" href="#video-section">Video</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
