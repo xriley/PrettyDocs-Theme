@@ -61,6 +61,10 @@
                             <section id="general" class="doc-section">
                                 <h2 class="section-title">Installation and Setup</h2>
                                 <div class="section-block">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> The package could not be installed. the theme is missing the style.css stylesheet ?</h3>
+                                    <div class="answer">
+                                        <p>A common issue that can occur with users new to installing WordPress themes is a "Broken theme and/or stylesheets missing” error message being displayed when trying to upload or activate the theme. This error message does not mean that the theme you have purchased is broken, it simply means it has been uploaded incorrectly. Luckily, there is a very easy fix : <a href="https://help.market.envato.com/hc/en-us/articles/202821510?_ga=2.169247137.1408211492.1511165547-83390855.1509686166" target="_blank">link to fix</a>.</p>
+                                    </div>
                                     <h3 class="question"><i class="fa fa-question-circle"></i> Upload issue, Are you sure you want to do this ?</h3>
                                     <div class="answer">
                                     <p>While uploading the theme if you see an issue like the image below</p>
@@ -69,12 +73,22 @@
                                     <p>You may need to contact your hosting company or web host and ask them to increase this limit. Other alternatives include <a href="installation.html#ftp-upload">installation via FTP</a> and <a href="installation.html#cpanel-upload">installation via cPanel</a></p>
 
                                     </div>
-                                    <h3 class="question"><i class="fa fa-question-circle"></i> White screen ?</h3>
-                                    <div class="answer">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</div>
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> White screen or Fatal Error ?</h3>
+                                    <div class="answer">White screen or Fatal error issue can occur because of following incompatibilities with your server settings :
+                                    <ol>
+                                        <li>PHP version 5.3 or less</li>
+                                        <li>PHP memory limit less than 128 mb or less than the server requirements. <a href="#how_much_php_memory">how to check this ?</a></li>
+                                        <li></li>
+                                    </ol>
+                                    </div>
                                 </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="question"><i class="fa fa-question-circle"></i> What is the ipsum dolor sit amet quam tortor? <span class="label label-success">New</span></h3>
-                                    <div class="answer">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                                <div class="section-block" id="how_much_php_memory">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> White screen, debugging PHP memory requirements ? <span class="label label-success">New</span></h3>
+                                    <div class="answer">
+                                    <p>WPLMS is a theme which has a lot of features. Each of these features consume PHP memory. The PHP memory consumption also increases with the number of users online in your site. Therefore we can not precisely suggest how much PHP memory can be required by your site. This faq will tell you how to detect PHP memory requirements for your site ? When you see a white screen on your site, ask for the PHP error log from your web host. If you see a fatal error, you get the same error in the browser screen that is recorded in the PHP error log.</p>
+                                    <img src="assets/images/memoryexhuastederror.png">
+                                    <p>Note</p>
+                                    </div>
                                 </div><!--//section-block-->
                                 <div class="section-block">
                                     <h3 class="question"><i class="fa fa-question-circle"></i> How does the morbi quam tortor work?</h3>
