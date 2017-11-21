@@ -1074,12 +1074,12 @@
 
 
                                     <li><h4>Logged in Menu</h4>
-                                    <p>This LMS setting is used to customize your profile menu. You can also rearrange the order of the profile menu fields. To add new fields to show it in your profile menu, click on add new item and by dropdown menu select those fields you wish to view. <b>Refer the Tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/customise-profile-menu-dropdown-wplms-2-6/" target="_blank"><b>Customized Logged In Menu</b></a></p>
+                                    This LMS setting is used to customize your profile menu. You can also rearrange the order of the profile menu fields. To add new fields to show it in your profile menu, click on add new item and by dropdown menu select those fields you wish to view. <b>Refer the Tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/customise-profile-menu-dropdown-wplms-2-6/" target="_blank"><b>Customized Logged In Menu</b></a>
                                     </li>
 
 
                                     <li><h4>Course Menu</h4>
-                                    <p>This LMS Setting is used to customize course menu which is visible on single course page. An Admin have the access to set the privacy of these courses for everyone, for instructors or only for students. He can set visibility of these menus on selected courses or for all courses.</p>
+                                    This LMS Setting is used to customize course menu which is visible on single course page. An Admin have the access to set the privacy of these courses for everyone, for instructors or only for students. He can set visibility of these menus on selected courses or for all courses.
                                         <div class="row">
                                             <div class="col-md-3 col-sm-3 col-xs-12">
                                                 <div class="screenshot-holder">
@@ -1098,14 +1098,951 @@
                                     </li>
 
 
-                                    <li><h4>Member Types</h4>
+                                    <li><h4>Member Types</h4>After adding member types you can set the Member types widget in your sidebar to show filtering according to member type on members directory. Member type can be assign with custom registration forms also. In wplms custom registration settings you will see a new settings for member type.
                                     </li>
 
 
                                     <li><h4>Group Types</h4>
+									To Group Types from , wp_admin > LMS > Settings > Group Types. Like Member Types You can set Group Types also. Refer the tutorial :<a href="https://vibethemes.com/documentation/wplms/knowledge-base/member-types-and-group-types/" target="_blank"><b> Set Member Types & Group Types</b></a>
                                     </li>
                                 </ul>
                             </section>
+
+<!-- LMS Settings : API
+================================================== -->
+                            <section id="api-settings" class="doc-section">
+                                <h2>LMS : API Settings</h2>
+								<p>WPLMS 3.0 uses oAuth 2.0 Server for authentication and user management. Though we’re not using all the features of the oAuth server, it is a very secure tool in managing site user login and registrations.</p>
+								<p>Following points will highlight the benefits of this feature :</p>
+								<ol>
+									<li><strong>Facilitate Secure Mobile App Authentication :</strong> Since mobile app access login data remotely without actually logging in to your WPLMS site, this feature was required for user authentication and management.</li>
+									<li><strong>Authentication via Tokens :</strong>  Once a user is verified , the oAuth server generates a secure Authorization token which is accompanied and verified in every API call which is trying to access and modify confidential data. Then tokens expire and can be removed from WPLMS API panel, so it presents a secure way of communication between apps and your web site.</li>
+									<li><strong>Site Identity :</strong> Every site can be easily distinguished with another via state factor which is uniquely added for every site.</li>
+									<li><strong>Built for WPLMS Mobile apps :</strong>  Since the API and APP development happened side by side for WPLMS, we have added special features to enable better communication and management of users connected via apps with your WPLMS site.</li>
+								</ol>
+								<p>Refer the tutorial : <a href="https://www.youtube.com/watch?v=_9wGs3xD6TA" target="_blank"><b>WPLMS Rest API</b></a></p>
+							</section>
+
+<!-- LMS Settings : Commissions
+================================================== -->
+                            <section id="commission-settings" class="doc-section">
+                                <h2>LMS : Commission Settings</h2>
+								<p>LMS Commissions is categorized into two parts : Set Commissions & Pay Commissions.</p>
+								<ul class="list">
+									<li><strong>Set Commissions :</strong> You can set commissions of instructors based on course and the instructor of the same course .Different instructors may assign different commissions. The commission is assigned in percentage value.</li>
+									<li><strong>Pay Commissions :</strong> You can pay commission to the instructor based on the time period i.e you can specify the start time period and end time period and when you click on show button then it shows: Instructor, Commission of an Instructor, Email Id of an Instructor, Checkbox, A Button (Pay via PayPal). There is a button "Mark as Paid" which allows to mark the instructors that are paid.</li>
+								</ul>
+									<div class="row">
+										<div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/sc1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/sc1.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/sc1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+											<div class="col-md-3 col-sm-3 col-xs-12">
+												<div class="screenshot-holder">
+													<a href="assets/images/demo/pc.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/pc.png" alt="screenshot" /></a>
+													<a class="mask" href="assets/images/demo/pc.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+									</div>
+							</section>
+							
+<!-- LMS Settings : Functions
+================================================== -->
+                            <section id="lms-functions" class="doc-section">
+                                <h2>LMS Admin Functions [ For Ad-Hoc Management]</h2>
+								<p>LMS Admin functions is categorized into two parts : Sync Areas and Ad Hoc.</p>
+								<p>It is mainly added for developers. It is used to push metafield value in any post_type or user. It also shows current time stamp that is useful for other functions added in wplms.</p>
+							</section>
+
+<!-- LMS Settings : Import/Export
+================================================== -->
+                            <section id="import-export" class="doc-section">
+                                <h2>Import/Export WPLMS Elements</h2>
+								<p>Download and upload in CSV format. Import/Export WPLMS elements with user statuses: Courses, Quizzes, Units, Assignments, Questions and Events.</p>
+								<h4>Export Settings</h4>
+								<ul class="list">
+									<li><strong>Select Module :</strong> A dropdown which contains module types such as course, unit, quiz, question and assignment. Select a wplms module that you want to export</li>
+									<li><strong>Set Taxonomy :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
+									<li><strong>Set Taxonomy Term :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
+									<li><strong>Specific Module/s Ids :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
+									<li><strong>Export content :</strong> If you checked the checkbox then you can export the content of the module.</li>
+									<li><strong>Export Settings :</strong> If you checked the checkbox then you can export module settings.</li>
+									<li><strong>Export Taxonomies :</strong> If you checked the checkbox then you can export optional taxonomies and relationship.</li>
+									<li><strong>Export Comments :</strong> If you checked the checkbox then you can exports reviews for courses, answers for questions and assignments.</li>
+									<li><strong>Export connected modules :</strong> If you checked the checkbox then you can export connected modules, like units,quizzes,assignments with courses, questions with quizzes etc.</li>
+									<li><strong>Export Users :</strong> If you checked the checkbox then you can export users profile.</li>
+									<li><strong>Export Connected User data :</strong> If you checked the checkbox then you can export user statuses for module/sub-modules.</li>
+									<li><strong>Start Point :</strong> the number specifies starting key count for module, recommended for larger exports.</li>
+									<li><strong>Number of Modules :</strong> the number specifies maximum no. of modules to export.</li>
+								</ul>
+								<p>click on Generate Export file-> Download Export File</p>
+								<p><b>Import Setting :</b> To Import a file :Select File to upload [ Maximum upload size 64 MB(s). 
+								click on choose file(it shoud be .csv file)->upload file.</p>
+								<p>Refer the tutorial : <b><a href="http://vibethemes.com/documentation/wplms/knowledge-base/
+									bulk-importexport-wplms-via-csv/" target="_blank">Import/Export Wplms via CSV</a></b></p>
+									<div class="row">
+										<div class="col-md-3 col-sm-3 col-xs-12">
+										<h6>Import Bulk users in a course</h6>
+											<div class="screenshot-holder">
+												<a href="assets/images/demo/import-bulk-users.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/import-bulk-users.png" alt="screenshot" /></a>
+												<a class="mask" href="assets/images/demo/import-bulk-users.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                       </div><!--colo-md-3-->
+
+											<div class="col-md-3 col-sm-3 col-xs-12">
+											<h6>Import Bulk units in a course</h6>
+												<div class="screenshot-holder">
+													<a href="assets/images/demo/import-bulk-units.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/import-bulk-units.png" alt="screenshot" /></a>
+													<a class="mask" href="assets/images/demo/import-bulk-units.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+										<div class="col-md-3 col-sm-3 col-xs-12">
+										<h6>Import Bulk Questions in a quiz</h6>
+											<div class="screenshot-holder">
+												<a href="assets/images/demo/import-bulk-questions.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/import-bulk-questions.png" alt="screenshot" /></a>
+												<a class="mask" href="assets/images/demo/import-bulk-questions.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+										<div class="col-md-3 col-sm-3 col-xs-12">
+											<div class="screenshot-holder">
+												<a href="assets/images/demo/imp1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/imp1.png" alt="screenshot" /></a>
+												<a class="mask" href="assets/images/demo/imp1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+									<div>
+							</section>
+
+<!-- LMS Settings : Touch Points
+================================================== -->
+                            <section id="touch-points" class="doc-section">
+                                <h2>Touch Points</h2>
+								<p>Set the touch points for student and instructor in wplms and connect with them via these touch points. Touch points are set for getting the notification,message and email on the following touch points when they triggered.</p>
+								<ul class="list">
+    								<li><strong>Annoucements :</strong> When the announcement is made the student and instructor get notified by email, notification and message.</li>
+    								<li><strong>News :</strong>Student and instructor get notified by email, notification and message when any news is done.</li>
+    								<li><strong>Course Subscribed:</strong>Student and instructor get the notification , email and message when the course is suscribed to the student.</li>
+    								<li><strong>User added to Course:</strong>Student and instructor get the notification , email and message when the student is added in the course.</li>
+                                    <li><strong>User starts a Course:</strong>Student and instructor get the notification , email and message when the student starts the course.</li>
+    								<li><strong>Course Certificate:</strong>Student and instructor get the notification , email and message when the student is assigned/removed with the course certificate.</li>
+    								<li><strong>Course Badge:</strong>Student and instructor get the notification , email and message when the student is assigned/removed with the course badge.</li>
+    								<li><strong>Course Reset by Instructor:</strong>Student and instructor get the notification , email and message when course is reset by the instructor.</li>
+    								<li><strong>Course Retake by User:</strong>Student and instructor get the notification , email and message when the student retakes the course.</li>
+    								<li><strong>Course Submit:</strong>Student and instructor get the notification , email and message when the student submit the course.</li>
+    								<li><strong>Course Evaluation:</strong>Student and instructor get the notification , email and message when the student submit the course for evaluation.</li>
+    								<li><strong>Course Reviews:</strong>Student and instructor get the notification , email and message when the student or instructor writes the review in the course.</li>
+    								<li><strong>Unsubscribe Course:</strong>Student and instructor get the notification , email and message when the student is unsubscribe from the course.</li>
+    								<li><strong>Unit marked complete by User:</strong>Student and instructor get the notification , email and message when the student marks the unit complete and move to the next unit.</li>
+                                    <li><strong>Unit marked incomplete by Instructor for Student:</strong>Student and instructor get the notification , email and message when an instructor marks the unit incomplete for the student.</li>
+                                    <li><strong>Unit marked complete by Instructor for Student:</strong>Student and instructor get the notification , email and message when an instructor marks the unit complete for the student.</li>
+    								<li><strong>Unit comment added by User:</strong>Student and instructor get the notification , email and message when the student add note or discussion comment in units.</li>
+    								<li><strong>Quiz Start by user:</strong>Student and instructor get the notification , email and message when the student starts the quiz.</li>
+    								<li><strong>Quiz Submitted by user:</strong>Student and instructor get the notification , email and message when the student submit the quiz.</li>
+    								<li><strong>Quiz Reset by Instructor:</strong>Student and instructor get the notification , email and message when the quiz is reset by the instructor.</li>
+    								<li><strong>Quiz Retake by User:</strong>Student and instructor get the notification , email and message when the student retake the quiz.</li>
+    								<li><strong>Quiz Evaluation:</strong>Student and instructor get the notification , email and message when the student submit the quixz for evaluation.</li>
+    								<li><strong>Assignment Start by user:</strong>Student and instructor get the notification , email and message when the student starts the assignment.</li>
+    								<li><strong>Assignment Submitted by user:</strong>Student and instructor get the notification , email and message when the student submit the assignment.</li>
+    								<li><strong>Assignment Evaluation:</strong>Student and instructor get the notification , email and message when the student submit the assignment for evaluation.</li>
+                                    <li><strong>Assignment Reset By Instructor:</strong> Student and instructor get the notification , email and message when tan instructor reset the assignment for student.</li>
+                                    <li><strong>Student Appplied For Course:</strong>Student and instructor get the notification , email and message when the student apply for a course.</li>
+                                    <li><strong>Instructor approves/rejects user application:</strong>Student and instructor get the notification , email and message when an instructor approves/rejects user application.</li>
+                                    <li><strong>Instructor Publishes a Course or Sends for Approval:</strong>Student and instructor get the notification , email and message when an instructor publishes a course or sends for approval.</li>
+                                    <li><strong>Student Enrolled in LearningPath:</strong>Student and instructor get the notification , email and message when the student enrolled in LearningPath.</li>
+                                    <li><strong>Student Enrolled out from LearningPath:</strong>Student and instructor get the notification , email and message when the student enrolled out from LearningPath.</li>
+                                    <li><strong>Student Completed a step in LearningPath:</strong>Student and instructor get the notification , email and message when the student completed a step in LearningPath.</li>
+                                    <li><strong>Student got Badge in LearningPath:</strong>Student and instructor get the notification , email and message when the student got a badge in LearningPath.</li>
+                                    <li><strong>Student got Certificate in LearningPath:</strong>Student and instructor get the notification , email and message when the student got a certificate in LearningPath.</li>
+								</ul>
+							</section>
+
+<!-- LMS Settings : Emails
+================================================== -->
+                            <section id="emails" class="doc-section">
+                                <h2>Emails</h2>
+								<p>All the email templates are now migrated to buddypress email template. Here you can set the from and email address from which the email will be sent. Also you can edit the email template from the buddypress emails when you click on edit email template.</p>
+								<ol>
+									<li>
+										<strong>Email Options</strong>
+										<ul>
+											<li>Set "From" name, this is the name from which the email will be sent.</li>
+											<li>Set "From" email, from which the email is to be sent.</li>
+											<li>You can edit the contact Form Email.</li>
+											<li>You can edit the activation Email.</li>
+											<li>You can edit the forgot password Email.</li>
+										</ul>
+									</li>
+									<li>
+										<strong>Email Schedule</strong>
+										<ul>
+											<li>Set the Drip feed email when the unit or section will be available. Enable/disable the drip feed email,schedule the email time i.e schedule the time when the unit or section will be available for example:before 12 hours of availablity,set the subject and messgae that is to be sent in email.</li>
+											<li>Set the course expiry email. Enable/disable the course expiry email,schedule the email time i.e schedule the email time when the course will be expired for example:before 12 hours of expiry,set the subject and messgae that is to be sent in email.</li>
+											<li>Set the inactivity email. Enable/disable the user inactivity email,schedule the email time i.e schedule the email time when the user is inactive on the website, for example:you set the inactivity email time to 30, this means the users who are inactive for more than 30 days will be sent the email. <b>Refer the tutorial :</b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/schedule-email-for-inactive-users/" target="_blank"><b> Schedule Email for Inactive Users</b></a></li>
+											<li>Schedule Course Review Email. Enable/disable the schedule course review email i.e. email students when the course is finished and the user has not given any review to the course.</li>
+										</ul>
+									</li>
+									<li>
+										<strong>Scheduled Emails</strong>
+										<ul>
+											<li>You can check which emails are scheduled in your website to be sent.</li>
+										</ul>
+									</li>
+								</ol>
+								<p><b>Refer the full video tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/touch-points-emails-messages-notifications/" target="_blank"><b> Touch Points</b></a></p>
+							</section>
+
+<!-- LMS Tree
+================================================== -->
+                            <section id="lms-tree" class="doc-section">
+                                <h2>LMS Tree</h2>
+								<p>Lms Tree is the tree which display course as the Branch and units and assignment as the sub-branches.Lms tree helps in viewing and editing all your courses and associated units and assignemnt through one place. <b>Refer the tutorial :</b><a href="https://www.youtube.com/watch?v=Rvt9GR0ZVG8" target="_blank"><b>LMS Tree in wplms</b></a></p>
+							</section>
+
+<!-- LMS Course Navigation
+================================================== -->
+                            <section id="lms-course-navigation" class="doc-section">
+                                <h2>LMS Course Navigation(when wplms course cutom nav plugin is activated)</h2>
+								<p>First of all please note that the hide show course settings feature will work for instructors only. Admin will see all the settings always. There are two settings screens in this plugin. One is for Custom course section and other for Course creation settings (hide/show).</p>
+								<ol>
+								<li>
+									<strong>Custom Sections :</strong> Just Click on Add Custom Section. It will show a form to add a section which will have 5 settings namely:
+									<ul>
+										<li><strong>Add Section Title : </strong> Add Title for the section.</li>
+										<li><strong>Add Section Slug : </strong> For the slug and permalink settings. This must be unique and does not contain any spaces.</li>
+										<li><strong>Add Section Description : </strong> Add Description for the section.</li>
+										<li><strong>Select Courses : </strong> In which courses it should be visible.</li>
+										<li><strong>Select Section Visibility : </strong> Set section visibility to make that section visible for specific group of users.</li>
+										<pre>Imp note : Please do not forget to re-save permalinks after each section you save by clicking on save section button.</pre>
+									</ul>
+								</li>
+								<li><strong>Front end course creation : </strong> This screen will show the show,hide and defaults values for the course settings that you will hide. There are some settings for which defaults are not available as they can be saved as blank.</li>
+
+								<pre>Imp Note : Please note that if any settings are added or removed in course then please re-save the hide/show settings again as more settings can be added to the course by using this tip. It is necessary that if you hide any settings you must provide default value in it to avoid any conflicts.</pre>
+							</section>
+
+<!-- LMS Course Category
+================================================== -->
+                            <section id="lms-course-category" class="doc-section">
+                                <h2>LMS Course Category</h2>
+								<p>Here, you can define categories for your courses. From your courses you can categorize the courses. To create Course category, Go to Lms->Course category->Add New Course category.</p>
+							</section>
+
+<!-- LMS Quiz Type
+================================================== -->
+                            <section id="lms-quiz-type" class="doc-section">
+                                <h2>LMS Quiz Type</h2>
+								<p>Here, you can define types of a quiz for your courses unit.</p>
+							</section>
+
+<!-- LMS Unit Tag
+================================================== -->
+                            <section id="lms-unit-tag" class="doc-section">
+                                <h2>LMS Unit Tag</h2>
+								<p>Unit tags helps in creating tags for your courses unit. Go to Lms->Unit Tag->Add New Tag</p>
+							</section>
+
+<!-- LMSLevel
+================================================== -->
+                            <section id="lms-level" class="doc-section">
+                                <h2>LMS Level</h2>
+								<p>To enable level taxonomy, go to Vibe Options Panel > course manager > Enable Level Level. Level Taxonomy helps in creating levels and sub levels in courses.</p>
+								<ul>
+									<li>Enable levels: Go to Vibe option panel->course manager->Enable levels.</li>
+									<li>Go to Lms->Levels->Add new levels</li>
+									<li>Select parent for creating sub level.<li>
+									<li>Go to the course and select level for the course.</li>
+									<li>Go To Appearance->widgets->Buddypress and add buddypress course filter widget and checked the checkbox of show level filter and save.</li>
+									<li>Filter courses based on levels in course directory.</li>
+									<li>See the level in course detail area. Resave your permalinks.</li>
+								</u>
+							</section>
+
+<!-- LMS Location
+================================================== -->
+                            <section id="lms-location" class="doc-section">
+                                <h2>LMS Location</h2>
+								<p>Location Taxonomy helps in locating course location. To Enable Course Location, Go to Vibe option panel->course manager->Enable Course Location.</p>
+								<ul>
+									<li>Go to Lms->Locations->Add new locations</li>
+									<li>In your courses, you can select the course location</li>
+								</u>
+							</section>
+
+<!-- General Shortcodes
+================================================== -->
+                            <section id="general" class="doc-section">
+							<p>WPLMS has more than 60 inbuilt shortcodes with almost unlimited options, most of the general shortcodes are available in all WP Editors through the ( v ) icon.</p>
+                                <h2>General Shortcodes</h2>
+								<p>The general shortcodes are available via the ( v ) icon in the shortcode bar. The shortcodes are as follows : </p>
+								<ol>
+									<li>
+										<strong>Accordion :</strong> This shortcode is useful for creating accordions. Simply select the accordion section in the ( v ) shortcode dropdown and start building an accordion. This shortcodes accepts one parameter "first" setting this to 1 opens the first accordion on the page by default. 
+										<pre>[agroup first="0"][accordion title="First Accordion title"]Accordion content[/accordion][accordion title="Second Accordion Title "]Accordion content[/accordion][/agroup]
+										</pre>
+										<p><b>Note : Important to note that two accordion title should not have exact same title.</b></p>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/accordion.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/accordion.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/accordion.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/accordion_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/accordion_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/accordion_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+									</li>
+
+									<li>
+										<strong>Button :</strong> Useful for creating buttons. The shortcode generator has a button generator which can create buttons of various shapes sizes and colors. It has 4 parameters :
+										<ul>
+											<li>URL : the link to which buttons points to.</li>
+											<li>Style : Select a prebuilt button style of create your own button by using Custom. Base style : picks up theme primary color which is set in theme customiser - theme section, Primary style picks up themes secondary color which is set in theme customiser body section.</li>
+											<li>Target : Open the button link in new window by setting this to _blank</li>
+											<li>Anchor : The title of the button</li>
+										</ul>
+										<pre>[button url="#" class="" bg="" hover_bg="" size="0px" color="" radius="0px" width="0px" height="0px" target="_self"] Something [/button]</pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/button.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/button.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/button.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/button2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/button2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/button2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+									</li>
+
+									<li>
+										<strong>Column :</strong>  Useful in creating columns. Can be used to divide a page in 1/5,1/4,1/3,1/2,2/3,3/4,3/5,4/5 sections. The blocks are responsive and turn full width on mobile devices. These are particularly useful in creating blocks in fullscreenstripes or areas where page builder blocks do not work.
+										<pre><p>
+                                        [one_fifth first=first] 
+                                        One Fifth 
+                                        [/one_fifth][three_fifth first=] 
+                                        Three Fifth 
+                                        [/three_fifth][one_fifth first=] 
+                                        One Fifth 
+                                        [/one_fifth]</p>
+										</pre>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/columns.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/columns.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/columns.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+									</li>
+
+									<li>
+										<strong>Counter :</strong> Adds a incrementing counter on page. The counter starts when the it appears in the view of the user. Accepts 4 arguments.
+                                        <ul>
+                                            <li>min : Starting value of counter.</li>
+                                            <li>max : End value of the counter.</li>
+                                            <li>delay : Start after x seconds</li>
+                                            <li>increment : The value by which the counter increments.</li>
+                                        </ul>
+                                        <p><b>Note: The "max" value can be overridden by adding a number value in the number counter which can also be done with help of shortcodes which result in number as output.</b></p>
+										<pre>
+                                        [number_counter min="0" max="100" delay="3" increment="1"]
+                                        [number_counter min="0" delay="3" increment="1"]300[/number_counter]
+                                        [number_counter min="0" delay="3" increment="1"][vibe_site_stats total=1 number=1][/number_counter]
+										</pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/counter.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/counter.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/counter.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+									</li>
+
+									<li>
+										<strong>Divider :</strong> Adds a divider or a horizontal line in the content. Useful for dividing content. Support custom class which can be useful.
+										<pre>[divider style="clear"]</pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/divider.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/divider.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/divider.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/divider_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/divider_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/divider_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+									</li>
+
+									<li>
+										<strong>Forms :</strong> Builds a form. Usefule for creating custom forms which can be send to any email/s. You can add custom emails and subject in the mail to identify the form from which the mail is sent. You can also customise the fields and their order. Remember to have a submit button in the form to submit the form.
+										<pre>[form to="example@example.com" subject="Subject"] [form_element type="text" validate="" options="" placeholder="Name"] [form_element type="text" validate="email" options="" placeholder="Email"] [form_element type="text" validate="phone" options="" placeholder="Phone"] [form_element type="textarea" validate="" options="" placeholder="Message"] [form_element type="captcha" validate="" options="" placeholder="Verify"] [form_element type="submit" validate="" options="" placeholder="Send Message"] [/form]
+										</pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/form.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/form.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/form.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/form_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/form_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/form_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+									</li>
+
+                                    <li>
+                                        <strong>Gallery :</strong> Useful for creating image galleries. Also compatible with default WordPress gallery. Accepts parameters for image sizes.
+                                        <pre>[gallery ids="234,456,678" size="small"]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/gallery.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/gallery.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/gallery.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/gallery_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/gallery_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/gallery_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Google Maps :</strong> Adds a Google map in a page. Grab the iframe code of google map from maps.google.com and add it in the shortocde. Refer screenshots for remo.
+                                        <pre>?????</pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/maps.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/maps.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/maps.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/maps1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/maps1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/maps1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/maps2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/maps2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/maps2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/maps_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/maps_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/maps_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Heading :</strong> Adds a heading in theme style.
+                                        <pre>[heading style="center"]This is a heading[/heading]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/heading.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/heading.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/heading.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/heading_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/heading_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/heading_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Icons :</strong> Adds an icon from the theme list of icons. Also allows you to customise the icon as per requirements. This icon can be used in various places in conjunction with other shortcodes or as a stand alone.
+                                        <pre> [icon icon="icon-moon-stroke" size="30px" color="" bg="" hovercolor="" hoverbg="" padding="0px" radius="0px"]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/icons.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/icons.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/icons.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Iframe :</strong> Adds a responsive iframe. Useful in embedding html/pdf files in pages. You can specify the height of the iframe, the height would govern if the scrollbars are shown for the iframe in a page.
+                                        <pre>[iframe height=600] http://google.com [/iframe]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/iframe.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/iframe.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/iframe.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Note :</strong> Adds a colored notification on page. You can set a custom colored notification on the page.
+                                        <pre> [note style="other" bg="#f61c1c" border="#f62121" bordercolor="{{bordercolor}}" color="#ffffff"] This is a notification. [/note]
+                                        </pre>
+                                        <p><b>Note : To center align the text in the notificate use style as "other center".</b></p>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/notification.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/notification.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/notification.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/notification_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/notification_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/notification_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Popups :</strong> Adds a popup on page. Create a popup from WP Admin -> Popups and note the ID of the popup. This id is used in this popup shortcode.
+                                        <pre>[popup id="3456" auto="1" classes="default"] Popup [/popup]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/popups.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/popups.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/popups.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>ProgressBar :</strong> Adds a progressbar on page. You can set custom color for the progressbar. By default the color is the primary theme color.
+                                        <pre>[progressbar color="other" percentage="20" bg= textcolor=] 20% [/progressbar]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/progressbar.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/progressbar.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/progressbar.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <strong>PullQuote :</strong> Adds a pullquote on page. You can select which side the pullquote should be.
+                                        <pre>[pullquote style="left"]It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. [/pullquote]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/pullquote.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/pullquote.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/pullquote.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/pullquote_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/pullquote_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/pullquote_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Round Progress :</strong> Adds a round progressbar on page.
+                                        <pre>[roundprogress style="other" color="#e82020" bg_color="#dbdbdb" percentage="20" radius="200" thickness="20"] Progress[/roundprogress]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/roundprogress.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/roundprogress.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/roundprogress.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/roundprogress_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/roundprogress_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/roundprogress_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Tabs :</strong>  Adds tabs on page. You can set the tab view to be left or on right or on top of the tabs. The default view for tabs is on top of the content.
+                                        <pre>
+                                        [tabs style="" theme=] [tab title="Title One" icon=""]
+                                          Tab Content One
+                                        [/tab] [tab title="Title Two" icon=""]
+                                          Tab Content Two
+                                        [/tab] [/tabs]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/tabs.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/tabs.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/tabs.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/tabs_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/tabs_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/tabs_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Team :</strong> Adds a team member. Best used with columns shortcode or in a page builder block.
+                                        <pre>
+                                        [one_third]
+                                        [team_member pic="http://xx.com/link-to-member-image.jpg" name="Steve Jobs" designation="CEO"] [team_social url="http://www.vibethemes.com" icon="icon-twitter"] [team_social url="http://www.vibethemes.com" icon="icon-facebook"] [/team_member]
+                                        [/one_third]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/team.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/team.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/team.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/team_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/team_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/team_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Testimonial :</strong> Adds a testimonial on page. Enter a testimonial ID from WP Admin - Testimonials section. Best used with columns shortcode or in a page builder block.
+                                        <pre>
+                                        [one_third]
+                                        [testimonial id="1049" length=100]
+                                        [/one_third]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/shortcodes2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/shortcodes2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/testimonial.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/testimonial.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/testimonial.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/testimonial_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/testimonial_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/testimonial_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>Tooltip :</strong> Adds a tooltip on anchor element.
+                                        <pre>
+                                        [tooltip tip="Tip content!"] Tooltip [/tooltip]
+                                        </pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/tooltip.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/tooltip.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/tooltip.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/tooltip_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/tooltip_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/tooltip_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <strong>video :</strong>  Embeds a video on page. Grab the iframe embed code and add it in the shortcode.
+                                        <pre>
+                                        ???
+                                        </pre>
+
+                                         <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/video.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/video.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/video.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/video_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/video_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/video_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+								</ol>
+							</section>
+
+
+<!-- Special Shortcodes
+================================================== -->
+                            <section id="special" class="doc-section">
+                                <h2>Special Shortcodes</h2>
+								<p>These are shortcodes for specific usage. Only required for special purposes.</p>
+								<ol>
+									<li>
+                                        <strong>All Badges :</strong> Displays all available badges in the site. The earned badges appear as faded with text as "earned" whereas non-eanred badges appear as colored.
+                                        <pre>[allbadges]</pre>   
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/allbadges_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/allbadges_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/allbadges_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>                       
+                                    </li>
+
+									<li>
+                                        <strong>Instructor :</strong> Returns the course instructor widget. Requires ID of the instructor.
+                                        <pre>[instructor id="1"]</pre>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/instructor.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/instructor.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/instructor.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>  
+                                    </li>
+
+                                    <li>
+                                        <strong>Course :</strong> Returns the course view. Requires ID of the course.
+                                        <pre>[course id="1"]</pre>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/course_view.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_view.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/course_view.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>  
+                                    </li>
+
+                                    <li>
+                                        <strong>wpml_lang_selector :</strong>  Adds WPML language selector
+                                        <pre>[wpml_lang_selector]</pre>
+                                    </li>
+
+                                    <li>
+                                        <strong>user_only :</strong> Display content to a particular user. Requires user ID or user IDs saperated by comma
+                                        <pre>[user_only id="1"]</pre>
+                                    </li>
+
+                                    <li>
+                                        <strong>course_product :</strong> Display information of WooCommerce product connected to a course. Requires course ID. Details, SKU returns SKU of the product, Price returns price of the product, sales return total sales count of the product, note returns the information for the product.
+                                        <pre>[course_product id="1" details="sku"]</pre>
+                                    </li>
+
+                                    <li>
+                                        <strong>course_search :</strong> Display Course search box.
+                                        <pre>[course_search]</pre>
+                                    </li>
+
+                                    <li>
+                                        <strong>pass_fail :</strong> Display If the student passed or failed.
+                                        <pre>[pass_fail]</pre>
+                                    </li>
+
+                                    <li>
+                                        <strong>survey_result :</strong> Display the result of the survey.
+                                        <pre>[survey_result]</pre>
+                                    </li>
+
+                                     <li>
+                                        <strong>show_certificates :</strong> Display All the certificates alloted to the student.
+                                        <pre>[show_certificates]</pre>
+                                    </li>
+
+                                     <li>
+                                        <strong>wplms_registration_form :</strong> You can create Custom Registration Form short codes. <b>Refer the tutorial :</b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/custom-registration-forms-in-wplms/" target="_blank"><b>Registration Form</b></a>
+                                        <pre>[wplms_registration_form name="instructor" field_meta=1]</pre>
+                                    </li>
+								</ol>
+							</section>
+
+<!-- Question Shortcodes
+================================================== -->
+                            <section id="question" class="doc-section">
+                                <h2>Question Shortcodes</h2>
+                            </section>
+
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
                     <div class="doc-sidebar">
@@ -1161,8 +2098,31 @@
                                     <a class="scrollto" href="#general-settings">LMS Settings</a>
                                     <ul class="nav doc-sub-menu">
                                         <li><a class="scrollto" href="#general-settings">General Settings</a></li>
+										<li><a class="scrollto" href="#api-settings">API Settings</a></li>
+										<li><a class="scrollto" href="#commission-settings">Commission Settings</a></li>
+										<li><a class="scrollto" href="#lms-functions">LMS Admin Functions</a></li>
+										<li><a class="scrollto" href="#import-export">Import/Export WPLMS Elements</a></li>
+										<li><a class="scrollto" href="#touch-points">Touch Points</a></li>
+										<li><a class="scrollto" href="#emails">Emails</a></li>
                                     </ul>
                                 </li>
+								<li><a class="scrollto" href="#lms-tree">LMS Tree</a></li>
+								<li><a class="scrollto" href="#lms-course-navigation">LMS Course Navigation</a></li>
+								<li><a class="scrollto" href="#lms-course-category">LMS Course Category</a></li>
+								<li><a class="scrollto" href="#lms-quiz-type">LMS Quiz Type</a></li>
+								<li><a class="scrollto" href="#lms-unit-tag">LMS Unit Tag</a></li>
+								<li><a class="scrollto" href="#lms-level">LMS Level</a></li>
+								<li><a class="scrollto" href="#lms-location">LMS Location</a></li>
+								<li>
+									<a class="scrollto" href="#general">Shortcodes</a>
+									<ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#general">General</a></li>
+										<li><a class="scrollto" href="#special">Special</a></li>
+										<li><a class="scrollto" href="#question">Question</a></li>
+										<li><a class="scrollto" href="#certificate">Certificate</a></li>
+										<li><a class="scrollto" href="#site-stats">Site Stats</a></li>
+									</ul>
+								</li>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
