@@ -93,6 +93,14 @@
                                     <li>Once items are added to the Menu drag them around to place them one under another. WPLMS supports unlimited menu levels.By default the next menu level is shown on hover and towards right.</li>
                                     <li>For Menus located closer to the right margin, you can add a CSS class left for the next level menu item to appear on left side. For this make sure you have enabled CSS classes from the screen options located on top right corner of the screen.</li>
                                  </ul>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <h6>Managing Menus In WPlms</h6>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JJRQ7l03nmo" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="row">
                                     <div class="col-md-3 col-sm-3 col-xs-6">
@@ -1582,8 +1590,10 @@
                                     </li>
 
                                     <li>
-                                        <strong>Google Maps :</strong> Adds a Google map in a page. Grab the iframe code of google map from maps.google.com and add it in the shortocde. Refer screenshots for remo.
-                                        <pre>?????</pre>
+                                        <strong>Google Maps :</strong> Adds a Google map in a page. Grab the iframe code of google map from maps.google.com and add it in the shortocde. Refer screenshots
+                                        <pre>
+                                        [map]&lt;iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3022.5237439932407!2d-73.993439!3d40.750504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a21fb011c85%3A0x33df10e49762f8e4!2sMadison+Square+Garden!5e0!3m2!1sen!2sin!4v1429253580855" width="600" height="450" frameborder="0">&lt;/iframe>[/map]
+                                        </pre>
 
                                         <div class="row">
                                             <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1925,7 +1935,7 @@
                                     <li>
                                         <strong>video :</strong>  Embeds a video on page. Grab the iframe embed code and add it in the shortcode.
                                         <pre>
-                                        ???
+                                        [iframevideo] &lt;iframe src="https://www.youtube.com/embed/HURLXtbfKVY" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen">&lt;/iframe> [/iframevideo]
                                         </pre>
 
                                          <div class="row">
@@ -2053,7 +2063,13 @@
                                     </li>
                                     <li>
                                         <strong>Match :</strong> Displays the grid in which Match elements are put. The match elements are generated from the question options.
-                                        <pre>???</pre>
+                                         <pre>
+                                           [match]&lt;ul>
+                                           &lt;li>Level1&lt;/li>
+                                           &lt;li>Level2&lt;/li>
+                                           &lt;li>Level3&lt;/li>
+                                           &lt;/ul>[/match]
+                                          </pre>
                                     </li>     
                                 </ul>
                             </section>
@@ -2201,6 +2217,671 @@
                                 </ol>
                             </section>
 
+<!-- Theme Customizer Guide
+================================================== -->
+                            <section id="theme-customizer-guide" class="doc-section">
+                                <h2>Theme Customizer Guide</h2>
+                                <p>This section explains the various functions available in the theme customiser section. Theme customiser is located in WP Admin - Appearance - Customise section. Following sections in the theme customiser are explained below :</p>
+                                <ol>
+                                    <li>
+                                        <strong>Site Identity :</strong>
+                                        <ul>
+                                            <li>Site title: You can set the title your site. The title of the site is used in generating the title of the home page which is important for SEO purpose.</li>
+                                            <li>Tagline: Site tagline, describe your site in one line.</li>
+                                            <li>Site Icon: The Site Icon is used as a browser and app icon for your site.</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/site_identity.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/site_identity.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/site_identity.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Background Image :</strong> The option is used to change the background image. 
+                                        <ul>
+                                            <li>Background Image: The background image can be set from this option. This is only visible in the Boxed Layout ( For boxed theme : Go to Theme Customiser->layouts->theme layout->boxed).</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/customise_background_image.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_background_image.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/customise_background_image.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Menus :</strong> The option is use to create/set the menus like main menu, footer menu, mobile menu etc. The menus set on the current page will be shown on the customiser sidebar.
+                                        <ul>
+                                            <li>Menu locations: Set the locations for different menus created from here like top, main, mobile, footer menu.</li>
+                                            <li>You can create a new custom menu from "Add a menu option" or edit/add items in the existing menu.</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/customise_menu_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_menu_1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/customise_menu_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/customise_menu_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_menu_2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/customise_menu_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/customise_menu_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_menu_3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/customise_menu_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/customise_menu_4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_menu_4.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/customise_menu_4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Widgets :</strong> The option is used to customize the widgets. The widgets set on the page opened in customiser will show in the customiser sidebar. You can also set widgets from the backend, go to wp-admin->appearance->Widgets.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/w1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/w1.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/w1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/w2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/w2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/w2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/w3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/w3.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/w3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/w4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/w4.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/w4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Static Front Page :</strong> Option for setting front page and posts page.
+                                        <ul>
+                                            <li>Front page displays: Whenever some user visits your site, the first page you want your users to see. If it is posts, mark "Your latest posts", if it is some static page, mark "A static page". If you select "A static page", you should set the other two options front page /posts page.</li>
+                                            <li>Front page: Select the home page of the site from this option.</li>
+                                            <li>Posts page: Select the posts page or Blog page from this option. We recommend setting this value as blank as blog templates add their custom styling as per their design.</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/stf1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/stf1.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/stf1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Theme :</strong> This is the most important section in the theme customiser. using thissection you can set your theme primary color, theme skin and theme text color.
+                                        <ul>
+                                            <li>Theme skin: Select out of Default, Elegant, Minimal skins from this option. Elegant, Minimal skins. Each theme skin adds a unique style to the entire theme. Each style adds its own styling file in the display and also adds their own classes on the body section.</li>
+                                           <li>Theme Primary Color: The most important setting in the theme customiser. Theme primary color is used in multiple places like default button background, tab background, selected link, icons etc. In each theme skin the primary color is treated differently.</li>
+                                           <li>Theme Primary text color: This is the theme color, which appears whereever the background is theme primary color. For example on buttons, links, pagination buttons etc. </li>
+                                        </ul>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/default_theme_skin.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_theme_skin.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/default_theme_skin.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/elegant_theme_skin.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/elegant_theme_skin.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/elegant_theme_skin.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/theme_primary_color.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/theme_primary_color.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/theme_primary_color.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Layouts :</strong> The layouts option has been added in latest update 2.0, you can choose different layouts for theme, directory pages like All courses, all members etc, profile layouts, group and single course layouts : 
+                                        <ul>
+                                            <li>
+                                            Theme Layout: Container, fluid, boxed
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/boxed_layout.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/boxed_layout.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/boxed_layout.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/fluid_layout.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/fluid_layout.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/fluid_layout.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                            Directory Layout: Default, D2, D3, D4, D5
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/directory_layout_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/directory_layout_1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/directory_layout_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/directory_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/directory_layout_2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/directory_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/directory_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/directory_layout_3.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/directory_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                            Profile Layout: Default, P2, P3, P4
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/profile_layout_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/profile_layout_1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/profile_layout_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/profile_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/profile_layout_2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/profile_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/profile_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/profile_layout_3.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/profile_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/profile_layout_4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/profile_layout_4.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/profile_layout_4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                            Group Layout: Default, G2, G3, G4
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/group_layout_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/group_layout_1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/group_layout_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/group_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/group_layout_2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/group_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/group_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/group_layout_3.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/group_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/group_layout_4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/group_layout_4.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/group_layout_4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                            Course Layout: Default, C2, C3, C4,C5
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/course_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/course_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/course_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_3.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/course_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/course_layout_4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_4.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/course_layout_4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/course_layout_5.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_5.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/course_layout_5.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <strong>Header :</strong> All settings in this section are used to customize the header of the theme.
+                                                <ul>
+                                                    <li>Header Style: The option is used to select the header style from Default, Sleek, Transparent, Centre aligned, Standard, standard center, Mooc, App style. </li>
+                                                   <li>Login Style: Default, Full screen, Popup, Big Drop, Modern</li>
+                                                   <li>Logo size: Sets the logo height from this option</li>
+                                                   <li>Adjust logo top: It sets the top spacing of the logo</li>
+                                                   <li>Adjust logo bottom: It sets the bottom spacing of the logo</li>
+                                                   <li>Header top/fixed background color:</li>
+                                                   <li>Header top/ fixed text color:</li>
+                                                   <li>Header background color:</li>
+                                                   <li>Header text/menu text color:</li>
+                                                   <li>Sub navigation background color: It sets the sub navigation background color</li>
+                                                   <li>Sub Nav text color: The setting is to set the text color in the sub navigation.</li>
+                                                   <li>Adjust menu padding:</li>
+                                                   <li>Login drop light background: The login drop box top background color</li>
+                                                   <li>Login drop dark background:The login drop box bootom background color</li>
+                                                   <li>Login drop light text color: It sets the text color in the top part of the login drop.</li>
+                                                   <li>Login drop dark text color: It sets the text color in the bottom part of the login drop.</li>
+                                                </ul>
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/customise_login_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_login_1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/customise_login_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/customise_login_default.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_login_default.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/customise_login_default.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/header_style_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/header_style_1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/header_style_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/header_style_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/header_style_2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/header_style_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/header_style_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/header_style_3.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/header_style_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <strong>Typography :</strong> All the typogrpahy in the theme is maintained from this option 
+                                                <ul>
+                                                   <li>H1 font color:  Sets H1 headings color via this option in the theme.</li>
+                                                   <li>H1 font size: Sets H1 font size .</li>
+                                                   <li>H2 font color: Sets H2 font color</li>
+                                                   <li>H2 font size: Sets H2 font size via this setting</li>
+                                                   <li>H3 font color: Sets H3 font color</li>
+                                                   <li>H3 font size: Sets H3 font size  </li>
+                                                   <li>H4 font color: Sets H4 font color</li>
+                                                   <li>H4 font size: Sets H4 font size </li>
+                                                   <li>H5 font color: Sets H5 font color</li>
+                                                   <li>H5 font size: Sets H5 font size </li>
+                                                   <li>H6 font color: Sets H6 font color</li>
+                                                   <li>H6 font size: Sets H6 font size </li>
+                                                   <li>Widget title font weight: Font weight of the Title of widget</li>
+                                                   <li>Widget title font color: Font color of the widget title</li>
+                                                   <li>Widget title size: Font size of the widget title </li>
+                                                   <li>Woocommerce product thumb title font color: </li>
+                                                   <li>Woocommerce product thumbnail title size: </li>
+                                                   <li>Woocommerce heading size: </li>
+                                                </ul>
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/typography_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/typography_1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/typography_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/typography_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/typography_2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/typography_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/typography_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/typography_3.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/typography_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/typography_font_manager.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/typography_font_manager.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/typography_font_manager.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                                <p>Refer the tutorial : <a href="https://www.youtube.com/watch?v=HWWLTWMVprg" target="_blank"><b>Google Fonts Manager</b></a></p>
+                                            </li>
+                                            <li>
+                                                <strong>Body :</strong> All settings related to the body of the theme
+                                                <ul>
+                                                   <li>Body background color: Set the background body color of the theme via this option.</li>
+                                                   <li>Content area background color: </li>
+                                                   <li>Content area text color: </li>
+                                                   <li>Link color: This setting is used to set the link color of the site.</li>
+                                                   <li>Price color: This options sets the Price color of the courses/ products in the theme.</li>
+                                                   <li>Body font size: The setting is used to set the font size of the content of the body</li>
+                                                   <li>Single menu dark color: </li>
+                                                   <li>Single menu light color: </li>
+                                                   <li>Main button color: Option to set the button color in the theme.</li>
+                                                </ul>
+
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/body_background_color.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/body_background_color.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/body_background_color.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/background_color_content_area.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/background_color_content_area.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/background_color_content_area.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/body_area_text_color.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/body_area_text_color.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/body_area_text_color.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/body_links_color.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/body_links_color.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/body_links_color.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/change_price_color.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/change_price_color.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/change_price_color.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <strong>Footer :</strong>
+                                                <ul>
+                                                   <li>Footer style: Footer Bottom, Single Sidebar Footer, Default(Double Sidebar), Copyright Only.</li>
+                                                   <li>Footer background color: It sets the background color of the footer</li>
+                                                   <li>Footer text color: The setting is used to set the text color of the footer in the theme</li>
+                                                   <li>Footer heading color: Heading/title color of the widgets added in the footer</li>
+                                                   <li>Bottom footer background color: It is used to set the background color of the bottom footer.</li>
+                                                   <li>Bottom footer text color: It sets the color of the text in the bottom footer.</li>
+                                                </ul>
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/footer_background_color.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/footer_background_color.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/footer_background_color.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/footer_style_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/footer_style_1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/footer_style_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/footer_heading_color.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/footer_heading_color.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/footer_heading_color.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <strong>Custom CSS :</strong> In this section you can add your customized css part. Sometimes it happens that you want to hide something and that is not available in the theme. So, you can directly add your custom css.
+                                            </li>
+                                            
+                                </ol>
+                            </section>
+<!-- Translation Guide
+================================================== -->
+                            <section id="translation-guide" class="doc-section">
+                                <h2>Translation Guide</h2>
+                                <p>In This Guide, you'll learn about how to translate wplms theme from one language to another. For Translation purpose, we recommend to use Loco Translate Plugin as it is easy to use. This Plugin helps you to translate your site in your native language.</p>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <h6>Translate Using Loco Translate Plugin</h6>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                           <iframe width="560" height="315" src="https://www.youtube.com/embed/tC6z0uN7FK0" frameborder="0" allowfullscreen></iframe>
+                                        </div><br>
+                                        <p>For Step By Step Tutorial : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/translate-using-loco-translate-plugin/" target="_blank"><b>Translate Using Loco Translate Plugin</b></a></p>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <h6>Translating BuddyPress in WPLMS</h6>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                           <iframe width="560" height="315" src="https://www.youtube.com/embed/2afXqhGnTfY" frameborder="0" allowfullscreen></iframe>
+                                        </div><br>
+                                        <p>For Step By Step Tutorial : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/buddy-press-translation-using-loco-translator/" target="_blank"><b>Buddy Press Translation using Loco Translator</b></a></p>
+                                    </div>
+                                </div>
+                            </section>
+
+<!-- Events Guide
+================================================== -->
+                            <section id="events-guide" class="doc-section">
+                                <h2>Events Guide</h2>
+                            </section>
+
+<!-- Assignment Guide
+================================================== -->
+                            <section id="assignment-guide" class="doc-section">
+                                <h2>Assignment Guide</h2>
+                            </section>
+
+<!-- Instructors
+================================================== -->
+                            <section id="instructors" class="doc-section">
+                                <h2>Instructors</h2>
+                            </section>
+
+<!-- Statistics
+================================================== -->
+                            <section id="statistics" class="doc-section">
+                                <h2>Administrator Statistics</h2>
+                                <p>Admin stats is present in the WP Admin panel -> LMS -> Statistics section. This area of Statistics is only accessible to Administrator. The Stats section comprises of 6 further subsections as follows.</p>
+                                <ul>
+                                    <li>
+                                        <strong>Overview :</strong>
+                                        <ol>
+                                            <li>Overview comprises of graphical representation of number students starting new courses in the WPLMS.</li>
+                                            <li>Overview shows critical information about the LMS as total number of students, total number of instructors,total number of Courses taken by students, total number of Badges awarded to students and total number of certificates awared to students.</li>
+                                            <li>The graph depicts a growth chart of number of students entering and starting the courses in the site.</li>
+                                            <li>The graph can also be set from a daily graph to a monthly graph to a custom date graph to check the growth levels in particular duration in WPLMS.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <strong>Courses :</strong> All the vital information regarding courses can be seen in this section. Each course with Number of students in it, number of certificated awared in this course, number of badges awarded in this course and the average score of students in this course.
+                                        <ol>
+                                            <li>Total number of students taking courses.</li>
+                                            <li>Total number of students who have started a course.</li>
+                                            <li>Total number of courses finished by students.</li>
+                                            <li>Total number of units in courses completed by students.</li>
+                                            <li>Total number of quizes finished by students.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <strong>Instructors :</strong> All the vital information regarding Instructors can be seen in this section. Each Instructor with Number of Courses, number of certificated awared by instructor, number of badges awarded by instructor and the average score of students in this Instructor's course and total number of students in this Instructors courses.
+                                        <ol>
+                                            <li>Total number of courses taught by instructor.</li>
+                                            <li>Total number of students taking instructor's courses.</li>
+                                            <li>Total number of badges awarded by Instructor.</li>
+                                            <li>Total number of certificates awarded by Instructor.</li>
+                                            <li>Average score of Students in courses by Instructor</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <strong>Students :</strong> All the vital information regarding students can be seen in this section. Each student with Number of Courses, with their scores and their averages is visible in this section.
+                                        <ol>
+                                            <li>Total number of students.</li>
+                                            <li>Total active students.</li>
+                                            <li>Total number of course students.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <strong>Download Stats :</strong> From here you can download stats reports of the selected module. Select the module and then click on "Generate Report" Button.
+                                    </li>
+                                    <li>
+                                        <strong>Assignments :</strong> All the vital information regarding assignments can be seen in this section.
+                                        <ol>
+                                            <li>Total number of Assignments</li>
+                                            <li>Total number of Assignments submission by student</li>
+                                            <li>Total number of submissions of a particular assignment.</li>
+                                            <li>Average Percentage of the Assignment</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/stats_overview.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/stats_overview.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/stats_overview.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/stats_course.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/stats_course.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/stats_course.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/stats_assgn.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/stats_assgn.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/stats_assgn.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+<!-- Certificates
+================================================== -->
+                            <section id="certificates" class="doc-section">
+                                <h2>Certificates Template</h2>
+                                <p>Admin or instructor can create certificate for courses by going in Admin dashboard -> LMS -> Certificate Templates section. You can customize your certificate template according to your choice. <a href="admin-guide.html#certificate"><b>Certificate Shortcodes</b></a> are also available to design your own template.</p>
+                                 <div class="row">
+                                    <div class="col-md-6 col-sm-6col-xs-12">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wl-SUlFngoA" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6col-xs-12">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LtMck_nMCbU" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <p><b>To Assign Certificate Template</b></p>
+                                <p>From Admin Panel : While editing or adding a course goto Course settings -> Certificate Template</p>
+                                <p>From Instructor Dashboard : Edit Course(from Front End), then in settings > certificate template</p>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/certificate_template.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/certificate_template.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/certificate_template.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/certificate_template_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/certificate_template_2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/certificate_template_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="callout-block callout-info">
+                                            <div class="icon-holder">
+                                            <i class="fa fa-info-circle"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                            <p>Note : If a student completes her course before admin or instructor creates a certificate for a course then the certificate to that student will not be available automatically if he/she passes.However instructor or admin can award a certificate to that student from members section in admin area of instructor by using option - "Assign badges/Certificates" to student.</p>
+                                            </div><!--//content-->
+                                        </div><!--//callout-block-->
+                                    </div>
+                                </div>
+                            </section>
+
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
                     <div class="doc-sidebar">
@@ -2282,6 +2963,13 @@
 									</ul>
 								</li>
                                 <li><a class="scrollto" href="#woocommerce">WooCommerce</a></li>
+                                <li><a class="scrollto" href="#theme-customizer-guide">Theme Customizer Guide</a></li>
+                                <li><a class="scrollto" href="#translation-guide">Translation Guide</a></li>
+                                <li><a class="scrollto" href="#events-guide">Events Guide</a></li>
+                                <li><a class="scrollto" href="#assignment-guide">Assignment Guide</a></li>
+                                <li><a class="scrollto" href="#instructors">Instructors</a></li>
+                                <li><a class="scrollto" href="#statistics">Administrator Statistics</a></li>
+                                <li><a class="scrollto" href="#certificates">Certificates Template</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
