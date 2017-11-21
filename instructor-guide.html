@@ -58,273 +58,822 @@
                 <div class="doc-body">
                     <div class="doc-content">
                         <div class="content-inner">
-                            <section id="chartjs" class="doc-section">
-                                <h2 class="section-title">Chart.js</h2>
-                                <div class="section-block">
-                                    <h3 class="block-title">1. Screenshot</h3>
-                                    <p>The screenshots used in this page are taken from <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">AppKit</a>. AppKit is a Bootstrap Angular admin theme.</p>
-                                    <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-chartjs.jpg" alt="screenshot" /></a>
-                                        <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
-                                    </div> 
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="block-title">2. Global Configurations</h3>
-                                    <p><strong><i class="fa fa-external-link-square"></i> Source:</strong> <a href="http://www.chartjs.org/docs/" target="_blank">http://www.chartjs.org/docs/</a></p>
-                                    <div class="code-block">
-                                        <pre><code class="language-javascript">Chart.defaults.global = {
-    // Boolean - Whether to animate the chart
-    animation: true,
-
-    // Number - Number of animation steps
-    animationSteps: 60,
-
-    // String - Animation easing effect
-    // Possible effects are:
-    // [easeInOutQuart, linear, easeOutBounce, easeInBack, easeInOutQuad,
-    //  easeOutQuart, easeOutQuad, easeInOutBounce, easeOutSine, easeInOutCubic,
-    //  easeInExpo, easeInOutBack, easeInCirc, easeInOutElastic, easeOutBack,
-    //  easeInQuad, easeInOutExpo, easeInQuart, easeOutQuint, easeInOutCirc,
-    //  easeInSine, easeOutExpo, easeOutCirc, easeOutCubic, easeInQuint,
-    //  easeInElastic, easeInOutSine, easeInOutQuint, easeInBounce,
-    //  easeOutElastic, easeInCubic]
-    animationEasing: &#x22;easeOutQuart&#x22;,
-
-    // Boolean - If we should show the scale at all
-    showScale: true,
-
-    // Boolean - If we want to override with a hard coded scale
-    scaleOverride: false,
-
-    // ** Required if scaleOverride is true **
-    // Number - The number of steps in a hard coded scale
-    scaleSteps: null,
-    // Number - The value jump in the hard coded scale
-    scaleStepWidth: null,
-    // Number - The scale starting value
-    scaleStartValue: null,
-
-    // String - Colour of the scale line
-    scaleLineColor: &#x22;rgba(0,0,0,.1)&#x22;,
-
-    // Number - Pixel width of the scale line
-    scaleLineWidth: 1,
-
-    // Boolean - Whether to show labels on the scale
-    scaleShowLabels: true,
-
-    // Interpolated JS string - can access value
-    scaleLabel: &#x22;&#x3C;%=value%&#x3E;&#x22;,
-
-    // Boolean - Whether the scale should stick to integers, not floats even if drawing space is there
-    scaleIntegersOnly: true,
-
-    // Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-    scaleBeginAtZero: false,
-
-    // String - Scale label font declaration for the scale label
-    scaleFontFamily: &#x22;&#x27;Helvetica Neue&#x27;, &#x27;Helvetica&#x27;, &#x27;Arial&#x27;, sans-serif&#x22;,
-
-    // Number - Scale label font size in pixels
-    scaleFontSize: 12,
-
-    // String - Scale label font weight style
-    scaleFontStyle: &#x22;normal&#x22;,
-
-    // String - Scale label font colour
-    scaleFontColor: &#x22;#666&#x22;,
-
-    // Boolean - whether or not the chart should be responsive and resize when the browser does.
-    responsive: false,
-
-    // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-    maintainAspectRatio: true,
-
-    // Boolean - Determines whether to draw tooltips on the canvas or not
-    showTooltips: true,
-
-    // Function - Determines whether to execute the customTooltips function instead of drawing the built in tooltips (See [Advanced - External Tooltips](#advanced-usage-custom-tooltips))
-    customTooltips: false,
-
-    // Array - Array of string names to attach tooltip events
-    tooltipEvents: [&#x22;mousemove&#x22;, &#x22;touchstart&#x22;, &#x22;touchmove&#x22;],
-
-    // String - Tooltip background colour
-    tooltipFillColor: &#x22;rgba(0,0,0,0.8)&#x22;,
-
-    // String - Tooltip label font declaration for the scale label
-    tooltipFontFamily: &#x22;&#x27;Helvetica Neue&#x27;, &#x27;Helvetica&#x27;, &#x27;Arial&#x27;, sans-serif&#x22;,
-
-    // Number - Tooltip label font size in pixels
-    tooltipFontSize: 14,
-
-    // String - Tooltip font weight style
-    tooltipFontStyle: &#x22;normal&#x22;,
-
-    // String - Tooltip label font colour
-    tooltipFontColor: &#x22;#fff&#x22;,
-
-    // String - Tooltip title font declaration for the scale label
-    tooltipTitleFontFamily: &#x22;&#x27;Helvetica Neue&#x27;, &#x27;Helvetica&#x27;, &#x27;Arial&#x27;, sans-serif&#x22;,
-
-    // Number - Tooltip title font size in pixels
-    tooltipTitleFontSize: 14,
-
-    // String - Tooltip title font weight style
-    tooltipTitleFontStyle: &#x22;bold&#x22;,
-
-    // String - Tooltip title font colour
-    tooltipTitleFontColor: &#x22;#fff&#x22;,
-
-    // Number - pixel width of padding around tooltip text
-    tooltipYPadding: 6,
-
-    // Number - pixel width of padding around tooltip text
-    tooltipXPadding: 6,
-
-    // Number - Size of the caret on the tooltip
-    tooltipCaretSize: 8,
-
-    // Number - Pixel radius of the tooltip border
-    tooltipCornerRadius: 6,
-
-    // Number - Pixel offset from point x to tooltip edge
-    tooltipXOffset: 10,
-
-    // String - Template string for single tooltips
-    tooltipTemplate: &#x22;&#x3C;%if (label){%&#x3E;&#x3C;%=label%&#x3E;: &#x3C;%}%&#x3E;&#x3C;%= value %&#x3E;&#x22;,
-
-    // String - Template string for multiple tooltips
-    multiTooltipTemplate: &#x22;&#x3C;%= value %&#x3E;&#x22;,
-
-    // Function - Will fire on animation progression.
-    onAnimationProgress: function(){},
-
-    // Function - Will fire on animation completion.
-    onAnimationComplete: function(){}
-}</code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                            </section><!--//doc-section-->
-                            
-                            <section id="flot" class="doc-section">
-                                <h2 class="section-title">Flot Charts</h2>
-                                <div class="section-block">
-                                    <h3 class="block-title">1. Screenshot</h3>
-                                    <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-flot.jpg" alt="screenshot" /></a>
-                                        <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
-                                    </div> 
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="block-title">2. Basic Usage</h3>
-                                    <p><strong><i class="fa fa-external-link-square"></i> Source:</strong> <a href="https://github.com/flot/flot/blob/master/README.md" target="_blank">https://github.com/flot/flot/blob/master/README.md</a></p>
-                                    <p>Create a placeholder div to put the graph in:</p>
-                                    <p><pre><code class="language-markup">&#x3C;div id=&#x22;placeholder&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre></p>
-                                    <p>You need to set the width and height of this div, otherwise the plot library doesn't know how to scale the graph. You can do it inline like this:</p>
-                                    <p><pre><code class="language-markup">&#x3C;div id=&#x22;placeholder&#x22; style=&#x22;width:600px;height:300px&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre></p>
-                                    <p>You can also do it with an external stylesheet. Make sure that the placeholder isn't within something with a display:none CSS property - in that case, Flot has trouble measuring label dimensions which results in garbled looks and might have trouble measuring the placeholder dimensions which is fatal (it'll throw an exception).</p>
-
-                                    <p>Then when the div is ready in the DOM, which is usually on document ready, run the plot function:</p>
-                                    <p><pre><code class="language-javascript">$.plot($(&#x22;#placeholder&#x22;), data, options);</code></pre></p>
-                                    <p>Here, data is an array of data series and options is an object with settings if you want to customize the plot. Take a look at the examples for some ideas of what to put in or look at the <a href="#">API reference</a>. Here's a quick example that'll draw a line from (0, 0) to (1, 1):</p>
-                                    
-                                    <p><pre><code class="language-javascript">$.plot($(&#x22;#placeholder&#x22;), [ [[0, 0], [1, 1]] ], { yaxis: { max: 1 } });</code></pre></p>
-                                    <p>The plot function immediately draws the chart and then returns a plot object with a couple of methods.</p>
-                                    
-                                </div><!--//section-block-->
-                            </section><!--//doc-section-->
-                            
-                            <section id="morris" class="doc-section">
-                                <h2 class="section-title">Morris.js</h2>
-                                <div class="section-block">
-                                    <h3 class="block-title">1. Screenshot</h3>
-                                    <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-flot.jpg" alt="screenshot" /></a>
-                                        <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
-                                    </div> 
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="block-title">2. Getting Started</h3>
-                                    <p>Add <strong>morris.js</strong> and its dependencies (<a href="#">jQuery</a> &amp; <a href="#">Raphaël</a>) to your page.</p>
-                                    <p><pre><code class="language-markup">1 &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css&#x22;&#x3E;
-2 &#x3C;script src=&#x22;//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
-3 &#x3C;script src=&#x22;//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js&#x22;&#x3E;&#x3C;/script&#x3E;
-4 &#x3C;script src=&#x22;//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre></p>
-                                     
-                                    
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="block-title">3. Your first chart</h3>
-                                    <p>Start by adding a <code>&lt;div&gt;</code> to your page that will contain your chart. Make
-sure it has an ID so you can refer to it in your Javascript later.</p>
-                                    <p><pre><code class="language-markup">&#x3C;div id=&#x22;myfirstchart&#x22; style=&#x22;height: 250px;&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre></p>
-                                    <div class="callout-block callout-info">
-                                        <div class="icon-holder">
-                                            <i class="fa fa-info-circle"></i>
-                                        </div><!--//icon-holder-->
-                                        <div class="content">
-                                            <h4 class="callout-title">Note:</h4>
-                                            <p>in order to display something, you’ll need to have given the div some dimensions. Here I’ve used inline CSS just for illustration.</p>
-                                        </div><!--//content-->
-                                    </div>
-                                    <p>Next add a <code>&lt;script&gt;</code> block to the end of your page, containing the following
-javascript code:</p>
-                                    <p><pre><code class="language-javascript">new Morris.Line({
-  // ID of the element in which to draw the chart.
-  element: &#x27;myfirstchart&#x27;,
-  // Chart data records -- each entry in this array corresponds to a point on
-  // the chart.
-  data: [
-    { year: &#x27;2008&#x27;, value: 20 },
-    { year: &#x27;2009&#x27;, value: 10 },
-    { year: &#x27;2010&#x27;, value: 5 },
-    { year: &#x27;2011&#x27;, value: 5 },
-    { year: &#x27;2012&#x27;, value: 20 }
-  ],
-  // The name of the data record attribute that contains x-values.
-  xkey: &#x27;year&#x27;,
-  // A list of names of data record attributes that contain y-values.
-  ykeys: [&#x27;value&#x27;],
-  // Labels for the ykeys -- will be displayed when you hover over the
-  // chart.
-  labels: [&#x27;Value&#x27;]
-});</code></pre></p>
-
-                                     
-                                    
-                                </div><!--//section-block-->
-                            </section><!--//doc-section-->
-                            
-                            <section id="inline" class="doc-section">
-                                <h2 class="section-title">Inline Charts</h2>
-                                <div class="section-block">
-                                    <h3 class="block-title">1. Screenshot</h3>
-                                    <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-inline.jpg" alt="screenshot" /></a>
-                                        <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
-                                    </div>
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <h3 class="block-title">2. Charts Used</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                                    <ul class="list list-unstyled">
-                                        <li><a href="#" target="_blank"><i class="fa fa-external-link-square"></i> Peity</a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-external-link-square"></i> Easy Pie Chart</a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-external-link-square"></i> Sparklines</a></li>
-                                    </ul>
-                                </div><!--//section-block-->
-                                <div class="section-block">
-                                    <div class="jumbotron text-center">
-                                        <h1>Jumbotron Example</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                                        <ul class="list list-inline center-block">
-                                            <li><a class="btn btn-cta btn-pink" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> AppKit Details</a></li>
-                                            <li><a class="btn btn-cta btn-primary" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="fa fa-eye"></i> AppKit Demo</a></li>
+<!-- Role
+================================================== -->
+                            <section id="role" class="doc-section">
+                                <h2 class="section-title">Role</h2>
+                                <ol>
+                                    <li>
+                                        <strong>Instructor :</strong>
+                                        <ul>
+                                            <li>An Instructor by default gets access to a lot of features in the sites. Like viewing all Questions in the question bank, viewing all units in the directory through the admin panel.</li>
+                                            <li>Instructor however can not edit or delete the contents from Units created by other Instructors.</li>
+                                            <li>An Instructor can not manually assign badges and certificates to students who are not taking the course.</li>
                                         </ul>
-                                    </div><!--//jumbotron-->
-                                </div><!--//section-->
+                                    </li>
+                                    <li>
+                                        <strong>Group Admin :</strong>
+                                        <ul>
+                                            <li>An instructor is also the Group Admin of the groups connected to Courses published by him.</li>
+                                            <li>An Instructor therefore can Add or Remove any student from the Group. An Instructor can also assign some students as Group Moderators for efficient functioning of the group.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Forum Admin :</strong>
+                                        <ul>
+                                            <li>Just like the groups, an Instructor is the Forum administrator for the Forum Connected to the Course.</li>
+                                            <li>An Instructor can delete any sub-forum, topic in the Course forum.</li>
+                                            <li>An Instructor can ban any user in his/her forum.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
                             </section><!--//doc-section-->
+<!-- LMS Settings
+================================================== -->
+                            <section id="general-settings" class="doc-section">
+                                <h2>LMS Settings</h2>
+                                <p>LMS Setting allows admin to redirect instructor and student to a particular page,set comission for the instructor,paying commisions according to the time period,ad-hoc management,import/export WPLMS elements.</p>
+                                <h3 class="block-title">LMS : General Settings</h3>
+                                <p>LMS General settings controls the redirection as well as allows you to display or hide the members, curriculum,user progress etc. from the differnt sections of the page.also helps in limiting no. of course,units and quiz per instructor. 
+                                Functions that are given in general settings are:</p>
+                                <ul class="list">
+                                    <li>
+                                        <h4>General Settings</h4>
+                                        <ol>
+                                            <li><strong>User Login & Registration Settings</strong>
+                                                <ul>
+                                                    <li><strong>Student Login redirect :</strong> A dropdown containing pages: Home Page, Profile Page, My Courses Page, Dashboard Page, Same Page. By default student redirection is set to home page but by choosing one from the dropdown you can redirect student to a different page as he log-in.</li>
+
+                                                    <li><strong>Instructor Login redirect :</strong> A dropdown containing pages: Home Page, Profile Page, My Courses Page, Dashboard Page, Same Page. By default instructor redirection is set to home page but by choosing one from the dropdown you can redirect an instructor to a different page as he log-in.</li>
+
+                                                    <li><strong>Enable One Session Per User :</strong> If u checked the checkbox then it  will allow a
+                                                    user can login from one unique user_id(EXCLUDES ADMINISTRATORS).</li>
+
+                                                    <li><strong>Hide Administrators in Instructors :</strong> If u checked the checkbox then it will hide administrator in all instructors page and elsewhere.</li>
+
+                                                    <li><strong>Enable message to Instructor in Course Page :</strong> If u checked the checkbox then it will enables a message icon to send message to instructor. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/show-contact-instructor-in-course/" target="_blank">Tutorial</a></li>
+
+                                                    <li><strong>Enable Create course button in instructor profile menu :</strong> If u checked the checkbox then it will add a create course button in the instructor profile menu.</li>
+
+                                                    <li><strong>Show WooCommerce/Pmpro account in profile :</strong> If u checked the checkbox  then it display woocommerce account in profile.</li>
+
+                                                    <li><strong>Set a terms and conditions page for BuddyPress registration :</strong> You can select any page from your website which should be the terms and conditions page in the buddypress registration page.</li>
+
+                                                    <li><strong>Enable Student menus :</strong>If u checked the checkbox then it adds new menu locations for students.</li>
+
+                                                    <li><strong>Enable Instructor menus :</strong>If u checked the checkbox then it adds new menu locations for instructors.</li>
+
+                                                    <li><strong>Assign Free courses to students on account activation :</strong> If u checked the checkbox then it enables auto-subscription to all the "free" courses in site to students when they signup/register and activate their account.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Course Home Settings</strong>
+                                                <ul>
+                                                    <li><strong>Course Members Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Admins. By default course members visibility is set to everyone. But you can choose who should see the course members, the logged in users or course users or just the instructors and the admin of the website.</li>
+
+                                                    <li><strong>Course Curriculum Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Admins. By default course curriculum visibility is set to everyone. But you can choose who should see the course curriculum, the logged in users or course users or just the instructors and the admin of the website.</li>
+
+                                                    <li><strong>Course Events Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Admins. By default course events visibility is set to everyone. But you can choose who should see the course events, the logged in users or course users or just the instructors and the admin of the website.</li>
+
+                                                    <li><strong>Course Activity Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Admins. By default course activity visibility is set to everyone. But you can choose who should see the course activity, the logged in users or course users or just the instructors and the admin of the website.</li>
+
+                                                    <li><strong>Course Drive Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Admins. By default course drive visibility is set to everyone. But you can choose who should see the course drive, the logged in users or course users or just the instructors and the admin of the website.</li>
+
+                                                    <li><strong>Hide Instructor in whole Site (single instructors) :</strong> This disables the instructor display on the website, its suitable for a website with just one instructor, as you do not want to show his/her name on the website everywhere.</li>
+
+                                                    <li><strong>Change Pre-Required Course Condition from submitted to Evaluated :</strong> After enabling this students will have to wait for course evaluation by the instructor to move on to courses which have pre-requisite course under evaluation. By default the students will be able to get access of the course when they mark the pre-requisite course as finish.</li>
+
+                                                    <li><strong>Hide Members section in Single Course page :</strong> If u checked the checkbox then it will hide members section from course pages.</li>
+
+                                                    <li><strong>Show curriculum below Course description :</strong> If u checked the checkbox then it  will show curriculum below the course description.</li>
+
+                                                    <li><strong>Disable Course Certificate image mode :</strong> If u checked the checkbox then it  will disable the image mode in the certificate. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/disable-certificate-image-mode/" target="_blank"><b>Tutorial</b></a></li>
+
+                                                    <li><strong>Free units should only be accessible to logged in members :</strong> If u checked the checkbox then the non logged in users cannot access any free units in the course curriculum.</li>
+
+                                                    <li><strong>Remove Finished Courses from directory :</strong> If u checked the checkbox then it will automatically remove finished courses from course directory for user.</li>
+
+                                                    <li><strong>Fix Course Menu on Scroll :</strong> If u checked the checkbox then the course menu will be fixed even if you scroll the page. Its suitable if you have very long course descriptions. It developed for only c2, c3 and c5 layout.</li>
+
+                                                    <li><strong>Show Course Badge & Certificate in PopUp on course details :</strong> If u checked the checkbox then it will display the course badge and certificate in popup in the course details section.</li>
+
+                                                    <li><strong>Open Login popup for non logged in users when they click on take this course button :</strong> If u checked the checkbox it will open a login page popup when a non-logged in user click on take this course.</li>
+
+                                                    <li><strong>Enable Course Duration from Start Course :</strong> If u checked the checkbox the course duration will be calculated from the time the user clicks on start course button.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Course Status Settings</strong>
+                                                <ul>
+                                                    <li><strong>Course Timeline Accordion style :</strong> Show curriculum accordion style.</li>
+                                                    <li><strong>Disable ajax in Course unit load  :</strong> Ajax disabled in course unit loads.</li>
+                                                    <li><strong>Show unit slug and title in Course Status page :</strong> Unit slug and title is displayed in the title of the course status page when user is viewing a unit.</li>
+                                                    <li><strong>Auto-mark unit complete when user proceeds to next unit :</strong> Hides "Mark Unit Complete" button and auto marks the unit as completed when user proceeds to next unit.</li>
+                                                    <li><strong>Auto trigger finish course button :</strong> Hides Finish course button and is automatically triggered on completion of all the units and quizzes.</li>
+                                                    <li><strong>Skip Course status page :</strong> Skip the introductory page, course status description on course start or continue.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Course Pricing Settings</strong>
+                                                <ul>
+                                                    <li><strong>Coming soon courses :</strong> If u checked the checkbox  then it enables the coming soon
+                                                    options for courses in the course pricing section.</li>
+
+                                                    <li><strong>Enable Course Codes :</strong> If u checked the checkbox then student can purchase/access courses by using custom defined codes for courses in course pricing section.</li>
+
+                                                    <li><strong>Enable Course external link :</strong> If u checked the checkbox then you can connect "Take this Course" button with an external link, defined in Course Pricing section.</li>
+
+                                                    <li><strong>Disable Auto allocation of Free courses :</strong> Whenever a user opens a course page and if that course is a free course then the user gets enrolled in the course automatically. If you check this checkbox then the user will not be enrolled in the free course automatically until they click on the take this course button.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Unit Settings</strong>
+                                                <ul>
+                                                    <li><strong>Show Unit Description in Course curriculum :</strong> If u checked the checkbox then unit description appears below unit titles in Course curriculum.</li>
+
+                                                    <li><strong>Show User progress in Course Admin :</strong> If u checked the checkbox then it  will show small progress bar for every user below her name in COURSE->ADMIN SECTION.</li>
+
+                                                    <li><strong>Enable Unit/Quiz Start Date time :</strong> If u checked the checkbox then it  will add setting in the units and quizzes settings to set the start date and time in it and the units and quizzes will start at a particulat date and time.</li>
+
+                                                    <li><strong>Unit comments/Notes :</strong> Enable unit comments only where comments is enabled for units. You can enable/disable notes/discussion features for particular units by editing the units in wp-admin panel and disabling comments in discussion metabox.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Quiz/Assignment Settings</strong>
+                                                <ul>
+                                                    <li><strong>Enable In-Course Quiz :</strong> If u checked the checkbox then quizzes open inside course like units.</li>
+
+                                                    <li><strong>In-Course Quiz questions per page :</strong> It set number of questions appearing per page in in-course quizzes.</li>
+
+                                                    <li><strong>Enable passing score for Quiz :</strong> If u checked the checkbox then it will set a passing score for every quiz, Student progress to next unit/quiz is restricted if user fails in quiz.</li>
+
+                                                    <li><strong>Enable partialy marking for Quiz :</strong> If u checked the checkbox then it will enables the ability to give partial marks in quizzes.
+                                                   </li>
+
+                                                    <li><strong>Force Quiz availability to Course students :</strong> If u checked the checkbox then only course students can take the quiz. Please make sure quiz is connected to the course in quiz settings.</li>
+
+                                                    <li><strong>Hide correct answers :</strong> If u checked the checkbox then correct answers in quizzes are not displayed unless student has finished/submitted the course.</li>
+
+                                                    <li><strong>Enable negative marking :</strong> Enables plupload in assignments(No upload limit).</li>
+
+                                                    <li><strong>Exclude quizzes not connected to course from evaluation :</strong> If you checked the checkbox then it will not consider quizzes that are not connected to course in quiz settings in course evaluation</li>
+
+                                                     <li><strong>Show Assignments in Course Curriculum :</strong> If u checked the checkbox then assignments will be displayed in course curriculum.</li>
+
+                                                    <li><strong>Display Submission time in Course/Quiz/Assignment submissions :</strong> This setting displays time (eg 2 hrs) with manual submissions, * requires activity to be enabled.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Front End Settings</strong>
+                                                <ul>
+                                                    <li><strong>Force Administrator Approval on every setting :</strong> If u checked the checkbox then instructor's courses will go to pending mode when settings/pricing/curriculum is saved. *Requires Admin Approval enabled in WPLMS - Course Manager.</li>
+
+                                                    <li><strong>Enable Front end course deletion :</strong> If u checked the checkbox then instructors will be able to delete course and related content from front end.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Miscellaneous Settings</strong>
+                                                <ul>
+                                                    <li><strong>Revert pretty permalinks for Courses :</strong> If u checked the checkbox then it will revert permalinks from coursname/admin to coursename/?action-.</li>
+
+                                                    <li><strong>Enable Course forum privacy :</strong> If u checked the checkbox then it only course students can access course forums.</li>
+
+                                                    <li><strong>Default order in course directory :</strong> A dropdown containing order:
+                                                    <ul>
+                                                        <li>Recent</li>
+                                                        <li>Alphabetical</li>
+                                                        <li>Number of students</li>
+                                                        <li>Rating</li>
+                                                        <li>Upcoming Courses via Start date</li>
+                                                        <li>Random</li>
+                                                    </ul>
+                                                    <p>By default it is set to recent</p>
+                                                    </li>
+
+                                                    <li><strong>Default order in Members directory :</strong> a dropdown containing order
+                                                    <ul>
+                                                        <li>Last active</li>
+                                                        <li>Newest Registered</li>
+                                                        <li>Aplhabetical</li>
+                                                    </ul>
+                                                    <p>by default it is set to menu order</p>
+                                                    </li>
+
+                                                    <li><strong>Limit Number of Courses per Instructor :</strong> You can limit number of courses per instructor by specifying the number in the box( 0 for unlimited course per instructor ).
+                                                    </li>
+
+                                                    <li><strong>Limit Number of Units Created per Instructor :</strong> You can limit number of units per instructor by specifying the number in the box( 0 for unlimited course per instructor ).
+                                                    </li>
+
+                                                    <li><strong>Limit Number of Quiz Created per Instructor :</strong> You can limit number of quizzes per instructor by specifying the number in the box( 0 for unlimited course per instructor ).
+                                                    </li>
+
+                                                    <li><strong>Buy Points Link :</strong> You can Buy Points for MyCred, displayed when user points are less than required.
+                                                    </li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>WPLMS Batch Settings(when wplms batch plugin is activated)</strong>
+                                                <ul>
+                                                    <li><strong>Enable Batch Course Visibility switch :</strong> Enable "BATCH COURSE VISIBILITY" switch would restrict course visbility for batch students to batch courses.</li>
+
+                                                    <li><strong>Enable Course auto subscribe for Batch students :</strong> Students in Batch are automatically subscribed to Batch courses.</li>
+
+                                                    <li><strong>Enable Batch specific curriculums :</strong> Adds ability to load different curriculum for batches</li>
+
+                                                    <li><strong>Enable Enroll Now Button in Batch on Course Page :</strong> Adds the Enroll Now button for all users even non logged in users on course page</li>
+
+                                                    <li><strong>Enable Buy Batch :</strong>Enables wplms buy batch shortcode. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/wplms-buy-batch-feature/" target="_blank"><b>Tutorial</b></a></li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>WPLMS Custom Learning Path Settings(when wplms custom learning paths plugin is activated)</strong>
+                                                <ul>
+                                                    <li><strong>Disable Enroll out button :</strong> Enabling this setting will hide the enrol out button from single learning path page.</li>
+                                                    <li><strong>Exclude Steps from Learning Path :</strong> Select Steps which you want to exclude from the learningpath "select steps".</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>WPLMS Gift Course Settings(when wplms gift course plugin is activated)</strong>
+                                                <ul>
+                                                    <li><strong>Enable non-logged in users to send gifts :</strong> Enabling this setting will allow non-logged in users to send gifts.</li>
+                                                    <li><strong>Send free courses as gift :</strong> Enabling this setting will allow users to gift free courses also.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>WPLMS Wishlist Settings(when wplms wishlist plugin is activated)</strong>
+                                                <ul>
+                                                    <li><strong>Disable add to collection icon on courses :</strong> Enable to disable direct add to collection on courses.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>WPLMS Woocommerce Settings(when wplms woocommerce plugin is activated)</strong>
+                                                <ul>
+                                                    <li><strong>Enable Various Products Popup in Course Page :</strong> Enabling this setting will show variable pricing/product in a popup on course page.</li>
+                                                    <li><strong>Display Batch Price On Course Page :</strong> Enabling this setting will show batch pricing on course page.</li>
+                                                    <li><strong>Enable Instructor Premium Courses :</strong> Enabling this setting enable the instructor premium courses feature in the website. The admin can restrict the instructors from creating the courses and the instructors will have to purchase the courses to continue publishing courses.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>WPLMS Course Events Settings</strong>
+                                                <ul>
+                                                    <li><strong>Course Events calendar display : </strong> Choose from two types of calender. Default and list type.</li>
+                                                </ul>
+                                            </li><br>
+
+                                            <li><strong>Tours Settings</strong>
+                                                <ul>
+                                                    <li><strong>Enable Tours :</strong> If u checked the checkbox, this will enable tour functionality in site. The tour functionality will guide you how to pursue a course.</li>
+                                                    <li><strong>Enable all tours by default for users :</strong> If u checked the checkbox, this will enable all tours by default for users.</li>
+                                                </ul>
+                                            </li><br>
+                                        </ol>
+                                    </li>
+
+
+                                    <li><h4>Registration Forms</h4>
+                                    <p>LMS Registration Form setting build registration forms for instructors and students as well as connect form with fields. It controls following settings :</p>
+                                        <ul>
+                                            <li>Auto Generate Username From Email</li>
+                                            <li>Show Password Meter</li>
+                                            <li>Show Field Group Labels</li>
+                                            <li>Google Captcha</li>
+                                            <li>Register & Login Simultaneously</li>
+                                            <li>Skip Mail Verification</li>
+                                            <li>Assign User Role: From this setting you can assign user role.</li>
+                                            <li>Add To BuddyPress Group</li>
+                                            <li>Assign member Type</li>
+                                        </ul>
+                                        <p>Here, you can select form fields which will be visible in your custom registration form and save those fields. <br><b>Follow the tutorial :</b> <a href="http://vibethemes.com/documentation/wplms/knowledge-base/custom-registration-forms-in-wplms/" target="_blank">Custom Registration Form in wplms</a></p>
+                                    </li>
+
+
+                                    <li><h4>Course Settings</h4>
+                                        <p>LMS Course Settings controls all the setting which is displayed in the sidebar of single course page. You can delete to hide these settings and rearrange it too.</p>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/lms-course-setting1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/lms-course-setting1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/lms-course-setting1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/lms-course-setting2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/lms-course-setting2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/lms-course-setting2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+
+                                    <li><h4>Logged in Menu</h4>
+                                    This LMS setting is used to customize your profile menu. You can also rearrange the order of the profile menu fields. To add new fields to show it in your profile menu, click on add new item and by dropdown menu select those fields you wish to view. <b>Refer the Tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/customise-profile-menu-dropdown-wplms-2-6/" target="_blank"><b>Customized Logged In Menu</b></a>
+                                    </li>
+
+
+                                    <li><h4>Course Menu</h4>
+                                    This LMS Setting is used to customize course menu which is visible on single course page. An Admin have the access to set the privacy of these courses for everyone, for instructors or only for students. He can set visibility of these menus on selected courses or for all courses.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/course-menu.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course-menu.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/course-menu.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/course-menu2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course-menu2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/course-menu2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+
+
+                                    <li><h4>Member Types</h4>After adding member types you can set the Member types widget in your sidebar to show filtering according to member type on members directory. Member type can be assign with custom registration forms also. In wplms custom registration settings you will see a new settings for member type.
+                                    </li>
+
+
+                                    <li><h4>Group Types</h4>
+                                    To Group Types from , wp_admin > LMS > Settings > Group Types. Like Member Types You can set Group Types also. Refer the tutorial :<a href="https://vibethemes.com/documentation/wplms/knowledge-base/member-types-and-group-types/" target="_blank"><b> Set Member Types & Group Types</b></a>
+                                    </li>
+                                </ul>
+                            </section>
+
+<!-- LMS Settings : API
+================================================== -->
+                            <section id="api-settings" class="doc-section">
+                                <h2>LMS : API Settings</h2>
+                                <p>WPLMS 3.0 uses oAuth 2.0 Server for authentication and user management. Though we’re not using all the features of the oAuth server, it is a very secure tool in managing site user login and registrations.</p>
+                                <p>Following points will highlight the benefits of this feature :</p>
+                                <ol>
+                                    <li><strong>Facilitate Secure Mobile App Authentication :</strong> Since mobile app access login data remotely without actually logging in to your WPLMS site, this feature was required for user authentication and management.</li>
+                                    <li><strong>Authentication via Tokens :</strong>  Once a user is verified , the oAuth server generates a secure Authorization token which is accompanied and verified in every API call which is trying to access and modify confidential data. Then tokens expire and can be removed from WPLMS API panel, so it presents a secure way of communication between apps and your web site.</li>
+                                    <li><strong>Site Identity :</strong> Every site can be easily distinguished with another via state factor which is uniquely added for every site.</li>
+                                    <li><strong>Built for WPLMS Mobile apps :</strong>  Since the API and APP development happened side by side for WPLMS, we have added special features to enable better communication and management of users connected via apps with your WPLMS site.</li>
+                                </ol>
+                                <p>Refer the tutorial : <a href="https://www.youtube.com/watch?v=_9wGs3xD6TA" target="_blank"><b>WPLMS Rest API</b></a></p>
+                            </section>
+
+<!-- LMS Settings : Commissions
+================================================== -->
+                            <section id="commission-settings" class="doc-section">
+                                <h2>LMS : Commission Settings</h2>
+                                <p>LMS Commissions is categorized into two parts : Set Commissions & Pay Commissions.</p>
+                                <ul class="list">
+                                    <li><strong>Set Commissions :</strong> You can set commissions of instructors based on course and the instructor of the same course .Different instructors may assign different commissions. The commission is assigned in percentage value.</li>
+                                    <li><strong>Pay Commissions :</strong> You can pay commission to the instructor based on the time period i.e you can specify the start time period and end time period and when you click on show button then it shows: Instructor, Commission of an Instructor, Email Id of an Instructor, Checkbox, A Button (Pay via PayPal). There is a button "Mark as Paid" which allows to mark the instructors that are paid.</li>
+                                </ul>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/sc1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/sc1.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/sc1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/pc.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/pc.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/pc.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                    </div>
+                            </section>
+                            
+<!-- LMS Settings : Functions
+================================================== -->
+                            <section id="lms-functions" class="doc-section">
+                                <h2>LMS Admin Functions [ For Ad-Hoc Management]</h2>
+                                <p>LMS Admin functions is categorized into two parts : Sync Areas and Ad Hoc.</p>
+                                <p>It is mainly added for developers. It is used to push metafield value in any post_type or user. It also shows current time stamp that is useful for other functions added in wplms.</p>
+                            </section>
+
+<!-- LMS Settings : Import/Export
+================================================== -->
+                            <section id="import-export" class="doc-section">
+                                <h2>Import/Export WPLMS Elements</h2>
+                                <p>Download and upload in CSV format. Import/Export WPLMS elements with user statuses: Courses, Quizzes, Units, Assignments, Questions and Events.</p>
+                                <h4>Export Settings</h4>
+                                <ul class="list">
+                                    <li><strong>Select Module :</strong> A dropdown which contains module types such as course, unit, quiz, question and assignment. Select a wplms module that you want to export</li>
+                                    <li><strong>Set Taxonomy :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
+                                    <li><strong>Set Taxonomy Term :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
+                                    <li><strong>Specific Module/s Ids :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
+                                    <li><strong>Export content :</strong> If you checked the checkbox then you can export the content of the module.</li>
+                                    <li><strong>Export Settings :</strong> If you checked the checkbox then you can export module settings.</li>
+                                    <li><strong>Export Taxonomies :</strong> If you checked the checkbox then you can export optional taxonomies and relationship.</li>
+                                    <li><strong>Export Comments :</strong> If you checked the checkbox then you can exports reviews for courses, answers for questions and assignments.</li>
+                                    <li><strong>Export connected modules :</strong> If you checked the checkbox then you can export connected modules, like units,quizzes,assignments with courses, questions with quizzes etc.</li>
+                                    <li><strong>Export Users :</strong> If you checked the checkbox then you can export users profile.</li>
+                                    <li><strong>Export Connected User data :</strong> If you checked the checkbox then you can export user statuses for module/sub-modules.</li>
+                                    <li><strong>Start Point :</strong> the number specifies starting key count for module, recommended for larger exports.</li>
+                                    <li><strong>Number of Modules :</strong> the number specifies maximum no. of modules to export.</li>
+                                </ul>
+                                <p>click on Generate Export file-> Download Export File</p>
+                                <p><b>Import Setting :</b> To Import a file :Select File to upload [ Maximum upload size 64 MB(s). 
+                                click on choose file(it shoud be .csv file)->upload file.</p>
+                                <p>Refer the tutorial : <b><a href="http://vibethemes.com/documentation/wplms/knowledge-base/
+                                    bulk-importexport-wplms-via-csv/" target="_blank">Import/Export Wplms via CSV</a></b></p>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <h6>Import Bulk users in a course</h6>
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/import-bulk-users.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/import-bulk-users.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/import-bulk-users.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                       </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <h6>Import Bulk units in a course</h6>
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/import-bulk-units.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/import-bulk-units.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/import-bulk-units.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <h6>Import Bulk Questions in a quiz</h6>
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/import-bulk-questions.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/import-bulk-questions.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/import-bulk-questions.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/imp1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/imp1.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/imp1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    <div>
+                            </section>
+
+<!-- LMS Settings : Touch Points
+================================================== -->
+                            <section id="touch-points" class="doc-section">
+                                <h2>Touch Points</h2>
+                                <p>Set the touch points for student and instructor in wplms and connect with them via these touch points. Touch points are set for getting the notification,message and email on the following touch points when they triggered.</p>
+                                <ul class="list">
+                                    <li><strong>Annoucements :</strong> When the announcement is made the student and instructor get notified by email, notification and message.</li>
+                                    <li><strong>News :</strong>Student and instructor get notified by email, notification and message when any news is done.</li>
+                                    <li><strong>Course Subscribed:</strong>Student and instructor get the notification , email and message when the course is suscribed to the student.</li>
+                                    <li><strong>User added to Course:</strong>Student and instructor get the notification , email and message when the student is added in the course.</li>
+                                    <li><strong>User starts a Course:</strong>Student and instructor get the notification , email and message when the student starts the course.</li>
+                                    <li><strong>Course Certificate:</strong>Student and instructor get the notification , email and message when the student is assigned/removed with the course certificate.</li>
+                                    <li><strong>Course Badge:</strong>Student and instructor get the notification , email and message when the student is assigned/removed with the course badge.</li>
+                                    <li><strong>Course Reset by Instructor:</strong>Student and instructor get the notification , email and message when course is reset by the instructor.</li>
+                                    <li><strong>Course Retake by User:</strong>Student and instructor get the notification , email and message when the student retakes the course.</li>
+                                    <li><strong>Course Submit:</strong>Student and instructor get the notification , email and message when the student submit the course.</li>
+                                    <li><strong>Course Evaluation:</strong>Student and instructor get the notification , email and message when the student submit the course for evaluation.</li>
+                                    <li><strong>Course Reviews:</strong>Student and instructor get the notification , email and message when the student or instructor writes the review in the course.</li>
+                                    <li><strong>Unsubscribe Course:</strong>Student and instructor get the notification , email and message when the student is unsubscribe from the course.</li>
+                                    <li><strong>Unit marked complete by User:</strong>Student and instructor get the notification , email and message when the student marks the unit complete and move to the next unit.</li>
+                                    <li><strong>Unit marked incomplete by Instructor for Student:</strong>Student and instructor get the notification , email and message when an instructor marks the unit incomplete for the student.</li>
+                                    <li><strong>Unit marked complete by Instructor for Student:</strong>Student and instructor get the notification , email and message when an instructor marks the unit complete for the student.</li>
+                                    <li><strong>Unit comment added by User:</strong>Student and instructor get the notification , email and message when the student add note or discussion comment in units.</li>
+                                    <li><strong>Quiz Start by user:</strong>Student and instructor get the notification , email and message when the student starts the quiz.</li>
+                                    <li><strong>Quiz Submitted by user:</strong>Student and instructor get the notification , email and message when the student submit the quiz.</li>
+                                    <li><strong>Quiz Reset by Instructor:</strong>Student and instructor get the notification , email and message when the quiz is reset by the instructor.</li>
+                                    <li><strong>Quiz Retake by User:</strong>Student and instructor get the notification , email and message when the student retake the quiz.</li>
+                                    <li><strong>Quiz Evaluation:</strong>Student and instructor get the notification , email and message when the student submit the quixz for evaluation.</li>
+                                    <li><strong>Assignment Start by user:</strong>Student and instructor get the notification , email and message when the student starts the assignment.</li>
+                                    <li><strong>Assignment Submitted by user:</strong>Student and instructor get the notification , email and message when the student submit the assignment.</li>
+                                    <li><strong>Assignment Evaluation:</strong>Student and instructor get the notification , email and message when the student submit the assignment for evaluation.</li>
+                                    <li><strong>Assignment Reset By Instructor:</strong> Student and instructor get the notification , email and message when tan instructor reset the assignment for student.</li>
+                                    <li><strong>Student Appplied For Course:</strong>Student and instructor get the notification , email and message when the student apply for a course.</li>
+                                    <li><strong>Instructor approves/rejects user application:</strong>Student and instructor get the notification , email and message when an instructor approves/rejects user application.</li>
+                                    <li><strong>Instructor Publishes a Course or Sends for Approval:</strong>Student and instructor get the notification , email and message when an instructor publishes a course or sends for approval.</li>
+                                    <p><b>[Note] : Learning Path Touch Points will be visible only when wplms Learning Path Plugin is activated.</b></p>
+                                    <li><strong>Student Enrolled in LearningPath:</strong>Student and instructor get the notification , email and message when the student enrolled in LearningPath.</li>
+                                    <li><strong>Student Enrolled out from LearningPath:</strong>Student and instructor get the notification , email and message when the student enrolled out from LearningPath.</li>
+                                    <li><strong>Student Completed a step in LearningPath:</strong>Student and instructor get the notification , email and message when the student completed a step in LearningPath.</li>
+                                    <li><strong>Student got Badge in LearningPath:</strong>Student and instructor get the notification , email and message when the student got a badge in LearningPath.</li>
+                                    <li><strong>Student got Certificate in LearningPath:</strong>Student and instructor get the notification , email and message when the student got a certificate in LearningPath.</li>
+                                </ul>
+                            </section>
+
+<!-- LMS Settings : Emails
+================================================== -->
+                            <section id="emails" class="doc-section">
+                                <h2>Emails</h2>
+                                <p>All the email templates are now migrated to buddypress email template. Here you can set the from and email address from which the email will be sent. Also you can edit the email template from the buddypress emails when you click on edit email template.</p>
+                                <ol>
+                                    <li>
+                                        <strong>Email Options</strong>
+                                        <ul>
+                                            <li>Set "From" name, this is the name from which the email will be sent.</li>
+                                            <li>Set "From" email, from which the email is to be sent.</li>
+                                            <li>You can edit the contact Form Email.</li>
+                                            <li>You can edit the activation Email.</li>
+                                            <li>You can edit the forgot password Email.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Email Schedule</strong>
+                                        <ul>
+                                            <li>Set the Drip feed email when the unit or section will be available. Enable/disable the drip feed email,schedule the email time i.e schedule the time when the unit or section will be available for example:before 12 hours of availablity,set the subject and messgae that is to be sent in email.</li>
+                                            <li>Set the course expiry email. Enable/disable the course expiry email,schedule the email time i.e schedule the email time when the course will be expired for example:before 12 hours of expiry,set the subject and messgae that is to be sent in email.</li>
+                                            <li>Set the inactivity email. Enable/disable the user inactivity email,schedule the email time i.e schedule the email time when the user is inactive on the website, for example:you set the inactivity email time to 30, this means the users who are inactive for more than 30 days will be sent the email. <b>Refer the tutorial :</b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/schedule-email-for-inactive-users/" target="_blank"><b> Schedule Email for Inactive Users</b></a></li>
+                                            <li>Schedule Course Review Email. Enable/disable the schedule course review email i.e. email students when the course is finished and the user has not given any review to the course.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Scheduled Emails</strong>
+                                        <ul>
+                                            <li>You can check which emails are scheduled in your website to be sent.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p><b>Refer the full video tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/touch-points-emails-messages-notifications/" target="_blank"><b> Touch Points</b></a></p>
+                            </section>
+
+<!-- LMS Tree
+================================================== -->
+                            <section id="lms-tree" class="doc-section">
+                                <h2>LMS Tree</h2>
+                                <p>Lms Tree is the tree which display course as the Branch and units and assignment as the sub-branches.Lms tree helps in viewing and editing all your courses and associated units and assignemnt through one place. <b>Refer the tutorial :</b><a href="https://www.youtube.com/watch?v=Rvt9GR0ZVG8" target="_blank"><b>LMS Tree in wplms</b></a></p>
+                            </section>
+
+<!-- LMS Course Navigation
+================================================== -->
+                            <section id="lms-course-navigation" class="doc-section">
+                                <h2>LMS Course Navigation(when wplms course custom nav plugin is activated)</h2>
+                                <p>First of all please note that the hide show course settings feature will work for instructors only. Admin will see all the settings always. There are two settings screens in this plugin. One is for Custom course section and other for Course creation settings (hide/show).</p>
+                                <ol>
+                                <li>
+                                    <strong>Custom Sections :</strong> Just Click on Add Custom Section. It will show a form to add a section which will have 5 settings namely:
+                                    <ul>
+                                        <li><strong>Add Section Title : </strong> Add Title for the section.</li>
+                                        <li><strong>Add Section Slug : </strong> For the slug and permalink settings. This must be unique and does not contain any spaces.</li>
+                                        <li><strong>Add Section Description : </strong> Add Description for the section.</li>
+                                        <li><strong>Select Courses : </strong> In which courses it should be visible.</li>
+                                        <li><strong>Select Section Visibility : </strong> Set section visibility to make that section visible for specific group of users.</li>
+                                        <pre>Imp note : Please do not forget to re-save permalinks after each section you save by clicking on save section button.</pre>
+                                    </ul>
+                                </li>
+                                <li><strong>Front end course creation : </strong> This screen will show the show,hide and defaults values for the course settings that you will hide. There are some settings for which defaults are not available as they can be saved as blank.</li>
+
+                                <pre>Imp Note : Please note that if any settings are added or removed in course then please re-save the hide/show settings again as more settings can be added to the course by using this tip. It is necessary that if you hide any settings you must provide default value in it to avoid any conflicts.</pre>
+                            </section>
+
+<!-- LMS Course Category
+================================================== -->
+                            <section id="lms-course-category" class="doc-section">
+                                <h2>LMS Course Category</h2>
+                                <p>Here, you can define categories for your courses. From your courses you can categorize the courses. To create Course category, Go to Lms->Course category->Add New Course category.</p>
+                            </section>
+
+<!-- LMS Quiz Type
+================================================== -->
+                            <section id="lms-quiz-type" class="doc-section">
+                                <h2>LMS Quiz Type</h2>
+                                <p>Here, you can define types of a quiz for your courses unit.</p>
+                            </section>
+
+<!-- LMS Unit Tag
+================================================== -->
+                            <section id="lms-unit-tag" class="doc-section">
+                                <h2>LMS Unit Tag</h2>
+                                <p>Unit tags helps in creating tags for your courses unit. Go to Lms->Unit Tag->Add New Tag</p>
+                            </section>
+
+<!-- LMSLevel
+================================================== -->
+                            <section id="lms-level" class="doc-section">
+                                <h2>LMS Level</h2>
+                                <p>To enable level taxonomy, go to Vibe Options Panel > course manager > Enable Level Level. Level Taxonomy helps in creating levels and sub levels in courses.</p>
+                                <ul>
+                                    <li>Enable levels: Go to Vibe option panel->course manager->Enable levels.</li>
+                                    <li>Go to Lms->Levels->Add new levels</li>
+                                    <li>Select parent for creating sub level.</li>
+                                    <li>Go to the course and select level for the course.</li>
+                                    <li>Go To Appearance->widgets->Buddypress and add buddypress course filter widget and checked the checkbox of show level filter and save.</li>
+                                    <li>Filter courses based on levels in course directory.</li>
+                                    <li>See the level in course detail area. Resave your permalinks.</li>
+                                </ul>
+                            </section>
+
+<!-- LMS Location
+================================================== -->
+                            <section id="lms-location" class="doc-section">
+                                <h2>LMS Location</h2>
+                                <p>Location Taxonomy helps in locating course location. To Enable Course Location, Go to Vibe option panel->course manager->Enable Course Location.</p>
+                                <ul>
+                                    <li>Go to Lms->Locations->Add new locations</li>
+                                    <li>In your courses, you can select the course location</li>
+                                </ul>
+                            </section>
+
+<!-- Course Creation Module
+================================================== -->
+                            <section id="course-creation-module" class="doc-section">
+                                <h2>Course Creation Module</h2>
+                                <p>In this module, you'll learn about full course creation module including adding unit, unit creation, questions creation, creating assignments, creating events, etc.</p>
+                                <ol>
+                                    <li>
+                                        <h3><strong>Creating Questions</strong></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>Adding a New Question</strong>
+                                                <ul>
+                                                    <li>Login to Admin Panel. Go to LMS section and click on All Questions.</li>
+                                                    <li>Now click on Add New button.</li>
+                                                    <li>Now fill in the reference name of the question like “Maths Quiz1 Question1″ etc, naming your question helps in putting up questions together while making a quiz. After naming, enter the question in the editor area.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Question Settings</strong>
+                                                <ul>
+                                                    <li><strong>Question Type: </strong> Select question type here. You can select from Multiple Choice (Select one from options), Multiple Correct(There can be multiple answers), Select Drop down, Fill in the blank, Match answers, Sort answers, Small Text(One Word or Sentence), Large Text(Essay Type Questions).</li>
+                                                    <li><strong>Question Options : </strong> Enter option by clicking on Add More. You can arrange the order of the options by dragging the small arrow button(in blue) on left hand side of the option number.</li>
+                                                    <li><strong>Correct Answer: </strong> For Single/ Multiple choice, enter the correct answer choice number and separated by comma in case of multiple answers. In case of Small Text, enter the full complete answer in the space given. This would help the instructor to evaluate quiz after it is completed and submitted by the student.</li>
+                                                    <li><strong>Answer Hint :</strong>Add a hint or clue to show to students.</li>
+                                                    <li><strong>Answer Explanation :</strong>Add an explanation for your answer.</li>
+                                                    <li><strong>Title Background Image :</strong>Add a background Image for your title which gives you better look and feel.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Finishing Question :</strong> Add a question tag for your question and publish.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Creating Quizzes</strong></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>Adding a New Quiz</strong>
+                                                <ul>
+                                                    <li>Login to Admin Panel. Go to LMS section and click on All Quizes.</li>
+                                                    <li>Now click on Add New button.</li>
+                                                    <li>Now fill in the details like Quiz Name in the heading of the post, and the instructions or any other information like type and questions you want to tell users before they head for the quiz in the editor area. The editor area is same as that for posts, pages and supports WordPress native audio and videos.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Quiz Settings</strong>
+                                                <ul>
+                                                    <li><strong>Quiz Subtitle: </strong>Enter a subtitle of the quiz here. The description comes below the Quiz name.</li>
+                                                    <li><strong>Connected Course : </strong> The courses connected with that particular quiz.</li>
+                                                    <li><strong>Quiz Duration: </strong> Select the total duration of the quiz in minutes. The time will set accordingly in the timer.</li>
+                                                    <li><strong>Quiz Duration Parameter :</strong>Selects the parameter for duration(minutes, seconds etc).
+                                                    </li>
+                                                    <li><strong>Auto Evaluate Results :</strong>As soon as quiz is completed, results are evaluated.</li>
+                                                    <li><strong>Post Quiz Message :</strong>The message box appears after the quiz has been completed by the students.</li>
+                                                    <li><strong>Add Check Answer Switch :</strong>Instantly check answer answer when question is marked.</li>
+                                                    <li><strong>Dynamic Quiz :</strong>Dynamic quiz automatically selects questions.</li>
+                                                    <li><strong>Dynamic Quiz Question Tags :</strong>Select Question tags from where questions will be selected for the quiz.(required if dynamic enabled)</li>
+                                                    <li><strong>Randomize Quiz Questions :</strong>Random Question sequence for every quiz.</li>
+                                                    <li><strong>Quiz Questions :</strong>Add the quiz questions here. The question here appears from the All questions that has been created by the instructor. Since the question database is common so the column shows all the questions created by all the instructors. So, it is very important to give a meaningful and identifiable question name while creating a question.</li>
+                                                    <li><strong>Title Background Image :</strong>Add a background Image for your title which gives you better look and feel.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Create Units</strong></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>Adding a New Unit</strong>
+                                                <ul>
+                                                    <li>Login to Admin Panel. Go to LMS section and click on All units.</li>
+                                                    <li>Now click on Add New button.</li>
+                                                    <li>Now fill in the details like Unit Name in the heading of the post, and the instructions or any other information like type and questions you want to tell users before they head for the quiz in the editor area. The editor area is same as that for posts, pages and supports WordPress native audio and videos.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Unit Settings</strong>
+                                                <ul>
+                                                    <li><strong>Unit Description: </strong>Enter a small list/description of the unit here. The description comes below the heading of the Unit.</li>
+                                                    <li><strong>Unit Type: </strong>Select unit type from General(Simple Text Unit) , Audio, Video or Podcast. Selecting the unit type comes handy in course curriculum where the unit icons are shown based on this selection i.e. in case of a video unit, a video icon will be shown along with the unit name in the course curriculum.</li>
+                                                    <li><strong>Free Unit: </strong>Select Free Unit Show or Hide. Show option makes the Unit as free and allow users to see the unit for non logged in users before purchasing the course.</li>
+                                                    <li><strong>Unit Duration: </strong>Enter the estimate of the duration of the course in Minutes.</li>
+                                                    <li><strong>Unit Duration Parameter: </strong>Selects the parameter for duration(minutes, seconds etc).</li>
+                                                    <li><strong>Unit Forum: </strong>BbPress Forum can be connected to an individual unit from here. Select the Unit forum or Course Forum or any other forum instructor wish to connect with this Unit. Forums are useful for instructor and students interaction, clearing the doubts and creating a social connection within the group opting the course.</li>
+                                                    <li><strong>Connect Assignments: </strong>Add assignments in a particular unit for students.</li>
+                                                    <li><strong>Attachments: </strong>Add attachments, so students can view and download thise attachments from the unit.</li>
+                                                    <li><strong>Link for Playground: </strong> Put Link on Playground Button</li>
+                                                    <li><strong>Access Date: </strong>Date on which unit is accessible.</li>
+                                                    <li><strong>Access Time: </strong>Time after which unit is accessible.</li>
+                                                    <li><strong>Title Background Image: </strong>Add background image for title.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Create Assignments</strong></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>Description</strong> Assignments are an integral part of course which represent homework or offline work job which require a longer duration of time in days and are manually evaluated by instructors.
+                                                <ul>
+                                                    <li>Assignments are like questions with timer and upload functionality.</li>
+                                                    <li>The assignment timer runs for days</li>
+                                                    <li> The assignments are manually evaluated by instructor. </li>
+                                                    <li>The assignments can be connected to a Unit or an Event. </li>
+                                                    <li>Assignment can also be included in courses for course evaluation, that is when the course is evaluated the cumulative percentage of all the quizzes and assignments will be calculated for auto-eveluate courses. For manual evaluation, assignment marks will be shown along with quiz marks for grading purpose.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Creation</strong>
+                                                <ul>
+                                                    <li>Login to<em> Admin</em> Panel</li>
+                                                    <li>Go to <em>LMS</em> section and click on All Assignments</li>
+                                                    <li>Now click on <em>Add New</em></li>
+                                                    <li>Now fill in the details like Assignment Name in the heading of the post, and the question of the assignment. The question can include multimedia like images, audio and videos.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Assignment Settings</strong>
+                                                <ul>
+                                                    <li><strong>Assignment Sub-title: </strong>Enter a sub-title for the assignment. Sub title is an important description text shown below the Assignment title.</li>
+                                                    <li><strong>Sidebar: </strong>Select a sidebar which appears below the timer.</li>
+                                                    <li><strong>Assignment Max-Marks: </strong>Marks for assignment, required if you're adding the assignment in a course for evaluation.</li>
+                                                    <li><strong>Assignment Maximum Time limit ( Days ): </strong>Set the maximum time for the assignment timer. The assignment is automatically submitted when the timer expires.</li>
+                                                    <li><strong>Assignment Duration parameter: </strong></li>
+                                                    <li><strong>Include in Course Evaluation: </strong> If set to yes, assignment marks will be included in course for calculating cumulative percentage based on which badges and certificates are awarded to students.</li>
+                                                    <li><strong>Include in Course: </strong>Include this assignment in a course.</li>
+                                                    <li><strong>Assignment Submissions: </strong>Select a Assignment submissions type. Upload file or text only.</li>
+                                                    <li><strong>Attachment Type: </strong>If Assignment submission is "upload file" then select permissible attachment types. This is an important setting as it detects the type of file uploaded and secures the upload functionality. This functionality however requires few functions to be installed in the server, if you've seen the notification on assignments and you want to use the upload functionality you need to contact your webhost to enable these functions.</li>
+                                                    <li><strong>Attachment Size (in MB): </strong>limit the maximum attachment size but size should be less than 20mb.</li>     
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Create Events</strong></h3>
+                                        <ul>
+                                            <li>??</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Create Courses</strong></h3>
+                                        <p>A course is  said to be complete, after units, quizzes are added to it.Follow the steps to create a course.</p>
+                                        <ul>
+                                            <li>
+                                                <strong>Adding a New Course</strong>
+                                                <ul>
+                                                    <li>Login to<em> Admin</em> Panel</li>
+                                                    <li>Go to <em>LMS</em> section and click on All Courses</li>
+                                                    <li>Now click on <em>Add New</em></li>
+                                                    <li>Now fill in the details like Course Name in the heading of the post, and the description for the course. The course can include multimedia like images, audio and videos.</li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <strong>Course Settings</strong>
+                                                <ul>
+                                                    <li><strong>Sidebar</strong>: Select the sidebar you want to place in the course page. Sidebars are created in the section Appearance-&gt;Widgets by the administrator.</li>
+                                                    <li><strong>Total Duration of Course:</strong> Total duration of the course is the total time for which the student can access the course by logging into the site. After the duration has expired, the user will not be able to view the course content.</li>
+                                                    <li><strong>Course Duration Parameter</strong>: Set the duration parameter for course.</li>
+                                                    <li><strong>Total Number of Students in Course</strong>: Initially while creating the course the number of students is set to 0.</li>
+                                                    <li><strong>Unit Completion Lock</strong>: Previous Units/Quiz must be Complete before next unit/quiz access</li>
+                                                    <li><strong>Offline Course</strong>: Make this an Offline Course</li>
+                                                    <li><strong>Show Unit Content in curriculum</strong>: Display units content in Course Curriculum, unit content visible in curriculum. ( Recommended for Offline Courses )</li>
+                                                    <li><strong>Hide Course Button After Subscription</strong>: Hide Start Course/Continue Course button after Course is subscribed by user. ( Recommended for Offline Courses)</li>
+                                                    <li><strong>Display Course Progress on Course home </strong>: Display a progress bar on your coures home page.</li>
+                                                    <li><strong>Time based Course Progress </strong>: Automatically generate course progress based on duration (number of months/weeks/days/hours) passed in course</li>
+                                                    <li><strong>Post Course Reviews from Course Home </strong>: Allow subscribed users to post Course reviews from Course home page.</li>
+                                                    <li><strong>Auto Evaluation </strong>: Evalute Courses based on Quizzes scores available in Course.</li>
+                                                    <li><strong>Course Start Date </strong>: Date from which Course Begin</li>
+                                                    <li><strong>Maximum Students in Course </strong>: Maximum number of students who can pursue the course at a time.</li>
+                                                    <li><strong>Excellence Badge</strong>: The badges are given on completion of the course and after achieving a certain percentage in the quiz i.e. the Badge Percentage which can be adjusted in the next setting. It is not necessary that every course taker will get the badge.</li>
+                                                    <li><strong>Badge Percentage</strong>: This is the minimum percentage required by the students to have a badge for the course.</li>
+                                                    <li><strong>Badge Title:</strong> You can set the title for the badge given after completion of the course like for a Maths course, you can set the title as Maths Champion which a student will get only after receiving the Badge Percentage .</li>
+                                                    <li><strong>Completion Certificate</strong>:&nbsp; If set Show, after the course is completed each student who passes the course will get this certificate of completion which is printable as well as downloadable. You can design the certificate according to your requirements.Follow the tutorial in the relevant section.Even after the course has expired the student can log in and view/print/download her certificate of completion.</li>
+                                                    <li><strong>Certificate Template</strong>: Select certificate template of your own choice.</li>
+                                                    <li><strong>Passing Percentage:</strong> The minimum percentage required to pass the course.</li>
+                                                    <li><strong>Drip Feed:</strong> Enable Drip Feed Course.</li>
+                                                    <li><strong>Course Starting Time as Drip Feed Origin:</strong> Drip feed time calculation from Course starting date/time vs previous unit access date/time (default)</li>
+                                                    <li><strong>Section Drip Feed:</strong> Enable Section Drip feed</li>
+                                                    <li><strong>Drip Duration as Unit Duration:</strong> Assume Drip duration same as Unit Duration. Duration between consecutive units</li>
+                                                    <li><strong>Drip Feed Duration (Static):</strong> Static duration, if Drip duration not equals Unit duration. This is the duration between consecutive Drip feed units (in Days)</li>
+                                                    <li><strong>Drip Duration parameter:</strong> The minimum percentage required to pass the course.</li>
+                                                    <li><strong>Course Curriculum :</strong></li>
+                                                    <li><strong>Prerequisite Course :</strong></li>
+                                                    <li><strong>Course Retakes :</strong></li>
+                                                    <li><strong>Course Forums :</strong></li>
+                                                    <li><strong>Course Group :</strong></li>
+                                                    <li><strong>Course Specific Instructions :</strong></li>
+                                                    <li><strong>Course Completion Message :</strong></li>
+                                                    <li><strong>Force Batch Enrollment :</strong></li>
+                                                    <li><strong>Batch Display :</strong></li>
+                                                    <li><strong>Hide Expired Batches :</strong></li>
+                                                    <li><strong>Set Finish Course Label :</strong></li>
+                                                    <li><strong>Title Background Image :</strong></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Free Courses</strong></h3>
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </section>
 
                             
                         </div><!--//content-inner-->
@@ -332,10 +881,27 @@ javascript code:</p>
                     <div class="doc-sidebar">
                         <nav id="doc-nav">
                             <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
-                                <li><a class="scrollto" href="#chartjs">Chart.js</a></li>
-                                <li><a class="scrollto" href="#flot">Flot Charts</a></li>
-                                <li><a class="scrollto" href="#morris">Morris.js</a></li>
-                                <li><a class="scrollto" href="#inline">Inline Charts</a></li>
+                                <li><a class="scrollto" href="#role">Role</a></li>
+                                <li>
+                                    <a class="scrollto" href="#general-settings">LMS Settings</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#general-settings">General Settings</a></li>
+                                        <li><a class="scrollto" href="#api-settings">API Settings</a></li>
+                                        <li><a class="scrollto" href="#commission-settings">Commission Settings</a></li>
+                                        <li><a class="scrollto" href="#lms-functions">LMS Admin Functions</a></li>
+                                        <li><a class="scrollto" href="#import-export">Import/Export WPLMS Elements</a></li>
+                                        <li><a class="scrollto" href="#touch-points">Touch Points</a></li>
+                                        <li><a class="scrollto" href="#emails">Emails</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="scrollto" href="#lms-tree">LMS Tree</a></li>
+                                <li><a class="scrollto" href="#lms-course-navigation">LMS Course Navigation</a></li>
+                                <li><a class="scrollto" href="#lms-course-category">LMS Course Category</a></li>
+                                <li><a class="scrollto" href="#lms-quiz-type">LMS Quiz Type</a></li>
+                                <li><a class="scrollto" href="#lms-unit-tag">LMS Unit Tag</a></li>
+                                <li><a class="scrollto" href="#lms-level">LMS Level</a></li>
+                                <li><a class="scrollto" href="#lms-location">LMS Location</a></li>
+                                <li><a class="scrollto" href="#course-creation-module">Course Creation Module</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->

@@ -1265,3 +1265,10 @@ select {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+
+.nav.doc-menu li > .nav.doc-sub-menu{
+  display:none;
+}
+.nav.doc-menu li.active > .nav.doc-sub-menu{
+  display:block;
+}
