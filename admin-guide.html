@@ -2041,6 +2041,164 @@
 ================================================== -->
                             <section id="question" class="doc-section">
                                 <h2>Question Shortcodes</h2>
+                                <p>These shortcodes are required while making questions of different types.</p>
+                                <ul>
+                                    <li>
+                                        <strong>Fillblank :</strong> Displays a fill in the blank section in the question content where it is placed.
+                                        <pre>This is the question, fill this blank [fillblank]</pre>
+                                    </li>
+                                    <li>
+                                        <strong>Select :</strong> Displays a select dropdown. The dropdown shows the options set in the question
+                                        <pre>Select the answer to this question [select]</pre>
+                                    </li>
+                                    <li>
+                                        <strong>Match :</strong> Displays the grid in which Match elements are put. The match elements are generated from the question options.
+                                        <pre>???</pre>
+                                    </li>     
+                                </ul>
+                            </section>
+
+
+<!-- Certificate Shortcodes
+================================================== -->
+                            <section id="certificate" class="doc-section">
+                                <h2>Certificate Shortcodes</h2>
+                                <p>These shortcodes are required for making certificates.</p>
+                                <ul>
+                                    <li>
+                                        <strong>certificate_student_name :</strong> Displays the name of the student in the certificate
+                                        <pre>[certificate_student_name]</pre>
+                                    </li>
+                                    <li>
+                                        <strong>certificate_student_photo :</strong> Displays students photo in the shortcode or if student id is passed then returns the photo of the user.
+                                        <pre>[certificate_student_photo]</pre>
+                                    </li>
+                                    <li>
+                                        <strong>certificate_student_email :</strong> Displays student email in certificate.
+                                        <pre>[certificate_student_email]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>certificate_student_marks :</strong> Displays marks of student in the course on the certificate.
+                                        <pre>[certificate_student_marks]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>certificate_student_field :</strong> Displays custom information frmo student profile. Requires the name of the field.
+                                        <pre>[certificate_student_field field="name"]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>certificate_student_date :</strong> Displays certificate student date.
+                                        <pre>[certificate_student_date]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>certificate_code :</strong> Displays certificate code for the student.
+                                        <pre>[certificate_code]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>course_instructor :</strong> Displays Course instructor name on the certificate.
+                                        <pre>[course_instructor]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>certificate_course_duration :</strong> Displays Course Duration on the certificate.
+                                        <pre>[certificate_course_duration]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>certificate_course_field :</strong> Displays Course name on the certificate.
+                                        <pre>[certificate_course_field]</pre>
+                                    </li> 
+                                    <li>
+                                        <strong>show_certificates :</strong> Display All the certificates alloted to the student.
+                                        <pre>[show_certificates]</pre>
+                                    </li>
+                                    <li>
+                                        <strong> course_completion_date :</strong> Displays Course instructor name on the certificate. 
+                                        <pre>[course_completion_date] </pre>
+                                    </li>  
+                                </ul>
+                            </section>
+
+<!-- Site Stats Shortcodes
+================================================== -->
+                            <section id="site-stats" class="doc-section">
+                                <h2>Site Stats Shortcodes</h2>
+                                <p>These shortcodes are required if you want to display site stats on pages.</p>
+                                <ul>
+                                    <li>
+                                        <strong>vibe_site_stats :</strong> Displays site stats.
+                                        <pre>Parameters:
+                                              total : Displays total number of users in site
+                                              courses : Displays total number of courses in site
+                                              instructor : display total number of instructors in site
+                                              groups : display total number of groups
+                                              subscriptions : Total number of course subscriptions by all users
+                                              sales : Total sales amount of courses
+                                              commissions: total commission earned by instructors
+                                              posts : Total number of blog posts published
+                                              comments : Total number of comments on the blog posts</pre>
+
+                                              <p>Sample Use :</p><pre>[vibe_site_stats total=1 courses=1 instructor=1 groups=1 subscriptions=1 sales=1 commissions=1 posts=0 comments =0]</pre>
+                                              <p>This will return the total "number" of members, which can be used with the counter shortcode.</p>
+                                              <pre>[vibe_site_stats members=1 number=1]</pre>
+                                    </li>
+                                </ul>
+                            </section>
+
+<!-- WooCommerce
+================================================== -->
+                            <section id="woocommerce" class="doc-section">
+                                <h2>Selling Courses with WooCommerce</h2>
+                                <p>WPLMS is deep integrated with WooCommerce, which makes WPLMS a very powerful combination to sell courses online. You can add unlimited WooCommerce plugins, Payment gateways, WooCommerce Affiliate system and take full advantage of it in WPLMS.
+                                </p>
+                                <p>WPLMS allows only Administrators to create new products. Each product can be connected to many courses and sold as an individual product or a subscription product.</p>
+
+                                <ol>
+                                    <li>
+                                        <strong>Creating Products :</strong> To create a product simply Login as Administrator in WPLMS site. Follow below instructions to create a new product : 
+                                        <ul>
+                                            <li>In WordPress Admin click on Products -> Add New</li>
+                                            <li>Add a title to the Product and add some description to the product</li>
+                                            <li>You'll notice a Product Course settings meta box, add the desired courses in the metabox</li>
+                                            <li>If you want the Pricing to be considered as a subscription, enable subscription.</li>
+                                            <li>If subscription is enabled then add the subscription days.</li>
+                                            <li>In Product data : General : Mark the product as Virtual and Downloadable.</li>
+                                            <li>In Product Data : Inverntory : Select Sold individually.</li>
+                                            <li>In Product Data : Advanced : Disable Reviews. As this could be confusing for the user.</li>
+                                            <li>Add Product featured image and some gallery images.</li>
+                                            <li>Enter the Price of the Product and Publish the product.</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms-prd1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms-prd1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms-prd1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms-prd3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms-prd3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms-prd3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>  
+                                    </li>
+                                    <li>
+                                        <strong>Connecting Courses :</strong>
+                                        <ul>
+                                            <li>Once the product is published, you can connect the product back to the course.</li>
+                                            <li>A course can be connected to a single product, while a product can be connected to many products.</li>
+                                            <li>The connected product is shown when the user clicks on Take this course button in single course screen.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Managing Orders :</strong>
+                                        <ul>
+                                            <li>Once a student has placed an order, the access to the course in not given untill the order has been marked as complete.</li>
+                                            <li>If the student uses Paypal as payment mode then the order is marked complete when user migrates from the thank you page. So, Paypal as payment mode works as expected which we have tested on the Demo site as well. However, same is not valid for other Payment modes.</li>
+                                            <li>For Payment Modes like Bank Transfer, Cheque the Administrator has to Manually Approve orders in WP Admin -> WooCommerce -> Orders Section</li>
+                                            <li>To Approve an order Administrator clicks on the Tick in front of the order to mark the order complete. Once the order is marked complete only then the Student gets access to the course.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
                             </section>
 
                         </div><!--//content-inner-->
@@ -2123,6 +2281,7 @@
 										<li><a class="scrollto" href="#site-stats">Site Stats</a></li>
 									</ul>
 								</li>
+                                <li><a class="scrollto" href="#woocommerce">WooCommerce</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
