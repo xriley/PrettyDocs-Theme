@@ -67,18 +67,18 @@
                                     </div>
                                     <h3 class="question"><i class="fa fa-question-circle"></i> Upload issue, Are you sure you want to do this ?</h3>
                                     <div class="answer">
-                                    <p>While uploading the theme if you see an issue like the image below</p>
-                                    <img src="images/areyousureerror.jpg" alt="wordpress upload limit issue wplms" />
-                                    <p>It means that the upload limit of your server is less than the size of the theme. The theme size is around ~32mb, so make sure the upload limit of your server is more than this.</p>
-                                    <p>You may need to contact your hosting company or web host and ask them to increase this limit. Other alternatives include <a href="installation.html#ftp-upload">installation via FTP</a> and <a href="installation.html#cpanel-upload">installation via cPanel</a></p>
-
+                                        <p>While uploading the theme if you see an issue like the image below</p>
+                                        <img src="images/areyousureerror.jpg" alt="wordpress upload limit issue wplms" />
+                                        <p>It means that the upload limit of your server is less than the size of the theme. The theme size is around ~32mb, so make sure the upload limit of your server is more than this.</p>
+                                        <p>You may need to contact your hosting company or web host and ask them to increase this limit. Other alternatives include <a href="installation.html#ftp-upload">installation via FTP</a> and <a href="installation.html#cpanel-upload">installation via cPanel</a></p>
                                     </div>
                                     <h3 class="question"><i class="fa fa-question-circle"></i> White screen or Fatal Error ?</h3>
                                     <div class="answer">White screen or Fatal error issue can occur because of following incompatibilities with your server settings :
-                                    <ol>
-                                        <li>PHP version 5.3 or less</li>
-                                        <li>PHP memory limit less than 128 mb or less than the server requirements. <a href="#how_much_php_memory">how to check this ?</a></li>
-                                    </ol>
+                                        <ol>
+                                            <li>PHP version 5.3 or less</li>
+                                            <li>PHP memory limit less than 128 mb or less than the server requirements. <a href="#how_much_php_memory">how to check this ?</a></li>
+                                            <li>Check your file persmission(set as 644) and folder permission(755)</li>
+                                        </ol>
                                     </div>
                                 </div><!--//section-block-->
                                 <div class="section-block" id="how_much_php_memory">
@@ -88,14 +88,56 @@
                                     <img src="assets/images/memoryexhuastederror.png">
                                     </div>
                                 </div><!--//section-block-->
+
+                                <div class="section-block" id="ajax error">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Ajax Error ?</h3>
+                                    <div class="answer">
+                                    <p>While setting up the theme, if you found an ajax error, this is not an error if it is visible on few. while installing plugins some plugins redirects, so we stop those redirections. You can ignore this and continue setting up your theme.</p>
+                                    </div>
+                                </div><!--//section-block-->
+
+                                <div class="section-block" id="slider re-import">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Slider is not Visible</h3>
+                                    <div class="answer">
+                                    <p>If Your Slider is not visible, you can swich the demo through demo switcher. Refer : <a href="https://www.youtube.com/watch?v=3twsjnelAAM" target="_blank">Link</a></p>
+                                    </div>
+                                </div><!--//section-block-->
+
+                                <div class="section-block" id="menu not visible">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Menu is not visible</h3>
+                                    <div class="answer">
+                                    <p>Sometimes it may happen that your menus are not visible. This happens due to id mismatched of menus as well as pages.
+                                    To resolve this issue, you need to manually set the menus and their display location. Go to wp-admin > Appearance > Menus > Set the menus and their display location. </p>
+                                    <p>Follow the tutorial : <a href="admin-guide.html#menu-setup" target="_blank">Menu Setup</a></p>
+                                    </div>
+                                </div><!--//section-block-->
+
+                                <div class="section-block" id="image missing">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Course Image Missing</h3>
+                                    <div class="answer">
+                                    <p>Sometimes it may happen that your course image is missing. This happens due to id mismatch. To resolve this issue, go to wp-admin > All courses > edit course > Set feature Image and save your course.</p>
+                                    </div>
+                                </div><!--//section-block-->
                             </section><!--//doc-section-->
+
+                            <section id="others" class="doc-section">
+                                <h2 class="section-title">Others</h2>
+                                <div class="section-block" id="take this course redirecting">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Take this course button redirecting to 404 page</h3>
+                                    <div class="answer">
+                                    <p>First check your course status page is set or not from wp-admin > settings > Buddypress > Pages.
+                                    If page is set then go to settings > permalinks > click on save permalinks. Sometimes redirection of a page on 404 occur due to permalinks.</p>
+                                    </div>
+                                </div><!--//section-block-->
+                            </section>
                                                         
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
                     <div class="doc-sidebar">
                         <nav id="doc-nav">
                             <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
-                                <li><a class="scrollto" href="#general">General</a></li>
+                                <li><a class="scrollto" href="#general">Installation & setup</a></li>
+                                <li><a class="scrollto" href="#others">Others</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
