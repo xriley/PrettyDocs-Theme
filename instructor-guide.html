@@ -1080,10 +1080,58 @@
                                         
                                     </li>
                                     <li>
-                                        
+                                        <h3>Create Settings</h3>These are vital settings for the course, which needs to be configured.
+                                        <ul>
+                                            <li><strong>Maximum Course Duration</strong> Maxmimum duration of course in days. Entering a value of  9999 or above shows "unlimited access" as time duration for course.</li>
+                                            <li><strong>Course Evaluation mode</strong> Set evaluation mode for course.</li>
+                                            <li><strong>Pre Required course</strong> Set a pre required course for the course. The course selected here, needs to submitted and evaluated in order to get started with this course.</li>
+                                            <li><strong>Drip Feed</strong><p> Enable Drip feed for course.</p>
+                                            <ul>
+                                            <li><strong>Drip Duration</strong> Set Drip duration for the course. The drip duration is time period between successive units.</li>
+                                            </ul>
+                                            </li>
+                                            <li><strong>Course Certificate</strong><p>Enable Course certifiacte</p>
+                                            <ul>
+                                            <li><strong>Certificate Percentage</strong> Set percentage out of 100. If students cumulative percentage of all quizzes and assignments is more than the value set here, she will get the certificate.</li>
+                                            <li><strong>Certificate Template</strong> Set a certificate template</li>
+                                            </ul>
+                                            </li> 
+                                            <li><strong>Course Badge</strong></li><p>Enable Badges for course</p>
+                                            <ul>
+                                            <li><strong>Badge Percentage</strong> Set percentage out of 100. If students cumulative percentage of all quizzes and assignments is more than the value set here, she will get the badge.</li>
+                                            <li><strong>Badge Title</strong> Add a title for the Badge. This title appears when user hovers over the badge.</li>
+                                            <li><strong>Badge Image</strong> Upload a Badge image. This is required to enable Badge for the course.</li>
+                                            </ul></li>
+                                            <li><strong>Number of Seats</strong> Enter Number of seats for the course. The Seats comprise of students currently taking the course. Once the seats are filled, a new student would not be able to join the Course.</li>
+                                            <li><strong>Start Date</strong> Set a Start date of the course. If set to a future date, the Course begins when the Start date arrives, that is student will be able to join the course only after the start date. </li>
+                                            <li><strong>Course Group</strong> Connect a group, if creating a new course it is recommended that you create a new group for the course. By default the group created is a private group only accessible to students taking the course.</li>
+                                            <li><strong>Course Retakes </strong> Enter number of retakes a student can make of that particular course</li>
+                                            <li><strong>Course Forum</strong> Connect a forum, if creating a new course it is recommended that you connect the group forum for the course.This will create a private group forum for the above group only accessible to students taking the course and in the group.</li>
+                                            <li><strong>Course Completion message</strong> Enter a Completion message, which is shown to user when the user finishes the course or submits the course for evaluation.</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        
+                                        <h3>Set Curriculum</h3>
+                                        <ul>
+                                            <li><strong>ADD SECTION</strong> Add a new section in the curriculum. Clicking this button would add a Text box in the curriculum section. Enter the section title in the box.</li>
+                                            <li><strong>ADD UNIT</strong> Add a unit in the curriculum. Clicking this button would add a select box showing all the units. If instructor privacy is enabled then all the units created by instructor will be shown in the select box. To add a new unit select "Add New Unit" in the select box, which will show a input box. Enter the title of the unit in the input box and select Publish from the dropdown beside the unit. Once published the unit will be published and the dropdown controls will now show edit unit. Clicking on edit in the dropdown controls would take the user to the unit editing screen.  Clicking on Delete would remove the unit from the databse. Clicking on remove will remove the unit form the curriculum.</li>
+                                            <li><strong>ADD QUIZ</strong> Add a Quiz in the curriculum. Clicking this button would add a select box showing all the quizzes. If instructor privacy is enabled then all the quizzes created by instructor will be shown in the select box. To add a new quiz select "Add New Quiz" in the select box, which will show a input box. Enter the title of the Quiz in the input box and select Publish from the dropdown beside the unit.Once published the quiz will be published and the dropdown controls will now show edit quiz. Clicking on edit in the dropdown controls would take the user to the quiz editing screen. Clicking on Delete would remove the quiz from the databse. Clicking on "remove" will remove the quiz form the curriculum.</li>
+                                            <li><strong>Save Curriculum</strong> Unless the Course curriculum is saved, the new units created and added are not a part of the course curriculum.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Pricing</h3>
+                                        <ul>
+                                            <li><strong>Free Course</strong> Set the course as Free. A free is available to all students accessing the course.</li>
+                                            <li><strong>Set a Course Product</strong> 
+                                            <ul><li>Select an existing product if instructor want to sell the course as a combination of courses.</li>
+                                            <li>Select "No Product" to keep the course as private and manually control the Students for course</li>
+                                            <li> Select "ADD NEW PRODUCT" to create a new product and set the mode and pricing. If mode is set to subscription set the duration of subscription in days. If subscription is not enabled then the subscription duration is set as course duration. When a student purchases a course the subscription duration is set for the student. The access to the course is limited by subscription duration of the course, post which the course goes into expired state and student has to re purchase a course product to continue with the course again.</li>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Publish Course</h3>  Publish the course. If Administrator has given access to publish the course then the course will be published, otherwise it will go into pending state, which the administrator needs to manually check and turn the status to Published.
                                     </li>
                                     <div class="row">
                                         <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1103,9 +1151,89 @@
                                 </ol>
                             </section>
 
+<!-- Editing Units
+================================================== -->
+                            <section id="edit-units" class="doc-section">
+                                <h2>Editing units</h2>
+                                <p>Units can be edited from the Course Curriculum unit controls or directly from the Edit Page control in the WP Admin bar.</p>
+                                <ul>
+                                    <li>When the unit is in edit mode, the content can be directly added in the unit using the front end interface.</li>
+                                    <li>Unit settings need to be saved first before clicking on update the unit content.</li>
+                                    <li>Unit settings 
+                                    <ul>
+                                    <li><strong>Unit Type</strong> Select a unit type. This shows a symbol in the course curriculum corresponding to units.</li>
+                                    <li><strong>Make Unit Free</strong> Set a unit free. A Free unit is accessible to the world, including non-registered members and search engine bots.</li>
+                                    <li><strong>Duration of unit</strong> Set a suggestive duration of a unit. Only for display purpose.</li>
+                                    <li><strong>Connect Assignment</strong> Connect an assignment to a unit or create a new one.</li>
+                                    <li><strong>Connect a Forum</strong> Connect a forum with the unit or create a new one in the course forum.</li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </section>
+<!-- Editing Quiz
+================================================== -->
+                            <section id="edit-quiz" class="doc-section">
+                                <h2>Editing Quiz</h2>
+                                <p>Quiz can be edited from the Course Curriculum Quiz controls or directly from the Edit Page control in the WP Admin bar.</p>
+                                <ul>
+                                    <li>When the Quiz is in edit mode, the Quiz instructions content  can be directly added in the unit using the front end interface.</li>
+                                    <li>Quiz settings need to be saved first before clicking on update the unit content.</li>
+                                    <li>Quiz settings 
+                                        <ul>
+                                            <li><strong>Quiz Subtitle</strong> Enter a sub-title for quiz. This sub-title is shown below quiz title.</li>
+                                            <li><strong>Connected Course</strong> Optionally select a connected course. Once connected the quiz will show a back to course button.</li>
+                                            <li><strong>Quiz Duration</strong> Set a duration of the quiz. This duration sets the timer.</li>
+                                            <li><strong>Quiz Evaluation</strong> Set quiz evaluation mode, automatic or manual. If set to automatic make sure all question types adhere to the settings done in Options panel -> Course manager -> Auto evaluate questiont types. </li>
+                                            <li><strong>Quiz Retakes</strong> Set quiz re-takes this allows student to retake a quiz</li>
+                                            <li><strong>Quiz Completion message</strong> Set a completion message. This message is shown to the user when user submits the quiz.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>MANAGE QUIZ QUESTIONS :</strong>Use this section to manage questions in the quiz.
+                                    <ul>
+                                    <li><strong>ADD Question</strong> Add Question using this button. A select box with questions will appear. If instructor privacy is enabled then all question created by instructor will be shown in the dropdown.</li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </section>
+
+<!-- Editing Ques
+================================================== -->
+                            <section id="edit-ques" class="doc-section">
+                                <h2>Editing Question</h2>
+                                <p>Questions can be edited from the quiz timeline or by adding <i>?edit</i> in the Question link. Once a question is in edit mode, it'll show question settings.</p>
+                                <ul>
+                                  <li><strong>Question Type</strong> : Select the question type our of following option types. <ul>
+                                  <li>Multiple Choice Single Answer : Requies options and only one choice can be marked as answer. Correct answer is entered as a single number like 1. Or simply by clicking on the option number.</li>
+                                  <li>Multiple Choice Multiple Answer : Requires options and multiple choices can be marked as answer. Correct answer is marked as multiple choice number saperated by comma as 1,2. Or simply by clicking on the option numbers.</li>
+                                  <li>Sort Answers :  Requires options and the order of options to be marked as answers like : 1,2,3,4</li>
+                                  <li>Single line text : Does not require options, correct answer needs to be marked</li>
+                                  <li>Multi Line text : </li>
+                                  </ul></li>
+                                  <li><strong>Add Options</strong> : Clicking on this button adds a new option with text input box. The text box acts as the option holder.</li>
+                                  <li><strong>Correct Answer</strong> : The correct answer for a question. If the quiz is auto evaluation mode, it needs to be configured properly. For multiple choice question it is suggested to click on option number to fill the correct answer</li>
+                                </ul>
+                            </section>
+
+<!-- Editing Assignment
+================================================== -->
+                            <section id="edit-assgn" class="doc-section">
+                                <h2>Editing Assignment</h2>
+                                <p>Assignments can be edited from the "Edit Assignments" link in the edit unit page or directly by adding <i>?edit</i> to the assignment URL. Once in edit mode, it will show following settings : </p>
+                                <ul>
+                                  <li><strong>Subtitle</strong> : Enter a assignment Subtitle.</li>
+                                  <li><strong>Assignment Maximum Marks</strong> : Enter Maximum marks for assignment.</li>
+                                  <li><strong>Assignment Duration</strong> : Assignment Duration in days. Assignment counter end automatically submits the assignment for evaluation.</li>
+                                  <li><strong>Include in Evaluation</strong> : Include this assignment in a course evaluation. If selected, marks of students in this assignment will be included in evaluation of a course. This also restricts students from viewing full assignment. Only students subscribed to the associated course can view the assignment details when they click on start assignment button and the timer starts.</li>
+                                  <li><strong>Assignment Course</strong> : Select a course to which the assignment should be connected. Only applicable if Include in Evaluation is set to yes.</li>
+                                  <li><strong>Submission type</strong> : Select submission type from Upload or Textarea.</li>
+                                  <li><strong>Attachment type</strong> : Select allowed Attachment types, if submission type is set to upload.</li>
+                                </ul>
+                            </section>
+
 <!-- Managing Course
 ================================================== -->
                             <section id="managing-course" class="doc-section">
+                            <h1>Managing Course</h1>
                                 <h2>Evaluate Quiz</h2>
                                 <p>After creating courses Instructor manages the courses. There are various function available to manage courses in the Theme. A course is Managed from the Admin section in Course page.</p>
                                 <ul>
@@ -1142,6 +1270,23 @@
                                     <li>As soon as this button is pressed the user gets a notification and message with the Course Results.</li>
                                     If the Course percentage is above Badge percentage then the user recieves a Badge, if the Course percentage is above the passing percentage then the user recieves a completion certificate.
                                 </ul>
+                            </section>
+
+<!-- Managing Students
+================================================== -->
+                            <section id="manage-students" class="doc-section">
+                                <h2>Managing Students</h2>
+                                <ul>
+                                    <li>An Instructor can reset the full course for any student. The will have to start the course again from the very begining. This can be done form the Course -> Admin screen.</li>
+                                    <li>An Instructor can remove any student from the Course. The student will have to Pruchase the course again to take the course. This can be done form the Course -> Admin screen.</li>
+                                </ul>
+                            </section>
+
+<!-- Course Message
+================================================== -->
+                            <section id="course-message" class="doc-section">
+                                <h2>Course Messaging</h2>
+                                <p>An Instructor can send mass message to the students taking the course.This can be done form the Course -> Admin -> Members screen.</p>
                             </section>
                             
 <!-- Statistics
@@ -1217,6 +1362,17 @@
                                 </div>
                             </section>
 
+<!-- Interaction
+================================================== -->
+                            <section id="interaction" class="doc-section">
+                                <h2>Interaction</h2>
+                                <p>BuddyPress provides a lot of functionality for interaction among students and instructors.</p>
+                                  <h3 id="groups">Groups</h3>
+                                  <p>Every Course taker is added to the course group. There are many useful plugins which can be installed to increase the usability of Groups in LMS. The plugin Group documents enables the Instructor to upload documents, like assignments for the Course group. This is automatically sent to the full course group.</p>
+                                  <h3 id="forums">Forums</h3>
+                                   <p>With the forum WPLMS get a lot of interaction features. A Private forum conencted to the Group can be made as the Course forum. This makes the Forum an exclusive club for the Course Members.</p> 
+                            </section>
+
                             
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
@@ -1244,7 +1400,16 @@
                                 <li><a class="scrollto" href="#lms-level">LMS Level</a></li>
                                 <li><a class="scrollto" href="#lms-location">LMS Location</a></li>
                                 <li><a class="scrollto" href="#course-creation-module">Course Creation Module</a></li>
-                                <li><a class="scrollto" href="#front-end-course">Front End Course</a></li>
+                                <li>
+                                    <a class="scrollto" href="#front-end-course">Front End Course</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#front-end-course">Editing Course</a></li>
+                                        <li><a class="scrollto" href="#edit-units">Editing Units</a></li>
+                                        <li><a class="scrollto" href="#edit-quiz">Editing Quizes</a></li>
+                                        <li><a class="scrollto" href="#edit-ques">Editing Questions</a></li>
+                                        <li><a class="scrollto" href="#edit-assgn">Editing Assignments</a></li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <a class="scrollto" href="#managing-course">Managing Course</a>
                                     <ul class="nav doc-sub-menu">
@@ -1255,6 +1420,7 @@
                                     </ul>
                                 </li>
                                 <li><a class="scrollto" href="#statistics">Statistics</a></li>
+                                <li><a class="scrollto" href="#interaction">Interaction</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
                     </div><!--//doc-sidebar-->
