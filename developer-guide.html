@@ -61,29 +61,41 @@
                             <section id="wplms" class="doc-section">
                                 <h2 class="section-title">WPLMS</h2>
                                 <p>This section describes the functioning of the WPLMS system. WPLMS is a complex system which works on top of several functionalities which are provided by the plugins included in the theme.</p>
-                                  <ul>
-                                    <li><strong>BuddyPress</strong>  : For Members, Groups, Messaging, Directories .</li>
-                                    <li><strong>BBPress</strong>     : For Forums used in the theme.</li>
-                                    <li><strong>WooCommerce</strong> : For selling products which in turn activate course.</li>
-                                    <li><strong>Vibe Course Module</strong> : Link for Courses and BuddyPress .</li>
-                                    <li><strong>Vibe Custom types</strong> : The backend of LMS in WP Admin area.</li>
-                                    <li><strong>Vibe Shortcodes</strong> : All the shortcodes used in the theme.</li>
-                                    <li><strong>WPLMS Assignments</strong> : For assignments functionality .</li>
-                                    <li><strong>WPLMS Front End</strong> : For front end course creation and the front end editor.</li>
-                                    <li><strong>WPLMS Dashboard</strong> : For Dashboards for Instructors and Students .</li>
-                                    <li><strong>EventON Plugin along with WPLMS Eventon </strong> : For Course Events.</li>
-                                    <li><strong>Co Authors Plugin along with WPLMS Co Authors Plus</strong> : To enable multiple instuctors to jointly instruct a course.</li>  
-                                    <li><strong>MyCred Plugin along with WPLMS MyCred Addon</strong> : For credits.</li>
-                                    <li><strong>Bp Social Connect</strong> : For Login and siging up via social networking sites.</li>
-                                </ul>
-                                <p>Each of these plugins covers a specific area, for example, if you want to retain all the data you've created in the theme, you only need to make sure you've installed the Vibe Custom types plugin</p>
                             </section>
 
+<!-- System
+================================================== -->
                             <section id="system" class="doc-section">
                                 <h2 class="section-title">System</h2>
                                 <p>This section would describe how the WPLMS System works.</p>
                                 <ul>
-                                  <li><strong>User Registration</strong> : This section is managed completely by BuddyPress and WordPress. Any page which is connected to the WP Admin - settings - buddypress - pages - registration becomes the registration page. BuddyPress overwrites this page and the content in the page is not loaded. WPLMS only adds styling to the page including the section accordion. This page is not avaiable to logged in users (because they're already registered) and has two sections. The first one is required and asks for User name (login), password and email, the second one section is built using the fields set in the WP Admin -> Users -> User fields section.</li>
+                                  <li><strong>User Registration</strong> : This section is managed completely by BuddyPress and WordPress. Any page which is connected to the WP Admin - settings - buddypress - pages - registration becomes the registration page. BuddyPress overwrites this page and the content in the page is not loaded. WPLMS only adds styling to the page including the section accordion. This page is not avaiable to logged in users (because they're already registered) and has two sections. The first one is required and asks for User name (login), password and email, the second one section is built using the fields set in the WP Admin -> Users -> User fields section.
+                                      <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_settings.png" data-toggle="lightbox"><img class="img-responsive"
+                                                         src="assets/images/demo/buddypress_settings.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_settings.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_settings2.png" data-toggle="lightbox"><img class="img-responsive"
+                                                         src="assets/images/demo/buddypress_settings2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_settings2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                         <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_settings3.png" data-toggle="lightbox"><img class="img-responsive"
+                                                         src="assets/images/demo/buddypress_settings3.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_settings3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                                  </li>
 
                                   <li><strong>Activation</strong> : This section is managed completely by BuddyPress. Any page which is connected to the WP Admin - settings - buddypress - pages - Activate becomes the registration page. BuddyPress overwrites this page and the content in the page is not loaded This page is not avaiable to logged in users (because they're already registered) . Upon successful registration the user gets an email with an activation link, the link is of the format : http://yoursite.com/activation-page-slug/XXXYYY in this link the XXXYYY is the activation code.<br />
                                   When a user registers via BuddyPress it gets stored in the WP Signups table. The signups table also record the activation code. When a user activates his account by clicking on the activation link or entering the activation code in the activation page, it creates the user from the WP Signups table.</li>
@@ -115,7 +127,8 @@
 
                                 </ul>
                             </section>
-
+<!-- Course Functioning
+================================================== -->
                             <section id="course-functioning" class="doc-section">
                                 <h2 class="section-title">Course Functioning</h2>
                                 <p>This section explains how courses function in WPLMS</p>
@@ -137,6 +150,383 @@
                                     <li><strong>Course Finish</strong> : When course is submitted by the user the course_status.courseID user meta is set to 4 and the postmeta field in the course is updated to marks obtained by the user in the course. These marks are shown in user results section.</li>
                                     <li><strong>Course Expiry</strong> : When a user is active in a course but the expiry time set for the user is less than the current timestamp. The course appears as expired for the user. The expiry time is stored in user meta field where the user key is the course id.</li>
                                 </ul>
+                            </section>
+
+<!-- Installed Plugins
+================================================== -->
+                            <section id="installed-plugins" class="doc-section">
+                                <h1>Plugins</h1>
+                                <p>Each of these plugins covers a specific area, for example, if you want to retain all the data you've created in the theme, you only need to make sure you've installed the Vibe Custom types plugin</p>
+                                <h2> Installed Plugins</h2>
+                                <ol>
+                                    <li>
+                                        <strong> Vibe Course Module :</strong> This is the course module plugins specifically designed for WPLMS. This plugin includes most of the functionality on the front end of the LMS. The Plugin acts as a bridge between WordPress and BuddyPress and WPLMS Theme.
+                                    </li>
+                                    <li>
+                                        <strong> Vibe Custom Types :</strong> This Plugin creates custom post types and custom meta boxes for WPLMS. This plugin stores all your LMS data. All the Custom post Types like: Courses, Units, Quizzes, Questions, Testimonials, and Popups.
+                                    </li>
+                                    <li>
+                                        <strong> Vibe Shortcodes :</strong> This Plugin contains all the shortcodes used in the theme. The ( V ) icon is added in the WP TinyMCE editor which contains the shortcode generator. Refer the shortcodes list : <a href="admin-guide.html#general" target="_blank"><b> Link</b></a>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS Dashboard :</strong> Dashboards is a one stop area for Student / Instructor to get a brief snapshot of what is happening in the site/courses. Refer the link : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/wplms-dashboards/" target="_blank"><b> Tutorial</b></a>
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/dashboard_plugin1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/dashboard_plugin1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/dashboard_plugin1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/dashboard_plugin2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/dashboard_plugin2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/dashboard_plugin2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/dashboard_plugin3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/dashboard_plugin3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/dashboard_plugin3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/dashboard_plugin4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/dashboard_plugin4.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/dashboard_plugin4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/dashboard-course-progress-widget.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/dashboard-course-progress-widget.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/dashboard-course-progress-widget.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS Assignments :</strong> Through this plugin an instructor can assign homeworks to their students. Now, Assignment can also be included in courses for course evaluation, that is when the course is evaluated the cumulative percentage of all the quizzes and assignments will be calculated for auto-eveluate courses. For manual evaluation, assignment marks will be shown along with quiz marks for grading purpose. An instructor can add assignments in units from front as well as back end. <br>To create assignments : <a href="instructor-guide.html#course-creation-module" target="_blank"><b> Tutorial(refer create assignments)</b></a>
+                                         <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/assgn1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/assgn1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/assgn1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/assgn2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/assgn2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/assgn2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS EventOn :</strong> WPLMS EventOn integrates EventOn plugin with WPLMS theme. It is used to add course specific events and dashboard calendar widget.
+                                        <p>Refer the Link to know about EventOn widgets : <a href="admin-guide.html#eventon-widget" target="_blank"><b> Tutorial</b></a></p>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS Front End :</strong> WPLMS Front End is a plugin made for WPLMS Theme. This plugin is only meant to work with WPLMS and can only be used with WPLMS. The WPLMS Front end plugin enables front end course creation and editing in WPLMS Theme. This plugin also enables front end unit creation, front end quiz creation, font end question creation.
+                                    </li>
+                                </ol>
+                            </section>
+
+<!-- Free AddOns
+================================================== -->
+                            <section id="free-addons" class="doc-section">
+                                <h2> Free ADDON</h2>
+                                 <ol>
+                                    <li>
+                                        <strong> BP Social Connect :</strong> Connect your BuddyPress site with popular social networks. This plugin will allow you to connect your WordPress or BuddyPress. You can now integrate bp social connect that allows user to log-in via Google,Facebook and Twitter accounts with your website.
+                                        <p>Refer the tutorial : <a href="https://vibethemes.com/documentation/wplms/knowledge-base/bp-social-connect-integration-with-wplms/" target="_blank"><b> BP Social Connect Integration with WPLMS</b></a></p>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS Co-Author Plus :</strong> Wplms can be integrated with co-authors plus plugin. This add on supports multiple instructors for a single course. To create multiple instructors in a course, activate co-authors plugin and edit your course in which there is a setting present to set your authors. Add multiple instructors for that course.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_coauthors1.png" data-toggle="lightbox"><img class="img-responsive"
+                                                     src="assets/images/demo/wplms_coauthors1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_coauthors1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                             <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_coauthors2.png" data-toggle="lightbox"><img class="img-responsive"
+                                                     src="assets/images/demo/wplms_coauthors2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_coauthors2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>WPLMS H5P Plugin : </strong> This Plugin is used to integrate H5P Plugin with WPLMS H5P. It works with wplms units and quizzes and integrates WPLMS quizzes with H5P quizzes. Refer the link for tutorial : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/wplms-h5p-addon/" target="_blank"><b> WPLMS H5P AddOn</b></a>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_h5p1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_h5p1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_h5p1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_h5p2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_h5p2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_h5p2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS MyCred ADDON :</strong> Connect your WPLMS Learning management system with MyCred Points system plugin. It allows students to puchase courses via MyCred points. This addon plugin integrates WPLMS with MyCred points system and also adds gamification options to award points to users on certain criteria.
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS BadgeOS :</strong> BadgeOS is a plugin that allows your site’s users to complete tasks and earn badges. WPLMS BadgeOS integrates BadgeOS Plugin with WPLMS.
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS H5P Plugin :</strong> This Plugin is used to integrate H5P Plugin with WPLMS H5P. It works with wplms units and quizzes and integrates WPLMS quizzes with H5P quizzes. Refer the link for tutorial : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/wplms-h5p-addon/" target="_blank"><b> WPLMS H5P AddOn</b></a>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_h5p1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_h5p1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_h5p1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_h5p2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_h5p2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_h5p2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>WPLMS BigBlueButton : </strong> BigBlueButton is an open source web conferencing system. Wplms BigBlueButton Plugin integrates BigBlueButton with wplms. It adds meeting tab in profile. you can set reminders before meetings,send email notifications before meeting. Refer the link for wplms bbb addon : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/wplms-bbb-addon/" target="_blank"><b> Tutorial</b></a>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_bbb1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_bbb1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_bbb1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_bbb2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_bbb2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_bbb2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_bbb3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_bbb3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_bbb3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS WooCommerce Subscriptions :</strong> WooCommerce Subscriptions allows you to introduce a variety of subscriptions for physical or virtual products and services. Create product of the month clubs, weekly service subscriptions or even yearly software billing packages. Add sign-up fees, offer free trials or set expiration periods. This Plugin integrates WooCommerce Subscriptions with WPLMS.
+                                        <p> Refer the Link : <a href="https://www.youtube.com/watch?v=DN9DKUSeoIg" target="_blank"><b>WPLMS Integration with WooCommerce Subscription</b></a></p>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS WooCommerce Memberships :</strong> Connects the woocommerce memberships to courses and provides access based on memberships. 
+                                        <p> Refer the Link : <a href="https://vibethemes.com/documentation/wplms/knowledge-base/woocommerce-membership-integration-with-wplms-addon/" target="_blank"><b> WooCommerce Membership Integration</b></a></p>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS EDD(Easy Digital Downloads) Addon :</strong> Easy Digital Downloads is a complete eCommerce solution for selling digital products on WordPress. Whether it is software, documents, photos, ebooks, songs, graphics, or any other type of media file, Easy Digital Downloads provides a complete system for effortlessly selling your digital products. This addon will integrate EDD Plugin with wplms.<br>
+                                        Refer the link : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/wplms-edd-addon/" target="_blank"><b> Download WPLMS EDD Addon</b></a>
+                                    </li>
+                                </ol>
+                            </section>
+
+<!-- Paid AddOns
+================================================== -->
+                            <section id="paid-addons" class="doc-section">
+                                <h2> Paid ADDON</h2>
+                                 <ol>
+                                    <li>
+                                        <strong> WPLMS Custom Learning Paths :</strong> The custom learning path addon is a very exciting addon plugin for WPLMS. It aims on creating custom paths for students to learn on the website. Until now there was no concept in wplms for allowing students to learn something in a particular path and award certificates and badges for completing different steps. Refer the tutorial : <a href="http://vibethemes.com/documentation/wplms/article-categories/wplms-clp/" target="_blank"><b> Tutorial</b></a>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                 <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_clp1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_clp1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_clp1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                 <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_clp2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_clp2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_clp2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                 <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_clp3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_clp3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_clp3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                             <div class="col-md-3 col-sm-3 col-xs-12">
+                                                 <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_clp4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_clp4.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_clp4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS WooCommerce :</strong> WPLMS WooCommerce is a plugin built for WooCommerce compatibility with WPLMS. Although WPLMS natively supports WooCommerce, this add-on makes WooCommerce compatible with WPLMS. Using this Add-on, you can support Variable Pricing for Courses.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_woocommerce1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_woocommerce1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_woocommerce1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_woocommerce2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_woocommerce2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_woocommerce2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS Batches :</strong> WPLMS is based on BuddyPress, we had groups functionality already available to us via BuddyPress and we used it to create batches. Refer the link for WPLMS Batches : <a href="https://vibethemes.com/documentation/wplms/article-categories/wplms-batches/" target="_blank"><b> Tutorial</b></a>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_batches.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_batches.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_batches.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_batches2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_batches2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_batches2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_batches3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_batches3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_batches3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS Wishlist :</strong> With WPLMS Wishlist you can enable your users to mark the courses as favourite. These courses then appear in their profile – Wishlist section. you can share your wishlists on social network. 
+                                        <p>Refer the link : <a href="https://www.youtube.com/watch?v=CbxhyT45e-U" target="_blank"><b> WPLMS Wishlist</b></a></p>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_wishlist1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_wishlist1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_wishlist1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_wishlist2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_wishlist2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_wishlist2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS Video Vibe :</strong>
+                                        <p> Integrates wplms with Vimeo. Vimeo Video Post is a WordPress video importer plugin specially developed for Vimeo that allows quick importing of Vimeo videos as WordPress posts with attached video player from channels, albums, user, groups or categories.<br>
+                                        Refer the tutorial : <a href="https://vibethemes.com/documentation/wplms/knowledge-base/video-vibe/" target="_blank"><b> Video Vibe</b></a></p>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS MailChimp :</strong> WPLMS Mailchimp plugin integrates Mailchimp with WPLMS.
+                                        <ul>
+                                            <li>Sync members of your site into various lists</li>
+                                            <li>Enable option to subscribe to newsletter in BuddyPress registration.</li>
+                                            <li>Enable option to subscribe to newsletter in WooCommerce checkout.</li>
+                                            <li>Sync all course members into a list grouped by courses.</li>
+                                            <li>Auto move users to various groups within All courses list and Course specific list.</li>
+                                            <li>Auto add user to course list on subscribe and remove on unsubscribe.</li>
+                                        </ul>
+                                        <p> Refer the tutorial : <a href="https://www.youtube.com/watch?v=GcoYAUOAwVo&feature=youtu.be" target="_blank"><b> WPLMS MailChimp</b></a></p>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_mailchimp1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_mailchimp1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_mailchimp1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_mailchimp2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_mailchimp2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_mailchimp2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_mailchimp3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_mailchimp3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_mailchimp3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> WPLMS S3 :</strong> Integrate WPLMS with Amazon S3. You can upload Videos, Audios and other attachments in Amazon S3.
+                                        <ul><strong> Features :</strong>
+                                            <li>Secure Audio,Video, images and attachments</li>
+                                            <li>Upload to Amazon S3 directly from media popup</li>
+                                            <li>Upload Videos, Audio and attachments on Amazon S3, reduce server load.</li>
+                                            <li>Works from both backend and front end</li>
+                                            <li>Fetch files from any bucket in Amazon S3</li>
+                                            <li>Instructor privacy option</li>
+                                        </ul>
+                                        <p><b> WPLMS S3 Addon Tutorial :</b> <a href="http://vibethemes.com/downloads/wplms-s3/" target="_blank"><b> Link</b></a></p>
+                                        <p><b> Using WPLMS S3 in Units :</b> <a href="https://www.youtube.com/watch?v=gcZQ_M_d2-U" target="_blank"><b> Tutorial</b></a></p>
+                                        <p><b> WPLMS S3 embed PDF and Video autoplay : </b><a href="https://www.youtube.com/watch?v=_IrUFU_LaDE" target="_blank"><b> Tutorial</b></a></p>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_s3_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_s3_1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_s3_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_s3_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_s3_2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_s3_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_s3_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_s3_3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_s3_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_s3_4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_s3_4.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/wplms_s3_4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                </ol>
                             </section>
 
                             <section id="hooks" class="doc-section">
@@ -428,6 +818,14 @@
                                     <ul class="nav doc-sub-menu">
                                         <li><a class="scrollto" href="#system">System</a></li>
                                         <li><a class="scrollto" href="#course-functioning">Course Functioning</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="scrollto" href="#installed-plugins">Plugins</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#installed-plugins">Installed Plugins</a></li>
+                                        <li><a class="scrollto" href="#free-addons">Free AddOns</a></li>
+                                        <li><a class="scrollto" href="#paid-addons">Paid AddOns</a></li>
                                     </ul>
                                 </li>
                                 <li>
