@@ -98,12 +98,50 @@
                                   </li>
 
                                   <li><strong>Activation</strong> : This section is managed completely by BuddyPress. Any page which is connected to the WP Admin - settings - buddypress - pages - Activate becomes the registration page. BuddyPress overwrites this page and the content in the page is not loaded This page is not avaiable to logged in users (because they're already registered) . Upon successful registration the user gets an email with an activation link, the link is of the format : http://yoursite.com/activation-page-slug/XXXYYY in this link the XXXYYY is the activation code.<br />
-                                  When a user registers via BuddyPress it gets stored in the WP Signups table. The signups table also record the activation code. When a user activates his account by clicking on the activation link or entering the activation code in the activation page, it creates the user from the WP Signups table.</li>
+                                  When a user registers via BuddyPress it gets stored in the WP Signups table. The signups table also record the activation code. When a user activates his account by clicking on the activation link or entering the activation code in the activation page, it creates the user from the WP Signups table.
+                                  <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_settings2.png" data-toggle="lightbox"><img class="img-responsive"
+                                                src="assets/images/demo/buddypress_settings2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_settings2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                                  </li>
 
                                   <li><strong>Directory pages (All Members, All Activity, All Courses, All Groups)</strong> : All the directory pages are pages connected at the WP Admin - settings - BuddyPress - Pages section. Any page connected here is built using BuddyPress template files and none of the WordPress content will be shown.<br />
-                                  For example : The course directory page is built using the wplms/course/index.php file. To overwrite this or build a new layout, you need to add the folder "course" in your child theme and add an index.php file which would overwrite the one in the parent WPLMS theme. </li>
+                                  For example : The course directory page is built using the wplms/course/index.php file. To overwrite this or build a new layout, you need to add the folder "course" in your child theme and add an index.php file which would overwrite the one in the parent WPLMS theme. 
+                                  <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_settings2.png" data-toggle="lightbox"><img class="img-responsive"
+                                                src="assets/images/demo/buddypress_settings2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_settings2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                                  </li>
 
-                                  <li><strong>Member Profiles</strong> : Member profiles are BuddyPress section. The default BuddyPress templates are overridden by WPLMS from the members section. The template files are located in the WPLMS/members section. Note that the members section has a course folder in it which has the template files for the course.</li>
+                                  <li><strong>Member Profiles</strong> : Member profiles are BuddyPress section. The default BuddyPress templates are overridden by WPLMS from the members section. The template files are located in the WPLMS/members section. Note that the members section has a course folder in it which has the template files for the course.
+                                  <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_1.png" data-toggle="lightbox"><img class="img-responsive"
+                                                src="assets/images/demo/buddypress_1.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_2.png" data-toggle="lightbox"><img class="img-responsive"
+                                                src="assets/images/demo/buddypress_2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                                  </li>
 
                                   <li><strong>My Courses</strong> : This section is located in User profile. Tempalte file is located at wplms/course/my-courses.php. Sub-sections include results and stats and instructing courses (for Instructors). The results and stats template files are located in the  wplms/members/course/results.php and stat.php</li>
 
@@ -117,13 +155,23 @@
 
                                   <li><strong>Course Members</strong> : Displays members enrolled in a course. Every member subscribed to the course has a User meta value</li>
 
-                                  <li><strong>Course Forum</strong> : Any forum connected to a course in the Course settings section becomes a course forum. The value of Forum ID is stored in a post meta <i>vibe_forum</i>. The Course Forum privacy can be enabled from the LMS -> Settings section.</li>
+                                  <li><strong>Course Forum</strong> : Any forum connected to a course in the Course settings section becomes a course forum. The value of Forum ID is stored in a post meta <i>vibe_forum</i>. The Course Forum privacy can be enabled from the LMS -> Settings section.
+                                  <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/course_forum_privacy.png" data-toggle="lightbox"><img class="img-responsive"
+                                                src="assets/images/demo/course_forum_privacy.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/course_forum_privacy.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                                  </li>
 
-                                  <li><strong>Course Groups</strong> : Any Group conneted to a course in course settings becomes a course group. The value if the group id is stored in the post meta field <i>vibe_group</i>. This field contains the group id. By default all groups created in WPLMS (via front end) are assumed as private. When a user subscribes to a course she gets access to the group as well.</li>
+                                  <li><strong>Course Groups</strong> : Any Group conneted to a course in course settings becomes a course group. The value if the group id is stored in the post meta field <i><b>vibe_group</b></i>. This field contains the group id. By default all groups created in WPLMS (via front end) are assumed as private. When a user subscribes to a course she gets access to the group as well.</li>
 
                                   <li><strong>Edit Course</strong> : This section is added by the WPLMS Front end plugin. A page connected to the WPLMS - Course manager opens when user clicks on the edit course. This is course creation page, note the ?action=234 in the url. The 234 is the course id, if you remove the course id from the url and reload the create course page will open a blank course. The course is created when the user clicks on the create course button.</li>
 
-                                  <li><strong>Course Admin</strong> : Displays admin actions for the course. Template file is located in the WPLMS /Course/single/admin.php</li>
+                                  <li><strong>Course Admin</strong> : Displays admin actions for the course. Template file is located in the <i><b>WPLMS /Course/single/admin.php</b></i></li>
 
                                 </ul>
                             </section>
