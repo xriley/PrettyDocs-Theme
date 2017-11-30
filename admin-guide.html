@@ -1073,7 +1073,7 @@
                                         <li><strong>Course Duration parameter :</strong> Duration parameter for display purpose</li>
                                         <li><strong>Finished Course Access :</strong> Allows the student to view the finished course.</li>
                                         <li><strong>Notes and Discussion styles :</strong>Set the styles for notes and discussion to be displayed in units. set per paragraph to show the notes per paragraph and set to per unit to show the comments below every unit</li>
-                                        <li><strong>Display News :</strong> Display News section in courses</li>
+                                        <li><strong>Display News :</strong> Display News section in courses. When news display enabled, you can add news in it from LMS > Course News.</li>
                                         <li><strong>Enable Levels :</strong> Enables Level taxonomy in Course, Units, Quizzes, Questions, Assignment and search page</li>
                                         <li><strong>Enable Course Location :</strong> Enables course location taxonomy in Courses and search page</li>  
                                         <li><strong>Enable Linkage :</strong> This is a very important functionality, highly recommended when the content in the lms system grows big. Refer to <a href="https://www.youtube.com/watch?v=FAGEYN6xbwc" target="_blank"><b>Tutorial Link</b></a>.</li>
@@ -1873,7 +1873,7 @@
 ================================================== -->
                             <section id="lms-quiz-type" class="doc-section">
                                 <h2>LMS Quiz Type</h2>
-                                <p>Here, you can define types of a quiz for your courses unit.</p>
+                                <p>Here, you can define types of a quiz for your courses unit. An admin or instructor can add new categories for quizzes.</p>
                             </section>
 
 <!-- LMS Unit Tag
@@ -3481,9 +3481,19 @@
 
 <!-- Certificates
 ================================================== -->
-                            <section id="certificates" class="doc-section">
+                            <section id="certificates-template" class="doc-section">
+                             <h1>Certificate Template & Payouts</h1>
                                 <h2>Certificates Template</h2>
-                                <p>Admin or instructor can create certificate for courses by going in Admin dashboard -> LMS -> Certificate Templates section. You can customize your certificate template according to your choice. <a href="admin-guide.html#certificate"><b>Certificate Shortcodes</b></a> are also available to design your own template.</p>
+                                <p>Admin or instructor can create certificate for courses by going in Admin dashboard -> LMS -> Certificate Templates section. You can customize your certificate template according to your choice.</p>
+                                <p>In LMS, an instructor or an admin can create their own custom certificates through this feature. When a student successfully finished the course and in reward an instructor wants to appreciate the effort of students then he can assign certificates to their students. <a href="admin-guide.html#certificate"><b>Certificate Shortcodes</b></a> are also available to design your own template. There are few certicates template setting described below :</p>
+                                <ul>
+                                    <li>Background Image</li>
+                                    <li>Enable Print & Pdf</li>
+                                    <li>Certificate Width</li>
+                                    <li>Certificate Height</li>
+                                    <li>Custom Class</li>
+                                    <li>Custom CSS</li>
+                                </ul>
                                  <div class="row">
                                     <div class="col-md-6 col-sm-6col-xs-12">
                                         <div class="embed-responsive embed-responsive-16by9">
@@ -3526,6 +3536,25 @@
                                             </div><!--//content-->
                                         </div><!--//callout-block-->
                                     </div>
+                                </div>
+
+
+                                <h2>Payouts</h2>
+                                <p>An administrator need to calculate instructor commissions on monthly basis. When an administrator add instructors commissions in payouts then it is visible in instructors dashboard. Instructor commission widget is used to display instructor commission in his dashboard.</p>
+                                 <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/lms-payouts.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/lms-payouts.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/lms-payouts.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/instructor-payouts.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/instructor-payouts.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/instructor-payouts.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
                                 </div>
                             </section>
 
@@ -3994,7 +4023,7 @@
                                 <li><a class="scrollto" href="#assignment-guide">Assignment Guide</a></li>
                                 <li><a class="scrollto" href="#creating-instructors">Creating Instructors</a></li>
                                 <li><a class="scrollto" href="#statistics">Administrator Statistics</a></li>
-                                <li><a class="scrollto" href="#certificates">Certificates Template</a></li>
+                                <li><a class="scrollto" href="#certificates-template">Certificates Template & Payouts</a></li>
                                 <li>
                                     <a class="scrollto" href="#installed-plugins">Plugins</a>
                                     <ul class="nav doc-sub-menu">

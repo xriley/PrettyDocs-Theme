@@ -69,6 +69,7 @@
                                             <li>An Instructor by default gets access to a lot of features in the sites. Like viewing all Questions in the question bank, viewing all units in the directory through the administartor panel.</li>
                                             <li>Instructor however can not edit or delete the contents from Units created by other Instructors.</li>
                                             <li>An Instructor can not manually assign badges and certificates to students who are not taking the course.</li>
+                                            <li>Once a user is registered on the site, the WPLMS (or any BuddyPress site) would not ackowledge it unless he/she logs in the site. Once the user is logged in, it will start appearing in the user's directory (<a href="glossary.html#users-directory" target="_blank"><b>To appear in user's directory</b></a>). So for WPLMS to recognise the user as a student, the user must login to the site at least once.</li>
                                         </ul>
                                     </li>
                                     <li>
@@ -694,9 +695,9 @@
 ================================================== -->
                             <section id="lms-quiz-type" class="doc-section">
                                 <h2>LMS Quiz Type</h2>
-                                <p>Here, you can define types of a quiz for your courses unit.</p>
+                                <p>Here, you can define types of a quiz for your courses unit. An admin or instructor can add new categories for quizzes.
+                                </p>
                             </section>
-
 <!-- LMS Unit Tag
 ================================================== -->
                             <section id="lms-unit-tag" class="doc-section">
@@ -1126,26 +1127,40 @@
                                             <li><strong>Change Course Status </strong>Enter the status of the course offline or online . <br><strong>Note:A Offline Course is not visible to students in the course directory.</strong></li>
                                         </ul>
                                         <div class="row">
-                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
                                                 <div class="screenshot-holder">
                                                     <a href="assets/images/demo/create_course1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_course1.png" alt="screenshot" /></a>
                                                     <a class="mask" href="assets/images/demo/create_course1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                                 </div><!--//screensot holder--> 
-                                            </div><!--colo-md-3-->
+                                            </div><!--colo-md-2-->
 
-                                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                                <div class="screenshot-holder">
-                                                    <a href="assets/images/demo/create_course3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_course3.png" alt="screenshot" /></a>
-                                                    <a class="mask" href="assets/images/demo/create_course3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                </div><!--//screensot holder--> 
-                                            </div><!--colo-md-3-->
-
-                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
                                                 <div class="screenshot-holder">
                                                     <a href="assets/images/demo/create_course2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_course2.png" alt="screenshot" /></a>
                                                     <a class="mask" href="assets/images/demo/create_course2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                                 </div><!--//screensot holder--> 
-                                            </div><!--colo-md-3-->
+                                            </div><!--colo-md-2-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/create_course3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_course3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/create_course3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/create_course4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_course4.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/create_course4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/create_course5.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_course5.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/create_course5.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
                                         </div>
                                     </li>
                                     <li>
@@ -1549,6 +1564,13 @@
                                             <a class="mask" href="assets/images/demo/course_admin_area5.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
                                     </div><!--colo-md-2-->
+
+                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/course_admin_area6.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_admin_area6.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/course_admin_area6.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-2-->
                                 </div>                          
                             </section>
                             
@@ -1644,6 +1666,40 @@
                                 </div>
                             </section>
 
+<!-- Buddypress Email Migration
+================================================== -->
+                            <section id="bbpress-email-migration" class="doc-section">
+                                <h2>BuddyPress Email Migration</h2>
+                                <p>There are two email templates present in theme. One is for wplms messages and another one is for buddypress. So it is recommended by wplms theme that all emails templates should be imported to buddypress templates. Buddypress email templates are customizable and it can b customized from wp-admin > Emails > Customize. Through this setting, you can customize your email template according to your own need. These templates can be translated also using Loco Translate Plugin.</p>
+                                <p>WPLMS Email Migration : <a href="https://vibethemes.com/documentation/wplms/knowledge-base/wplms-email-migration-to-buddypress-emails/" target="_blank"><b> Tutorial</b></a></p>
+
+                                <p>Migrate All the WPLMS Mail to BuddyPress Again : <a href="https://vibethemes.com/documentation/wplms/knowledge-base/migrate-all-the-wplms-emails-to-buddypress-again/" target="_blank"><b> Tutorial</b></a></p>
+
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/bbpress_email_template.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/bbpress_email_template.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/bbpress_email_template.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/bbpress_email_template2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/bbpress_email_template2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/bbpress_email_template2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/bbpress_email_template3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/bbpress_email_template3.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/bbpress_email_template3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section
+
+
 <!-- Video Tutorial
 ================================================== -->
                             <section id="video-tutorial" class="doc-section">
@@ -1723,6 +1779,7 @@
                                 </li>
                                 <li><a class="scrollto" href="#statistics">Statistics</a></li>
                                 <li><a class="scrollto" href="#interaction">Interaction</a></li>
+                                <li><a class="scrollto" href="#bbpress-email-migration">BuddyPress Email Migration</a></li>
                                 <li><a class="scrollto" href="#video-tutorial">Video Tutorial</a></li>
                             </ul><!--//doc-menu-->
                         </nav>
