@@ -574,10 +574,10 @@
                                     <h3 class="block-title">Content</h3>
 										<ul class="list">
 											<li>
-                                                <strong>Media : </strong>This will create default Media. All media which is used in units, course featured images etc.
+                                                <strong>Media : </strong>This will import media files from our demo setups into your wordpress installation. All the media images used in the demos are either open to use or come with extended license, hence you can use them in your site as well. All media which is used in units, course featured images etc. are imported during this. Since, this requires fetching of media items from our demos, it requires a active internet connection. In some cases, it may happen that due to netwrok connection issues or server overload of our site you might not be able to download the media files, in such cases you may be required to re-download the media files Or restart the setup wizard (<a href="#restart-setupwizard" target="_blank">?</a>). All Media files can be located in WP Admin - Media section.
                                             </li>
 											<li>
-                                                <strong>Posts : </strong>This will create default Posts.
+                                                <strong>Posts : </strong>This will import default Posts from our demos. The posts are located in WP Admin - Posts. <a href="https://codex.wordpress.org/Writing_Posts" target="_blank">Learn more about posts</a>
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 col-xs-12">
                                                         <div class="screenshot-holder">
@@ -588,7 +588,7 @@
                                                 </div>
                                             </li>
 											<li>
-                                                <strong>Pages : </strong>This will create default Pages.
+                                                <strong>Pages : </strong>This will import default pages from our demos. The pages are located in WP Admin - pages. A page is like a post but it can be used for multiple purposes. You can set any page as your site's home page at WP Admin - Settings - Reading, this configuration is automatically set by the setup wizard. Learn more about pages
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 col-xs-12">
                                                         <div class="screenshot-holder">
@@ -599,7 +599,7 @@
                                                 </div>
                                             </li>
 											<li>
-                                                <strong>Courses : </strong>This will create default Courses.
+                                                <strong>Courses : </strong> This will import default Courses. Courses are main entities of WPLMS
                                                 <div class="row">
                                                     <div class="col-md-2 col-sm-2 col-xs-12">
                                                         <div class="screenshot-holder">
@@ -1100,6 +1100,34 @@
                                             </div><!--colo-md-12-->
                                         </div><!--//row-->
                                 </div><!--//section-block-->
+                                <div id="restart-setupwizard" class="section-block">
+                                    <h3>Re-starting setup wizard</h3>
+                                    <p>In some cases you might be required to restart the setup wizard. First you need to identify that you want to import selected components in your setup or completely clear the site and re-start the setup wizard</p>
+                                    <p><strong>To import selected components</strong> : follow below steps:</p>
+                                    <ol>
+                                        <li>Login to your WordPress Admin pabnel (WP-Admin)</li>
+                                        <li>Go to  WP admin - Appearance - Setup Wizard</li>
+                                        <li>You'll be prompted with a screen which has a blue button "Restart the setup Wizard"</li>
+                                        <li>Click on the button to restart the setup wizard</li>
+                                        <li>Make sure you "Skip the step" which you do not want to repeat</li>
+                                    </ol>
+                                    <p><strong>To clear entire site and restart setup wizard</strong> : follow below steps:</p>
+                                    <ol>
+                                        <li>Login to your WordPress dashboard</li>
+                                        <li>Go to Plugins - Add New section</li>
+                                        <li>Search for plugin : WP Reset</li>
+                                        <li>Install and activate the plugin</li>
+                                        <li>Now, go to WP admin - Tools - Reset</li>
+                                        <li>Enter the text wp-reset and click on reset.</li>
+                                        <li>This will clear all data from your site and set the starting* WP admin username and password. Starting* wp admin details which you entered while installing your wordpress site.</li>
+                                        <li>Login to your WP admin panel again with your starting credentials</li>
+                                        <li>Go to Appearnce - Themes</li>
+                                        <li>Activate the WPLMS Blank child theme (recommended) or the main WPLMS Theme</li>
+                                        <li>You'll most likely see buddypress activated screen, go to WP Admin - Install WPLMS</li>
+                                        <li>You'll see a button to start the Theme Setup Wizard</li>
+                                        <li>Click on it and the Setup wizard will run again.</li>
+                                    </ol>
+                                </div><!--//section-block-->
                             </section>
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
@@ -1153,6 +1181,7 @@
 										<li><a class="scrollto" href="#instructor-commission">Instructor Commission</a></li>
 										<li><a class="scrollto" href="#quizzes">Quizzes & Assignments</a></li>
                                         <li><a class="scrollto" href="#touch-points">Touch Points</a></li>
+                                        <li><a class="scrollto" href="#restart-setupwizard">Restarting Setup Wizard</a></li>
                                     </ul>
                                 </li>
                             </ul><!--//doc-menu-->
