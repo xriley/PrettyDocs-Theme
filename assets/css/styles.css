@@ -1272,3 +1272,13 @@ select {
 .nav.doc-menu li.active > .nav.doc-sub-menu{
   display:block;
 }
+
+.box {
+    background-clip: padding-box;
+    background: #F88C30;
+    border: 1px solid #F88C30;
+    border-left-width: 1px !important;
+    color: #424242;
+    margin: 0 0 1.758em;
+    padding: 20px;
+}

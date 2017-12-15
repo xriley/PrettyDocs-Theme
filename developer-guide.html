@@ -582,221 +582,288 @@
                                 <p> Hooks are functions that can be applied to an Action or a Filter in WordPress. Actions and Filters in WordPress are functions that can be modified by theme and plugin developers to change the default WordPress functionality. Functions used to modify Actions/Filters in WordPress can be hooked into WordPress. However, it is important to note that actions and filters are not the same thing. Actions are functions performed when a certain event occurs in WordPress. Filters allow you to modify certain functions.</p>
                                 <p>This section describes the filters and hooks used in the theme.</p>
                                 <h2 class="section-title">Hooks</h2>
-                                 <ul>
-                                    <li><strong>WPLMS Theme </strong>:
-                                        <ul>
-                                            <li><strong>wplms_validate_certificate</strong> : Runs for certificate validation. Accepts two arguments : User ID and Course ID</li>
-                                            <li><strong>wplms_certificate_before_full_content</strong> : Runs before any content on default certificate</li>
-                                            <li><strong>wplms_certificate_extra_buttons</strong> : Runs where buttons for print is executed</li>
-                                            <li><strong>wplms_certificate_before_name</strong> : Runs on default certificate template before name. </li>
-                                            <li><strong>wplms_certificate_after_name</strong> : Runs on default certificate template after name</li>
-                                            <li><strong>wplms_certificate_after_content</strong> : Runs after certificate content has been executed for default certificate template</li>
-                                            <li><strong>wplms_certificate_after_full_content</strong> : Runs after all certificate is executed.</li>
-                                            <li><strong>bp_before_course_loop</strong> : Runs before any Course loop begins</li>
-                                            <li><strong>bp_before_directory_course_list</strong> : Runs on Course directory, Course Category taoxnomy, Instructor courses, Levels taxonomy pages, before the course list.</li>
-                                            <li><strong>bp_directory_course_item</strong> : Runs before every course item is listed in the directory or course loop</li>
-                                            <li><strong>bp_after_directory_course_list</strong> : Runs after course directory has been listed</li>
-                                            <li><strong>bp_after_course_loop</strong> : Runs after course loop</li>
-                                            <li><strong>bp_after_directory_course</strong> : Runs after curse directory. Also runs on Instructor courses page</li>
-                                            <li><strong>bp_after_directory_course_page</strong> : Runs at the end of course directory page</li>
-                                            <li><strong>bp_before_course_header</strong> : Runs before single course page : course header (left column) is displayed</li>
-                                            <li><strong>bp_before_course_header_meta</strong> : Runs before meta information for current course in single course</li>
-                                            <li><strong>bp_course_header_actions</strong> : Displays header actions, like instructor message/email on single course page</li>
-                                            <li><strong>bp_course_header_meta</strong> : Displays course header meta information like star rating, reviews for course</li>
-                                            <li><strong>bp_after_course_header</strong> : Runs after course header is displayed</li>
-                                            <li><strong>wplms_course_curriculum_section</strong> : Runs before Course curriculum is displayed</li>
-                                            <li><strong>wplms_course_before_front_main</strong> : Runs before Course page content is displayed in single course.</li>
-                                            <li><strong>wplms_before_course_description</strong> : Runs before course description is displayed</li>
-                                            <li><strong>wplms_after_course_description</strong> : After course description</li>
-                                            <li><strong>wplms_course_stats_panel</strong> : Runs before calculate stats icon is displayed in stats section of course admin</li>
-                                            <li><strong>wplms_before_create_course_header</strong> : Runs before Front end course creation template : create_Content is displayed.</li>
-                                            <li><strong>wplms_before_create_course_page</strong> : Runs before Course creation page is displayed</li>
-                                            <li><strong>wplms_front_end_pricing_content</strong> : Runs in pricing section of Course creation</li>
-                                            <li><strong>wplms_after_create_course_page</strong> : Runs after create course page</li>
-                                            <li><strong>wplms_header_top_login</strong> : Runs in header.php after login/register is displayed</li>
-                                            <li><strong >wplms_customizer_custom_css</strong> : Runs in Customizer generate CSS function. Accepts the argument $themecustomizer which is an array containing all the settings in the theme customizer.</li>
-                                            <li><strong>bp_before_sidebar_login_form</strong> : Runs before login drop down is displayed</li>
-                                            <li><strong>login_form</strong> : Runs after login form is displayed. </li>
-                                            <li><strong>wplms_be_instructor_button</strong> : Runs on the member index page for become and isntructor link</li>
-                                            <li><strong>bp_before_course_stats</strong> : Runs before course stats are displayed in Course - admin - stats</li>
-                                            <li><strong>wplms_before_notes_discussion</strong> : Runs before notes and discussion template shows content.</li>
-                                            <li><strong>wplms_course_sidebar_hook</strong> : Runs in Course search page</li>
-                                            <li><strong>bp_before_course_home_content</strong> : Runs on single course page before course description</li>
-                                            <li><strong>bp_course_options_nav</strong> : Hook for course navigation in single course. </li>
-                                            <li><strong>bp_before_course_body</strong> : Runs before main content of any section is shown in single course.</li>
-                                            <li><strong>wplms_load_templates</strong> : Runs after the templates have been loaded</li>
-                                            <li><strong>badgeos_wplms_submit_course</strong> : Runs when course has been submitted, accepts Course ID as argument.</li>
-                                            <li><strong>wplms_question_after_content</strong> : Runs after question content is displayed for single question</li>
-                                            <li><strong>wplms_before_quiz</strong> : Runs before header of single quiz</li>
-                                            <li><strong>wplms_front_end_quiz_controls</strong> : Runs after quiz content. Used to display front end controls.</li>
-                                            <li><strong>wplms_before_every_unit</strong> : Runs before every unit content, accepts unit ID as argument</li>
-                                            <li><strong>wplms_after_every_unit</strong> : Runs after every unit content, accepts unit ID as argument</li>
-                                            <li><strong>wplms_before_single_assignment</strong> : Runs before single assignment header is loaded.</li>
-                                            <li><strong>wplms_assignment_before_content</strong> : Runs before assignment content is loaded</li>
-                                            <li><strong>wplms_assignment_after_content</strong> : Runs after assignment content is loaded</li>
-                                            <li><strong>wplms_after_assignment</strong> : Runs at the end of the assignment.</li>
-                                            <li><strong>wplms_before_start_course</strong> : Runs at the begining of start course page before header. Usually used for access check.</li>
-                                            <li><strong>wplms_start_course</strong> : Runs at the beginging of start course page after header.</li>
-                                            <li><strong>wplms_unit_header</strong> : Runs at display unit header, Unit ID and Course ID as arguments.</li>
-                                            <li><strong>wplms_course_unit_meta</strong> : Runs after unit header. Unit ID as argument. Displays unit meta information like tags and instructors.</li>
-                                            <li><strong>wplms_course_start_after_time</strong> : Runs after Course time is displayed.</li>
-                                            <li><strong>wplms_course_start_after_timeline</strong> : Runs after Course timeline is displayed</li>
-                                        </ul>
+                                  <ol>
+                                    <li>
+                                      <strong><h3>WPLMS Theme</h3></strong>
                                     </li>
-                                    <li><strong>Vibe Course Module </strong>:
-                                        <ul>
-                                            <li><strong>wplms_course_product_puchased</strong> : Runs after Course product is purchased, Arguments : Course ID, USer ID, Expirty Time, Course Status(0)</li>
-                                            <li><strong>badgeos_wplms_start_course</strong> : Runs when the current user subscribes the coruse. Arguments : Course ID</li>
-                                            <li><strong>badgeos_wplms_unit_complete</strong> : Runs when current user finishes a unit. Arguments : UnitID, Course Progress % and Course ID</li>
-                                            <li><strong>wplms_student_course_remove</strong> : Runs when a user is removed from the course. Arguments : Course ID, User ID</li>
-                                            <li><strong>wplms_student_course_reset</strong> : Runs when course is reset for a user. Arguments : Course ID, USER ID</li>
-                                            <li><strong>wplms_badge_earned</strong> : Runs when a user earns a badge. Arguments : Course ID, User Badges array,User ID, Badge Filter Flag (used for restricting badge assignment on special conditions).</li>
-                                            <li><strong>wplms_certificate_earned</strong> : Runs when a user earns a Certificate. Arguments : Course ID, User certificates array,User ID, Certificate Filter Flag (used for restricting badge assignment on special conditions).</li>
-                                            <li><strong>badgeos_wplms_evaluate_course</strong> : Runs when Course is evaluated. Arguments : Course ID, Marks, User ID</li>
-                                            <li><strong>badgeos_wplms_evaluate_quiz</strong> : Runs when Quiz is evaluated. Arguments : Quiz ID, Marks, User ID</li>
-                                            <li><strong>wplms_course_manual_evaluation</strong> : Runs when Course is manually evaluated. Arguments : Course ID, User ID</li>
-                                            <li><strong>wplms_course_stats_process</strong> : Runs when user clicks on Process course stats. Accepts arguments passed by reference : Title of Stat, Stats array,Stats counter,Course ID,USER ID,Field name</li>
-                                            <li><strong>wplms_mod_stats_process</strong> : Runs when user clicks on Process stats for Quiz, unit,assiggment. Accepts arguments passed by reference : Title of Stat, Stats array,Stats counter,Module ID,USER ID,Field name,Post Type of module</li>
-                                            <li><strong>badgeos_wplms_submit_quiz</strong> : Runs when user submits a quiz. Arguments : Quiz ID</li>
-                                            <li><strong>wplms_before_quiz_begining</strong> :Runs before uquiz is displayed. Arguments : Quiz ID </li>
-                                            <li><strong>badgeos_wplms_start_quiz</strong> : Runs when user starts a quiz. Arguments : Quiz ID </li>
-                                            <li><strong>wplms_renew_course</strong> : Runs when User clicks on course retake. Arguments : Course ID , USer ID</li>
-                                            <li><strong>courses_setup_nav</strong> : Sets up Course navigation in members profile page</li>
-                                            <li><strong>bp_course_screen_my_courses</strong> : Runs on My Courses in profile</li>
-                                            <li><strong>bp_course_screen_my_results</strong> : Runs on My Results in profile</li>
-                                            <li><strong>bp_course_screen_course_stats</strong> : Runs on My stats in profile</li>
-                                            <li><strong>bp_course_instructing_courses</strong> : Runs on Instructing courses in profile</li>
-                                        </ul>
+                                    <li>
+                                      <strong><h3>Vibe Course Module</h3></strong>
+                                      <div class="box">
+                                        <b>All vibe course module hooks are included in: vibe-course-module/includes/bp-course-action.php</b>
+                                      </div>
                                     </li>
-                                    <li><strong>WPLMS Assignments </strong>:
-                                        <ul>
-                                            <li><strong>badgeos_wplms_submit_assignment</strong> : Runs when assignment is submitted. Arguments : Assignment ID</li>
-                                        </ul>
-                                    </li>
-                                    </ul>
+                                  </ol>
                             </section>
 
                             <section id="filters" class="doc-section">
                                 <h2 class="section-title">Filters</h2>
-                                          <ul>
-                                            <li><strong>WPLMS Theme </strong>:
-                                              <ul>
-                                                <li><strong>wplms_allinstructors</strong> : Filter on Query arguments for All Instructors template.</li>
-                                                <li><strong>wplms_sidebar</strong> : Filter on Sidebar which is to be shown in Courses, Pages, posts etc.</li>
-                                                <li><strong>wplms_instructor_courses_style</strong> : Filter on featured block style name (course2, course...) for instructing courses</li>
-                                                <li><strong>wplms_certificate_code_user_id</strong> : Certificate validation, Filter on certificate code to return User ID</li>
-                                                <li><strong>wplms_certificate_code_course_id</strong> : Certificate validation, Filter on certificate code to return Course ID</li>
-                                                <li><strong>wplms_certificate_code_template_id</strong> : Certificate validation, Filter on certificate code to return Template ID</li>
-                                                <li><strong>wplms_certificate_heading</strong> : Default certificate title</li>
-                                                <li><strong>wplms_certificate_sub_heading</strong> : Default certificate sub heading</li>
-                                                <li><strong>wplms_certificate_before_course_title</strong> : Default certificate text</li>
-                                                <li><strong>bp_course_admin_before_course_students_list</strong> : Filters array of Student IDs in a course in course - admin - members section.</li>
-                                                <li><strong>wplms_curriculum_course_link</strong> : Course - Curriculum : Filters flag value, if returns 1 then the items (units/quizzes) in Course curriculum appear with direct links.</li>
-                                                <li><strong>wplms_curriculum_course_lesson</strong> : Course - Curriculum : Filters individual Unit html in Course - Curriculum. Accepts 1 more argument as Unit ID</li>
-                                                <li><strong>wplms_curriculum_time_filter</strong> : Course - Curriculum : Filters the time display html for every unit. Accepts 1 more argument that is the time value saved in Unit duration meta field.</li>
-                                                <li><strong>wplms_course_instructors</strong> : Filters out instructors IDs for a course. Used in Coauthor plus integration. Accepts 1 more argument, the ID of the course.</li>
-                                                <li><strong>wplms_create_course_settings</strong> : Filters out course settings array and their stored/default value</li>
-                                                <li><strong>wplms_frontend_create_course_pricing</strong> : Filters for Course pricing setting with their stored/defaut value</li>
-                                                <li><strong>wplms_front_end_pricing</strong> : Flag which enables/disables the pricing section from the front end course creation page.</li>
-                                                <li><strong>wplms_frontend_cpt_query</strong> : Modifies WP arguments for loading list of units,quizzes. Used in Instructor privacy and Linkage.</li>
-                                                <li><strong>wplms_front_end_course_delete</strong> : Filters flag which enables course deletion via front end.</li>
-                                                <li><strong>wplms_logo_url</strong> : Filters and returns Logo image link</li>
-                                                <li><strong>wplms-mobile-menu</strong> : Filter on Mobile Menu arguments</li>
-                                                <li><strong>wplms-top-menu</strong> : Filter on Mobile top arguments</li>
-                                                <li><strong>wplms-main-menu</strong> : Filter on Mobile main arguments</li>
-                                                <li><strong>wplms_customizer_config</strong> : Filter on Customizer config, can be used to add custom control in theme customiser</li>
-                                                <li><strong>wplms_pmpro_course_check</strong> : Filter on user expiration timestamp for course if course is subscribed via PMPro membership</li>
-                                                <li><strong>vibe_breadcrumbs_show_title</strong> : Filters Flag which displays current page title in breadcrumb, return 0 to disable.</li>
-                                                <li><strong>wplms_unit_print_button</strong> : Filter Print button html on certificate and unit pages</li>
-                                                <li><strong>wplms_registeration_page</strong> : Filters registration page link html in the header</li>
-                                                <li><strong>wplms_instructing_courses_endpoint</strong> : Filters instructing courses end point, default set to 'instructing-courses', append this end point on a authors page to get the list of courses published by the author.</li>
-                                                <li><strong>wplms_course_stats_list</strong> : Filters download stats options</li>
-                                                <li><strong>wplms_course_status</strong> : Filters out course status across the setup</li>
-                                                <li><strong>wplms_notes_dicussion_args</strong> : Filters out WP Query arguments on notes and discussion</li>
-                                                <li><strong>vibe_font_query_args</strong> : Filters out Font query arguments while loading google fonts</li>
-                                                <li><strong>wplms_login_widget_action</strong> : Filters the "action" link of Vibe Login dropdown in header. Useful to bypass server restrictions imposed by some hosting companies.</li>
-                                                <li><strong>wplms_in_course_quiz</strong> : Filters flag to enable In course quiz</li>
-                                                <li><strong>wplms_direct_access_not_allowed</strong> : Filters message "Direct access not allowed"</li>
-                                                <li><strong>wplms_event_access_flag</strong> : Filters access to event content</li>
-                                                <li><strong>loop_shop_columns</strong> : Filters number of products in one row in shop page</li>
-                                                <li><strong>vibe_option_custom_sections</strong> : Filters out sections in options panel. Can be used to add custom options or information in options panel.</li>
-                                              </ul>
-                                            </li>
-                                            <li><strong>Vibe Course Module </strong>:
-                                              <ul>
-                                                <li><strong>wplms_calculated_commission_base</strong> : Filters calculated commission for instructor for per course sale</li>
-                                                <li><strong>wplms_unit_mark_complete</strong> : Filters Mark unit complete HTML</li>
-                                                <li><strong>wplms_in_course_quiz_args</strong> : Filters WP Query arguments for In course quiz</li>
-                                                <li><strong>bp_course_wplms_filters</strong> : Filters Arguments passed by Filters in course directory</li>
-                                                <li><strong>bp_user_can_create_course</strong> : Filters true/false based on current user capability</li>
-                                                <li><strong>wplms_course_nav_menu</strong> : Filters Course Menu.</li>
-                                                <li><strong>bp_directory_course_search_form</strong> : Filters search form HTML</li>
-                                                <li><strong>wplms_auto_subscribe</strong> : Filters auto-subscribe (user gets subscribed to course on opening the course)for course. Accepts 1 more argument : Course ID</li>
-                                                <li><strong>wplms_take_course_page</strong> : Filters Take course page url, accepts Course ID as another argument</li>
-                                                <li><strong>wplms_finished_course_link</strong> : Filters finished course link when course is finished</li>
-                                                <li><strong>wplms_course_product_id</strong> : Filters Product ID for course take this course button. Arguements : Product ID, Course ID </li>
-                                                <li><strong>wplms_private_course_button</strong> : Filters link on Private course button</li>
-                                                <li><strong>wplms_private_course_button_label</strong> : Filters labels on Private course button</li>
-                                                <li><strong>wplms_course_details_widget</strong> : Filters course details array.</li>
-                                                <li><strong>wplms_generate_quiz_questions</strong> : Filters quiz id returns list of questions generated for the user.</li>
-                                                <li><strong>wplms_unit_classes</strong> : Filters classes added in the units loaded inside the course start page.</li>
-                                                <li><strong>wplms_incorrect_quiz_answer</strong> : Filters incorrect quiz answer marks.</li>
-                                                <li><strong>wplms_correct_quiz_answer</strong> : Filters correct quiz answer marks.</li>
-                                                <li><strong>wplms_course_drectory_default_order</strong> : Filters default course directory order. Used by LMS - settings</li>
-                                                <li><strong>bp_course_single_item</strong> : Filters classes on single course item in coruse directory</li>
-                                                <li><strong>wplms_display_course_instructor_avatar</strong> : Filters intructor avatar html</li>
-                                                <li><strong>wplms_instructor_meta</strong> : Filters instructor meta value html whereever instructor html is generated.</li>
-                                                <li><strong>wplms_course_credits_array</strong> : Filters the array of multiple payment modes of a course.</li>
-                                                <li><strong>wplms_course_marks</strong> : Filters out course marks.</li>
-                                                <li><strong>wplms_course_finished</strong> : Filters Course finished message.</li>
-                                                <li><strong>wplms_unfinished_unit_quiz_message</strong> : Filters unfinished Quiz or Unit message. Accepts Unit ID/Quiz ID as argument</li>
-                                                <li><strong>wplms_course_filters_course_cat</strong> : Filters out list of categories to be displayed in Course filters widget</li>
-                                                <li><strong>wplms_course_filter_admin_args</strong> : Filters WP User query arguments for Administrator to be included in Instructors.</li>
-                                                <li><strong></strong> : </li>
-                                              </ul>
-                                            </li>
-                                            <li><strong>Vibe Custom Types </strong>:
-                                              <ul>
-                                                <li><strong>vibe_course_duration_parameter</strong> : Filters course duration parameter, default set to 86400 seconds = 1 days</li>
-                                                <li><strong>vibe_drip_duration_parameter</strong> : Filters course duration parameter, default set to 86400 seconds = 1 days</li>
-                                                <li><strong>vibe_unit_duration_parameter</strong> : Filters course duration parameter, default set to 60 seconds = 1 minute</li>
-                                                <li><strong>vibe_quiz_duration_parameter</strong> : Filters course duration parameter, default set to 60 seconds = 1 minute</li>
-                                                <li><strong>vibe_product_duration_parameter</strong> : Filters course duration parameter, default set to 86400 seconds = 1 days</li>
-                                                <li><strong>vibe_assignment_duration_parameter</strong> : Filters course duration parameter, default set to 86400 seconds = 1 days</li>
-                                                <li><strong>wplms_post_metabox</strong> : Filters metabox arguments for posts</li>
-                                                <li><strong>wplms_page_metabox</strong> : Filters metabox arguments for pages</li>
-                                                <li><strong>wplms_course_metabox</strong> : Filters metabox arguments for courses</li>
-                                                <li><strong>wplms_course_product_metabox</strong> : Filters metabox arguments for Course pricing options</li>
-                                                <li><strong>wplms_unit_metabox</strong> : Filters metabox arguments for units</li>
-                                                <li><strong>wplms_question_metabox</strong> : Filters metabox arguments for questions</li>
-                                                <li><strong>wplms_quiz_metabox</strong> : Filters metabox arguments for quizzes</li>
-                                                <li><strong>wplms_testimonial_metabox</strong> : Filters metabox arguments for testimonial</li>
-                                                <li><strong>wplms_product_metabox</strong> : Filters metabox arguments for product</li>
-                                                <li><strong>wplms_events_metabox</strong> :Filters metabox arguments for Events </li>
-                                                <li><strong>wplms_certificate_metabox</strong> : Filters metabox arguments for certificate</li>
-                                                <li><strong>wplms_assignment_metabox</strong> : Filters metabox arguments for assignment</li>
-                                                <li><strong>wplms_survey_metabox</strong> : Filters metabox arguments for survey</li>
-                                                <li><strong>vibe_thumb_featured_image</strong> : Filters metabox arguments for featured images</li>
-                                                <li><strong>vibe_thumb_rating</strong> : Filters metabox arguments for ratings in featured blocks</li>
-                                                <li><strong>vibe_thumb_reviews</strong> : Filters metabox arguments for reviews in featured blocks</li>
-                                                <li><strong>vibe_thumb_instructor_meta</strong> : Filters metabox arguments for instructor meta information</li>
-                                                <li><strong>vibe_featured_thumbnail_style</strong> : Filters HTML generated by featured block</li>
-                                                <li><strong>wplms_backend_cpt_query</strong> : Filters WP Query for backend posts, used in Instructor privacy and linkage.</li>
-                                              </ul>
-                                            </li>
-                                            <li><strong>WPLMS Front End </strong>:
-                                              <ul>
-                                                <li><strong>wplms_front_end_group_vars</strong> : Filters arguments for Group creation via front end</li>
-                                                <li><strong>wplms_front_end_forum_vars</strong> : Filters arguments for Forum creation via front end</li>
-                                                <li><strong>wplms_front_end_unit_vars</strong> : Filters arguments for Unit creation via front end</li>
-                                                <li><strong>wplms_front_end_quiz_vars</strong> : Filters arguments for Quiz creation via front end</li>
-                                                <li><strong>wplms_frontend_new_product</strong> : Filters arguments for Product creation via front end</li>
-                                                <li><strong>wplms_front_end_question_vars</strong> : Filters arguments for questions creation via front end</li>
-                                                <li><strong>wplms_front_end_assignment_vars</strong> : Filters arguments for assignment creation via front end</li>
-                                                <li><strong>wplms_unit_types</strong> : Filters available unit types </li>
-                                              </ul>
-                                            </li>
-                                          </ul>
+                                <ol>
+                                    <li>
+                                      <strong><h3>WPLMS Theme</h3></strong>
+                                        <div class="box">
+                                          <b>All wplms filters are included in: wplms/includes/filters.php</b>
+                                        </div>
+                                        <ul>
+                                          <li>
+                                              <strong> : </strong><br>
+                                              <strong>@func :</strong> <br>
+                                              <strong>@param :</strong> <br>
+                                              <strong>@return :</strong> 
+                                            </li><br>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                      <strong><h3>Vibe Course Module</h3></strong>
+                                      <div class="box">
+                                        <b>All vibe course module filters are included in: vibe-course-module/includes/bp-course-filters.php</b>
+                                      </div>
+
+                                      <ul>
+                                        <li>
+                                          <strong> bp_ajax_querystring: </strong>Allow templates to pass parameters directly into the template loops via AJAX<br>
+                                          <strong>@func :</strong> bp_course_ajax_querystring<br>
+                                          <strong>@param :</strong> $string, $object<br>
+                                          <strong>@return :</strong> updated string
+                                        </li><br>
+
+                                        <li>
+                                          <strong> wplms_course_product_id : </strong> Filters Product ID for course take this course button.<br>
+                                          <strong>@func :</strong> wplms_expired_course_product_id <br>
+                                          <strong>@param :</strong> $pid <br>
+                                          <strong>@param :</strong> $course_id<br>
+                                          <strong>@param :</strong> $status -> check status of the course product whether it is expired or not<br>
+                                          <strong>@return :</strong> return $pid;
+                                        </li><br>
+
+                                        <li>
+                                          <strong> vibe_course_duration_parameter : </strong>Filters course duration parameter<br>
+                                          <strong>@func :</strong> course_duration_filter<br>
+                                          <strong>@param :</strong>$duration <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> duration of course
+                                        </li><br>
+
+                                        <li>
+                                          <strong> vibe_drip_duration_parameter: </strong> Filters drip feed duration<br>
+                                          <strong>@func :</strong> drip_duration_filter<br>
+                                          <strong>@param :</strong>$duration <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> duration of course
+                                        </li><br>
+
+                                        <li>
+                                          <strong> vibe_unit_duration_parameter: </strong>Filters a specific unit duration <br>
+                                          <strong>@func :</strong> unit_duration_filter<br>
+                                          <strong>@param :</strong>$duration <br>
+                                          <strong>@param :</strong>$unit_id <br>
+                                          <strong>@return :</strong> unit duration
+                                        </li><br>
+
+                                        <li>
+                                          <strong>vibe_quiz_duration_parameter : </strong> Filters quiz time duration<br>
+                                          <strong>@func :</strong>quiz_duration_filter <br>
+                                          <strong>@param :</strong>$duration <br>
+                                          <strong>@param :</strong>$quiz_id <br>
+                                          <strong>@return :</strong> quiz duration
+                                        </li><br>
+
+                                        <li>
+                                          <strong>vibe_assignment_duration_parameter : </strong> Filters assignment time duration<<br>
+                                          <strong>@func :</strong>assignment_duration_filter <br>
+                                           <strong>@param :</strong>$duration <br>
+                                          <strong>@param :</strong>$assignment_id <br>
+                                          <strong>@return :</strong> assignment duration
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_curriculum_course_lesson : </strong> Course - Curriculum : Filters individual Unit html in Course - Curriculum. Accepts 1 more argument as Unit ID<br>
+                                          <strong>@func :</strong>course_lesson_details <br>
+                                          <strong>@param :</strong>$title <br>
+                                          <strong>@param :</strong>$unit_id <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $title
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_unit_classes : </strong> Filters classes added in the units loaded inside the course start page.<br>
+                                          <strong>@func :</strong>wplms_incourse_quiz_stop_notes <br>
+                                          <strong>@param :</strong>$class <br>
+                                          <strong>@param :</strong>$id <br>
+                                          <strong>@return :</strong> $class
+                                        </li><br>
+
+
+                                        <li>
+                                          <strong>wplms_take_this_course_button_label : </strong>Filters take this course button label<br>
+                                          <strong>@func :</strong> apply_course_button_label<br>
+                                          <strong>@param :</strong>$label <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $label -> new label set for the course button instead of apply course button label<br>
+                                          Refer : <a href="https://wplms.io/support/knowledge-base/change-take-this-course-label-for-selected-courses/" target="_blank">Tip to change button label</a>
+                                        </li><br>
+
+
+                                        <li>
+                                          <strong> wplms_private_course_button_label: </strong> Filters labels on Private course button<br>
+                                          <strong>@func :</strong> apply_course_button_label<br>
+                                          <strong>@param :</strong>$label <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $label -> new label set for the course button
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_course_product_id : </strong> Filters Product ID for course take this course button. Arguements : Product ID, Course ID<br>
+                                          <strong>@func :</strong>apply_course_button_link <br>
+                                          <strong>@param :</strong>$link,$course_id <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $link
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_private_course_button : </strong> Filters link on Private course button<br>
+                                          <strong>@func :</strong>apply_course_button_link <br>
+                                          <strong>@param :</strong>$link <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $link
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_course_details_widget : </strong> Filters course details array.<br>
+                                          <strong>@func :</strong>hide_price <br>
+                                          <strong>@param :</strong>$details <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $details
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_course_submission_tabs : </strong> Filters the submissions by the student<br>
+                                          <strong>@func :</strong>apply_course_submission_tab, this function returns the tabs according to the submissions such as quiz submission, course submission, applications. <br>
+                                          <strong>@param :</strong>$tabs <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $tabs
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_drip_feed_element_in_message : </strong> Filters the message of unit availability<br>
+                                          <strong>@func :</strong>drip_feed_element, function used to show the message in unit if drip feed is enabled<br>
+                                          <strong>@param :</strong>$element <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $element
+                                        </li><br>
+
+                                         <li>
+                                          <strong>wplms_drip_value : </strong><br>
+                                          <strong>@func :</strong>evaluate_course_drip, this function evaluates the course drip feed. First it checks which drip feed is enabled and according to the condition evaluates the course <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                        <li>
+                                          <strong>vibe_total_drip_duration : </strong> Filters the total drip duration, when the course is started till the end.<br>
+                                          <strong>@func :</strong> total_drip_duration, function to evaluate the total drip duration w.r.t drip duration parameter. It calculates the total time duration for drip feed.<br>
+                                          <strong>@param :</strong>$value <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@param :</strong>$unit_id <br>
+                                          <strong>@param :</strong>$pre_unit_id <br>
+                                          <strong>@return :</strong> $value
+                                        </li><br>
+
+                                        <li>
+                                          <strong>bp_course_next_unit_access : </strong> Filters the accessibility of next unit<br>
+                                          <strong>@func :</strong>next_unit_access <br>
+                                          <strong>@param :</strong>$next_unit_access <br>
+                                          <strong>@param :</strong>$course_id <br>
+                                          <strong>@return :</strong> $next_unit_access
+                                        </li><br>
+
+
+                                        <li>
+                                          <strong>bp_activity_user_can_delete : </strong> test if a non-admin can delete their own activity.<br>
+                                          <strong>@func :</strong> student_restricted_activities<br>
+                                          <strong>@param :</strong>$flag <br>
+                                          <strong>@param :</strong>$activity <br>
+                                          <strong>@return :</strong> $flag
+                                        </li><br>
+
+                                        <li>
+                                          <strong>bp_get_course_certificate_url : </strong><br>
+                                          <strong>@func :</strong>certificate_url <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                        <li>
+                                          <strong>bp_course_certificate_class : </strong><br>
+                                          <strong>@func :</strong> certificate_class<br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                        <li>
+                                          <strong>question_the_content : </strong><br>
+                                          <strong>@func :</strong>execute_shortcode_in_questions <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                         <li>
+                                          <strong>bp_get_profile_field_data : </strong><br>
+                                          <strong>@func :</strong>check_for_array <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                        <li>
+                                          <strong>get_comment : </strong><br>
+                                          <strong>@func :</strong>avatar_on_comment_screen_for_units_fix <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_course_nav_menu : </strong><br>
+                                          <strong>@func :</strong>wplms_course_news_menu <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                         <li>
+                                          <strong>wplms_course_locate_template : </strong><br>
+                                          <strong>@func :</strong>wplms_course_news_template <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                        <li>
+                                          <strong>bp_course_total_count : </strong><br>
+                                          <strong>@func :</strong>wpml_course_count <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                         <li>
+                                          <strong>bp_course_api_check_quiz_lock : </strong><br>
+                                          <strong>@func :</strong>api_site_quiz_lock <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                        <li>
+                                          <strong>wplms_check_partial_free_course_access : </strong><br>
+                                          <strong>@func :</strong>check_access_for_partial_free_course <br>
+                                          <strong>@param :</strong> <br>
+                                          <strong>@return :</strong> 
+                                        </li><br>
+
+                                      </ul>
+
+                                    </li>
+                                  </ol>
+
                             </section>
 
                              <section id="execution-sequence" class="doc-section">
