@@ -183,8 +183,8 @@
                                 <p><b>Sidebars and Widgets can be set up in WP Admin Dashboard->Appearance->Widgets.</b></p>
                                 <p>In WPLMS we use the terminology Sidebar for Widget areas in the theme. The sidebars are used in almost all the pages in WPLMS. Although sidebars are configurable for each post type like page, post, course, unit etc. each post type has a default value of the sidebar. Description of each sidebar is explained below.</p>
                                 <ol>
-                                    <li><b>Student Sidebar : </b>This is the dashboard sidebar for students. This sidebar is visible on the dashboard area of students. Any widgets added in thsi sidebar will appear in the student dashboard.</li>
-                                    <li><b>Instructor Sidebar : </b>This is the dashboard sidebar for instructors. Similar to student sidebar, this sidebar is visible on the dashboard area of instructors. Any widgets added in thsi sidebar will appear in the instructor dashboard. </li>
+                                    <li><b>Student Sidebar : </b>This is the dashboard sidebar for students. This sidebar is visible on the dashboard area of students. Any widgets added in this sidebar will appear in the student dashboard.</li>
+                                    <li><b>Instructor Sidebar : </b>This is the dashboard sidebar for instructors. Similar to student sidebar, this sidebar is visible on the dashboard area of instructors. Any widgets added in this sidebar will appear in the instructor dashboard. </li>
                                     <li><b>Main Sidebar : </b>This sidebar is the default sidebar for all the pages, posts, archive, category pages etc. For posts and pages you also get an option to override this sidebar from page/post settings area.</li>
                                     <li><b>BuddyPress : </b>This sidebar is shown on All BuddyPress pages like All members, All groups, All forums, All courses page and all activity.
                                     </li>
@@ -194,7 +194,7 @@
                                     <li><b>Product : </b>This sidebar is shown on All Product pages.</li>
                                     <li><b>Checkout : </b>This sidebar is shown on checkout page below the coupon widget.</li>
                                     <li><b>Top footer Sidebar : </b>This sidebar is shown on Footer top row. You can chose to show/hide this sidebar based on the footer layout value which can be set in Customizer - Footer.</li>
-                                    <li><b>Bottom footer Sidebar : </b>This sidebar is shown on Footer bottom row. You can chose to show/hide this suidebar based on the Footer layout value set in Customizer - footer.</li>
+                                    <li><b>Bottom footer Sidebar : </b>This sidebar is shown on Footer bottom row. You can chose to show/hide this sidebar based on the Footer layout value set in Customizer - footer.</li>
                                     <li><b>Megamenu : </b>This is sidebar created from Sidebar manage in options panel. We'll use this sidebar in creating a Mega menu. Refer to <a href="http://vibethemes.com/documentation/wplms/knowledge-base/setting-up-mega-menu-in-wplms/" target="_blank"><b>Mega menu section</b></a> on how to use a sidebar for mega menu.</li>
                                 </ol>
                                 <p><b>You can create unlimited sidebars using Options Panel -> Sidebar Manager.</b></p>
@@ -285,14 +285,14 @@
 ================================================== -->
                             <section id="buddypress-course-widget" class="doc-section">
                                 <h3 class="block-title">Widget : BuddyPress Course Widget</h3>
-                                <p>BuddyPress Course Widget is a multipurpose widget which is used to show information about courses. The Course widget has following paramters</p>
+                                <p>BuddyPress Course Widget is a multipurpose widget which is used to show information about courses. The Course widget has following parameters</p>
                                 <ol>
                                     <li><strong>Widget Title</strong> : The widget title which appears above the widget in the sidebar.</li>
                                     <li><strong>Style</strong> : Select out of 3 style options :
                                         <ul>
                                             <li><strong>Single</strong> : Display one course snapshot at a time. If display courses count is more than one then each course snapshot appears below the other.</li>
                                             <li><strong>List</strong> : The courses are displayed in a list view. Each list item contains course image 64px in width, aligned to left and course title with course categories.</li>
-                                            <li><strong>Carousel</strong> : Displayes one course snapsop at a time. However, if display courses count is more than one then more courses can be scrolled over in the same space in a coursel format.</li>
+                                            <li><strong>Carousel</strong> : Displayes one course snapshot at a time. However, if display courses count is more than one then more courses can be scrolled over in the same space in a coursel format.</li>
                                         </ul>
                                     </li>
                                     <li><strong>Select course category</strong> : (Optional), if you want to show courses from a specific category then select a existing course category.</li>
@@ -306,7 +306,7 @@
                                             <li><strong>Number of Students</strong> : Order by number of students in the course</li>
                                         </ul> 
                                     </li>
-                                    <li><strong>Sort</strong> : Sort order for the orderby clause helps in refining the list of courses with the order by clause. Supports two values, Ascending, Decending (default)</li>
+                                    <li><strong>Sort</strong> : Sort order for the orderby clause helps in refining the list of courses with the order by clause. Supports two values, Ascending, Descending (default)</li>
                                     <li><strong>Specific Courses</strong> : If you want to display specific courses in the widget, enter their comma saperated course ids in the order in which you want to display them in the widget. If courses are entered in this field, it will overwrite all the order fields. Course ids are standard post ids.</li>
                                     <li><strong>Number of courses to show</strong> : Select the number of courses to display in the widget. Only valid if no value is entered in Specific courses.</li>
                                 </ol>
@@ -342,7 +342,7 @@
                                 <p>Buddypress Instructor Widget is used to show any particular Instructor in the Sidebar. If this widget is placed in the course sidebar then the widget will automatically display the course instructor details.</p>
                                 <ol>
                                     <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
-                                    <li><strong> Fallback Instrcutor Id</strong> : Enter the fallback instructor id. The widget would display the details of this instructor when placed in non-course sidebar</li>
+                                    <li><strong> Fallback Instructor Id</strong> : Enter the fallback instructor id. The widget would display the details of this instructor when placed in non-course sidebar</li>
                                     <li><strong> Number of course by the instructor to show </strong> : How many courses you want to show of the particular instructor.</li>
                                 </ol>
                                 <div class="row">
@@ -412,7 +412,7 @@
                                         </ul> 
                                     </li>
                                     <li><strong> Comma Separated Courses</strong> : If you want to display specific courses in the widget, enter their comma saperated course ids in the order in which you want to display them in the widget.</li>
-                                    </ol>
+                                </ol>
                                     <div class="row">
                                     <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
@@ -445,7 +445,7 @@
                                             <li><strong>Course Count</strong> : The number of courses in the course category</li>
                                         </ul>
                                     </li>
-                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or decending.</li>
+                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
                                     <li><strong>Exclude Course Category Terms Ids (comma saperated): </strong> : By entering specific Course category ids, these course categories can be excluded from the resulting list. refer below screenshot on how to get course category id. Go to LMS -> Course Category and edit the category</li>
                                 </ol>
                                 <div class="row">
@@ -479,7 +479,7 @@
                                             <li><strong>Course Count</strong> : The number of courses in the course category</li>
                                         </ul>
                                     </li>
-                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or decending.</li>
+                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
                                     <li><strong>Exclude Course Category Terms Slugs (comma saperated): </strong> : By entering specific Course category ids, these course categories can be excluded from the resulting list. refer below screenshot on how to get course category id. Go to LMS -> Course Category and edit the category</li>
                                 </ol>
                                 <div class="row">
@@ -515,7 +515,7 @@
                                             <li><strong>Rating</strong> : It displays the course reviews on the basis of ratings.</li>
                                         </ul>
                                     </li>
-                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or decending.</li>
+                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
                                     <li><strong>Specific Reviews/Comments (comma saperated): </strong> : By entering specific Course ids, it shows specific course reviews/comments for those ids.</li>
                                     <li><strong> Number of Reviews to show</strong> : Enter the numeric value to show number of reviews
                                 </ol>
@@ -543,12 +543,12 @@
                                         <ol>
                                             <li><strong>Single</strong> : Display one event card at a time. If display events count is more than one then each event card appears below the other.</li>
                                             <li><strong>List</strong> : The events are displayed in a list view. </li>
-                                            <li><strong>Carousel</strong> : Displayes one event card at a time. However, if display events count is more than one then more events can be scrolled over in the same space in a coursel format.</li>
+                                            <li><strong>Carousel</strong> : Displays one event card at a time. However, if display events count is more than one then more events can be scrolled over in the same space in a coursel format.</li>
                                         </ol>
                                     </li>
                                     <li><strong> Select Event type</strong> : Select an Event category to display events.</li>
                                     <li><strong> Order By</strong> : Currently supports three formats, published date, Random or Name</li>
-                                    <li><strong> Sort</strong> : Sort the above selected order by in Ascending or Decending</li>
+                                    <li><strong> Sort</strong> : Sort the above selected order by in Ascending or Descending</li>
                                     <li><strong> Specific Events </strong>: Enter the event ids of the event which you want to in the widget. Event ids are standard post ids of event posts.</li>
                                     <li><strong> Number of Events to show</strong> : Set a maximum limit on number of events which can be displayed in the widget.</li>
                                     <li><strong> Show course events (on course pages)</strong> : Force widget to select the course automatically when displaying a course page. So, the widget would display the events of the displayed course if placed in the course sidebar.
@@ -952,10 +952,10 @@
                                 <h3 class="block-title">Header</h3>
                                 <p>The options in this section controls the header part of the theme. It has some important controls like:</p>
                                 <ul class="list">
-                                    <li><strong>Upload Logo : </strong>Upload or chose an image from the Media gallery as your site logo.</li>
-                                    <li><strong>Upload Logo for Mobile : </strong>Upload or chose an image from the Media gallery as your site logo for Mobile.</li>
+                                    <li><strong>Upload Logo : </strong>Upload or choose an image from the Media gallery as your site logo.</li>
+                                    <li><strong>Upload Logo for Mobile : </strong>Upload or choose an image from the Media gallery as your site logo for Mobile.</li>
                                     <li><strong>Upload Alternate Logo : </strong>This Logo is shown in header when it becomes fixed or in the Header top.</li>
-                                    <li><strong>Upload Favicon : </strong>Upload or chose an image from the Media gallery as your favicon.</li>
+                                    <li><strong>Upload Favicon : </strong>Upload or choose an image from the Media gallery as your favicon.</li>
                                     <li><strong>Fix Top header on Scroll : </strong>Fix the top header which has the login controls, on site scroll.</li>
                                     <li><strong>Navigation Search as Course Search : </strong>Enabling this option would force the default search in main menu to search for entered text only in courses. The result of this search is displayed in a special course search page.</li>
                                     <li><strong>Header Top Content -  standard header : </strong>You can Write the HTML here. It will be shown in the header.</li>
@@ -1065,7 +1065,7 @@
                                         <li><strong>Instructor can Assign/remove Badges and Certificates :</strong> This switch enables instructors to manually assign and remove course badge and certificates to students for their courses. The functionality is located in Course Admin members section. Note : Using this functionality does not generate time values, so the certificates do not show a course completion date value.</li>
                                         <li><strong>Instructor can extend subscription :</strong>Allows intructor to extend the subscription of the course for the student. </li>
                                         <li><strong>Force Instructor Content privacy :</strong> This is a very inportant switch, it enables privacy among instructors. When this switch is enabled, an instructor can not see other instructors units, courses, quizzes, questions and the uploads library while creating content.</li>
-                                        <li><strong>Leaderboard/Stats visibility :</strong>The setting allows to select the visibility of the leaderboard/stats to student/instrcutors </li>
+                                        <li><strong>Leaderboard/Stats visibility :</strong>The setting allows to select the visibility of the leaderboard/stats to student/instructors </li>
                                         <li><strong>Become a Teacher Page : </strong>Select any page which you want to shown when user click on Become a teach button. This is an important page and is shown at various places like the All instructors page.</li>
                                         <li><strong>Fallback Certificate Page :</strong>Select the Page with Certificate Page Template.</li>
                                         <li><strong>Course default avatar :</strong> Upload the avatar, this avatar is shown for courses which do not have any avatar</li>
@@ -1686,9 +1686,9 @@
                                 <h4>Export Settings</h4>
                                 <ul class="list">
                                     <li><strong>Select Module :</strong> A dropdown which contains module types such as course, unit, quiz, question and assignment. Select a wplms module that you want to export</li>
-                                    <li><strong>Set Taxonomy :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
-                                    <li><strong>Set Taxonomy Term :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
-                                    <li><strong>Specific Module/s Ids :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma seperated modules for more than one modules.</li>
+                                    <li><strong>Set Taxonomy :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma separated modules for more than one modules.</li>
+                                    <li><strong>Set Taxonomy Term :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma separated modules for more than one modules.</li>
+                                    <li><strong>Specific Module/s Ids :</strong> By default all are selected but you can specify a particular if you want.it is an optional field.enter comma separated modules for more than one modules.</li>
                                     <li><strong>Export content :</strong> If you checked the checkbox then you can export the content of the module.</li>
                                     <li><strong>Export Settings :</strong> If you checked the checkbox then you can export module settings.</li>
                                     <li><strong>Export Taxonomies :</strong> If you checked the checkbox then you can export optional taxonomies and relationship.</li>
