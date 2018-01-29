@@ -131,6 +131,76 @@
                                 </div>
                             </section>
 
+                            <section id="student-menu" class="doc-section">
+                                <h2 class="section-title">Student Menu</h2>
+                                <ol>
+                                    <li>
+                                        <b> Dashboard :</b> Student can view his own course progress, no of units completed, finished courses, his statistics, can prepare his to do tasks,course events. It is same like instructor dashboard.
+                                    </li>
+                                    <li>
+                                        <b> Courses :</b> This section consits number of completed courses by students, the courses in which student is enrolled. It consists of further three subcategories : My Courses, Results, Stats
+                                    </li>
+                                    <li>
+                                        <b> Activity :</b> This section records the activities of student. It consists of further 6 subcategories: 
+                                        <ul>
+                                            <li>Personal</li>
+                                            <li>Mentions</li>
+                                            <li>Favourites</li>
+                                            <li>Friends</li>
+                                            <li>Course</li>
+                                            <li>Groups</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/student_activity.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/student_activity.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/student_activity.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <b> Profile :</b> Student Profile is visible here where he can upload cover image as well as his profile image.
+                                    </li>
+                                    <li>
+                                        <b> Notifications :</b> All the notifications are visible in this section(e.g. instructor notifications, course evaluated, course reset for student)
+                                    </li>
+                                    <li>
+                                        <b> Messages :</b> All the messages send to students is visible in this section.
+                                    </li>
+                                    <li>
+                                        <b> Wishlist :</b> User/Student Wishlist is visible in this section
+                                    </li>
+                                    <li>
+                                        <b> Friends :</b> Whenever someone send you friend request, that will be visible in this section. And, if you are already a friend with someone then that wil also be visisble in this section under friendship subcategory. You can also send friend request to someone. For that access <b>site url/members</b>, it will display list of all members now just click on add friend and when that person accepts your friend request. Both of you become friends.
+                                    </li>
+                                    <li>
+                                        <b> Groups :</b> Groups membership and group invitations will be visible
+                                        in this section.
+                                    </li>
+                                    <li>
+                                        <b> Forums :</b> It consists information like topic started in the forum, replies created, favourites, subscriptions.
+                                    </li>
+                                    <li>
+                                        <b> BuddyDrive :</b> It records the file sharing between members, between friends via buddydrive feature.<b>Buddydrive Integration with WPLMS</b><a href="https://wplms.io/support/course-drive-buddydrive-integration-with-wplms/" target="_blank"><b> Tutorial</b></a>
+                                    </li>
+                                    <li>
+                                        <b> Settings :</b> It consists general settings such as changing your password, resetting password, email notifications, setting for your pofile visibility, delete, account.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/email_notifications.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/email_notifications.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/email_notifications.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <b> Achievements :</b> Display your achievements.
+                                    </li>
+                                </ol>
+                            </section>
+
                             <section id="browse" class="doc-section">
                                 <h1>Taking Course</h1>
                                 <p>This section covers all the aspects of Student pursuing a course in detail. Right from browsing the course, to purchasing, completing the course, checking the results for the course and finally submitting the course and getting a badge or certificate of the course.</p>
@@ -147,7 +217,7 @@
                               <p>The course page contains several details for a student to decide on to take the course.</p>
                               <ol>
                                 <li>Vital Information is located on top right corner with information like : Required Pre-Course, Price of Course,
-                                Course Badge, Course CErtificate.</li>
+                                Course Badge, Course Certificate.</li>
                                 <li>Course Description is shown on the course home page</li>
                                 <li>Course Reviews are shown at the end of the course description</li>
                                 <li>Total number of students who have taken the course.</li>
@@ -364,16 +434,28 @@
 
                              <section id="interaction" class="doc-section">
                                 <h2 class="section-title">Interaction</h2>
-                                <p>BuddyPress offers a variety of components to promote interaction among students and instructors.</p>
+                                <p>BuddyPress offers a variety of components to promote interaction among students and instructors. BuddyPress is set up as a plugin that can be added to a WordPress site. It’s a large plugin, and it adds a lot of functionality. Users can create and update their profiles, send private messages to one another, befriend and de-friend each other, form and join groups, participate in forum discussions, and more. There are some core features which are discussed below:</p>
+                                <h3 id="groups">Extended Profiles</h3>
+                                  <p>Users can update their profiles from their  profile section. They can update their profile photo, update or change their cover image, update about your location and bio.</p>
+                                <h3 id="groups">Activity Streams</h3>
+                                  <p>Activity streams aggregate all of your activities across a BuddyPress installation. Enabled BuddyPress components make use of the activity stream component, which means any sort of activity can be recorded. Blogs posts, new friendships and blog comments are among the most popular activities recorded.
+                                  </p>
                                 <h3 id="groups">Friends</h3>
-                                  <p>If Friendship component is enabled in buddypress then a student can send friendship request to other members (students+ instructors). Friends have access to send private message and invite each other groups etc..</p>
-                                  <h3 id="groups">Private Messaging</h3>
-                                  <p>Private messaging allows greater interaction among students.</p>
+                                  <p>If Friendship component is enabled in buddypress then a student can send friendship request to other members (students+ instructors). Friends have access to send private message and invite each other groups etc.</p>
+                                <h3 id="groups">Private Messaging</h3>
+                                  <p>Private messaging allows greater interaction among students.Members can message other people on their friends list as well as reply to received messages. Each member has their own individual Inbox and Sent messages folders as well as a Compose message screen. Members are notified of new messages in three ways:
+                                    <ul>
+                                        <li>By email (if enabled by the user)</li>
+                                        <li>By an incremented number in the notification circle located in the WP Admin Toolbar</li>
+                                        <li>By an incremented number in the Messages tab if the user is on their own profile</li>
+                                    </ul>
+                                  </p>
                                   <p>Quiz and Course results are sent to users via private messaging, wherein students can directly interact with their instructor on the results.</p>
-                                  <h3 id="groups">Groups</h3>
+                                <h3 id="groups">Groups</h3>
                                   <p>Groups are a very powerful component of BuddyPress which allows greater levels of interaction. Each course can be connected to a Group and while students access to course is limited but a student is a lifetime member to a course. Using external plugins like Group documents, instructor can send assignments to students via this mode.</p>
-                                  <h3 id="forums">Forums</h3>
+                                <h3 id="forums">Forums</h3>
                                   <p>Each course and unit can be connected to forums. Each group can also be connected to a forum. If the group is private then the forum access is allowed only to group members. Which make the forum an exclusive forum for course members. We recommend connecting this same forum with the Groups course.</p>
+                                  <p>To read about buddypress features in detail : <a href="https://buddypress.org/about/activity/"" target="_blank"><b>Link</b></a></p>
                                     <div class="row">
                                         <div class="col-md-3 col-sm-3 col-xs-12">
                                             <div class="screenshot-holder">
@@ -415,6 +497,7 @@
                                         <li><a class="scrollto" href="#register">Register</a></li>
                                         <li><a class="scrollto" href="#profile-fields">Profile Fields</a></li>
                                         <li><a class="scrollto" href="#avatar">Avatar</a></li>
+                                        <li><a class="scrollto" href="#student-menu">Student Menu</a></li>
                                     </ul>
                                 </li>
                                 <li>

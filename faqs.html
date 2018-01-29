@@ -58,6 +58,26 @@
                 <div class="doc-body">
                     <div class="doc-content">
                         <div class="content-inner">
+<!-- Update Section
+================================================== -->
+                        <section id="update" class="doc-section">
+                                <h2 class="section-title">Update</h2>
+                                <div class="section-block" id="updating-wplms">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Updating WPLMS</h3>
+                                    <div class="answer">
+                                        <p>There are two ways through which you can update wplms theme: one is auto updating wplms and anoother one is manually updating wplms.</p>
+                                        <ol>
+                                            <li>
+                                                <a href="https://wplms.io/support/knowledge-base/auto-updating-wplms/" target="_blank"><b> Auto Updating Tutorial</b></a></br>
+                                                <a href="installation.html#download-purchase-code"><b>Get API Key</b></a>
+                                            </li>
+                                            <li><a href="https://wplms.io/support/knowledge-base/manually-updating-wplms/"><b> Manually updating Tutorial</b></a></li>
+                                        </ol>
+                                    </div>
+                                </div><!--//section-block-->
+                            </section>
+<!-- Installation and Setup
+================================================== -->
                             <section id="general" class="doc-section">
                                 <h2 class="section-title">Installation and Setup</h2>
                                 <div class="section-block">
@@ -68,7 +88,7 @@
                                     <h3 class="question"><i class="fa fa-question-circle"></i> Upload issue, Are you sure you want to do this ?</h3>
                                     <div class="answer">
                                         <p>While uploading the theme if you see an issue like the image below</p>
-                                        <img src="images/areyousureerror.jpg" alt="wordpress upload limit issue wplms" />
+                                        <img src="assets/images/areyousureerror.jpg" alt="wordpress upload limit issue wplms" />
                                         <p>It means that the upload limit of your server is less than the size of the theme. The theme size is around ~32mb, so make sure the upload limit of your server is more than this.</p>
                                         <p>You may need to contact your hosting company or web host and ask them to increase this limit. Other alternatives include <a href="installation.html#ftp-upload">installation via FTP</a> and <a href="installation.html#cpanel-upload">installation via cPanel</a></p>
                                     </div>
@@ -99,7 +119,9 @@
                                 <div class="section-block" id="slider-re-import">
                                     <h3 class="question"><i class="fa fa-question-circle"></i> Slider is not Visible</h3>
                                     <div class="answer">
-                                    <p>If Your Slider is not visible, you can swich the demo through demo switcher. Refer : <a href="https://www.youtube.com/watch?v=3twsjnelAAM" target="_blank">Link</a></p>
+                                    <p>If Your Slider is not visible, you can swich the demo through demo switcher. Refer : <a href="https://www.youtube.com/watch?v=3twsjnelAAM" target="_blank"><b>Link</b></a></p><br>
+                                    Still Slider is not downloaded then you can download the slider from here: <a href="https://wplms.io/support/knowledge-base/slider-not-downloaded/" target="_blank"><b>Download Slider</b></a>
+                                    </p>
                                     </div>
                                 </div><!--//section-block-->
 
@@ -136,10 +158,30 @@
                                     <p>This is the most common issue that the student purchased a course but doesn't get access to that course. This happens because course is not connected with the woocommerce product. Make sure your course is connected always with the course product.</p>
                                     </div>
                                 </div><!--//section-block-->
+
+                                <div class="section-block" id="auto-add-courses">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Automatically Add courses on signup</h3>
+                                    <div class="answer">
+                                    <p>If an Instructor/admministrator wants to assign free courses on user signup then there is a setting present in LMS > Settings > Assign Free Courses to students on account activation.</p>
+                                    </div>
+                                </div><!--//section-block-->
                             </section>
 
+<!-- Translation
+================================================== -->
                             <section id="translation" class="doc-section">
                                 <h2 class="section-title">Translation</h2>
+                                <div class="section-block" id="translation-via-loco">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> Few Points to remember while translating</h3>
+                                    <div class="answer">
+                                        <ol>
+                                            <li>Always save your translations in global languages folder instead of local languages folder. This will prevent losing the translations even after the theme update.</li>
+                                            <li>Sync your po and mo file and then save before starting translation of strings.</li>
+                                            <li>If even after syncronizing po and mo files, some strings not appear then update your .pot file via poedit editor and save. Updating pot file will update all the strings. Just locate your pot file and open it using poedit editor > click on update > save.</li>
+                                        </ol>
+                                    </div>
+                                </div><!--//section-block-->
+
                                 <div class="section-block" id="translation-not-working">
                                     <h3 class="question"><i class="fa fa-question-circle"></i> Troubleshooting Guide - Translation not working</h3>
                                     <div class="answer">
@@ -156,6 +198,13 @@
                                     <p>Refer this tutorial : <a href="https://wplms.io/support/knowledge-base/social-profile-field-group/" target="_blank"><b> Link</b></a></p>
                                     </div>
                                 </div><!--//section-block-->
+
+                                <div class="section-block" id="delete-profile-field">
+                                    <h3 class="question"><i class="fa fa-question-circle"></i> How To Delete Multiple Profile Fields</h3>
+                                    <div class="answer">
+                                    <p>Sometimes duplicate profile fields are visible on register page. You can delete these duplicate ones from wp-admin > users > Profile Fields</b></a></p>
+                                    </div>
+                                </div><!--//section-block-->
                             </section>
                                                         
                         </div><!--//content-inner-->
@@ -163,6 +212,7 @@
                     <div class="doc-sidebar">
                         <nav id="doc-nav">
                             <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
+                                <li><a class="scrollto" href="#update">Update</a></li>
                                 <li><a class="scrollto" href="#general">Installation & setup</a></li>
                                 <li><a class="scrollto" href="#others">Others</a></li>
                                 <li><a class="scrollto" href="#translation">Translation</a></li>
