@@ -53,7 +53,7 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><span aria-hidden="true" class="icon icon_puzzle_alt"></span> Admin Guide</h1>
-                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Nov 20, 2017</div>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Dec 25, 2017</div>
                 </div><!--//doc-header-->
                 <div class="doc-body">
                     <div class="doc-content">
@@ -72,13 +72,23 @@
                                             <li><b>Footer Menu</b>: located in the Footer bottom in the right corner. This menu does not support multi-level items.</li>
                                             <li><b>Mobile Menu</b>: is the Slide out menu. It appears only on Mobile layouts when the user clicks on the Menu icon placed in the header in Mobile layouts. This menu does not support multi-level items.</li>
                                         </ul>
-                                        <p>You can choose the Menus from wp-admin > Appearance > Customizer > Menus Locations</p>
+                                        <p>You can choose the Menus from wp-admin > Appearance > Customizer > Menus Locations. The menu Location can be also chosen from the backend. Go to wp-admin > Appearance > Menus</p>
+                                        <p>You can read more about wordpress menu : <a href="https://codex.wordpress.org/WordPress_Menu_User_Guide" target="_blank"><b>Setting Up WordPress Menu</b></a></p>
                                     </div><!--colo-md-9-->
 
                                     <div class="col-md-3 col-sm-3 col-xs-12">
                                         <div class="screenshot-holder">
                                             <a href="assets/images/demo/menu.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/menu.png" alt="screenshot" /></a>
                                             <a class="mask" href="assets/images/demo/menu.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div><!--//row-->
+
+                                <div class="row">
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/set_menu.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/set_menu.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/set_menu.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
                                     </div><!--colo-md-3-->
                                 </div><!--//row-->
@@ -168,7 +178,7 @@
                                     </div><!--//icon-holder-->
                                     <div class="content">
                                         <h4 class="callout-title">Other Details Related To Mega Menu</h4>
-                                        <p><b>Mega Menu Tutorial : </b> <a href="http://vibethemes.com/documentation/wplms/knowledge-base/setting-up-mega-menu-in-wplms/" target="_blank"><b>link</b></a></p>
+                                        <p><b>Mega Menu Tutorial : </b> <a href="https://wplms.io/support/knowledge-base/setting-up-mega-menu-in-wplms/" target="_blank"><b>link</b></a></p>
 
                                         <p><b>Mega Menu - Sub Category style : </b> <a href="http://vibethemes.com/documentation/wplms/knowledge-base/setting-up-mega-menu-in-wplms/" target="_blank"><b>link</b></a></p>
 
@@ -181,7 +191,7 @@
                             <section id="wplms-sidebars" class="doc-section"> 
                                 <h3 class="block-title">WPLMS Sidebars/Widget Areas</h3>
                                 <p><b>Sidebars and Widgets can be set up in WP Admin Dashboard->Appearance->Widgets.</b></p>
-                                <p>In WPLMS we use the terminology Sidebar for Widget areas in the theme. The sidebars are used in almost all the pages in WPLMS. Although sidebars are configurable for each post type like page, post, course, unit etc. each post type has a default value of the sidebar. Description of each sidebar is explained below.</p>
+                                <p>In WPLMS we use the terminology <a href="glossary.html#sidebars" target="_blank"><b>Sidebar</b></a> for Widget areas in the theme. The sidebars are used in almost all the pages in WPLMS. Although sidebars are configurable for each post type like page, post, course, unit etc. each post type has a default value of the sidebar. Description of each sidebar is explained below.</p>
                                 <ol>
                                     <li><b>Student Sidebar : </b>This is the dashboard sidebar for students. This sidebar is visible on the dashboard area of students. Any widgets added in this sidebar will appear in the student dashboard.</li>
                                     <li><b>Instructor Sidebar : </b>This is the dashboard sidebar for instructors. Similar to student sidebar, this sidebar is visible on the dashboard area of instructors. Any widgets added in this sidebar will appear in the instructor dashboard. </li>
@@ -281,253 +291,262 @@
                                 </div><!--//row-->
                             </section>
 
-<!-- Buddypress course widget
+<!-- BuddyPress Widgets
 ================================================== -->
-                            <section id="buddypress-course-widget" class="doc-section">
-                                <h3 class="block-title">Widget : BuddyPress Course Widget</h3>
-                                <p>BuddyPress Course Widget is a multipurpose widget which is used to show information about courses. The Course widget has following parameters</p>
-                                <ol>
-                                    <li><strong>Widget Title</strong> : The widget title which appears above the widget in the sidebar.</li>
-                                    <li><strong>Style</strong> : Select out of 3 style options :
+                            <section id="buddypress-widget" class="doc-section"> 
+                                <h2 class="block-title">BuddyPress Widgets</h2>
+                                <ul>
+                                    <li>
+                                        <h3 class="block-title">Widget : BuddyPress Course Widget</h3>
+                                        <p>BuddyPress Course Widget is a multipurpose widget which is used to show information about courses. The Course widget has following parameters</p>
+                                        <ol>
+                                        <li><strong>Widget Title</strong> : The widget title which appears above the widget in the sidebar.</li>
+                                        <li><strong>Style</strong> : Select out of 3 style options :
                                         <ul>
-                                            <li><strong>Single</strong> : Display one course snapshot at a time. If display courses count is more than one then each course snapshot appears below the other.</li>
-                                            <li><strong>List</strong> : The courses are displayed in a list view. Each list item contains course image 64px in width, aligned to left and course title with course categories.</li>
-                                            <li><strong>Carousel</strong> : Displayes one course snapshot at a time. However, if display courses count is more than one then more courses can be scrolled over in the same space in a coursel format.</li>
+                                        <li><strong>Single</strong> : Display one course snapshot at a time. If display courses count is more than one then each course snapshot appears below the other.</li>
+                                        <li><strong>List</strong> : The courses are displayed in a list view. Each list item contains course image 64px in width, aligned to left and course title with course categories.</li>
+                                        <li><strong>Carousel</strong> : Displayes one course snapshot at a time. However, if display courses count is more than one then more courses can be scrolled over in the same space in a coursel format.</li>
                                         </ul>
-                                    </li>
-                                    <li><strong>Select course category</strong> : (Optional), if you want to show courses from a specific category then select a existing course category.</li>
-                                    <li><strong>Order By</strong> : Select order by for selecting courses from the course directory in an order. The order by clause currently supports :
+                                        </li>
+                                        <li><strong>Select course category</strong> : (Optional), if you want to show courses from a specific category then select a existing course category.</li>
+                                        <li><strong>Order By</strong> : Select order by for selecting courses from the course directory in an order. The order by clause currently supports :
                                         <ul>
-                                            <li><strong>Name</strong> : Order by course slug</li>
-                                            <li><strong>Course Title</strong> : Order by course title</li>
-                                            <li><strong>Number of Reviews</strong> : Order by number of course reviews</li>
-                                            <li><strong>Date Published (default)</strong> : Order by date published</li>
-                                            <li><strong>Rating score</strong> : Order by rating score</li>
-                                            <li><strong>Number of Students</strong> : Order by number of students in the course</li>
+                                        <li><strong>Name</strong> : Order by course slug</li>
+                                        <li><strong>Course Title</strong> : Order by course title</li>
+                                        <li><strong>Number of Reviews</strong> : Order by number of course reviews</li>
+                                        <li><strong>Date Published (default)</strong> : Order by date published</li>
+                                        <li><strong>Rating score</strong> : Order by rating score</li>
+                                        <li><strong>Number of Students</strong> : Order by number of students in the course</li>
                                         </ul> 
+                                        </li>
+                                        <li><strong>Sort</strong> : Sort order for the orderby clause helps in refining the list of courses with the order by clause. Supports two values, Ascending, Descending (default)</li>
+                                        <li><strong>Specific Courses</strong> : If you want to display specific courses in the widget, enter their comma saperated course ids in the order in which you want to display them in the widget. If courses are entered in this field, it will overwrite all the order fields. Course ids are standard post ids.</li>
+                                        <li><strong>Number of courses to show</strong> : Select the number of courses to display in the widget. Only valid if no value is entered in Specific courses.</li>
+                                        </ol>
+                                        <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/buddypress1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress1.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/buddypress1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                        </div><!--col-md-2-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/buddypress2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/buddypress2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                        </div><!--col-md-2-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/buddypress3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress3.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/buddypress3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                        </div><!--col-md-2-->
+                                        </div>
                                     </li>
-                                    <li><strong>Sort</strong> : Sort order for the orderby clause helps in refining the list of courses with the order by clause. Supports two values, Ascending, Descending (default)</li>
-                                    <li><strong>Specific Courses</strong> : If you want to display specific courses in the widget, enter their comma saperated course ids in the order in which you want to display them in the widget. If courses are entered in this field, it will overwrite all the order fields. Course ids are standard post ids.</li>
-                                    <li><strong>Number of courses to show</strong> : Select the number of courses to display in the widget. Only valid if no value is entered in Specific courses.</li>
-                                </ol>
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
+
+                                    <li>
+                                        <h3 class="block-title">Widget : BuddyPress Instructor Widget</h3>
+                                        <p>Buddypress Instructor Widget is used to show any particular Instructor in the Sidebar. If this widget is placed in the course sidebar then the widget will automatically display the course instructor details.</p>
+                                        <ol>
+                                        <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
+                                        <li><strong> Fallback Instructor Id</strong> : Enter the fallback instructor id. The widget would display the details of this instructor when placed in non-course sidebar</li>
+                                        <li><strong> Number of course by the instructor to show </strong> : How many courses you want to show of the particular instructor.</li>
+                                        </ol>
+                                        <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
-                                            <a href="assets/images/demo/buddypress1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/buddypress1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        <a href="assets/images/demo/buddpress_instructor1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddpress_instructor1.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/buddpress_instructor1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
+                                        </div><!--col-md-2-->
 
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
-                                            <a href="assets/images/demo/buddypress2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/buddypress2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        <a href="assets/images/demo/Buddypress_Instruc2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/Buddypress_Instruc2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/Buddypress_Instruc2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
+                                        </div><!--col-md-2-->
+                                        </div>
+                                    </li>
 
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                    <li>
+                                        <!-- Buddypress course search widget
+                                        ================================================== -->
+                                        <h3 class="block-title">Widget : BuddyPress Course Search Widget</h3>
+                                        <p>Buddypress Course search Widget is used to show the course specific search with two select boxes. One for instructor and other for course categories. This is an advanced search built only for courses.</p>
+                                        <ol>
+                                        <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
+                                        <li><strong> Show Course category dropdown</strong> : Display dropdown of all course categories, to filter the result only from this category.</li>
+                                        <li><strong> Show Instructor dropdown</strong> : Display dropdown of all instructors, to filter the result only related to courses published by the selected instructor.</li>
+                                        </ol>
+                                        <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
-                                            <a href="assets/images/demo/buddypress3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress3.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/buddypress3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        <a href="assets/images/demo/buddypress_course_search1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress_course_search1.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/buddypress_course_search1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-                                </div>
-                            </section>
+                                        </div><!--col-md-2-->
 
-
-<!-- Buddypress instructor widget
-================================================== -->
-                            <section id="buddypress-instructor-widget" class="doc-section">
-                                <h3 class="block-title">Widget : BuddyPress Instructor Widget</h3>
-                                <p>Buddypress Instructor Widget is used to show any particular Instructor in the Sidebar. If this widget is placed in the course sidebar then the widget will automatically display the course instructor details.</p>
-                                <ol>
-                                    <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
-                                    <li><strong> Fallback Instructor Id</strong> : Enter the fallback instructor id. The widget would display the details of this instructor when placed in non-course sidebar</li>
-                                    <li><strong> Number of course by the instructor to show </strong> : How many courses you want to show of the particular instructor.</li>
-                                </ol>
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
-                                            <a href="assets/images/demo/buddpress_instructor1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddpress_instructor1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/buddpress_instructor1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        <a href="assets/images/demo/buddypress_course_search2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress_course_search2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/buddypress_course_search2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
+                                        </div><!--col-md-2-->
+                                        </div>
+                                    </li>
 
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/Buddypress_Instruc2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/Buddypress_Instruc2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/Buddypress_Instruc2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-                                </div>
-                            </section>
-
-
-<!-- Buddypress course search widget
-================================================== -->
-                            <section id="buddypress-course-search-widget" class="doc-section">
-                                <h3 class="block-title">Widget : BuddyPress Course Search Widget</h3>
-                                <p>Buddypress Course search Widget is used to show the course specific search with two select boxes. One for instructor and other for course categories. This is an advanced search built only for courses.</p>
-                                <ol>
-                                  <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
-                                  <li><strong> Show Course category dropdown</strong> : Display dropdown of all course categories, to filter the result only from this category.</li>
-                                  <li><strong> Show Instructor dropdown</strong> : Display dropdown of all instructors, to filter the result only related to courses published by the selected instructor.</li>
-                                </ol>
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/buddypress_course_search1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress_course_search1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/buddypress_course_search1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/buddypress_course_search2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress_course_search2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/buddypress_course_search2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-                                </div>
-                            </section>
-
- <!-- Buddypress related course widget
-================================================== -->
-                            <section id="buddypress-related-course-widget" class="doc-section">
-                                <h3 class="block-title">Widget : BuddyPress Related Course Widget</h3>
-                                <p>Buddypress Related Course Widget is used to show the courses which is related to each other by some common fields.</p>
-                                <ol>
-                                    <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
-                                    <li><strong> Show From Same Course Category</strong> : It displays the courses from same course category.</li>
-                                    <li><strong> Show from Same Instructor</strong> : It displays the courses from same instructor.</li>
-                                    <li><strong> Show from Same Course Location</strong> : It displays the courses from same course location.</li>
-                                    <li><strong> Show from Same Course Level</strong> : It displays the courses from same course level.</li>
-                                    <li><strong> Number of Courses</strong> : It displays the number of courses</li>
-                                    <li><strong> Block Style</strong> : It displays the courses according to the block style
+                                    <li>
+                                        <!-- Buddypress related course widget
+                                        ================================================== -->
+                                        <h3 class="block-title">Widget : BuddyPress Related Course Widget</h3>
+                                        <p>Buddypress Related Course Widget is used to show the courses which is related to each other by some common fields.</p>
+                                        <ol>
+                                        <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
+                                        <li><strong> Show From Same Course Category</strong> : It displays the courses from same course category.</li>
+                                        <li><strong> Show from Same Instructor</strong> : It displays the courses from same instructor.</li>
+                                        <li><strong> Show from Same Course Location</strong> : It displays the courses from same course location.</li>
+                                        <li><strong> Show from Same Course Level</strong> : It displays the courses from same course level.</li>
+                                        <li><strong> Number of Courses</strong> : It displays the number of courses</li>
+                                        <li><strong> Block Style</strong> : It displays the courses according to the block style
                                         <ul>
-                                            <li><strong>Course</strong> : Course title and description will be visible below course image.</li>
-                                            <li><strong>Side</strong> : Course title and description will be visible besides course image.</li>
-                                            <li><strong>blogpost</strong> : Displays according to the publish date of the course.</li>
-                                            <li><strong>images_only</strong> : It displays images only without any description</li>
-                                            <li><strong>custom_block</strong> : It displays courses according to your custom block.</li>
+                                        <li><strong>Course</strong> : Course title and description will be visible below course image.</li>
+                                        <li><strong>Side</strong> : Course title and description will be visible besides course image.</li>
+                                        <li><strong>blogpost</strong> : Displays according to the publish date of the course.</li>
+                                        <li><strong>images_only</strong> : It displays images only without any description</li>
+                                        <li><strong>custom_block</strong> : It displays courses according to your custom block.</li>
                                         </ul> 
-                                    </li>
-                                    <li><strong> Comma Separated Courses</strong> : If you want to display specific courses in the widget, enter their comma saperated course ids in the order in which you want to display them in the widget.</li>
-                                </ol>
-                                    <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                        </li>
+                                        <li><strong> Comma Separated Courses</strong> : If you want to display specific courses in the widget, enter their comma saperated course ids in the order in which you want to display them in the widget.</li>
+                                        </ol>
+                                        <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
-                                            <a href="assets/images/demo/related_course1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/related_course1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/related_course1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        <a href="assets/images/demo/related_course1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/related_course1.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/related_course1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
+                                        </div><!--col-md-2-->
 
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
-                                            <a href="assets/images/demo/related_course2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/related_course2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/related_course2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        <a href="assets/images/demo/related_course2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/related_course2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/related_course2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-                                </div>
+                                        </div><!--col-md-2-->
+                                        </div>
+                                    </li>
+                                </ul>
                             </section>
 
 
-<!-- Course Categories
+
+<!-- Course Widgets
 ================================================== -->
-                            <section id="course-category-widget" class="doc-section">
-                                <h3 class="block-title">Widget : Course Categories</h3>
-                                <p>This widget displays the list of course categories available in the setup. The categories are displayed in a standard list format. </p>
-                                <ol>
-                                    <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
-                                    <li><strong> Order By</strong> : This parameter governs the order of the Course category list. Course categories can be displayed in order related to :
+                            <section id="course-widget" class="doc-section"> 
+                                <h2 class="block-title">Course Related Widgets</h2>
+                                <ul>
+                                    <li>
+                                        <!-- Course Categories
+                                        ================================================== -->
+                                        <h3 class="block-title">Widget : Course Categories</h3>
+                                        <p>This widget displays the list of course categories available in the setup. The categories are displayed in a standard list format. </p>
+                                        <ol>
+                                        <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
+                                        <li><strong> Order By</strong> : This parameter governs the order of the Course category list. Course categories can be displayed in order related to :
                                         <ul>
-                                            <li><strong>Name</strong> : The display name of the category</li>
-                                            <li><strong>Slug</strong> : The permalink slug value of the category</li>
-                                            <li><strong>Course Count</strong> : The number of courses in the course category</li>
+                                        <li><strong>Name</strong> : The display name of the category</li>
+                                        <li><strong>Slug</strong> : The permalink slug value of the category</li>
+                                        <li><strong>Course Count</strong> : The number of courses in the course category</li>
                                         </ul>
+                                        </li>
+                                        <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
+                                        <li><strong>Exclude Course Category Terms Ids (comma saperated): </strong> : By entering specific Course category ids, these course categories can be excluded from the resulting list. refer below screenshot on how to get course category id. Go to LMS -> Course Category and edit the category</li>
+                                        </ol>
+                                        <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/course_category1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category1.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/course_category1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                        </div><!--col-md-2-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/course_category2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/course_category2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                        </div><!--col-md-2-->
+                                        </div>
                                     </li>
-                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
-                                    <li><strong>Exclude Course Category Terms Ids (comma saperated): </strong> : By entering specific Course category ids, these course categories can be excluded from the resulting list. refer below screenshot on how to get course category id. Go to LMS -> Course Category and edit the category</li>
-                                </ol>
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/course_category1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/course_category1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
 
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/course_category2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/course_category2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-                                </div>
-                            </section>
-
-<!-- Course Category Navigation
-================================================== -->
-                            <section id="course-category-navigation" class="doc-section">
-                                <h3 class="block-title">Widget : Course Category Navigation</h3>
-                                <p>This widget displays the course categories navigation.</p>
-                                <ol>
-                                    <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
-                                    <li><strong> Order By</strong> : This parameter governs the order of the Course category list. Course categories can be displayed in order related to :
+                                    <li>
+                                        <!-- Course Category Navigation
+                                        ================================================== -->
+                                        <h3 class="block-title">Widget : Course Category Navigation</h3>
+                                        <p>This widget displays the course categories navigation.</p>
+                                        <ol>
+                                        <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
+                                        <li><strong> Order By</strong> : This parameter governs the order of the Course category list. Course categories can be displayed in order related to :
                                         <ul>
-                                            <li><strong>Name</strong> : The display name of the category</li>
-                                            <li><strong>Slug</strong> : The permalink slug value of the category</li>
-                                            <li><strong>Course Count</strong> : The number of courses in the course category</li>
+                                        <li><strong>Name</strong> : The display name of the category</li>
+                                        <li><strong>Slug</strong> : The permalink slug value of the category</li>
+                                        <li><strong>Course Count</strong> : The number of courses in the course category</li>
                                         </ul>
+                                        </li>
+                                        <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
+                                        <li><strong>Exclude Course Category Terms Slugs (comma saperated): </strong> : By entering specific Course category ids, these course categories can be excluded from the resulting list. refer below screenshot on how to get course category id. Go to LMS -> Course Category and edit the category</li>
+                                        </ol>
+                                        <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/course_category_nav1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category_nav1.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/course_category_nav1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                        </div><!--col-md-2-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                        <a href="assets/images/demo/course_category_nav2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category_nav2.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/course_category_nav2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                        </div><!--col-md-2-->
+                                        </div>
                                     </li>
-                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
-                                    <li><strong>Exclude Course Category Terms Slugs (comma saperated): </strong> : By entering specific Course category ids, these course categories can be excluded from the resulting list. refer below screenshot on how to get course category id. Go to LMS -> Course Category and edit the category</li>
-                                </ol>
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/course_category_nav1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category_nav1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/course_category_nav1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
 
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/course_category_nav2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_category_nav2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/course_category_nav2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-                                </div>
-                            </section>
-
-
-<!-- Course Reviews Widget
-================================================== -->
-                            <section id="course-reviews-widget" class="doc-section">
-                                <h3 class="block-title">Widget : Course Reviews Widget</h3>
-                                <p>This widget displays the course reviews in single, list & carousel formats.</p>
-                                <ol>
-                                    <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
-                                    <li><strong> Course Id(optional)</strong> : It is an optional field. </li>
-                                    <li><strong> Order By</strong> : This parameter governs the order of the Course category list. Course categories can be displayed in order related to :
+                                    <li>
+                                        <!-- Course Reviews Widget
+                                        ================================================== -->
+                                        <h3 class="block-title">Widget : Course Reviews Widget</h3>
+                                        <p>This widget displays the course reviews in single, list & carousel formats.</p>
+                                        <ol>
+                                        <li><strong> Widget Title</strong> : Enter the title of the widget you need to display. </li>
+                                        <li><strong> Course Id(optional)</strong> : It is an optional field. </li>
+                                        <li><strong> Order By</strong> : This parameter governs the order of the Course category list. Course categories can be displayed in order related to :
                                         <ul>
-                                            <li><strong>Recent</strong> : It Displays the recent course reviews</li>
-                                            <li><strong>Random</strong> : It displays the random course reviews</li>
-                                            <li><strong>Rating</strong> : It displays the course reviews on the basis of ratings.</li>
+                                        <li><strong>Recent</strong> : It Displays the recent course reviews</li>
+                                        <li><strong>Random</strong> : It displays the random course reviews</li>
+                                        <li><strong>Rating</strong> : It displays the course reviews on the basis of ratings.</li>
                                         </ul>
-                                    </li>
-                                    <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
-                                    <li><strong>Specific Reviews/Comments (comma saperated): </strong> : By entering specific Course ids, it shows specific course reviews/comments for those ids.</li>
-                                    <li><strong> Number of Reviews to show</strong> : Enter the numeric value to show number of reviews
-                                </ol>
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                        </li>
+                                        <li><strong>Sort Order </strong> : This governs the sort order of the displayed result along with the order by parameter. Supports ascending or descending.</li>
+                                        <li><strong>Specific Reviews/Comments (comma saperated): </strong> : By entering specific Course ids, it shows specific course reviews/comments for those ids.</li>
+                                        <li><strong> Number of Reviews to show</strong> : Enter the numeric value to show number of reviews
+                                        </ol>
+                                        <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
                                         <div class="screenshot-holder">
-                                            <a href="assets/images/demo/course_reviews.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_reviews.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/course_reviews.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        <a href="assets/images/demo/course_reviews.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_reviews.png" alt="screenshot" /></a>
+                                        <a class="mask" href="assets/images/demo/course_reviews.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                         </div><!--//screensot holder--> 
-                                    </div><!--col-md-2-->
-                                </div>
-                            </section>
+                                        </div><!--col-md-2-->
+                                        </div>
+                                    </li>
+                                </ul>
+
+
 
 <!-- WPLMS Events Widget
 ================================================== -->
@@ -899,8 +918,33 @@
 ================================================== -->
                             <section id="pagebuilder-section" class="doc-section">
                                 <h3 class="block-title">PageBuilder</h3>
-                                <p>Page Builder allows an admin to build or modify existing pages with drag and drop functionality. Through this, a person without even knowing about html, css can build pages. set carousel blocks, set layer sliders, post grids etc. To get page builder settings in your page, we have to export page builder codes. For that, Go to Vibe Options Panel > Page Builder Manager > Import Code.</p>
-                                <p>To import page builder code, copy the <a href="https://vibethemes.com/documentation/wplms/knowledge-base/page-builder-export-codes/" target="_blank"><b>export code</b></a> of your demo and paste that in import area of page builder manager section.</p>
+                                <p>Page Builder allows an admin to build or modify existing pages with drag and drop functionality. Through this, a person without even knowing about html, css can build pages. set carousel blocks, set layer sliders, post grids etc. Page Buider settings is categorized into 3 sub-parts: Columns, Content, Saved Layouts. It is necessary to enable the pagebuilder to show the components added in the page using pagebuilder.
+                                <p>To save the desirred page Layout, Click on save Layout. When you add a new page, you'll find your saved Layout in that Page in Page Builder settings Saved Layout Section. Drag and Drop that Layout and you'll get the exactly same page on another page.</p>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/page_builder_setting1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/page_builder_setting1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/page_builder_setting1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--col-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/page_builder_setting2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/page_builder_setting2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/page_builder_setting2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--col-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/page_builder_setting3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/page_builder_setting3.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/page_builder_setting3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--col-md-3-->
+                                </div>
+
+                                 <p>This saved Layout will also be visible in the pagebuilder manager section in the vibe options panel. Similarly, you can also create your home page like other demos by importing the code. After importing the code you'll see a new layout is saved in the  pagebuilder manager section. You need to just drag & drop this layout from Page builder saved Layout Settings and you'll get the page exactly like other demo's home page. To get page builder settings in your page, we have to export page builder codes. For that, Go to Vibe Options Panel > Page Builder Manager > Import Code.</p>
+                                <p>To import page builder code, copy the <a href="https://wplms.io/support/knowledge-base/page-builder-export-codes/" target="_blank"><b>export code</b></a> of your demo and paste that in import area of pagebuilder manager section.</p>
 
                                 <div class="row">
                                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -917,9 +961,11 @@
                                             </div>
                                         </div>
                                     </div><br><!--//row-->
-                                        <p><b>Visual Composer : </b>A visual editor or composer basically allows you to create structures, such as columns, rows, tabs or add content like image gallery, call to action buttons, maps, etc. using a visual interface. You can pick from a menu and add elements or drag and drop structures to order content. The Visual Composer plugin offers you an extraordinary editor which you can use to create any kind of layout you prefer. Refer video for Important settings in visual composer : <a href="https://www.youtube.com/watch?v=pJG1D40DkPg" target="_blank"><b>Tutorial</b></a></p>
+                                        <h3  class="block-title">Visual Composer(Now WP bakery PageBuilder)</h3>
+                                        <p>A visual editor or composer basically allows you to create structures, such as columns, rows, tabs or add content like image gallery, call to action buttons, maps, etc. using a visual interface. You can pick from a menu and add elements or drag and drop structures to order content. The Visual Composer plugin offers you an extraordinary editor which you can use to create any kind of layout you prefer. Refer video for Important settings in visual composer : <a href="https://www.youtube.com/watch?v=pJG1D40DkPg" target="_blank"><b>Tutorial</b></a></p>
                                         <p><b>WPLMS Enable Visual composer : <a href="https://www.youtube.com/watch?v=x6GvYu7N7oA" target="_blank">Tutorial</a></b></p>
-                                        <p><b> Updating Visual composer : <a href="https://www.youtube.com/watch?v=w0TO3dEXSKQ" target="_blank">Tutorial</a></b></p>            
+                                        <p><b> Updating Visual composer : <a href="https://www.youtube.com/watch?v=w0TO3dEXSKQ" target="_blank">Tutorial</a></b></p> 
+                                        <p> In WPLMS version 3.2 we have added a new feature in which pagebuilder elements are now added with visual composer. Tutorial: <a href="https://wplms.io/support/knowledge-base/vibe-page-builder-visual-composer-integration/" target="_blank"><b> Vibe PageBuilder</b></a></p>           
                             </section>
 
 
@@ -943,6 +989,14 @@
                             <section id="getting-started" class="doc-section">
                                 <h3 class="block-title">Getting Started</h3>
                                 <p>This section consists of the most important setting for the Theme. The theme requires your Themeforest credentials for Auto-Update system. You need to enter your Themeforest username and Themeforest Buyer API key for this. To know more on how to get an API key, refer to this screenshots:</p>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/buyer_api_key.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buyer_api_key.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/buyer_api_key.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--col-md-3-->
+                                </div>
                             </section>
 
 
@@ -955,8 +1009,8 @@
                                     <li><strong>Upload Logo : </strong>Upload or choose an image from the Media gallery as your site logo.</li>
                                     <li><strong>Upload Logo for Mobile : </strong>Upload or choose an image from the Media gallery as your site logo for Mobile.</li>
                                     <li><strong>Upload Alternate Logo : </strong>This Logo is shown in header when it becomes fixed or in the Header top.</li>
-                                    <li><strong>Upload Favicon : </strong>Upload or choose an image from the Media gallery as your favicon.</li>
-                                    <li><strong>Fix Top header on Scroll : </strong>Fix the top header which has the login controls, on site scroll.</li>
+                                    <li><strong>Upload Favicon : </strong>Upload or choose an image from the Media gallery as your favicon. A favicon is a small, 16x16 image that is shown inside the browser's location bar and bookmark menu when your site is called up.</li>
+                                    <li><strong>Fix Top header on Scroll : </strong>Fix the top header which has the login controls, on site scroll. You can fix the top header on scroll or remain it static so that whenever user scroll down the page the header do not scroll down with the page.</li>
                                     <li><strong>Navigation Search as Course Search : </strong>Enabling this option would force the default search in main menu to search for entered text only in courses. The result of this search is displayed in a special course search page.</li>
                                     <li><strong>Header Top Content -  standard header : </strong>You can Write the HTML here. It will be shown in the header.</li>
                                     <li><strong>Header Content : </strong>You can Write the HTML here. It will be shown in the header.</li>
@@ -978,10 +1032,10 @@
                                 <h3 class="block-title">Sidebar Manager</h3>
                                 <p>This section deals with Widget areas or sidebars. This functionality allows you to create unlimited sidebars in the theme. These sidebars are particularly useful when you want to have custom widget area/sidebars for a course, page or post. <b>All Events page sidebar</b> : If you're using WPLMS Events and you want to assign a different sidebar to all events page then use this option.</p>
                                 <ul>
-                                    <li><b>Create new sidebars :</b> Upload or chose an image from the Media gallery as your site logo.</li>
-                                    <li><b>All events page sidebar : </b>Upload or chose an image from the Media gallery as your favicon.</li>
-                                    <li><b>Import/export sidebar setting : </b>Fix the top header which has the login controls, on site scroll.</li>
-                                    <li><b>Import/export widget setting : </b>Fix the top header which has the login controls, on site scroll.</li>
+                                    <li><b>Create new sidebars :</b> As you can see in the wp-admin > Appearance > Widgets there are already sidebars present which is useful for all the purposes. What if, you want to create your own sidebar. To cretate own sidebar is needed hwen we use megamenu instread of simple navigation menus.</li>
+                                    <li><b>All events page sidebar : </b> The sidebar assigned to this page will be visible in all events page. You can even select a different sidebar. The widgets added in this sidebar will also be visible on posts pages.</li>
+                                    <li><b>Import/export sidebar setting : </b> Through this setting you can easily import sidebar settings in your current demo from another demo. Paste the code in the <i><b>import code</b></i> setion and click on import. This will import your sidebars from other demos as well as the widgets used in it. No need to set those widgets manually.</li>
+                                    <li><b>Import/export widget setting : </b> This will import/export widget setting from other demos to your demo.</li>
                                 </ul>
                                 <div class="row">
                                     <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1267,11 +1321,135 @@
                                     </div>
                                 </div>
                             </section>
+
+<!-- LMS Unit
+================================================== -->
+                            <section id="LMS" class="doc-section">
+                                <h2>LMS</h2>
+                                <ol>
+                                    <li><b>All Courses: </b>A course is a unit of teaching that typically lasts one academic term, is led by one or more instructors (teachers or professors), and has a fixed roster of students. A course is usually an individual subject. This section in LMS consists all the imported courses. You can delete these courses and create a new one.
+                                    </li>
+                                    <li><b>All Units: </b> A unit is like a semester or you can say a unit divides a whole course into small subunits. An instructor can set timing for units that wen it will be available to students. This section consists all the imported course units.
+                                    </li>
+                                    <li><b>All Quizes: </b> A quiz is a brief assessment used in education and similar fields to measure growth in knowledge, abilities, and/or skills. Quizzes are usually scored in points. In wplms, an instructor can create quizzes and attach those quizzes for the assessment of those students who are enrolled in that course.
+                                    </li>
+                                    <li><b>All Questions: </b> Question Bank as the name suggests, it is a collection of different types of questions. WPLMS Supports 10 types of questions: True-False, Multiple Choice, Multiple Correct, Soort Answers, Match Answers, Fill in the Blank, DropDown Select, Small Text, Large Text, Survey Type
+                                    </li>
+                                    <li><b> All Assignments: </b> An assignment is a task or piece of work that you are given to do, especially as part of your job or studies.
+                                    </li>
+                                    <li><b> Payouts: </b> This section is for instructor commissions.It shows the payouts that an admininstrator have to pay to the instructors in different courses. 
+                                    </li>
+                                    <li><b> Certificate Templates: </b> Instructors and Administrators can create their own certificate templates which is used for certificates and set these templates for the certificates. 
+                                    </li>
+                                    <li><b> Statistics: </b>statistics deals with the collection, analysis, interpretation, and presentation of masses of numerical data.<br><b> Read More About Statistics: </b><a href="instructor-guide.html#statistics" target="_blank"><b> Link</b></a>
+                                    </li>
+                                    <li><b> LMS Tree: </b>
+                                        Lms Tree is the tree which display course as the Branch and units and assignment as the sub-branches.Lms tree helps in viewing and editing all your courses and associated units and assignemnt through one place. <b>Refer the tutorial :</b><a href="https://www.youtube.com/watch?v=Rvt9GR0ZVG8" target="_blank"><b>LMS Tree in wplms</b></a>
+                                    </li>
+                                    <li><b> Add Ons: </b>
+                                    </li>
+                                    <li><b> Course Navigation(when wplms course custom nav plugin is activated): </b>
+                                        First of all please note that the hide show course settings feature will work for instructors only. Administrator will see all the settings always. There are two settings screens in this plugin. One is for Custom course section and other for Course creation settings (hide/show).
+                                        <ol>
+                                            <li>
+                                                <strong>Custom Sections :</strong> Just Click on Add Custom Section. It will show a form to add a section which will have 5 settings namely:
+                                                <ul>
+                                                <li><strong>Add Section Title : </strong> Add Title for the section.</li>
+                                                <li><strong>Add Section Slug : </strong> For the slug and permalink settings. This must be unique and does not contain any spaces.</li>
+                                                <li><strong>Add Section Description : </strong> Add Description for the section.</li>
+                                                <li><strong>Select Courses : </strong> In which courses it should be visible.</li>
+                                                <li><strong>Select Section Visibility : </strong> Set section visibility to make that section visible for specific group of users.</li>
+                                                <pre>Imp note : Please do not forget to re-save permalinks after each section you save by clicking on save section button.</pre>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Front end course creation : </strong> This screen will show the show,hide and defaults values for the course settings that you will hide. There are some settings for which defaults are not available as they can be saved as blank.</li>
+
+                                            <pre>Imp Note : Please note that if any settings are added or removed in course then please re-save the hide/show settings again as more settings can be added to the course by using this tip. It is necessary that if you hide any settings you must provide default value in it to avoid any conflicts.</pre>
+                                        </ol>
+                                    </li>
+                                    <li><b> Course Category: </b>
+                                        Here, you can define categories for your courses. From your courses you can categorize the courses. To create Course category, Go to Lms->Course category->Add New Course category.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/lms_course_category.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/lms_course_category.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/lms_course_category.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li><b> Quiz Type: </b>
+                                        Here, you can define types of a quiz for your courses unit. An administrator or instructor can add new categories for quizzes.
+                                    </li>
+                                    <li><b> Unit Tag: </b>
+                                        Unit tags helps in creating tags for your courses unit. Go to Lms->Unit Tag->Add New Tag.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/unit_tag.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/unit_tag.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/unit_tag.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li><b> Level: </b>
+                                        To enable level taxonomy, go to Vibe Options Panel > course manager > Enable Level Level. Level Taxonomy helps in creating levels and sub levels in courses.
+                                        <ul>
+                                            <li>Enable levels: Go to Vibe option panel->course manager->Enable levels.</li>
+                                            <li>Go to Lms->Levels->Add new levels</li>
+                                            <li>Select parent for creating sub level.</li>
+                                            <li>Go to the course and select level for the course.</li>
+                                            <li>Go To Appearance->widgets->Buddypress and add buddypress course filter widget and checked the checkbox of show level filter and save.</li>
+                                            <li>Filter courses based on levels in course directory.</li>
+                                            <li>See the level in course detail area. Resave your permalinks.
+                                            </li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/levels1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/levels1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/levels1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/level_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/level_2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/level_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li><b> Location: </b>
+                                        Location Taxonomy helps in locating course location. To Enable Course Location, Go to Vibe option panel->course manager->Enable Course Location.
+                                        <ul>
+                                            <li>Go to Lms->Locations->Add new locations</li>
+                                            <li>In your courses, you can select the course location</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/course_location1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_location1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/course_location1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/course_location2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_location2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/course_location2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                </ol>
+                            </section>
+
 <!-- LMS Settings
 ================================================== -->
                             <section id="general-settings" class="doc-section">
                                 <h2>LMS Settings</h2>
-                                <p>LMS Setting allows admin to redirect instructor and student to a particular page, set commission for the instructor, paying commissions according to the time period, ad-hoc management, import/export WPLMS elements.</p>
+                                <p>LMS Setting allows administrator to redirect instructor and student to a particular page, set commission for the instructor, paying commissions according to the time period, ad-hoc management, import/export WPLMS elements.</p>
                                 <h3 class="block-title">LMS : General Settings</h3>
                                 <p>LMS General settings control the redirection as well as allows you to display or hide the members, curriculum, user progress etc. from the different sections of the page.also helps in limiting no. of course, units and quiz per instructor. 
                                 Functions that are given in general settings are:</p>
@@ -1285,180 +1463,56 @@
 
                                                     <li><strong>Instructor Login redirect :</strong> A dropdown containing pages: Home Page, Profile Page, My Courses Page, Dashboard Page, Same Page. By default instructor redirection is set to home page but by choosing one from the dropdown you can redirect an instructor to a different page as he log-in.</li>
 
-                                                    <li><strong>Enable One Session Per User :</strong> If you checked the checkbox then a
+                                                    <li><strong>Enable One Session Per User :</strong> If you checked the checkbox then it  will allow a
                                                     user can login from one unique user_id(EXCLUDES ADMINISTRATORS).</li>
 
                                                     <li><strong>Hide Administrators in Instructors :</strong> If you checked the checkbox then it will hide administrator in all instructors page and elsewhere.</li>
 
                                                     <li><strong>Enable message to Instructor in Course Page :</strong> If you checked the checkbox then it will enables a message icon to send message to instructor. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/show-contact-instructor-in-course/" target="_blank">Tutorial</a></li>
 
-                                                    <li><strong>Enable Create course button in instructor profile menu :</strong> If you checked the checkbox then it will add a create course button in the instructor profile menu.
-                                                    <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                            <a href="assets/images/demo/create_a_course_button.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_a_course_button.png" alt="screenshot" /></a>
-                                                            <a class="mask" href="assets/images/demo/create_a_course_button.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
+                                                    <li><strong>Enable Create course button in instructor profile menu :</strong> If you checked the checkbox then it will add a create course button in the instructor profile menu.</li>
 
-                                                    <li><strong>Show WooCommerce/Pmpro account in profile :</strong> If you checked the checkbox  then it display woocommerce account in profile.
-                                                    <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                            <a href="assets/images/demo/wc_menu_in_profile.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wc_menu_in_profile.png" alt="screenshot" /></a>
-                                                            <a class="mask" href="assets/images/demo/wc_menu_in_profile.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
+                                                    <li><strong>Show WooCommerce/Pmpro account in profile :</strong> If you checked the checkbox  then it display woocommerce account in profile.</li>
 
                                                     <li><strong>Set a terms and conditions page for BuddyPress registration :</strong> You can select any page from your website which should be the terms and conditions page in the buddypress registration page.</li>
 
-                                                    <li>
-                                                        <strong>Enable Student menus :</strong>If you checked the checkbox then it adds new menu locations for students.By Using this setting an administrator can set different Menu for Students. Whenever a student logged in he will see the menu which is different from instructor menus.
-                                                        <div class="row">
-                                                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                                                <div class="screenshot-holder">
-                                                                    <a href="assets/images/demo/menu_for_student.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/menu_for_student.png" alt="screenshot" /></a>
-                                                                    <a class="mask" href="assets/images/demo/menu_for_student.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                                </div><!--//screensot holder--> 
-                                                            </div><!--colo-md-3-->
-                                                        </div>
-                                                    </li>
+                                                    <li><strong>Enable Student menus :</strong>If you checked the checkbox then it adds new menu locations for students.</li>
 
-                                                    <li>
-                                                        <strong>Enable Instructor menus :</strong> If you checked the checkbox then it adds new menu locations for instructors. Using this setting an administrator can set different Menu for Instructors. Whenever an Instructor logged in he will see the menu which is different from student menus.
-                                                    </li>
+                                                    <li><strong>Enable Instructor menus :</strong>If you checked the checkbox then it adds new menu locations for instructors.</li>
 
                                                     <li><strong>Assign Free courses to students on account activation :</strong> If you checked the checkbox then it enables auto-subscription to all the "free" courses in site to students when they signup/register and activate their account.</li>
                                                 </ul>
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/lms_gs1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/lms_gs1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/lms_gs1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
                                             </li><br>
 
                                             <li><strong>Course Home Settings</strong>
                                                 <ul>
-                                                    <li><strong>Course Members Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course members visibility is set to everyone. But you can choose who should see the course members, the logged in users or course users or just the instructors and the Administrators of the website.
-                                                    <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/members_tab1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/members_tab1.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/members_tab1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/members_tab.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/members_tab.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/members_tab.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
+                                                    <li><strong>Course Members Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course members visibility is set to everyone. But you can choose who should see the course members, the logged in users or course users or just the instructors and the administrators of the website.</li>
 
-                                                    <li><strong>Course Curriculum Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course curriculum visibility is set to everyone. But you can choose who should see the course curriculum, the logged in users or course users or just the instructors and the Administrators of the website.
-                                                    <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_curriculum_tab.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_curriculum_tab.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_curriculum_tab.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
+                                                    <li><strong>Course Curriculum Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course curriculum visibility is set to everyone. But you can choose who should see the course curriculum, the logged in users or course users or just the instructors and the administrators of the website.</li>
 
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_curriculum_tab1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_curriculum_tab1.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_curriculum_tab1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
-                                                    <li><strong>Course Events Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course events visibility is set to everyone. But you can choose who should see the course events, the logged in users or course users or just the instructors and the Administrators of the website.
-                                                     <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_events_tab1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_events_tab1.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_events_tab1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
+                                                    <li><strong>Course Events Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course events visibility is set to everyone. But you can choose who should see the course events, the logged in users or course users or just the instructors and the admin of the website.</li>
 
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_events_tab2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_events_tab2.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_events_tab2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
-                                                    <li><strong>Course Activity Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course activity visibility is set to everyone. But you can choose who should see the course activity, the logged in users or course users or just the instructors and the Administrators of the website.
-                                                     <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_activity_tab1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_activity_tab1.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_activity_tab1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
+                                                    <li><strong>Course Activity Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Admins. By default course activity visibility is set to everyone. But you can choose who should see the course activity, the logged in users or course users or just the instructors and the admin of the website.</li>
 
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_activity_tab2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_activity_tab2.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_activity_tab2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
-                                                    <li><strong>Course Drive Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Administrators. By default course drive visibility is set to everyone. But you can choose who should see the course drive, the logged in users or course users or just the instructors and the Administrators of the website.
-                                                    Refer this tutorial: <a href="https://wplms.io/support/knowledge-base/course-drive-in-wplms/" target="_blank"><b> Course Drive Tab in WPLMS</b></a>
-                                                     <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_drive_tab1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_drive_tab1.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_drive_tab1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
+                                                    <li><strong>Course Drive Visibility :</strong> A dropdown contains options for Everyone, Logged In Users, Course Users, Instructors and Admins. By default course drive visibility is set to everyone. But you can choose who should see the course drive, the logged in users or course users or just the instructors and the admin of the website.</li>
 
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_drive_tab2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_drive_tab2.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_drive_tab2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
+                                                    <li><strong>Hide Instructor in whole Site (single instructors) :</strong> This disables the instructor display on the website, its suitable for a website with just one instructor, as you do not want to show his/her name on the website everywhere.</li>
 
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/course_drive_tab3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_drive_tab3.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/course_drive_tab3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
+                                                    <li><strong>Change Pre-Required Course Condition from submitted to Evaluated :</strong> After enabling this students will have to wait for course evaluation by the instructor to move on to courses which have pre-requisite course under evaluation. By default the students will be able to get access of the course when they mark the pre-requisite course as finish.</li>
 
-                                                    <li><strong>Hide Instructor in whole Site (single instructors) :</strong> This disables the instructor display on the website, its suitable for a website with just one instructor, as you do not want to show his/her name on the website everywhere.
-                                                    <div class="row">
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/single_instructor_visibility1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/single_instructor_visibility1.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/single_instructor_visibility1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-
-                                                        <div class="col-md-3 col-sm-3 col-xs-12">
-                                                            <div class="screenshot-holder">
-                                                                <a href="assets/images/demo/single_instructor_visibility2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/single_instructor_visibility2.png" alt="screenshot" /></a>
-                                                                <a class="mask" href="assets/images/demo/single_instructor_visibility2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                                            </div><!--//screensot holder--> 
-                                                        </div><!--colo-md-3-->
-                                                    </div>
-                                                    </li>
-
-                                                    <li><strong>Change Pre-Required Course Condition from submitted to Evaluated :</strong> After enabling this students will have to wait for course evaluation by the instructor to move on to courses which have pre-requisite course under evaluation. By default the students will be able to get access of the course when they mark the pre-requisite course as finish.
-                                                    </li>
-
-                                                    <li><strong>Hide Members section in Single Course page :</strong> If you checked the checkbox then it will hide members section from course pages i.e. from single course page
-                                                    </li>
+                                                    <li><strong>Hide Members section in Single Course page :</strong> If you checked the checkbox then it will hide members section from course pages.</li>
 
                                                     <li><strong>Show curriculum below Course description :</strong> If you checked the checkbox then it  will show curriculum below the course description.</li>
 
-                                                    <li><strong>Disable Course Certificate image mode :</strong> If you checked the checkbox then it  will disable the image mode in the certificate. <a href="https://wplms.io/support/knowledge-base/disable-certificate-image-mode/" target="_blank"><b>Tutorial</b></a></li>
+                                                    <li><strong>Disable Course Certificate image mode :</strong> If you checked the checkbox then it  will disable the image mode in the certificate. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/disable-certificate-image-mode/" target="_blank"><b>Tutorial</b></a></li>
 
                                                     <li><strong>Free units should only be accessible to logged in members :</strong> If you checked the checkbox then the non logged in users cannot access any free units in the course curriculum.</li>
 
@@ -1518,7 +1572,7 @@
                                                 <ul>
                                                     <li><strong>Show Unit Description in Course curriculum :</strong> If you checked the checkbox then unit description appears below unit titles in Course curriculum.</li>
 
-                                                    <li><strong>Show User progress in Course Administrators :</strong> If you checked the checkbox then it  will show small progress bar for every user below her name in COURSE->Administrator SECTION.</li>
+                                                    <li><strong>Show User progress in Course Admin :</strong> If you checked the checkbox then it  will show small progress bar for every user below her name in COURSE->ADMIN SECTION.</li>
 
                                                     <li><strong>Enable Unit/Quiz Start Date time :</strong> If you checked the checkbox then it  will add setting in the units and quizzes settings to set the start date and time in it and the units and quizzes will start at a particulat date and time.</li>
 
@@ -1577,8 +1631,7 @@
 
                                             <li><strong>Miscellaneous Settings</strong>
                                                 <ul>
-                                                    <li><strong>Revert pretty permalinks for Courses :</strong> Pretty Permalinks is: wplms.io/demos/demo9/course/software-training/curriculum. Earlier we used to load like this: wplms.io/demos/demo9/course/software-training?action=curriculum. But some servers are not supporting pretty permalinks. That's why we need to revert pretty permalinks to make it supportable on all servers.
-                                                    </li>
+                                                    <li><strong>Revert pretty permalinks for Courses :</strong> If you checked the checkbox then it will revert permalinks from coursname/admin to coursename/?action-.</li>
 
                                                     <li><strong>Enable Course forum privacy :</strong> If you checked the checkbox then it only course students can access course forums.</li>
 
@@ -1950,128 +2003,7 @@
                                 <p><b>Refer the full video tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/touch-points-emails-messages-notifications/" target="_blank"><b> Touch Points</b></a></p>
                             </section>
 
-<!-- LMS Tree
-================================================== -->
-                            <section id="lms-tree" class="doc-section">
-                                <h2>LMS Tree</h2>
-                                <p>Lms Tree is the tree which display course as the Branch and units and assignment as the sub-branches.Lms tree helps in viewing and editing all your courses and associated units and assignemnt through one place. <b>Refer the tutorial :</b><a href="https://www.youtube.com/watch?v=Rvt9GR0ZVG8" target="_blank"><b>LMS Tree in wplms</b></a></p>
-                            </section>
 
-<!-- LMS Course Navigation
-================================================== -->
-                            <section id="lms-course-navigation" class="doc-section">
-                                <h2>LMS Course Navigation(when wplms course custom nav plugin is activated)</h2>
-                                <p>First of all please note that the hide show course settings feature will work for instructors only. Administrator will see all the settings always. There are two settings screens in this plugin. One is for Custom course section and other for Course creation settings (hide/show).</p>
-                                <ol>
-                                <li>
-                                    <strong>Custom Sections :</strong> Just Click on Add Custom Section. It will show a form to add a section which will have 5 settings namely:
-                                    <ul>
-                                        <li><strong>Add Section Title : </strong> Add Title for the section.</li>
-                                        <li><strong>Add Section Slug : </strong> For the slug and permalink settings. This must be unique and does not contain any spaces.</li>
-                                        <li><strong>Add Section Description : </strong> Add Description for the section.</li>
-                                        <li><strong>Select Courses : </strong> In which courses it should be visible.</li>
-                                        <li><strong>Select Section Visibility : </strong> Set section visibility to make that section visible for specific group of users.</li>
-                                        <pre>Imp note : Please do not forget to re-save permalinks after each section you save by clicking on save section button.</pre>
-                                    </ul>
-                                </li>
-                                <li><strong>Front end course creation : </strong> This screen will show the show,hide and defaults values for the course settings that you will hide. There are some settings for which defaults are not available as they can be saved as blank.</li>
-
-                                <pre>Imp Note : Please note that if any settings are added or removed in course then please re-save the hide/show settings again as more settings can be added to the course by using this tip. It is necessary that if you hide any settings you must provide default value in it to avoid any conflicts.</pre>
-                            </section>
-
-<!-- LMS Course Category
-================================================== -->
-                            <section id="lms-course-category" class="doc-section">
-                                <h2>LMS Course Category</h2>
-                                <p>Here, you can define categories for your courses. From your courses you can categorize the courses. To create Course category, Go to Lms->Course category->Add New Course category.</p>
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/lms_course_category.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/lms_course_category.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/lms_course_category.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--colo-md-3-->
-                                </div>
-                            </section>
-
-<!-- LMS Quiz Type
-================================================== -->
-                            <section id="lms-quiz-type" class="doc-section">
-                                <h2>LMS Quiz Type</h2>
-                                <p>Here, you can define types of a quiz for your courses unit. An administrator or instructor can add new categories for quizzes.</p>
-                            </section>
-
-<!-- LMS Unit Tag
-================================================== -->
-                            <section id="lms-unit-tag" class="doc-section">
-                                <h2>LMS Unit Tag</h2>
-                                <p>Unit tags helps in creating tags for your courses unit. Go to Lms->Unit Tag->Add New Tag</p>
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/unit_tag.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/unit_tag.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/unit_tag.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--colo-md-3-->
-                                </div>
-                            </section>
-
-<!-- LMSLevel
-================================================== -->
-                            <section id="lms-level" class="doc-section">
-                                <h2>LMS Level</h2>
-                                <p>To enable level taxonomy, go to Vibe Options Panel > course manager > Enable Level Level. Level Taxonomy helps in creating levels and sub levels in courses.</p>
-                                <ul>
-                                    <li>Enable levels: Go to Vibe option panel->course manager->Enable levels.</li>
-                                    <li>Go to Lms->Levels->Add new levels</li>
-                                    <li>Select parent for creating sub level.</li>
-                                    <li>Go to the course and select level for the course.</li>
-                                    <li>Go To Appearance->widgets->Buddypress and add buddypress course filter widget and checked the checkbox of show level filter and save.</li>
-                                    <li>Filter courses based on levels in course directory.</li>
-                                    <li>See the level in course detail area. Resave your permalinks.</li>
-                                </ul>
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/levels1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/levels1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/levels1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--colo-md-3-->
-
-                                     <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/level_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/level_2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/level_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--colo-md-3-->
-                                </div>
-                            </section>
-
-<!-- LMS Location
-================================================== -->
-                            <section id="lms-location" class="doc-section">
-                                <h2>LMS Location</h2>
-                                <p>Location Taxonomy helps in locating course location. To Enable Course Location, Go to Vibe option panel->course manager->Enable Course Location.</p>
-                                <ul>
-                                    <li>Go to Lms->Locations->Add new locations</li>
-                                    <li>In your courses, you can select the course location</li>
-                                </ul>
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/course_location1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_location1.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/course_location1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--colo-md-3-->
-
-                                     <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="screenshot-holder">
-                                            <a href="assets/images/demo/course_location2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_location2.png" alt="screenshot" /></a>
-                                            <a class="mask" href="assets/images/demo/course_location2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
-                                        </div><!--//screensot holder--> 
-                                    </div><!--colo-md-3-->
-                                </div>
-                            </section>
 
 <!-- General Shortcodes
 ================================================== -->
@@ -4082,12 +4014,8 @@
                                 <li>
                                 <a class="scrollto" href="#wplms-widgets">Widgets</a>
                                 <ul class="nav doc-sub-menu">
-                                    <li><a class="scrollto" href="#buddypress-course-widget">BuddyPress Course Widget</a></li>
-                                    <li><a class="scrollto" href="#buddypress-instructor-widget">BuddyPress Instructor Widget</a></li>
-                                    <li><a class="scrollto" href="#buddypress-related-course-widget">BuddyPress Related Course</a></li>
-                                    <li><a class="scrollto" href="#course-category-widget">Course Categories</a></li>
-                                    <li><a class="scrollto" href="#course-category-navigation">Course Category Navigation
-                                    <li><a class="scrollto" href="#course-reviews-widget">Course Reviews</a></li>
+                                    <li><a class="scrollto" href="#buddypress-widget">BuddyPress Related Widgets</a></li>
+                                    <li><a class="scrollto" href="#course-widget">Course Related Widgets</a></li>
                                     <li><a class="scrollto" href="#wplms-events-widget">WPLMS Events Widget</a></li>
                                     <li><a class="scrollto" href="#vibe-tabs-widget">Vibe Tabs</a></li>
                                     <li><a class="scrollto" href="#vibe-testimonial-widget">Vibe Testimonial</a></li>
@@ -4099,7 +4027,7 @@
                                     <li><a class="scrollto" href="#eventon-widget">EventOn Widgets</a></li>
                                 </ul><!--//nav doc-sub-menu-->
                                 </li>
-                                <li><a class="scrollto" href="#pagebuilder-section">PageBuilder</a></li>
+                                <li><a class="scrollto" href="#pagebuilder-section">PageBuilder & Visual Composer</a></li>
                                 <li>
                                 <a class="scrollto" href="#vibe-options-panel">Vibe Options Panel</a>
                                     <ul class="nav doc-sub-menu">
@@ -4119,6 +4047,18 @@
                                     </ul>
                                 </li>
                                 <li>
+                                    <a class="scrollto" href="#LMS">LMS</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#lms-tree">LMS Tree</a></li>
+                                        <li><a class="scrollto" href="#lms-course-navigation">LMS Course Navigation</a></li>
+                                        <li><a class="scrollto" href="#lms-course-category">LMS Course Category</a></li>
+                                        <li><a class="scrollto" href="#lms-quiz-type">LMS Quiz Type</a></li>
+                                        <li><a class="scrollto" href="#lms-unit-tag">LMS Unit Tag</a></li>
+                                        <li><a class="scrollto" href="#lms-level">LMS Level</a></li>
+                                        <li><a class="scrollto" href="#lms-location">LMS Location</a></li>
+                                    </ul>
+                                </li>
+                                <li>
                                     <a class="scrollto" href="#general-settings">LMS Settings</a>
                                     <ul class="nav doc-sub-menu">
                                         <li><a class="scrollto" href="#general-settings">General Settings</a></li>
@@ -4130,13 +4070,7 @@
                                         <li><a class="scrollto" href="#emails">Emails</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="scrollto" href="#lms-tree">LMS Tree</a></li>
-                                <li><a class="scrollto" href="#lms-course-navigation">LMS Course Navigation</a></li>
-                                <li><a class="scrollto" href="#lms-course-category">LMS Course Category</a></li>
-                                <li><a class="scrollto" href="#lms-quiz-type">LMS Quiz Type</a></li>
-                                <li><a class="scrollto" href="#lms-unit-tag">LMS Unit Tag</a></li>
-                                <li><a class="scrollto" href="#lms-level">LMS Level</a></li>
-                                <li><a class="scrollto" href="#lms-location">LMS Location</a></li>
+                                
                                 <li>
                                     <a class="scrollto" href="#general">Shortcodes</a>
                                     <ul class="nav doc-sub-menu">
