@@ -1156,11 +1156,11 @@
                                         <li><strong>Tab style course layout :</strong>From Wplms version 2.6 we have added tabs style course page layout. Refer : <a href="http://vibethemes.com/documentation/wplms/knowledge-base/tabs-style-in-course-menu-with-custom-sections/" target="_blank"><b>Tutorial Link</b></a>
                                         </li>
                                         <li><strong>Disable right click in course status page :</strong> Disable right click for content copy in course status page. This will only disable right click from course status page but if you want to disable for the whole site you can use any third party plugin for that.</li>
-                                        <li><strong>Course status templates :</strong>From Wplms version 2.5 we have added two course status templates.
+                                        <li><strong>Course status templates :</strong>From Wplms version 2.5 we have added two course status template(i.e. Full screen and default)
                                         </li>
                                         <li><strong>Admin Approval for Course :</strong> While creating units form the Front end, this settings allows instructors to publish the course directly or keep the courses in pending state for Admin approval. Once this setting is on, to approve a course for the site, the administrator has to manually change the status of the course from Pending to published.</li>
                                         <li><strong>Unit Locking :</strong> If this setting is on then wplms forces the student to finish all the previous units in a course curriculum before viewing the next unit.</li>
-                                        <li><strong>Unit Media Locking :</strong> : If this setting is on, then wplms would force the unit to first watch the embedded video/audio before marking the unit complete. This feature is only avialable for embeded media files only.</li>
+                                        <li><strong>Unit Media Locking :</strong> : If this setting is on, then wplms would force the unit to first watch the embedded video/audio before marking the unit complete. This feature is only available for embeded media files only.</li>
                                         <li><strong>Assignment Locking :</strong> This setting forces the student to first complete the connected assignment before marking the unit as complete.</li>
                                         <li><strong>Show course Progress Bar :</strong> This switch enables a course progress bar. Course Progressbar is shown above the Course timeline in the start course page.</li>
                                         <li><strong>Instructor can Add Students :</strong> This switch enables instructors to manually add students to their courses. The functionality is located in Course Admin members section.
@@ -1217,7 +1217,7 @@
                                         <li><strong>Become a Teacher Page : </strong>Select any page which you want to shown when user click on Become a teacher button. This is an important page and is shown at various places like the All instructors page.</li>
                                         <li><strong>Fallback Certificate Page :</strong>Select the Page with Certificate Page Template.</li>
                                         <li><strong>Course default avatar :</strong> Upload the avatar, this avatar is shown for courses which do not have any avatar</li>
-                                        <li><strong>Hide Courses from Directory :</strong>Hides the courses from course directory and pages and course can only be assesible by direct link. When you don't want to give the accessibility of all the courses, at that time you can hide courses from directory. Yu can access those courses from LMS > ALL Courses > Your Course > View</li>
+                                        <li><strong>Hide Courses from Directory :</strong>Hides the courses from course directory and pages and course can only be assesible by direct link. When you don't want to give the accessibility of all the courses, at that time you can hide courses from directory. You can access those courses from LMS > ALL Courses > Your Course > View</li>
                                         <li><strong>Course Duration parameter :</strong> Duration parameter for display purpose. Setting Parameter here display the course duration according to this parameter.
                                         <div class="row">
                                             <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1246,7 +1246,7 @@
                                             <b>[NOTE]: If Finished Course Access is set to No and course retakes is left then student can access the course.</b>
                                         </li>
                                         <li><strong>Notes and Discussion styles :</strong>Set the styles for notes and discussion to be displayed in units. set per paragraph to show the notes per paragraph and set to per unit to show the comments below every unit</li>
-                                        <li><strong>Display News :</strong> Display News section in courses. When news display enabled, you can add news in it from LMS > Course News. Sometimes course News Menu is not vivibe even after enabling the course news setting. For that, go to LMS > Settings > Course menu > Reset Settings and save.
+                                        <li><strong>Display News :</strong> Display News section in courses. When news display enabled, you can add news in it from LMS > Course News. Sometimes course News Menu is not visible even after enabling the course news setting. For that, go to LMS > Settings > Course menu > Reset Settings and save.
                                         <div class="row">
                                             <div class="col-md-3 col-sm-3 col-xs-12">
                                                 <div class="screenshot-holder">
@@ -1484,7 +1484,7 @@
                                     <li><b> LMS Tree: </b>
                                         Lms Tree is the tree which display course as the Branch and units and assignment as the sub-branches.Lms tree helps in viewing and editing all your courses and associated units and assignemnt through one place. <b>Refer the tutorial :</b><a href="https://www.youtube.com/watch?v=Rvt9GR0ZVG8" target="_blank"><b>LMS Tree in wplms</b></a>
                                     </li>
-                                    <li><b> Add Ons: </b>
+                                    <li><b> Add Ons: </b> As the name suggests it adds something. In wplms, Addons are available which extends the functionality of a plugin. This will integrates the plugin with the wplms theme such as WPLMS Woocommerce, WPLMS CoAuthors Plus.
                                     </li>
                                     <li><b> Course Navigation(when wplms course custom nav plugin is activated): </b>
                                         First of all please note that the hide show course settings feature will work for instructors only. Administrator will see all the settings always. There are two settings screens in this plugin. One is for Custom course section and other for Course creation settings (hide/show).
@@ -1601,24 +1601,66 @@
 
                                                     <li><strong>Instructor Login redirect :</strong> A dropdown containing pages: Home Page, Profile Page, My Courses Page, Dashboard Page, Same Page. By default instructor redirection is set to home page but by choosing one from the dropdown you can redirect an instructor to a different page as he log-in.</li>
 
-                                                    <li><strong>Enable One Session Per User :</strong> If you checked the checkbox then it  will allow a
-                                                    user can login from one unique user_id(EXCLUDES ADMINISTRATORS).</li>
+                                                    <li><strong>Enable One Session Per User :</strong> WordPress introduced session management classes/functions/hooks.You can locate the “Logout of all other sessions” button your user profile in WP admin panel, click this button and you’ll be logged out of all other sessions. Other sessions would mean that you logged in from another computer, mobile phone/app etc. If you checked the checkbox then it  will allow a user can login from one unique user_id(EXCLUDES ADMINISTRATORS).
+                                                    </li>
 
-                                                    <li><strong>Hide Administrators in Instructors :</strong> If you checked the checkbox then it will hide administrator in all instructors page and elsewhere.</li>
+                                                    <li><strong>Hide Administrators in Instructors :</strong> This setting will hide administrator in all instructors page and elsewhere.</li>
 
-                                                    <li><strong>Enable message to Instructor in Course Page :</strong> If you checked the checkbox then it will enables a message icon to send message to instructor. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/show-contact-instructor-in-course/" target="_blank">Tutorial</a></li>
+                                                    <li><strong>Enable message to Instructor in Course Page :</strong> If you checked the checkbox then it will enables a message icon to send message to instructor. To send messages, first enable the private message from settings > BuddyPress > Components > Private Messaging. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/show-contact-instructor-in-course/" target="_blank"><b>Tutorial</b></a></li>
 
-                                                    <li><strong>Enable Create course button in instructor profile menu :</strong> If you checked the checkbox then it will add a create course button in the instructor profile menu.</li>
+                                                    <li><strong>Enable Create course button in instructor profile menu :</strong> It will add a create course button in the instructor profile menu.
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                            <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/create_a_course_profile.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/create_a_course_profile.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/create_a_course_profile.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                    </div>
+                                                    </li>
 
-                                                    <li><strong>Show WooCommerce/Pmpro account in profile :</strong> If you checked the checkbox  then it display woocommerce account in profile.</li>
+                                                    <li><strong>Show WooCommerce/Pmpro account in profile :</strong> It will display woocommerce account in profile. Now, WooCommerce account would be manageable directly from BuddyPress profile section.
+                                                        <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                            <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/wc_account_profile.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wc_account_profile.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/wc_account_profile.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                            <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/wc_account.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wc_account.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/wc_account.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                            <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/wc_account_in-loggedin.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wc_account_in-loggedin.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/wc_account_in-loggedin.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                    </div>
+                                                    </li>
 
                                                     <li><strong>Set a terms and conditions page for BuddyPress registration :</strong> You can select any page from your website which should be the terms and conditions page in the buddypress registration page.</li>
 
-                                                    <li><strong>Enable Student menus :</strong>If you checked the checkbox then it adds new menu locations for students.</li>
+                                                    <li><strong>Enable Student menus :</strong>If you checked the checkbox then it adds new menu locations for students. Menu will be visible when user logged in as Student.</li>
 
-                                                    <li><strong>Enable Instructor menus :</strong>If you checked the checkbox then it adds new menu locations for instructors.</li>
+                                                    <li><strong>Enable Instructor menus :</strong>If you checked the checkbox then it adds new menu locations for instructors. Menu will be visible when user logged in as instructor.
+                                                        <div class="row">
+                                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                            <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/menu_for_instructor.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/menu_for_instructor.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/menu_for_instructor.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i>
+                                                            </a>
+                                                            </div><!--//screensot holder--> 
+                                                            </div><!--colo-md-3-->
+                                                        </div>
+                                                    </li>
 
-                                                    <li><strong>Assign Free courses to students on account activation :</strong> If you checked the checkbox then it enables auto-subscription to all the "free" courses in site to students when they signup/register and activate their account.</li>
+                                                    <li><strong>Assign Free courses to students on account activation :</strong> It enables auto-subscription to all the "free" courses in site to students when they signup/register and activate their account.</li>
                                                 </ul>
                                                 <div class="row">
                                                     <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1646,17 +1688,17 @@
 
                                                     <li><strong>Change Pre-Required Course Condition from submitted to Evaluated :</strong> After enabling this students will have to wait for course evaluation by the instructor to move on to courses which have pre-requisite course under evaluation. By default the students will be able to get access of the course when they mark the pre-requisite course as finish.</li>
 
-                                                    <li><strong>Hide Members section in Single Course page :</strong> If you checked the checkbox then it will hide members section from course pages.</li>
+                                                    <li><strong>Hide Members section in Single Course page :</strong> This will hide members section from single course page.</li>
 
-                                                    <li><strong>Show curriculum below Course description :</strong> If you checked the checkbox then it  will show curriculum below the course description.</li>
+                                                    <li><strong>Show curriculum below Course description :</strong> This will show curriculum below the course description.</li>
 
                                                     <li><strong>Disable Course Certificate image mode :</strong> If you checked the checkbox then it  will disable the image mode in the certificate. <a href="http://vibethemes.com/documentation/wplms/knowledge-base/disable-certificate-image-mode/" target="_blank"><b>Tutorial</b></a></li>
 
                                                     <li><strong>Free units should only be accessible to logged in members :</strong> If you checked the checkbox then the non logged in users cannot access any free units in the course curriculum.</li>
 
-                                                    <li><strong>Remove Finished Courses from directory :</strong> If you checked the checkbox then it will automatically remove finished courses from course directory for user.</li>
+                                                    <li><strong>Remove Finished Courses from directory :</strong> If it is enable then it will automatically remove finished courses from course directory for user.</li>
 
-                                                    <li><strong>Fix Course Menu on Scroll :</strong> If you checked the checkbox then the course menu will be fixed even if you scroll the page. Its suitable if you have very long course descriptions. It developed for only c2, c3 and c5 layout.</li>
+                                                    <li><strong>Fix Course Menu on Scroll :</strong> The course menu will be fixed even if you scroll the page. Its suitable if you have very long course descriptions. It developed for only c2, c3 and c5 layout.</li>
 
                                                     <li><strong>Show Course Badge & Certificate in PopUp on course details :</strong> If you checked the checkbox then it will display the course badge and certificate in popup in the course details section.</li>
 
@@ -1672,16 +1714,41 @@
                                                         </div><!--//screensot holder--> 
                                                     </div><!--colo-md-3-->
                                                 </div>
-                                            </li><br>
+                                            </li>
 
                                             <li><strong>Course Status Settings</strong>
                                                 <ul>
-                                                    <li><strong>Course Timeline Accordion style :</strong> Show curriculum accordion style. Accordion Style is the tab style in which you have to click on the Sign(+) to view the content.</li>
-                                                    <li><strong>Disable ajax in Course unit load  :</strong> Ajax calls are faster because it loads the part of the content which is required at that time instead of loading the whole content. In WPLMS same method is applied on unit loading. Some custom Plugins like visual composer are not ajax compatible. So, while using visula composer we need to disable this setting.</li>
-                                                    <li><strong>Show unit slug and title in Course Status page :</strong> Unit slug and title is displayed in the title of the course status page when user is viewing a unit.</li>
+                                                    <li><strong>Course Timeline Accordion style :</strong> Show curriculum accordion style. Accordion Style is the tab style in which you have to click on the Sign(+) to view the content.
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/course_timeline_accordion1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_timeline_accordion1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/course_timeline_accordion1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                        </div><!--colo-md-3-->
+
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/course_timeline_accordion2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_timeline_accordion2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/course_timeline_accordion2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                        </div><!--colo-md-3-->
+                                                    </div>
+                                                    </li>
+                                                    <li><strong>Disable ajax in Course unit load  :</strong> Ajax calls are faster because it loads the part of the content which is required at that time instead of loading the whole content. In WPLMS same method is applied on unit loading. Some custom Plugins like visual composer are not ajax compatible. So, while using visual composer we need to disable this setting. </li>
+                                                    <li><strong>Show unit slug and title in Course Status page :</strong> Unit slug and title is displayed in the title of the course status page when user is viewing a unit. When this setting is enabled then while accessing the unit(on the course status page) the URL will be like : yoursite/course/course-name/unit-name</li>
                                                     <li><strong>Auto-mark unit complete when user proceeds to next unit :</strong> Sometimes user forgot to click on "mark unit complete button" and not realize that their units are not completed. To overcome this, there is a setting present in LMS > Settings >Hides "Mark Unit Complete" button which auto marks the unit as completed when user proceeds to next unit.</li>
                                                     <li><strong>Auto trigger finish course button :</strong> Hides Finish course button and is automatically triggered on completion of all the units and quizzes.</li>
-                                                    <li><strong>Skip Course status page :</strong> Skip the introductory page, course status description on course start or continue.</li>
+                                                    <li><strong>Skip Course status page :</strong> Skip the introductory page, course status description on course start or continue.
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/skip_course_status.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/skip_course_status.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/skip_course_status.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                        </div><!--colo-md-3-->
+                                                    </div>
+                                                    </li>
                                                 </ul>
                                             </li><br>
 
@@ -1690,11 +1757,10 @@
                                                     <li><strong>Coming soon courses :</strong> If you checked the checkbox  then it enables the coming soon
                                                     options for courses in the course pricing section.</li>
 
-                                                    <li><strong>Enable Course Codes :</strong> If you checked the checkbox then student can purchase/access courses by using custom defined codes for courses in course pricing section.</li>
-
-                                                    <li><strong>Enable Course external link :</strong> If you checked the checkbox then you can connect "Take this Course" button with an external link, defined in Course Pricing section.</li>
-
-                                                    <li><strong>Disable Auto allocation of Free courses :</strong> Whenever a user opens a course page and if that course is a free course then the user gets enrolled in the course automatically. If you check this checkbox then the user will not be enrolled in the free course automatically until they click on the take this course button.</li>
+                                                    <li><strong>Enable Course Codes :</strong> If you checked the checkbox then student can purchase/access courses by using custom defined codes for courses in course pricing section. A user with a <a href="https://wplms.io/support/knowledge-base/course-codes/" target="_blank"><b>course code</b></a> can directly subscribe to the course from the Course codes widget. 
+                                                    </li>
+                                                    <li><strong>Enable Course External Link :</strong> If you checked the checkbox then you can connect "Take this Course" button with an external link, defined in Course Pricing section. When the user is on the course page then the course button is converted into the <a href="https://wplms.io/support/knowledge-base/connect-take-this-course-button-to-external-page-2/" target="_blank"><b>external link</b></a>. When user click on take this course button then the user is taken to the external link.</li>
+                                                    <li><strong>Disable Auto Allocation of Free courses :</strong> Whenever a user opens a course page and if that course is a free course then the user gets enrolled in the course automatically. If you check this checkbox then the user will not be enrolled in the free course automatically until they click on the take this course button.</li>
                                                 </ul>
                                                 <div class="row">
                                                     <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1708,13 +1774,46 @@
 
                                             <li><strong>Unit Settings</strong>
                                                 <ul>
-                                                    <li><strong>Show Unit Description in Course curriculum :</strong> If you checked the checkbox then unit description appears below unit titles in Course curriculum.</li>
+                                                    <li><strong>Show Unit Description in Course curriculum :</strong> If you checked the checkbox then unit description appears below unit titles in Course curriculum.
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/show_unit_description1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/show_unit_description1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/show_unit_description1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                        </div><!--colo-md-3-->
 
-                                                    <li><strong>Show User progress in Course Admin :</strong> If you checked the checkbox then it  will show small progress bar for every user below her name in COURSE->ADMIN SECTION.</li>
-
-                                                    <li><strong>Enable Unit/Quiz Start Date time :</strong> If you checked the checkbox then it  will add setting in the units and quizzes settings to set the start date and time in it and the units and quizzes will start at a particulat date and time.</li>
-
-                                                    <li><strong>Unit comments/Notes :</strong> Enable unit comments only where comments is enabled for units. You can enable/disable notes/discussion features for particular units by editing the units in wp-admin panel and disabling comments in discussion metabox.</li>
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/show_unit_description2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/show_unit_description2.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/show_unit_description2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                        </div><!--colo-md-3-->
+                                                    </div>
+                                                    </li>
+                                                    <li><strong>Show User progress in Course Admin :</strong> Enabling this will show small progress bar for every user below her name in COURSE->ADMIN SECTION. Using this setting, administrator will be aware of the user's progress that how much course is completed by the user. An administrator can easily track record of user's progress.
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/user_course_progress.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/user_course_progress.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/user_course_progress.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                        </div><!--colo-md-3-->
+                                                    </div>
+                                                    </li>
+                                                    <li><strong>Enable Unit/Quiz Start Date time :</strong> After enabling this it will add setting in the units and quizzes settings to set the start date and time in it and the units and quizzes will start at a particulat date and time. You can check this setting when you edit your course from front end. Edit the unit and in the unit's setting, you'll get the setting for access time and access date for unit.
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                        <a href="assets/images/demo/unit_access1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/unit_access1.png" alt="screenshot" /></a>
+                                                        <a class="mask" href="assets/images/demo/unit_access1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                        </div><!--colo-md-3-->
+                                                    </div>
+                                                    </li>
+                                                    <li><strong>Unit comments/Notes :</strong> Enable unit comments only where comments is enabled for units. You can enable/disable notes/discussion features for particular units by editing the units in wp-admin panel and disabling comments in discussion metabox. If you disable comments for a unit, the <a href="https://wplms.io/support/knowledge-base/notes-discussions-in-wplms/" target="_blank"><b>notes and discussion</b></a> module for that unit is disabled.
+                                                        Tutorial : <a href="https://wplms.io/support/knowledge-base/simple-notes-and-discussion/" target="_blank"><b> Notes & Discussion Styles</b></a>
+                                                    </li>
                                                 </ul>
                                                  <div class="row">
                                                     <div class="col-md-3 col-sm-3 col-xs-12">
@@ -1728,25 +1827,23 @@
 
                                             <li><strong>Quiz/Assignment Settings</strong>
                                                 <ul>
-                                                    <li><strong>Enable In-Course Quiz :</strong> If you checked the checkbox then quizzes open inside course like units.</li>
-
+                                                    <li><strong>Enable In-Course Quiz :</strong> If you checked the checkbox then quizzes open inside course like units. Follow this video Tutorial : <a href="https://wplms.io/support/knowledge-base/in-course-quiz/" target="_blank"><b> In-Course Quiz</b></a>
+                                                    </li>
                                                     <li><strong>In-Course Quiz questions per page :</strong> It set number of questions appearing per page in in-course quizzes.</li>
 
-                                                    <li><strong>Enable passing score for Quiz :</strong> If you checked the checkbox then it will set a passing score for every quiz, Student progress to next unit/quiz is restricted if user fails in quiz.</li>
+                                                    <li><strong>Enable passing score for Quiz :</strong> It will set a passing score for every quiz, Student progress to next unit/quiz is restricted if user fails in quiz. Follow this video Tutorial : 
+                                                    <a href="https://wplms.io/support/knowledge-base/quiz-passing-score/" target="_blank"><b> Quiz passing Score Feature</b></a>
+                                                    </li>
 
-                                                    <li><strong>Enable partialy marking for Quiz :</strong> If you checked the checkbox then it will enables the ability to give partial marks in quizzes.
+                                                    <li><strong>Enable partial marking for Quiz :</strong> It will enables the ability to give partial marks in quizzes. If some of your answers is wrong and some of them are right then student will get marks for each right answers.
                                                    </li>
-
                                                     <li><strong>Force Quiz availability to Course students :</strong> If you checked the checkbox then only course students can take the quiz. Please make sure quiz is connected to the course in quiz settings.</li>
-
-                                                    <li><strong>Hide correct answers :</strong> If you checked the checkbox then correct answers in quizzes are not displayed unless student has finished/submitted the course.</li>
-
+                                                    <li><strong>Hide correct answers :</strong> If you checked the checkbox then correct answers in quizzes are not displayed unless student has finished/submitted the course.
+                                                    </li>
                                                     <li><strong>Enable negative marking :</strong> It will enable negative mzrking for quizzes questions</li>
-
-                                                    <li><strong>Exclude quizzes not connected to course from evaluation :</strong> If you checked the checkbox then it will not consider quizzes that are not connected to course in quiz settings in course evaluation</li>
-
-                                                     <li><strong>Show Assignments in Course Curriculum :</strong> If you checked the checkbox then assignments will be displayed in course curriculum.</li>
-
+                                                    <li><strong>Exclude quizzes not connected to course from evaluation :</strong> After enabling this switch it will not consider quizzes that are not connected to course in quiz settings in course evaluation</li>
+                                                    <li><strong>Show Assignments in Course Curriculum :</strong>When checkbox is checked then assignments will be displayed in course curriculum. The assignment is basically connected to a unit. By enabling this feature you display assignment link in the course - curriculum section.
+                                                    </li>
                                                     <li><strong>Display Submission time in Course/Quiz/Assignment submissions :</strong> This setting displays time (eg 2 hrs) with manual submissions, * requires activity to be enabled.</li>
                                                 </ul>
                                                  <div class="row">
@@ -1763,15 +1860,19 @@
                                                 <ul>
                                                     <li><strong>Force Administrator Approval on every setting :</strong> If you checked the checkbox then instructor's courses will go to pending mode when settings/pricing/curriculum is saved. *Requires Administrator Approval enabled in WPLMS - Course Manager.</li>
 
-                                                    <li><strong>Enable Front end course deletion :</strong> If you checked the checkbox then instructors will be able to delete course and related content from front end.</li>
+                                                    <li><strong>Enable Front end course deletion :</strong> Through this setting instructors will be able to delete course and related content from front end.</li>
                                                 </ul>
                                             </li><br>
 
                                             <li><strong>Miscellaneous Settings</strong>
                                                 <ul>
-                                                    <li><strong>Revert pretty permalinks for Courses :</strong> If you checked the checkbox then it will revert permalinks from coursname/admin to coursename/?action-.</li>
+                                                    <li><strong>Revert pretty permalinks for Courses :</strong> If you checked the checkbox then it will revert permalinks from coursname/admin to coursename/?action-.
+                                                    Earlier we used to load tabs like this: wplms.io/demos/demo1/course/course-name?action=curriculum and now we load them like this : wplms.io/demos/demo1/course/course-name/curriculum. This is pretty permalinks: wplms.io/demos/demo1/course/course-name/curriculum
+                                                    </li>
 
-                                                    <li><strong>Enable Course forum privacy :</strong> If you checked the checkbox then it only course students can access course forums.</li>
+                                                    <li><strong>Enable Course forum privacy :</strong> Enabling this will allow ony those students in course forum who are aleady enrolled in the course. Only course students can access course forums. Read  More About Course Forum Privacy : <a href="https://wplms.io/support/knowledge-base/course-forum-privacy-feature/" target="_blank"><b> Course Forum Privacy Feature</b></a><br>
+                                                    To make visible back to course in forum : <a href="https://wplms.io/support/knowledge-base/course-forum-connectivity-back-to-course-in-forums/" target="_blank"><b> Back To Course in Forum</b></a>
+                                                    </li>
 
                                                     <li><strong>Default order in course directory :</strong> A dropdown containing order:
                                                     <ul>
@@ -1824,8 +1925,9 @@
 
                                             <li><strong>WPLMS Custom Learning Path Settings(when wplms custom learning paths plugin is activated)</strong>
                                                 <ul>
-                                                    <li><strong>Disable Enroll out button :</strong> Enabling this setting will hide the enrol out button from single learning path page.</li>
+                                                    <li><strong>Disable Enroll out button :</strong> Enabling this setting will hide the enroll out button from single learning path page.</li>
                                                     <li><strong>Exclude Steps from Learning Path :</strong> Select Steps which you want to exclude from the learningpath "select steps".</li>
+                                                    Follow this Tutorial on Custom Learning Path(CLP) : <a href="https://wplms.io/support/knowledge-base/wplms-custom-learning-paths-introduction/" target="_blank"><b>CLP Introduction</b></a>
                                                 </ul>
                                             </li><br>
 
