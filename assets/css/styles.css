@@ -1282,3 +1282,17 @@ select {
     margin: 0 0 1.758em;
     padding: 20px;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 10px;
+        margin-top: 10px;
+}
+div.highlight{
+    border: 1px solid #e1e4e5;
+    padding: 0px;
+    overflow-x: auto;
+    background: #fff;
+    margin: 1px 0 24px 0;
+}

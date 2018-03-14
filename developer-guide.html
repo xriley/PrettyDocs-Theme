@@ -140,7 +140,7 @@
                                                 <a class="mask" href="assets/images/demo/buddypress_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
                                             </div><!--//screensot holder--> 
                                         </div><!--colo-md-3-->
-                                    </div>
+                                  </div>
                                   </li>
 
                                   <li><strong>My Courses</strong> : This section is located in User profile. Tempalte file is located at wplms/course/my-courses.php. Sub-sections include results and stats and instructing courses (for Instructors). The results and stats template files are located in the  wplms/members/course/results.php and stat.php</li>
@@ -1250,6 +1250,381 @@
                               </ul>
                             </section>
 
+                              <section id="api-docs" class="doc-section">
+                                <h2> API Endpoints</h2>
+                                <strong> WPLMS API Endpoints :</strong> The wplms API uses the namespace : wplms/v1, using this with the endpoints we can get information from a wplms website.
+                                <br/>
+                                Following are the endpoints (type=GET):
+                                </br>
+                                 <ol>
+                                    <li id="main-enpoints">
+                                        <strong> Response Codes:</strong>The HTTP response codes indicate if a request to the server has been successfully processed or not. This chapter lists the most common response codes in the WPLMS. The API-specific response codes and messages are described in the respective API reference chapters.</br></br>
+                                        <strong>Success:</strong>The following is the most common response codes in the WPLMS system when a request is succesfully processed.
+                                        <table style="width:40%;">
+                                          <tr>
+                                            <th>Response Code</th>
+                                            <th>Description</th>
+                                          </tr>
+                                          <tr>
+                                            <td>200</td>
+                                            <td>Success Call</td>
+                                          </tr>
+                                        </table></br>
+                                        <strong>Error Handling</strong></br>
+                                        There are two types of error codes:
+                                        <ul>
+                                          <li>Client (4xx): Authentication failure or invalid domain on the client side</li>
+                                          <li>Server (5xx): Server errors</li>
+                                        </ul>
+                                        </br>
+                                        The following tables list the most common error codes in the WPLMS.
+                                        <table style="width:70%;">
+                                          <tr>
+                                            <th>Error Code</th>
+                                            <th>Description</th>
+                                          </tr>
+                                          <tr>
+                                            <td>400</td>
+                                            <td>Bad request. Invalid input parameters</td>
+                                          </tr>
+                                          <tr>
+                                            <td>401</td>
+                                            <td>Unauthorized. API Token or Affiliate Tracking ID invalid</td>
+                                          </tr>
+                                          <tr>
+                                            <td>403</td>
+                                            <td>Forbidden. Tampered URL</td>
+                                          </tr>
+                                          <tr>
+                                            <td>404</td>
+                                            <td>Not found</td>
+                                          </tr>
+                                        </table></br>
+                                    </li>
+                                    <li>
+                                        <strong> Registration</strong></br>
+                                        <ol></br>
+                                          <li>Start registration </li>
+                                          <li>Add Json data on this url=http://localhost/wordpressnew/wp-json/wplms/v1/user/register :
+                                            <code>
+                                              {
+                                                client_id:"RDRc53PSL8ncHowchpkBi3O",
+                                                state:"FE7dN0cp",
+                                                username:"test",
+                                                email:"test@test.sada",
+                                                password:"1234"
+                                              }
+                                            </code>
+                                            <ul>
+                                              <li>
+                                                For client Id : Go to wp-admin > lms > settings > api > connected clients
+                                                 <div class="row">
+                                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/findclientid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/findclientid.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/findclientid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </li>
+                                          <li>Return data format:
+                                            <code>
+                                             {
+                                                 "status":true,
+                                                 "message":"Registration complete !",
+                                                 "user":{
+                                                    "id":12,
+                                                    "name":"test",
+                                                    "sub":"",
+                                                    "email":"test@test.sada",
+                                                    "avatar":"http:\/\/localhost\/wordpressnew\/wp-content\/uploads\/2016\/02\/thumbsup-1.png"
+                                                 },
+                                                 "token":{
+                                                    "access_token":"7XneUyNdXs7zHmhrROXAPeIfI6a7dlKhGc(#e8VE",
+                                                    "client_id":"RDRc53PSL8ncHowchpkBi3O",
+                                                    "user_id":12,
+                                                    "expires":"2018-03-21 12:07:05",
+                                                    "scope":null
+                                                 }
+                                              }
+                                            </code>
+                                          </li>
+                                          <li>Access : access_token : 7XneUyNdXs7zHmhrROXAPeIfI6a7dlKhGc(#e8VE</li>
+                                        </ol>      
+                                    </li>
+                                    </br>
+                                    <li>
+                                        <strong> track:</strong>The most important endpoint is the “track” endpoint because it gives all the changes made in the website with their timestamp,</br>Url : http://localhost/wordpressnew/wp-json/wplms/v1/track </br>refer: 
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/track.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/track.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/track.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                        </br>
+                                        also track the data via timestamp by adding “/?access=1502523502” where “1502523502” is the particular timestamp, refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/track1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/track1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/track1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> track/(?P<id>\\d+)?:</strong> You can track all the data related to a particular user by adding his/her id after track,</br>Url : http://localhost/wordpressnew/wp-json/wplms/v1/track/1 </br> refer: 
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/track11.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/track11.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/track11.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                        Similarly you can add “?access=1502523502” i.e. the timestamp to get the data of the user from a particular timesatmp.
+                                    </li>
+                                    </br>
+                                    <li>
+                                        <strong> course: </strong>This endpoint gives you information of all the courses present in your wplms website
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/course
+                                        </br>
+                                         refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/courseapi.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/courseapi.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/courseapi.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> course/(?P<id>\\d+)?:</strong> Using this endpoint you can get the data of a particular course using the course id
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/course/1250
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/courseid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/courseid.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/courseid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> course/featured:</strong>You can use this endpoint to get all the featured courses on the wplms website
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/course/featured
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/coursefeatured.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/coursefeatured.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/coursefeatured.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>course/popular: </strong> You can use this endpoint to get all the popular courses from the wplms website
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/course/popular
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/popularcourse.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/popularcourse.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/popularcourse.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>course/filters(?P<filter>.+)?: </strong>This endpoint uses the json data as the url to fetch results, for example if you want to fetch the recent courses then use the json data in the url
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/course/filters?filter=%7B%22search%22:%22%22,%22filters%22:%5B%5D,%22sort%22:%22popular%22,%22paged%22:1%7D
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/coursefilterid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/coursefilterid.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/coursefilterid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>instructors:</strong>This endpoint is used for fetching all the instructors in the website
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/instructors/
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/courseinstructors.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/courseinstructors.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/courseinstructors.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>instructors/(?P<instructor_id>\d+)?:</strong> You can also fetch the insformation of a single instructor from the website through the instructor id
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/instructors/5
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/courseinstructorid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/courseinstructorid.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/courseinstructorid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> course/taxonomy(?P<taxonomy>.+)?:</strong>You can also fetch the information of taxonomy from the website like course-cat, level, location, etc.
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/course/taxonomy/?taxonomy=course-cat
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/taxonomycat.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/taxonomycat.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/taxonomycat.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> course/category/(?P<id>\d+)?:</strong>You can also fetch the information of a particular course category through its id
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/course/category/40
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/coursecatid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/coursecatid.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/coursecatid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                </ol>
+                                </br></br></br>
+                                Now there are user endpoints, these end points require the “Authorization” to be passed in the headers to fetch the information. You need to send the access token of the client as Authorization in the header which you can get from the connected clients in the API.
+                                </br></br>
+                                <strong>Following are the endpoints for users (Type=GET):</strong>
+                                </br>
+                                <ol id="user-endpoints">
+                                    <li>
+                                        <strong> user:</strong>This endpoint gives you the id of the user who is connected to the app i.e. the user who’s access token is sent in the headers
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/user/
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/usaerpro.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/usaerpro.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/usaerpro.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> user/profile:</strong>This endpoint fetches all the information or the data that is shown to the user in his/her profile page, like the user can see dashboard, courses, etc tabs in his/her profile
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/user/profile
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/userprofile.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/userprofile.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/userprofile.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> user/profile/(?P<tab>\w+)?(&P<per_page>\d+)?(&P<paged>\d+):</strong> This endpoint lets you fetch the information according to particular tabs, you can also use “per_page=” to get limited information on a page, you can also add “paged=” to directly jump onto a particular page. For example if you want the information of tab profile then use the endpoint as namspace/user/profile/?tab=profile
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/user/profile/?tab=profile
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/userprofiletab.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/userprofiletab.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/userprofiletab.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> user/coursestatus/(?P<course>\d+)?: </strong> This endpoint can be used to get the full information of the course status page for the user who’s access token is sent in the header, in the endpoint you provide the course id to get the status for that particular course. It lets you know if the course has been expired for the user or if the user is continuing the course and all other information related to that particular course status for the particular user
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/user/coursestatus/2851
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/coursestatuswithid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/coursestatuswithid.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/coursestatuswithid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong> user/coursestatus/(?P<course>\d+)/item/(?P<id>\d+)?:</strong>This endpoint is similar to the previous one but it uses the course id and then the unit id who’s information you need for the particular user
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/user/coursestatus/2851/item/242
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/courseitemid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/courseitemid.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/courseitemid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>user/getreview/(?P<course>\d+):</strong>This endpoint is used to get the review of the user from a particular course by using the course id
+                                        </br>
+                                        Url : http://localhost/wordpressnew/wp-json/wplms/v1/user/getreview/2851
+                                        </br>
+                                        refer:
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/getreviewid.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/getreviewid.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/getreviewid.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                </ol>
+                            </section>
+
+
                             
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
@@ -1281,17 +1656,10 @@
                                 </li>
                                 <li><a class="scrollto" href="#important-functions">Important Functions</a></li>
                                 <li>
-                                    <a class="scrollto" href="#hooks">API Docs</a>
+                                    <a class="scrollto" href="#api-docs">API Docs</a>
                                      <ul class="nav doc-sub-menu">
-                                        <li><a class="scrollto" href="#hooks">Tracker</a></li>
-                                        <li><a class="scrollto" href="#execution-sequence">Home Page</a></li>
-                                        <li><a class="scrollto" href="#execution-sequence">Tabs & Menu</a></li>
-                                        <li><a class="scrollto" href="#filters">Login & Registration</a></li>
-                                        <li><a class="scrollto" href="#execution-sequence">Profile</a></li>
-                                        <li><a class="scrollto" href="#execution-sequence">Courses</a></li>
-                                        <li><a class="scrollto" href="#execution-sequence">Quizzes</a></li>
-                                        <li><a class="scrollto" href="#execution-sequence">Questions</a></li>
-                                        <li><a class="scrollto" href="#execution-sequence">Misc</a></li>
+                                        <li><a class="scrollto" href="#main-enpoints">Main Endpoints</a></li>
+                                        <li><a class="scrollto" href="#user-endpoints">User's Endpoints</a></li>
                                     </ul>
                                 </li>
                             </ul><!--//doc-menu-->
