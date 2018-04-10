@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Wplms Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+
+<body>
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">WPLMS</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Student Guide</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><span aria-hidden="true" class="icon icon_genius"></span>Student Guide</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Dec 25, 2017</div>
+                </div><!--//doc-header-->
+                <div id="showcase" class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">                          
+                            
+                            <section id="overview" class="doc-section">
+                                <h2 class="section-title">Overview</h2>
+                                <p>A Student in WPLMS is basically any registered user on the site. All users which appear in the users table or the  WP Admin - Users are considered as student. A Student is a user who has a profile and can pursue courses in the system.</p>
+                                <p>Once a user is registered on the site, the WPLMS (or any BuddyPress site) would not ackowledge it unless he/she logs in the site. Once the user is logged in, it will start appearing in the user's directory. So for WPLMS to recognise the user as a student, the user must login to the site at least once.</p>
+
+                                <p>In this guide we'll learn how a student interacts at various points in the WPLMS site.  Student have lesser rights than instructors and administrators. Here are the students rights given below:</p>
+                                <ul>
+                                    <li>A Student can pursue courses.</li>
+                                    <li>A Student can purchase courses.</li>
+                                    <li>A Student can rate and review courses, access free units.</li>
+                                    <li>A student can check his own results, view course statistics.</li>
+                                    <li>A Student can send a private message (<a href="glossary.html#private-messages" target="_blank"><b>Private Messages</b></a>) to instructors.</li>
+                                    <li>A Student can create friends. (<a href="glossary.html#create-friends" target="_blank"><b>Create Friends</b></a>)</li>
+                                    <li>A Student can create followers (<a href="glossary.html#create-followers" target="_blank"><b>To Create Followers</b></a>).
+                                    </li>
+                                </ul>
+                            </section><!--//doc-section-->
+
+                             <section id="register" class="doc-section">
+                                <h1>Become A Student</h1>
+                                <p>With WPLMS installed, Memberships should be enabled in WordPress and the default role selected that of a Student. In BuddyPress Settings -> Pages, a page should be connected to the registeration page.</p>
+                                <h2 class="section-title">Register</h2>
+                                <ul>
+                                    <li>To register a student can simply click on the signup link in the header or the signup button in the Login panel.
+                                    </li>
+                                    <li>If the WP FB Auto connect plugin is installed and connected with the facebook APP the student can simply click on facebook button in the Login form to sign up or login in the site as a Student.</li>
+                                    <li>On clicking the page the student is taken to the Registeration page. </li>
+                                    <li>Student should fill all the details in the registeration page and click on complete signup button at the bottom of the registeration form.</li>
+                                    <li>After this, the student gets an email at the registered email address with an activation link.</li>
+                                    <li>The Student account is finally created in the site only when student clicks on the activation link.</li>
+                                    <li>Student can now login in WPLMS using the login/password credentials entered in the registeration form.</li>
+                                </ul>
+                            </section>
+
+                            <section id="profile-fields" class="doc-section">
+                                <h2 class="section-title">Profile Fields</h2>
+                                <ul>
+                                    <li>Login to the WPLMS site</li>
+                                    <li>Click on View Profile link in the Login panel</li>
+                                    <li>Click on Edit button to edit the profile.</li>
+                                    <li>Enter the fields, there may be multiple field groups which the student can switch to fill the details.</li>
+                                </ul>
+                                <div class="row">
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/edit_profile_field1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/edit_profile_field1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/edit_profile_field1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/edit_profile_field.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/edit_profile_field.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/edit_profile_field.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                            <section id="avatar" class="doc-section">
+                                <h2 class="section-title">Avatar</h2>
+                                <p>A Student can change her avatar from the edit profile section itself. The Avatar edit section can be located in the profile section. The student can simply edit the avatar, delete the avatar or upload a new avatar. Upon uploading the new avatar the student can also crop it to a fitting size.</p>
+                                <div class="row">
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/change_profile_photo.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/change_profile_photo.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/change_profile_photo.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                            <section id="student-menu" class="doc-section">
+                                <h2 class="section-title">Student Menu</h2>
+                                <ol>
+                                    <li>
+                                        <b> Dashboard :</b> Student can view his own course progress, no of units completed, finished courses, his statistics, can prepare his to do tasks,course events. It is same like instructor dashboard.
+                                    </li>
+                                    <li>
+                                        <b> Courses :</b> This section consits number of completed courses by students, the courses in which student is enrolled. It consists of further three subcategories : My Courses, Results, Stats
+                                    </li>
+                                    <li>
+                                        <b> Activity :</b> This section records the activities of student. It consists of further 6 subcategories: 
+                                        <ul>
+                                            <li>Personal</li>
+                                            <li>Mentions</li>
+                                            <li>Favourites</li>
+                                            <li>Friends</li>
+                                            <li>Course</li>
+                                            <li>Groups</li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/student_activity.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/student_activity.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/student_activity.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <b> Profile :</b> Student Profile is visible here where he can upload cover image as well as his profile image.
+                                    </li>
+                                    <li>
+                                        <b> Notifications :</b> All the notifications are visible in this section(e.g. instructor notifications, course evaluated, course reset for student)
+                                    </li>
+                                    <li>
+                                        <b> Messages :</b> All the messages send to students is visible in this section.
+                                    </li>
+                                    <li>
+                                        <b> Wishlist :</b> User/Student Wishlist is visible in this section
+                                    </li>
+                                    <li>
+                                        <b> Friends :</b> Whenever someone send you friend request, that will be visible in this section. And, if you are already a friend with someone then that wil also be visisble in this section under friendship subcategory. You can also send friend request to someone. For that access <b>site url/members</b>, it will display list of all members now just click on add friend and when that person accepts your friend request. Both of you become friends.
+                                    </li>
+                                    <li>
+                                        <b> Groups :</b> Groups membership and group invitations will be visible
+                                        in this section.
+                                    </li>
+                                    <li>
+                                        <b> Forums :</b> It consists information like topic started in the forum, replies created, favourites, subscriptions.
+                                    </li>
+                                    <li>
+                                        <b> BuddyDrive :</b> It records the file sharing between members, between friends via buddydrive feature.<b>Buddydrive Integration with WPLMS</b><a href="https://wplms.io/support/course-drive-buddydrive-integration-with-wplms/" target="_blank"><b> Tutorial</b></a>
+                                    </li>
+                                    <li>
+                                        <b> Settings :</b> It consists general settings such as changing your password, resetting password, email notifications, setting for your pofile visibility, delete, account.
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/email_notifications.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/email_notifications.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/email_notifications.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <b> Achievements :</b> Display your achievements.
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="browse" class="doc-section">
+                                <h1>Taking Course</h1>
+                                <p>This section covers all the aspects of Student pursuing a course in detail. Right from browsing the course, to purchasing, completing the course, checking the results for the course and finally submitting the course and getting a badge or certificate of the course.</p>
+                                <h2 class="section-title">Browsing</h2>
+                                <p>A student can browse through all the courses through the Course directory. The course directory consists of all the courses from all the instructors. Each course line in course directory shows the Title of the course, a short description of the course, the price of the connected product for the course, the ratings, review count of the course and the total number of students which have taken the course.</p>
+                                <p>A student can use the search bar to search for a specific course. A student can sort the course directory. Following are options available for sorting the directory:</p>
+                                <ol>
+                                  <li><strong>Alphbetical</strong> : Shows the courses in Alphbetical order.</li>
+                                  <li><strong>Newly Created</strong> : [Default] Shows the courses in Date published order.</li>
+                                  <li><strong>Most Members</strong> : Shows the courses in Student count order.</li>
+                                  <li><strong>Highest Rated</strong> : Shows the courses in star Rating number order.</li>
+                              </ol>
+                              <p>After finlaizing on a course, the student can simply click on the course name to see the course page.</p>
+                              <p>The course page contains several details for a student to decide on to take the course.</p>
+                              <ol>
+                                <li>Vital Information is located on top right corner with information like : Required Pre-Course, Price of Course,
+                                Course Badge, Course Certificate.</li>
+                                <li>Course Description is shown on the course home page</li>
+                                <li>Course Reviews are shown at the end of the course description</li>
+                                <li>Total number of students who have taken the course.</li>
+                                <li>Students Taking the course can be seen in the Students section in the Course home.</li>
+                                <li>Student can also view course curriculum.</li>
+                                <li>Student can click on Free units to go through each unit.</li>
+                              </ol>
+                              <div class="row">
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/browse_course1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/browse_course1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/browse_course1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/browse_course2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/browse_course2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/browse_course2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                            <section id="purchase" class="doc-section">
+                                <h2 class="section-title">Purchase</h2>
+                                <ul>
+                                    <li>To purchase the course a student simply needs to click on "Take the Course" button, the student is then redirect to the connected product for the course.</li>
+                                    <li>A connected product can be of One time payment type or Subscription type</p>
+                                    <li>A Student can also browse through the Products and there may be products which may offer a combination of courses.</li>
+                                    <li>Student can simply add the product to the cart and proceed with the purchase process to purchase the product.</li>
+                                    <li>After Purchasing the product, student is automatically connected to the course group and forums.</li>
+                                </ul>
+                                <div class="row">
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/purchase_course1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/purchase_course1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/purchase_course1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/purchase_course2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/purchase_course2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/purchase_course2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/purchase_course3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/purchase_course3.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/purchase_course3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                            <section id="start-course" class="doc-section">
+                                <h2 class="section-title">Start Course</h2>
+                                <ul>
+                                <li>Once the student has purchased the course, the student is eligible to take the course. If a course has Pre-Required course then the student can not start the course unless the pre-required course is finished and evaluated by the instructor.</li>
+                                  <li>Once the course has been started the student can access the course units and can access the course timeline.</li>
+                                  <li>Each unit may be connected to a Unit forums where a student can ask questions and interact with the Instructor and other students.</li>
+                                  <li>A student can also download attachments for each unit. A student can also download attachments uploaded in the group.
+                                  </li>
+                                </ul>
+                                <div class="row">
+                                     <div class="col-md-2 col-sm-2 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/unit_attachments1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/unit_attachments1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/unit_attachments1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-2-->
+                                </div>
+                            </section>
+
+                            <section id="complete-unit" class="doc-section">
+                                <h2 class="section-title">Completing Units</h2>
+                                <ul>
+                                <li>After the student has finished with a unit, the student can mark the unit complete. </li>
+                                <li>To mark the unit as complete the student simply needs to click on the link at the bottom of each unit "Mark Unit complete". </li>
+                                <li>Once the Unit is marked as complete, a green colored dot appears on the course timeline in front of the marked unit.</li>
+                                </ul>
+                                <div class="row">
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/unit_completed.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/unit_completed.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/unit_completed.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                            <section id="take-quiz" class="doc-section">
+                                <h2 class="section-title">Taking a Quiz</h2>
+                                <ul>
+                                    <li>Quizes are an integral part of WPLMS. Quiz are independent units which can or can not be connected to any course.
+                                    </li>
+                                    <li>A student can simply click on the Quiz in the course timeline to being with the Quiz.</li>
+                                    <li>Upon clicking the link the student is taken to the quiz interface. The quiz page shows instructions for the quiz.</li>
+                                    <li>To start the quiz the student simply needs to click on start quiz button.</li>
+                                    <li>Once the quiz is started the timer starts running.</li>
+                                    <li>If a student drops out from the quiz, the student can join the quiz within the time allotted for the quiz. Which means the timer will keep on running even if the student is not taking the quiz.</li>
+                                    <li>The Quiz can be submitted by the student simply by clicking on the button Submit Quiz.</li>
+                                    <li>If the student does not submit the quiz and the timer counts down to Zero, the quiz is automatically submitted.</li
+                                    >
+                                    <li>Once the quiz is submitted the student can check his/her marked answers by clicking on Check quiz results button. </li>
+                                    <li>Now student awaits for instructor to evaluate the Quiz if quiz is set for manual evaluation.</li>
+                                </ul>
+                                <div class="row">
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/quiz_setting.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/quiz_setting.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/quiz_setting.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/quiz_setting2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/quiz_setting2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/quiz_setting2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                            <section id="submit-course" class="doc-section">
+                                <h2 class="section-title">Submitting Courses</h2>
+                                <ul>
+                                <li>Once all Units and Quizes in the course are complete</li>
+                                <li>The student can go to course timeline and click on Finish course button the submit the course for evaluation.</li>
+                                </ul>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/finish_course.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/finish_course.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/finish_course.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                             <section id="review-course" class="doc-section">
+                                <h2 class="section-title">Reviewing Courses</h2>
+                                <ul>
+                                <li>The course review has to be done after submitting the course.</li>
+                                <li>To review the course the student simply has to click on Review Course button below the Course Timeline</li>
+                                <li>The student can now review the course by rating the course our of 5 and giving his/her comments for the course.</li>
+                                </ul>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/finish_course2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/finish_course2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/finish_course2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                             <section id="results" class="doc-section">
+                                <h2 class="section-title">Results</h2>
+                                <h4>Quiz Results</h4>
+                                <ul>
+                                    <li>Once the students have submitted the quiz.</li>
+                                    <li>The Instructor evaluates the quiz and an automatic message is sent to the students with their marks from link to check the quiz scores.</li>
+                                    <li>The student can also check the quiz results in the Profile -> Courses -> Results section. This feature is basically used when an instructor manually evaluate the quiz. In auto evaluation a student got his result just after submitting the quiz.</li>
+                                </ul>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/quiz_result.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/quiz_result.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/quiz_result.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+
+                                <h4>Course Results</h4>
+                                <ul>
+                                <li>Once the Instructor has evaluated the submitted courses and given marks to each student for course. The student recieves an automatic message and notification. The message contains the percentage student got in the course.</li>
+                                <li>The student can check the Course percentage in the Profile -> Courses -> Stats section</li>
+                                </ul>
+                                 <div class="row">
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/results2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/results2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/results2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+
+                                     <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/results3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/results3.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/results3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                             <section id="badges" class="doc-section">
+                                <h2 class="section-title">Badges And Certificates</h2>
+                                <ul>
+                                <li>If the student has got course pecentage above the Badge percentage then the student gets a badge. This badge is shown in students profile.</li>
+                                <li>If the student has got course percentage above the passing percentage then the student gets a passing certificate. This certificate is shown in the Students profile page. The student can also print this certificate.</li>
+                                </ul>
+                                 <div class="row">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="screenshot-holder">
+                                            <a href="assets/images/demo/results1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/results1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/results1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                        </div><!--//screensot holder--> 
+                                    </div><!--colo-md-3-->
+                                </div>
+                            </section>
+
+                             <section id="interaction" class="doc-section">
+                                <h2 class="section-title">Interaction</h2>
+                                <p>BuddyPress offers a variety of components to promote interaction among students and instructors. BuddyPress is set up as a plugin that can be added to a WordPress site. It’s a large plugin, and it adds a lot of functionality. Users can create and update their profiles, send private messages to one another, befriend and de-friend each other, form and join groups, participate in forum discussions, and more. There are some core features which are discussed below:</p>
+                                <h3 id="groups">Extended Profiles</h3>
+                                  <p>Users can update their profiles from their  profile section. They can update their profile photo, update or change their cover image, update about your location and bio.</p>
+                                <h3 id="groups">Activity Streams</h3>
+                                  <p>Activity streams aggregate all of your activities across a BuddyPress installation. Enabled BuddyPress components make use of the activity stream component, which means any sort of activity can be recorded. Blogs posts, new friendships and blog comments are among the most popular activities recorded.
+                                  </p>
+                                <h3 id="groups">Friends</h3>
+                                  <p>If Friendship component is enabled in buddypress then a student can send friendship request to other members (students+ instructors). Friends have access to send private message and invite each other groups etc.</p>
+                                <h3 id="groups">Private Messaging</h3>
+                                  <p>Private messaging allows greater interaction among students.Members can message other people on their friends list as well as reply to received messages. Each member has their own individual Inbox and Sent messages folders as well as a Compose message screen. Members are notified of new messages in three ways:
+                                    <ul>
+                                        <li>By email (if enabled by the user)</li>
+                                        <li>By an incremented number in the notification circle located in the WP Admin Toolbar</li>
+                                        <li>By an incremented number in the Messages tab if the user is on their own profile</li>
+                                    </ul>
+                                  </p>
+                                  <p>Quiz and Course results are sent to users via private messaging, wherein students can directly interact with their instructor on the results.</p>
+                                <h3 id="groups">Groups</h3>
+                                  <p>Groups are a very powerful component of BuddyPress which allows greater levels of interaction. Each course can be connected to a Group and while students access to course is limited but a student is a lifetime member to a course. Using external plugins like Group documents, instructor can send assignments to students via this mode.</p>
+                                <h3 id="forums">Forums</h3>
+                                  <p>Each course and unit can be connected to forums. Each group can also be connected to a forum. If the group is private then the forum access is allowed only to group members. Which make the forum an exclusive forum for course members. We recommend connecting this same forum with the Groups course.</p>
+                                  <p>To read about buddypress features in detail : <a href="https://buddypress.org/about/activity/"" target="_blank"><b>Link</b></a></p>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/buddypress_settings.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/buddypress_settings.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/buddypress_settings.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                            </section>
+
+                            <section id="video-tutorial" class="doc-section">
+                                <h2 class="section-title">Video Tutorial</h2>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h6>WPLMS Student User Flow</h6>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MFtX9ussRKk" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <h6>WPLMS Assignment Student Flow</h6>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qs65VVud7oI" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>          
+                            </section>
+                                                        
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
+                                <li><a class="scrollto" href="#overview">Overview</a></li>
+                                <li>
+                                    <a class="scrollto" href="#register">Become A Student</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#register">Register</a></li>
+                                        <li><a class="scrollto" href="#profile-fields">Profile Fields</a></li>
+                                        <li><a class="scrollto" href="#avatar">Avatar</a></li>
+                                        <li><a class="scrollto" href="#student-menu">Student Menu</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="scrollto" href="#browse">Taking Course</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#browse">Browsing</a></li>
+                                        <li><a class="scrollto" href="#purchase">Purchasing</a></li>
+                                        <li><a class="scrollto" href="#start-course">Starting A Course</a></li>
+                                        <li><a class="scrollto" href="#complete-unit">Completing Units</a></li>
+                                        <li><a class="scrollto" href="#take-quiz">Taking a Quiz</a></li>
+                                        <li><a class="scrollto" href="#submit-course">Submitting Courses</a></li>
+                                        <li><a class="scrollto" href="#review-course">Reviewing Courses</a></li>
+                                        <li><a class="scrollto" href="#results">Results</a></li>
+                                        <li><a class="scrollto" href="#badges">Badges and Certificates</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="scrollto" href="#interaction">Interaction</a></li>
+                                <li><a class="scrollto" href="#video-tutorial">Video Tutorial</a></li>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+        <div id="promo-block" class="promo-block promo-block-2">
+            <div class="container">
+                <div class="promo-block-inner">
+                    <h3 class="promo-title text-center"><i class="fa fa-heart"></i> <a href="" target="_blank">Like WPLMS ?</a></h3>
+                    <div class="row">
+                        <div class="figure-holder col-md-5 col-sm-6 col-xs-12">
+                            <div class="figure-holder-inner">
+                               <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/VI2g--5LFzw' frameborder='0' allowfullscreen></iframe></div>
+                            </div>
+                        </div><!--//figure-holder-->
+                        <div class="content-holder col-md-7 col-sm-6 col-xs-12">
+                            <div class="content-holder-inner">
+                                <div class="desc">
+                                    <h4 class="content-title"><strong>Rate us at Themeforest</strong></h4>
+                                    <p>Every rating counts and helps us to improve WPLMS. <a href="https://vibethemes.com/documentation/wplms/knowledge-base/how-to-rate-us-at-themeforest/">How to rate WPLMS ?</a> </p>
+                                    <h4 class="content-title"><strong>Not Happy ?</strong></h4>
+                                    <p>Send us an email at <a href="mailto:vibethemes@gmail.com" target="_blank">vibethemes@gmail.com</a> and share feedback.</p>
+                                </div> 
+                            </div><!--//content-holder-inner-->
+                        </div><!--//content-holder-->
+                    </div><!--//row-->
+                </div><!--//promo-block-inner-->  
+            </div><!--//container-->
+        </div><!--//promo-block-->
+        
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright"><a href="https://vibethemes.com/documentation/wplms/forums/" target="_blank"><b>Having an issue? Create a topic on forum
+            </b></a></small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>  
+    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>                                                            
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+

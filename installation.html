@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Wplms Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+    
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
+  
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">WPLMS</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Installation</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Installation</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Dec 25, 2017</div>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+                        <section id="general-section" class="doc-section">
+                                <h2 class="section-title">General</h2>
+                                <div id="wp-info-section"  class="section-block">
+                                    <h3 class="block-title">Wordpress Information</h3>
+                                    <p>To install this theme you must have a working version of WordPress already installed. If you need help installing WordPress, follow the instructions in <a href="https://codex.wordpress.org/Installing_WordPress" target="_blank"><b>WordPress Codex</b></a>. Below are all the useful links for WordPress information.</p>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <ul class="list">
+                                                <li><a href="https://codex.wordpress.org/Installing_WordPress" target="_blank"><b>WordPress Codex</b></a>
+                                                - General info about WordPress and how to install on your server.
+                                                </li>
+                                                <li><a href="https://codex.wordpress.org/First_Steps_With_WordPress" target="_blank"><b>First Step With Wordpress</b></a>- General info about multiple topics about WordPress.</li>
+                                                <li><a href="https://codex.wordpress.org/FAQ_New_To_WordPress" target="_blank"><b>FAQ New to Wordpress</b>
+                                                </a>- The most popular FAQ’s regarding WordPress.</li>
+                                            </ul>
+                                        </div>
+                                </div><!--//section-block-->
+                                <div id="requirements-section"  class="section-block">
+                                    <h3 class="block-title">Requirements</h3>
+                                    <p>To use WPLMS, please make sure you are running <b>WordPress 4.6</b> or higher, <b>PHP 5.6</b> or higher, and MySQL 5.6 or higher <b>(for legacy environments also PHP versions 5.3.x will work but it is recommended to be on at least PHP 5.6 and preferably PHP 7.0. WordPress recommends PHP 7)</b>. We have tested it with Mac, and Windows. WPLMS is compatible with PHP 7.1 also. Below is a list of items you should ensure your host can comply with.</p>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <ul class="list">
+                                                <li>Check to ensure that your web host has the <a href="https://wordpress.org/about/requirements/" target="_blank"><b>minimum requirements to run WordPress</b></a>.</li>
+                                                <li>Always make sure they are running the latest version of WordPress.</li>
+                                                <li>You can download the latest release of WordPress from the official <a href="https://wordpress.org/" target="_blank"><b>WordPress</b></a> website.</li>
+                                                <li>Always create secure passwords for FTP and Database.</li>
+                                            </ul>
+                                        </div><!--//col-md-6-->
+
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="callout-block callout-info">
+                                                <div class="icon-holder">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </div><!--//icon-holder-->
+                                                <div class="content">
+                                                    <p>Hosting is more secure when PHP applications, like WordPress, are run using your account’s username instead of the server’s default shared username (www or www-data). The most common way for hosting companies to do this is using suPHP. Just ask your potential host if they run suPHP or something similar. We recommend to use <a href="https://wefoster.co/wordpress-lms-hosting" target="_blank"><b>wefoster</b></a> for all your hosting needs.</p>
+                                                </div><!--//content-->
+                                            </div><!--//callout-block-->
+                                        </div><!--//col-md-6-->
+
+                                    </div><!--//row-->
+                                </div><!--//section-block-->
+
+                                 <div id="imp-note-section"  class="section-block">
+                                    <h3 class="block-title">Requirements for WPLMS</h3>
+                                        <p>WPLMS is not just a theme, it is built as an LMS (Learning management system) which means it has a lot of features for any eLearning setup. Running such a system has its own requirements in terms of memory and space. </p>
+                                        <ol>
+                                            <li><strong>PHP 5.4+ (optimal performance at 7.0+) </strong> Most Important<a href="https://wordpress.org/about/requirements/" target="_blank"><b> WordPress recommends PHP 7.0</b></a> and for good reason. Other PHP versions have reached the end of their life cycle and may expose your site to security vulnerabilities. There is a significant reason to no longer use old PHP versions, always update to the latest versions. WPLMS uses many functions which do not work on PHP 5.3 or below versions.</li>
+                                            <li><strong>PHP Memory : 128 mb or more </strong> WPLMS is built on BuddyPress and for eCommerce needs uses WooCommerce, both of these plugins recommend a minimum PHP memory allocation of 64 mb, therefore WPLMS recommends a minimum requirement of 128 mb.(<a href="https://docs.woocommerce.com/document/increasing-the-wordpress-memory-limit/" title="how to increaste your PHP limit" target="_blank">How to increase PHP memory Limit</a>)</li>
+                                            <li><strong>PHP Upload Limit : 32mb or more </strong> WPLMS supports PHP upload limit above or equal to 32mb.</li>
+                                            <li><strong>PHP Max execution Time limit </strong> WPLMS recommends a maximum execution time limit of 200s or more.</li>
+                                        </ol>   
+                                        <p>In order to make any change to above configuration, you may be required to contact your web host/hosting service provider. We strongly recommend you to contact your web host to make changes according to above recommendation.</p>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="download-section" class="doc-section">
+                                <h2 class="section-title">Theme Download</h2>
+                                <div id="download-purchase-code" class="section-block">
+                                    <h5>WPLMS is exclusively sold on Themeforest.com. It is under exclusive contract with Envato, so it can not be sold anywhere outside the site themeforest.com, not even on our own site. Please make sure you purchase the theme from the below link </h5>
+                                    <p><a href="https://themeforest.net/item/wplms-learning-management-system/6780226" target="_blank" title="wplms wordpress lms">https://themeforest.net/item/wplms-learning-management-system/6780226</a></p>
+                                    <h3 class="block-title">Purchase Code</h3>
+                                    <p>Themeforest provides you with a purchase code for each item you purchase. This purchase code is used for verification so you can receive theme support and also fully register your product. Please read below instructions on how to download your purchase code. It is a vital piece of information which helps us to ensure that the theme is being downloaded and used legally by you on your site. We recommend users to note their purchase code and their <a href="https://vibethemes.com/documentation/wplms/knowledge-base/how-to-find-buyer-api-key-in-themeforest/" title="wplms how to get buyer api key" target="_blank">buyer api key</a> to register the WPLMS and use its support.</p><br>
+                                    <h4>How To Download Your Purchase Code From ThemeForest</h4>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <ul class="list">
+                                                    <li><b>Step 1</b> – Log into your ThemeForest account and click your username in the top right corner to access the dropdown. Select the “Downloads” link.</li>
+                                                    <li><b>Step 2</b> – Find the WPLMS Purchase in the list of items you have bought.</li>
+                                                    <li><b>Step 3</b> – Click the “Download” button to activate the dropdown menu. Select to download the license certificate and purchase code as a PDF or Text file. Open the file to find the purchase code. Example Purchase Code: 91d36x28-ddd5-4q70-a109-c9wc8aac6a16.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       <div class="screenshot-holder"><a href="assets/images/demo/wplms_purchase_code.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_purchase_code.png" alt="screenshot" /></a></div> 
+                                       <div class="screenshot-holder"><a href="assets/images/demo/wplms_purchase_code.gif" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_purchase_code.gif" alt="screenshot" /></a></div> 
+                                </div><!--//section-block-->
+                                <div id="download-full-package"  class="section-block">
+                                    <h3 class="block-title">Full Package</h3>
+                                    <p>When you download WPLMS from Themeforest, you get the full WPLMS package. This is the full package, which includes sample data zip file and this documentation.</p>
+                                    <p>Uploading the full package will give you an error of no stylesheet found.</p>
+                                    <p>You need to first unzip the package and locate the file <b>WPLMS.zip</b> and use only this file to upload in WordPress Appearance themes section.</p>
+                                    <div class="code-block">
+                                        <h4>Included Files From Your Themeforest Purchase</h4>
+                                        <ul class="list">
+                                            <li><b>wplms.zip</b> – Located inside the WPLMS_Package Theme folder, this is the installable WordPress file you’ll need to install or update wplms manually.</li>
+                                            <li><b>Child Themes Folder</b> – Located inside the WPLMS_Package Theme folder, inside this folder ~6 types of child themes (*may change) are present which is supported by wplms theme.</li>
+                                            <li><b>Documentation Folder</b> – Contains the developer documentation for all the features exist in wplms theme.</li>
+                                            <li><b>Help Folder</b> – This Folder contains count of total number of css files, js files, bundled plugins with the package used in wplms.</li>
+                                        </ul>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                                <div id="download-theme"  class="section-block">
+                                    <h3 class="block-title">WPLMS Child Theme (wplmsblankchild.zip)</h3>
+                                    <p>WPLMS child theme allows you to apply custom code changes to your site. Using a child theme ensures that all your customizations will not be overwritten even when you update the parent theme. Continue reading below to learn how to setup your own child theme.</p>
+                                    <p>A child theme is a theme that has all the functionality and styling of another theme called the parent theme, which in our case, is WPLMS. <b>Child themes are the recommended way of modifying the code of an existing theme because a child theme preserves all custom code changes and modifications even after a theme update.</b> If you modify code directly from a parent theme, then update the parent theme, your changes will be lost. Always use a child theme if you are modifying core code. Child themes can also be used for a number of things, such as custom CSS applications, template file modifications, and custom PHP functions and/or hooks. There are a couple of methods to modify a child theme. Child themes don’t guarantee that an update of custom code on the parent theme will not require further maintenance. This is especially true if you copy files from the parent theme to your child theme.</p>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="upload-theme-section" class="doc-section">
+                                <h2 class="section-title">Upload Theme</h2>
+                                <div id="wp-upload"  class="section-block">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h3 class="block-title">How To Install WPLMS via WordPress</h3>
+                                            <ul class="list">
+                                                <li><b>Step 1</b> – Navigate to WordPress Dashboard > Appearance > Themes.</li>
+                                                <li><b>Step 2</b> – Click the ‘Add New’ button on top of the page, then the ‘Upload Theme’ button.</li>
+                                                <li><b>Step 3</b> – Click ‘Choose File’ and find the theme files you’ve just downloaded. If you’ve downloaded the installable WordPress file, then you do not need to unzip the file. If you’ve downloaded the Full Theme Package, you have to unzip the WPLMS_Package.zip file, and then unzip the wplms.zip file which will give a wplms folder this is the one you select to install.</li>
+                                                <li><b>Step 4</b> – Once the file has uploaded, we recommend our users to install a child theme for WPLMS.In the WPLMS_Package folder you will see a wplms.zip file and a child themes folder. You must first install wplms.zip file because that is the parent theme. Once that’s done, you can then install the child theme which follows the exact process of installing the parent theme. Choose to install the theme zip files via <b>WP upload</b> or via <b>FTP upload.</b></li>
+                                                <li><b>Step 5</b> – To activate WPLMS go to WordPress Dashboard > Appearance > Themes and click the Activate button for the theme you wish to activate.Once you activate the theme, you will be redirected to our setup wizard.</li>
+                                            </ul>
+                                        </div><!--//col-md-12-->
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="callout-block callout-info">
+                                                <div class="icon-holder">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </div><!--//icon-holder-->
+                                                <div class="content">
+                                                    <h3>How To Make Code Customization?</h3>
+                                                    <p>Copying files from the parent theme to child theme is a common method to make code customizations. This is the easiest method available but there are limitations to it. Due to the limitations, we recommend only modifying the files inside the templates folder from the parent theme into the child theme.</p>
+                                                    <ul class="list">
+                                                        <li>You can only copy some files to the child theme. In WPLMS, we have made a decision to make sure that core logical code which can break the theme is not copied in the child theme. This includes the files inside the includes folder.</li>
+                                                        <li>It is not update-safe (sometimes). Whenever we make major changes to a certain file e.g. header.php in the parent theme, you’ll have to copy the theme file from parent theme again and apply the customizations again. If you don’t do this, there’s a chance that the related feature might not work anymore.</li>
+                                                    </ul>
+                                                </div><!--//content-->
+                                            </div><!--//callout-block-->
+                                        </div><!--//col-md-12-->
+                                    </div><!--//row-->
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="callout-block callout-success">
+                                                <div class="icon-holder">
+                                                    <i class="fa fa-thumbs-up"></i>
+                                                </div><!--//icon-holder-->
+                                                <div class="content">
+                                                    <h4 class="callout-title">Important Note:</h4>
+                                                    <p>After switching from child theme to parent theme, some of the widgets will be removed and some of the plugins will be deactivated.</p>
+                                                    <p>Whenever you want to make code customization in child theme, create a folder of same name presesnt in parent theme, then create a file of same name which is present in parent theme and customize your code in it.</p>
+                                                    <p>Refer tutorial to use child theme : <a href="https://wplms.io/support/knowledge-base/how-to-use-child-theme/" target="_blank"><b>Tutorial</b></a></p>
+                                                </div><!--//content-->
+                                            </div><!--//callout-block-->
+                                        </div>
+                                    </div>
+                                </div><!--//section-block-->
+                                <div id="ftp-upload" class="section-block">
+                                    <h3 class="block-title">How To Install WPLMS via FTP</h3>
+                                     <ul class="list">
+                                        <li><b>Step 1</b> – Log into your server installation via FTP. You can use software such as Filezilla for this.</li>
+                                        <li><b>Step 2</b> – If you have downloaded the Full Theme Package from ThemeForest, please unzip the WPLMS_Package.zip file and then unzip the wplms.zip file which will give a wplms folder.</li>
+                                        <li><b>Step 3</b> – Upload the extracted wplms folder to the wp-content > themes folder on the server. Make sure the folder name is -> wplms.</li>
+                                        <li><b>Step 4</b> – Log in to your WordPress Dashboard and navigate to Appearance > Themes and clicking the ‘Activate’ button, for the WPLMS theme.</li>
+                                        <li><b>Step 5</b> – Once activated, you will be redirected to our Setup Wizard.</li>
+                                    </ul>
+                                </div><!--//section-block-->
+                                 <div id="cpanel-upload" class="section-block">
+                                    <h3 class="block-title">How To Install WPLMS via CPanel</h3>
+                                    <ul class="list">
+                                        <li><b>Step 1</b> – Log into your CPanel File Manager.</li>
+                                        <li><b>Step 2</b> – If you have downloaded the Full Theme Package from ThemeForest, please unzip the WPLMS_Package.zip file and then unzip the wplms.zip file which will give a wplms folder.</li>
+                                        <li><b>Step 3</b> – Upload the extracted WPLMS folder to the wp-content > themes folder on the server. Make sure the folder name is -> ‘wplms’.</li>
+                                        <li><b>Step 4</b> – Log in to your WordPress Dashboard and navigate to Appearance > Themes and clicking the ‘Activate’ button, for the WPLMS theme.</li>
+                                        <li><b>Step 5</b> – Once activated, you will be redirected to our Setup Wizard.</li>
+                                    </ul>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/hbcDjZVChIw" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><br><!--//row-->  
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+
+                            <section id="setup-wizard-section" class="doc-section">
+                                <h2 class="section-title">Setup Wizard</h2>
+                                <div id="setup-wizard-config-check-section"  class="section-block">
+                                    <h3 class="block-title">Configuration Check</h3>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="callout-block callout-info">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-info-circle"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h3>Recommended PHP Configuration Limits</h3>
+                                                <p>Many issues that you may run into such as: <a href="https://codex.wordpress.org/Common_WordPress_Errors#The_White_Screen_of_Death" target="_blank"><b>white screen</b></a>, your demo import fails, empty page content with Wplms and other similar issues are all related to low PHP configuration limits. The solution is to increase the PHP limits. You can do this on your own, or contact your web host and ask them to increase those limits to a minimum as follows:</p>
+                                                <ul class="list">
+                                                    <li>PHP version : 5.3+</li>
+                                                    <li>PHP Memory limit : 128 m or more</li>
+                                                    <li>PHP Upload limit : 32mb or more</li>
+                                                    <li>PHP Max execution Time limit : 200s or more (only required for sample data setup)</li>
+                                                </ul>
+                                            </div><!--//content-->
+                                        </div><!--//callout-block-->
+                                    </div><!--//col-md-12-->
+                                    <p>To edit these php configurations, you need to modify php.ini file and then restart your server. But some of the users do not have access to modify the file. Then, contact your webhost to modify these files and make sure the server should be restarted after modifying the file.</p>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C0RQO3-tjAI" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><br>
+
+                                    <div class="callout-block callout-success">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-thumbs-up"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Useful Tip:</h4>
+                                            <p><b>Slider Re-import : </b><a href="https://www.youtube.com/watch?v=fpJcOBV8gjY" target="_blank"> Tutorial</a>
+                                            </p>
+                                            <p><b>Change to different demo : </b><a href="https://www.youtube.com/watch?v=b0dBxtJ3gdM" target="_blank"> Tutorial</a>
+                                            </p>
+                                            <p><b>Menu Configuration : </b><a href="https://www.youtube.com/watch?v=JJRQ7l03nmo&list=PL8n4TGA_rwD-IdrZV4g0cEZJXgkPiX4Bu&index=4" target="_blank"> Tutorial
+                                            </a>
+                                            </p>
+                                        </div><!--//content-->
+                                    </div>
+                                </div><!--//section-block-->
+                                <div id="setup-wizard-site-import-export" class="section-block">
+                                    <h3 class="block-title">Site Import/Export</h3>
+                                    <p>In wplms 3.2 version we have added a new feature: Wplms Site import and export feature is built for the users who want to export all their wplms content to a new wplms website. Refer the link : <a href="https://wplms.io/support/knowledge-base/wplms-site-import-and-export/" target="_blank"><b> Site Import/Export</b></a></p>
+                                     <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/site_import_export.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/site_import_export.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/site_import_export.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/site_import_export2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/site_import_export2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/site_import_export2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/site_import_export3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/site_import_export3.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/site_import_export3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                                </div>
+
+                                <div id="setup-wizard-features-section"  class="section-block">
+                                    <h3 class="block-title">WPLMS Features</h3>
+                                        <ol>
+											<li>
+												<strong>LMS</strong>
+												<p>WPLMS is a Learning Management System for WordPress . It is not just a WordPress education theme but a complete eLearning suite. It is suitable for Educational Training Centres, Corporate trainings, Coaching centres, Course tutors, College, Academy, University, School and <b><a href="glossary.html#mooc" target="_blank">Massive Open Online Course(MOOC)</a></b> Platform. It is an e Learning WordPress theme for course management, instructor and student management using which you can create and sell your courses online. Create your own eLearning academy or online business like Lynda.com, Udemy.com, Coursera.com with WPLMS. WPLMS is a flexible, scalable and robust platform.</p>
+											</li>
+											<li>
+												<strong>eCommerce</strong>
+												<p>Through this feature, you can create and sell courses onine. Allow instructors to set price for their courses, earn commissions. WooCommerce can be integrated seamlessly with the theme thereby making the process of selling courses effortless.</p>
+											</li>
+											<li>
+												<strong>Slider</strong>
+												<p>It can create unlimited slideshows in your site. It includes LayerSlider and Revolution Slider. Slider Revolution as well as LayerSlider both provide a unique interface from which you will create powerful image slideshows that slide through multiple pictures.
+												<b>Refer the tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/updating-layer-slider-in-wplms/" target="_blank">To update Layer Slider</a></p>
+											</li>
+											<li>
+												<strong>Visual Composer</strong>
+												<p>Visual Composer is a premium page builder which works with any wordpress theme. It comes bundled with 2 types of editors allowing you to choose your preferred view- front end editor and backend editor. You can create responsive websites automatically or adjust preferences you need to ensure your WordPress website looks perfect on mobile or tablet.<b>Refer the tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/how-to-update-visual-composer/"  target="_blank">To update visual composer</a></p>
+											</li>
+											<li>
+												<strong>Events</strong>
+												<p>This is recommended when you want to use inbuilt Events in LMS. An Event supports physical location (Map), date, time and can be connected to a course. A Course can have its own events calendar. Admin as well as Instructors can create events for their courses. <b>Refer the tutorial : </b><a href="https://www.youtube.com/watch?v=nVGolm4XLhc" target="_blank">EventOn with Wplms</a>, <a href="https://vibethemes.com/documentation/wplms/knowledge-base/how-to-update-visual-composer/"  target="_blank">To update EventOn</a></p>
+											</li>
+											<li>
+												<strong>Drive</strong>
+												<p>Through this feature, Instructors can create a course drive and course users can download uploads. It provide upload and share feature for users. Only course users have access to download this file. Non course users cannot access this file.<b>Refer the tutorial : </b><a href="https://www.youtube.com/watch?v=-_SOMgbXEh8" target="_blank">Course Drive in wplms</a></p>
+											</li>
+											<li>
+												<strong>Discussion Forums</strong>
+												<p>Discussion forum with BBPress which allows students to interact with each other by using forums.</p>
+											</li>
+											<li>
+												<strong>Gamification & Points</strong>
+												<p>This feature adds gamification options to award points to users on certain criteria. It allows users  to purchase courses using points. To have this feature you have to use Wplms MyCred add on plugin. <b>Refer the tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/wplms-mycred-add-on/" target="_blank">WPLMS MyCred ADD On</a></p>
+											</li>
+											<li>
+												<strong>Custom Badges</strong>
+												<p>For Custom Badges, Instructors can use BadgeOs Plugin which is integrated with wplms. Instructors can also award badges on various course activities, course subscriptions, course start, course submit, course evaluation etc. <b>Refer the tutorial : </b><a href="https://www.youtube.com/watch?v=GayQx7mg2sM" target="_blank">how BadgeOS works with WPLMS</a></p>
+											</li>
+											<li>
+												<strong>Memberships</strong>
+												<p>Instructors can sell courses via memberships. can create and connect courses memberships with courses. Set up the membership levels that best fit your business, whether they are one-time payments or recurring subscriptions (annual, monthly, weekly, daily). You can even offer custom trial periods including Free Trials, Custom-length Trial, or ‘Introductory’ Pricing trials. Wplms is integrated with PMPro Membership plugin.<b>Refer the tutorial : </b><a href="https://www.youtube.com/watch?v=eFAaUjHtNNU" target="_blank">WPLMS with PMPro Membership Plugin</a></p>
+											</li>
+											<li>
+												<strong>Multiple Instructors Per Course</strong>
+												<p>This feature is also available in wplms to assign more than one instructors for a single course by using Wplms coauthors plus addon. you can extend coauthors plus plugin in wplms. Admin can assign multiple instructors for a single course as primary and secondary instructors if needed.<b>Refer the tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/wplms-coauthor-plus-integration/" target="_blank">WPLMS Co-Authors Plus Integration</a></p>
+											</li>
+											<li>
+												<strong>Video Conferencing</strong>
+												<p>BigBlueButton is an open source web conferencing system. BigBlueButton supports multiple audio and video sharing. To enable this video conferencing feature in wplms, you have to use wplms bbb addon. This addon will integrate BigBlueButton with wplms.<b>Refer the tutorial : </b><a href="https://vibethemes.com/documentation/wplms/knowledge-base/wplms-bbb-addon/" target="_blank">Wplms bbb addon</a></p>
+											</li>
+                                            <li>
+												<strong>H5P Interactive Learning</strong>
+												<p>H5p is an open source plugin which gives you access to lots of different <a href="https://h5p.org/content-types-and-applications/" target="_blank">interactive content types.</a>Using Wplms h5p addon integrates h5p plugin with wplms. It marks unit as complete as soon as user completed h5p playground and also integrates Wplms quizzes with H5p quiz.<b>Refer the tutorial : </b><a href="http://vibethemes.com/documentation/wplms/knowledge-base/wplms-h5p-addon/" target="_blank">WPLMS h5p addon</a></p>
+											</li>    
+                                        </ol>
+                                </div><!--//section-block-->
+                                <div id="setup-wizard-plugins-section" class="section-block">
+                                    <h3 class="block-title">Plugins</h3>
+                                    <p>After the theme is installed and activated, you'll get notification to install plugins. Some of these plugins are required and some are recommended. Here is a list of plugins and their functions :</p>
+
+                                    <ul class="list">
+                                        <li><b>BuddyPress</b> : The main plugin required for theme to function as LMS. <a href="glossary.html#buddypress-plugin" target="_blank"><b>Need of Buddypress in wplms</b></a></li>
+                                        <li><b>BBPress</b> : Recommended plugin to enhance LMS experience. <a href="glossary.html#bbPress-plugin" target="_blank"><b>Need of bbPress in wplms</b></a></li>
+                                        <li><b>WooCommerce</b> : The Required plugin if you want to sell courses in LMS.</li>
+                                        <li><b>Vibe Course Module</b> : The main plugin required for LMS to connect with BuddyPress. Contains all the necessary features of LMS.</li>
+                                        <li><b>Vibe Custom Types</b> : This is a Required plugin which is the backbone of LMS.</li>
+                                        <li><b>Vibe Shortcodes</b> : The Optional plugin is recommended if you want to use inbuilt shortcodes LMS.</li>
+                                        <li><b>WPLMS Events</b> : The Optional plugin is recommended if you want to use inbuilt Events in LMS. An Event supports physical location (Map), date, time and can be connected to a course. A Course can have its own events calendar.</li>
+                                        <li><b>WPLMS Assignments</b> : The Optional plugin is recommended if you want to use assignments functionality in your theme. An Assignment is like a question which allows students to upload their files and has time duration in hours/days. Assignments can be connected to a Unit or an Event and can be included in course evaluation. So when course percentage is calculated it takes into account, the assignment marks along with quiz marks.</li>
+                                        <li><b>WPLMS Front end</b> : The Optional plugin is recommended if you want to enable Front end Course creation in LMS.</li>
+                                        <li><b>Layerslider</b> : The Optional plugin is recommended to build beautiful sliders. If you do not want any slider in your theme, then you need not install this plugin.</li>
+                                        <li><b>WPLMS Dashboard</b> : Dashboards is a one stop area for Student/Instructor to get a brief snapshot of what is happening in the site/courses. In dashboard an instructor can view all activities of students as well as instructors own activities. But a student can only view his own activities on his dashboard. <b>Refer the tutorial :</b><a href="https://www.youtube.com/watch?v=qLx97Z0TyXs" target="_blank"><b>WPLMS Dashboards</b></a></li>
+                                    </ul>
+                                    <b>There are other plugins which can be used to enhace the experience and useful for maintenance of system:</b>
+                                    <ul class="list">
+                                        <li><b>BuddyPress security check</b> : Maths Security Check placed at the bottom of registeration to keep a check on spam.</li>
+                                        <li><b>BuddyPress Group documents</b> : Useful for sharing documents in group.</li>
+                                        <li><b>WP FB Auto connect</b> : Adds a Login by FB link in Login panel.</li>
+                                    </ul>
+                                    <p><b>For deatiled tutorial about Plugins Visit : </b><a href="admin-guide.html#installed-plugins" target="_blank"><b>Link</b></a></p>
+
+                                </div><!--//section-block-->
+                                <div id="setup-wizard-style-section" class="section-block">
+                                    <h3 class="block-title">Style</h3>
+									<p>There are 700+ styles combinations which is supported by wplms. To set the theme styles, Go to wp-admin > Appearance > customize. There are 4 types of theme Skin.</p>
+									<ul class="list">
+										<li>Default</li>
+										<li>Elegant</li>
+										<li>Modern</li>
+										<li>Minimal</li>
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/default_theme_skin.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_theme_skin.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/default_theme_skin.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/elegant_theme_skin.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/elegant_theme_skin.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/elegant_theme_skin.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/minimal_ theme_skin.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/minimal_ theme_skin.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/minimal_ theme_skin.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/modern_theme_skin.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/modern_theme_skin.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/modern_theme_skin.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+
+									</ul>
+									<p>Wplms Supports three types of theme layouts such as Container, fluid, Boxed.</p>
+									<p> Five Types of directory layout such as default, D2, D3, D4, D5. </p>
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/directory_layout_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/directory_layout_1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/directory_layout_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/directory_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/directory_layout_2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/directory_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/directory_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/directory_layout_3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/directory_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+									<p>Four Types of Profile layout such as Default, P2, P3, P4.</p>
+                                    <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/profile_layout_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/profile_layout_1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/profile_layout_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/profile_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/profile_layout_2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/profile_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/profile_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/profile_layout_3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/profile_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+									<p>Four types of Group Layout such as Default, G2, G3, G4.</p>
+                                    <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/group_layout_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/group_layout_1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/group_layout_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/group_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/group_layout_2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/group_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                             <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/group_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/group_layout_3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/group_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+									<p>Five Types of Course Layout such as Default, C2, C3, C4, C5.</p>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/course_layout_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/course_layout_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/course_layout_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_3.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/course_layout_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/course_layout_4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_4.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/course_layout_4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+
+                                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                <a href="assets/images/demo/course_layout_5.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/course_layout_5.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/course_layout_5.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-3-->
+                                        </div>
+									<p>You can also customize Header, Login and Footer styles. There are nine types of header styles available in wplms : Default, Generic, Sleek, Transparent, Center Aligned, Standard, Standard center, Mooc, App Style. There are five types of Login styles available : Default, full Screen, Popup, Big Drop, Modern.</p>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/customise_login_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_login_1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/customise_login_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/customise_login_default.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/customise_login_default.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/customise_login_default.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/header_style_1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/header_style_1.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/header_style_1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/header_style_2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/header_style_2.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/header_style_2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="screenshot-holder">
+                                            <a href="assets/images/demo/header_style_3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/header_style_3.png" alt="screenshot" /></a>
+                                            <a class="mask" href="assets/images/demo/header_style_3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-3-->
+                                    </div>
+                                </div><!--//section-block-->
+                                <div id="setup-wizard-content-section" class="section-block">
+                                    <h3 class="block-title">Content</h3>
+										<ul class="list">
+											<li>
+                                                <strong>Media : </strong>This will import media files from our demo setups into your wordpress installation. All the media images used in the demos are either open to use or come with extended license, hence you can use them in your site as well. All media which is used in units, course featured images etc. are imported during this. Since, this requires fetching of media items from our demos, it requires a active internet connection. In some cases, it may happen that due to netwrok connection issues or server overload of our site you might not be able to download the media files, in such cases you may be required to re-download the media files Or restart the setup wizard (<a href="#restart-setupwizard" target="_blank">How to Restart setup wizard</a>). All Media files can be located in WP Admin - Media section.
+                                            </li>
+											<li>
+                                                <strong>Posts : </strong>This will import default Posts from our demos. The posts are located in WP Admin - Posts. <a href="https://codex.wordpress.org/Writing_Posts" target="_blank">Learn more about posts</a>
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_post1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_post1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_post1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Pages : </strong>This will import default pages from our demos. The pages are located in WP Admin - pages. A page is like a post but it can be used for multiple purposes. You can set any page as your site's home page at WP Admin - Settings - Reading, this configuration is automatically set by the setup wizard.
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_page1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_page1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_page1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Courses : </strong> This will import default Courses from our demos. Courses are main entities of WPLMS. A course is usually an individual subject. Students may receive a grade and academic credit after completion of the course. A course is a unit of teaching that typically lasts one academic term, is led by one or more instructors (teachers or professors). Using WPLMS Theme you can create offline as well as online courses. The courses are located in WP-Admin > LMS > All Courses.
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_course1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_course1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_course1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_course2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_course2.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_course2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Units : </strong>This will import default Units from our demos. Unit is an entity of course. Unit is a general measure of academic work over a period of time, typically a term ( or semester). The units are located in WP-Admin > LMS > All Units.
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_unit1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_unit1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_unit1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_unit2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_unit2.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_unit2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                             </li>
+											<li>
+                                                <strong>Quizzes : </strong> This will import default Quizzes from our demos. A quiz is a brief assessment used in education and similar fields to measure growth in knowledge, abilities, and/or skills. Quizzes are usually scored in points. In wplms, an instructor can create quizzes and attach those quizzes for the assessment of those students who are enrolled in that course. The quizzes are located in WP-Admin > LMS >All Quizzes.
+                                                <div class="row"> 
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_quiz1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_quiz1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_quiz1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Question Bank : </strong> This will import default Questions from our demos. Question banks is a library containing hundreds of questions. The questions are located in WP-Admin > LMS > All Questions.
+                                                 <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_ques1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_ques1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_ques1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_ques2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_ques2.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_ques2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Products : </strong> This will import default Products from our demos. The Products are located in WP-Admin > Products > All products. <a href="https://docs.woocommerce.com/document/managing-products/" target="_blank"><b>Adding and Managing Products</b></a>
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_product.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_product.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_product.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Buddypress Emails : </strong> This will import default Buddypress Emails from our demos. Every Email is assosciated with a situation. Whenever an action is triggered its associated email template send by system. The Emails are located in WP-Admin > Emails > All Emails. You can customize your buddypress emails template from WP-Admin > Emails > Customize. <br><a href="https://codex.buddypress.org/emails/" target="_blank"><b>Learn more about Buddypress Emails</b></a>
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_email.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_email.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_email.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-2-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/bbpress_email_template.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/bbpress_email_template.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/bbpress_email_template.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-2-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/bbpress_email_template2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/bbpress_email_template2.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/bbpress_email_template2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-2-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/bbpress_email_template3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/bbpress_email_template3.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/bbpress_email_template3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-2-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Testimonials : </strong> This will import default Testimonials from our demos. Testimonials not only let potential clients and customers know what benefits they can expect from what you are offering, but they can also increase your perceived trustworthiness and credibility. The Testimonials are located in WP-Admin > Testimonials.
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_testimonial.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_testimonial.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_testimonial.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Navigation : </strong>This will create default Navigation. <br>Refer : <a href="admin-guide.html#lms-course-navigation" target="_blank"><b>Course Navigation</b></a>
+                                            </li>
+											<li>
+                                                <strong>Widgets : </strong> This will import default widgets from our demos. A WordPress Widget is a small block that performs a specific function. You can add these widgets in sidebars also known as widget-ready areas on your web page. Widgets are located in WP-Admin > Appearance > Widgets.
+                                                Refer : <a href="admin-guide.html#wplms-widgets" target="_blank"><b> Widgets</b></a>
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_widget1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_widget1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_widget1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Vibe Options Panel : </strong> This will configure wplms option panel. Vibe Options Panel or WPLMS options Panel is located just below the Appearance section in WordPress admin panel. The panel contains a lot of controlling options for theme.
+                                                Refer : <a href="admin-guide.html#vibe-options-panel" target="_blank"><b> Vibe Option Panel</b></a>
+                                            </li>
+											<li>
+                                                <strong>Customizers : </strong> This will configure customizer settings to customize your wplms theme. Theme Customizer is located in WP-Admin > Appearance > Customize.
+                                                Refer : <a href="admin-guide.html#theme-customizer-guide" target="_blank"><b> Theme Customizer Guide</b></a>
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_customize1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_customize1.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_customize1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_customize2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_customize2.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_customize2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_customize3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_customize3.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_customize3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Users : </strong> This will configure sample users and profile fields. Users are located in WP-Admin > Users > All Users. An administrator can add new profiles, manage signups, edit profile fields.
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="screenshot-holder">
+                                                            <a href="assets/images/demo/default_user.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/default_user.png" alt="screenshot" /></a>
+                                                            <a class="mask" href="assets/images/demo/default_user.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                        </div><!--//screensot holder--> 
+                                                    </div><!--colo-md-3-->
+                                                </div>
+                                            </li>
+											<li>
+                                                <strong>Settings : </strong>This will configure default settings(menus location, widget connections, set home page, link course units, quiz questions etc.
+                                            </li>
+											<li>
+                                                <strong>Sliders : </strong>This will import sliders. If your slider is not imported properly. 
+                                                Refer : <a href="https://www.youtube.com/watch?v=fpJcOBV8gjY" target="_blank"><b> Slider Re-import</b></a>
+                                            </li>
+										</ul>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="getting-started-section" class="doc-section">
+                                <h2 class="section-title">Getting Started</h2>
+                                <div id="register-on-forum" class="section-block">
+                                    <h3 class="block-title">How To Register On Wplms Forum</h3>
+                                    <p>If you want any kind of assisstance and help related to wplms theme you can directly contact us on our forum. We will provide you solutions regarding your issues.</p>
+                                    <p><b>Follow this link to register yourself : </b><a href="https://wplms.io/support/knowledge-base/how-to-create-a-support-topic-in-new-wplms-forums/" target="_blank"><b>Link</b></a></p>
+                                </div>
+
+                                <div id="multiple-site-setup" class="section-block">
+                                    <h3 class="block-title">WPLMS Multiple Site Setup</h3>
+                                    <p>WordPress Multisite is a version of WordPress that allows you to run multiple sites off a single installation of WordPress. It makes it possible to run a network of sites under a single WordPress dashboard. You can manage everything including the number of sites, features, themes, and user roles. It is possible to manage hundreds, thousands, and even millions of sites this way. WordPress Multisite is best used when you are building a network of sites sharing similar functionality.</p>
+                                    <p><b>Multiple Site Setup : </b><a href="https://www.youtube.com/watch?v=i80MKz2YcfY&feature=youtu.be" target="_blank"><b>Link</b></a></p>
+                                </div>
+
+
+                                <div id="creating-courses" class="section-block">
+                                    <h3 class="block-title">Creating Courses</h3>
+                                    <div class="section-block">
+                                        <p>Once your WPLMS theme is setup and ready, it is time to create your first course. Although courses can be created from the WordPress Admin (WP Admin) area, we strongly recommend our users to use the intutive front end course creation platform for creating and maintaining courses.</p>
+										<div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="callout-block callout-info">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-info-circle"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <p><b>Tip : </b>There is also an option for user guides which would guide you through the course creation process. To enable it simply go to WordPress admin area and click on LMS > Settings and enable the user guided tours. Once you've enabled it, go to your front end profile and click on create course.</p>
+                                            </div><!--//content-->
+                                        </div><!--//callout-block-->
+                                    </div><!--//col-md-12-->
+                                        <p>To start with your first course simply go to the Course directory and click on the button "create course". You'll be presented with our front end course creation platform. Follow below video tutorial below for detailed overview of course creation.</p>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+												<h6>Front End Course Creation</h6>
+													<div class="embed-responsive embed-responsive-16by9">
+														<iframe width="560" height="315" src="https://www.youtube.com/embed/xkSeHimJGF8" frameborder="0" allowfullscreen></iframe>
+													</div>
+												</div>
+											</div><br>
+
+                                        <pre><b>Note : Every course created using the front end course creation tool must have a name and description to proceed.</b></pre>
+                                </div>
+
+                                <div id="testing-courses" class="section-block">
+                                    <h3 class="block-title">Testing Courses</h3>
+                                    <p>Every logged in user in WPLMS is a student whether an administrator or an instructor. So they can pursue courses just like a student. This presents a perfect opportunity to test your own course as a student. </p>  
+									 <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="callout-block callout-info">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-info-circle"></i>
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <p><b>Tip : WPLMS is independent of eCommerce platforms, so it can be connected to any eCommerce platform, by default we are using WooCommerce for selling courses.</b></p>
+                                            </div><!--//content-->
+                                        </div><!--//callout-block-->
+                                    </div><!--//col-md-12-->
+
+                                     <div class="section-block">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12 col-md-push-2 col-xs-12">
+                                            <h6>WPLMS Student Userflow</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MFtX9ussRKk" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>WPLMS Non Logged In Userflow</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GO4JzUCLV5Q" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div><!--//row-->
+                                    </div><!--//section-block-->
+                                </div>
+
+                                <div id="student-management" class="section-block">
+                                    <h3 class="block-title">Student Management</h3>
+                                    Student management is an integral part of any LMS platform. Sadly very few platforms focus on this area, but unlike others WPLMS has a strong focus on student management for courses.
+
+									<div class="section-block">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>Manage Student course Status in Wplms</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vcAz6lmi0R0" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>WPLMS add Students to course from Course - Admin</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GW_5rKKn1Us" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+                                    <p> For detail tutorial about student management, follow this : <a href="instructor-guide.html#managing-course" target="_blank"><b>Link</b></a></p>
+                                </div>
+
+                                <div id="statistics" class="section-block">
+                                    <h3 class="block-title">Statistics</h3>
+									<p>To view statistics, Go to wp-admin > LMS > Statistics. You can download your stats by generating stats reports. This area of Statistics is only accessible to Administrator. The Stats section comprises of 4 further subsections as follows.</p>
+									<ul class="list">
+										<li><strong>Course statistics : </strong>It consists information related to no of courses, no of students enrolled in a course, total no of students taking the course, total number of courses finished by students, total number of quizzes finished by students etc. </li>
+										<li><strong>User Statistics : </strong>All the vital information regarding User/Student can be seen in this section.This statistics contain information about total students, total active students, total course students, score and average in each course.</li>
+										<li><strong>Instructor statistics : </strong>An Instructor can view his own statistics as well as users statistics. All the vital information regarding Instructors can be seen in this section. Each Instructor with Number of Courses, number of certificated awarded by instructor, number of badges awarded by instructor and the average score of students in this Instructor's course and total number of students in this Instructors courses. There is only one condition when instructor can also view administrator statistics when instructors have administrators right or an instructor is an admin also.</li>
+										<li><strong>Administrator Statistics : </strong>All the vital information regarding Administrator can be seen in this section. An Administrator can view instructors statistics but vice versa is not possible. </li>
+									</ul>
+
+                                    <p> For detail tutorial about statistics, follow this : <a href="instructor-guide.html#statistics" target="_blank"><b>Link</b></a></p>
+                                </div>
+
+                                <div id="activity-tracking" class="section-block">
+                                    <h3 class="block-title">Activity Tracking</h3>
+                                    <p>Activity recording is one of the most important parts for any LMS platform. You may want to know what is going on in your courses. When a student accessed the course, when he finished and so on. This helps instructors to improve their courses. An instructor can track all users activities through his dashboard > activity.
+                                    Activities in WPLMS can be synced with external LRS ( Learning record stores) a concept from TinCan/xAPI where in LMS's are required to send out statements to LRS thus removing the dependency on LMS of instructors for activity tracking.</p>
+                                    <ul class="list">
+										<li><b>User : </b>Track a specific user activity.</li> 
+										<li><b>Global : </b>Track all activities.</li>
+										<li><b>Course Activity : </b>Track how many students started the quiz.</li>
+									</ul>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/activity_tracking1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/activity_tracking1.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/activity_tracking1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-2-->
+
+                                        <div class="col-md-2 col-sm-2 col-xs-12">
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/track-activity2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/track-activity2.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/track-activity2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div><!--//screensot holder--> 
+                                        </div><!--colo-md-2-->
+                                    </div>
+                                </div>
+
+                                <div id="instructor-commission" class="section-block">
+                                    <h3 class="block-title">Instructor Commissions</h3>
+									<p>
+										WPLMS being a dynamic platform for eLarning can also be converted into a marketplace site. The popular concept <a href="glossary.html#mooc" target="_blank"><b>"MOOC" (Massive Open Online courses)</b></a> can be easily acomplished using WPLMS. Many of the top sites using WPLMS are competing with global brand names like Udemy, Coursera, KhanAcademy etc.
+									</p>
+									<p>
+										Using this feature you can invite other instructors to publish courses on your WPLMS site and then award them with commissions based on every sale for their courses. This way you can get more courses and students in your site and turn your eLearning store into a complete business generating good amount of revenue.
+									</p>
+                                    <p>Below video explains how this flow works.</p>
+									<div class="section-block">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h6>WPLMS Instructor Commissions</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Crjpf3BabYQ" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div><!--//col-md-->
+										</div><!--//row-->
+									</div><!--//section block-->
+                                </div>
+
+
+                                <div id="quizzes" class="section-block">
+                                    <h3 class="block-title">Quizzes and Assignments </h3>
+                                    <p>WPLMS boasts of an incredibly flexible and powerful quizzing system. Quizzes in WPLMS are independent entities unless they're connected to courses. You can even use WPLMS as a quizzing platform and sell quizzes using our free addon plugin.</p>
+
+                                    <p>The quiz in WPLMS supports 10 question types, which can be easily created using the question template creator.</p>
+									<ul class="list">
+										<li>
+                                        <strong>Multiple Choice : </strong> A question type with multiple answers choice.
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/mcq-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/mcq-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/mcq-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+										<li><strong>Multiple Correct : </strong>A question type in which multiple answers are correct.
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/multiple-correct-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/multiple-correct-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/multiple-correct-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+										<li><strong>Sort Answers : </strong>To randomize your possible answers, you can use sort answer type questions.
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/sort-answer-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/sort-answer-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/sort-answer-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+										<li><strong>Match Answers : </strong>A question type in which question match with one of your acceptable answers.<br>Refer the tutorial : <a href="https://www.youtube.com/watch?v=KUQaasjoXlI" target="_blank"><b>Match Answers Question Type</b></a>
+                                        <p><b>To add images in question : </b><a href="https://www.youtube.com/watch?v=KUQaasjoXlI" target="_blank"><b> Tutorial</b></a></p>
+                                        </li>
+                                         <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/match-answer-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/match-answer-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/match-answer-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+										<li><strong>Fill in the Blanks : </strong>A question type in which you have to fill the blanks given in the question with correct answers. An instrutor can also create multiple fill blanks and select dropdown type questions. <br>Refer the tutorial : <a href="https://www.youtube.com/watch?v=VK1PD_tlgJU" target="_blank"><b>Creating Fill in the blanks</b></a>
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/fill-blank-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/fill-blank-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/fill-blank-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+										<li><strong>Drop Down Select : </strong>Multiple Answers given in the drop down list, and you have to select possible answer from the drop down list.<br>Refer the tutorial : <a href="https://www.youtube.com/watch?v=YAYPwPeSOd4" target="_blank"><b>Multiple Fillblanks and Select dropdowns in questions</b></a></li>
+										<li><strong>Small Text : </strong>A question type which require short descriptive answers.
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/small-text-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/small-text-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/small-text-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+										<li><strong>Large Text : </strong>A Question type which require descriptive long answers like essay writing etc.
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/large-text-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/large-text-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/large-text-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+										<li><strong>Survey Type : </strong>This is basically survey type questions. These types of questions are used for data analysis purpose. <br>Refer the tutorial : <a href="https://www.youtube.com/watch?v=nTDlH3N0-AI" target="_blank"><b>Survey Question Type</b></a>
+                                         <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/survey-type-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/survey-type-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/survey-type-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+                                        <li><strong>True or False Type : </strong> These types of questions consist a statement which is either true or false.
+                                         <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/true-false-ques.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/true-false-ques.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/true-false-ques.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                        </li>
+									</ul>
+
+									<p>The quizzes can be manually and automatically evaluated, you can also re-evaluated an already evaluated quiz for a student.</p>
+									<div class="section-block">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>WPLMS Manual Quiz Evaluation</h6>
+                                                    <div class="screenshot-holder"><a href="assets/images/demo/wplms_manual_quiz_evaluation.gif" data-toggle="lightbox">
+													<img class="img-responsive" src="assets/images/demo/wplms_manual_quiz_evaluation.gif" alt="screenshot" /></a></div> 
+                                            </div><!--//col-md-->
+
+											<div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h6>WPLMS Quiz Reset</h6>
+												<div class="screenshot-holder"><a href="assets/images/demo/wplms_quiz_reset.png" data-toggle="lightbox">
+													<img class="img-responsive" src="assets/images/demo/wplms_quiz_reset.png" alt="screenshot" /></a></div> 
+                                                    
+                                            </div><!--//col-md-->
+										</div><!--//row-->
+									</div><!--//section block-->
+                                    
+                                    <p>Dynamic quizzes, quizzes can select questions randomly from a pool of questions. You can create a quiz wherein the questions are picked from various tags and you can set the marks for each question picked up from the tag.</p>
+									<div class="section-block">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h6>Refer full video :</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Czvx9Lwf9H4" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div><!--//col-md-->
+										</div><!--//row-->
+									</div><!--//section block-->
+									<p>Quiz scores are visible in form of graphs in the Student Stats widget in the dashboard.</p>
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/students_widget1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/students_widget1.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/students_widget1.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/students_widget2.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/students_widget2.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/students_widget2.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/students_widget3.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/students_widget3.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/students_widget3.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+
+                                            <div class="col-md-2 col-sm-2 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/students_widget4.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/students_widget4.png" alt="screenshot" /></a>
+                                                    <a class="mask" href="assets/images/demo/students_widget4.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-2-->
+                                        </div>
+                                    <p>Assignments are like homework where in the user is required to upload documents. The assignment can be timed or unlimited duration. The instructor can select the type of attachment for each assignment and the maximum size of the attachment submitted by the student. Assignments when tied to courses also add into the course evaluation score or grade.</p>        
+                                </div>
+
+                                <div id="touch-points" class="section-block">
+                                    <h3>User Touch Points</h3>
+                                    <p>Set the touch points for student and instructor in wplms and connect with them via these touch points. Touch points are set for getting the notification,message and email when they are triggered. To enable these touch points, go to wp-admin > LMS > Settings > Touch Points. You can set these touch points individually for students or for instructors as well as for both.</p>
+                                    <p>To configure touch points settings, Follow below video tutorial for detailed overview of touch points.</p>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h6>Refer full video :</h6>
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mmt81gWbDDE" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                            </div><!--//col-md-9-->
+                                        </div><!--//row-->
+                                         <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="screenshot-holder">
+                                                    <a href="assets/images/demo/wplms_touch_points1.png" data-toggle="lightbox"><img class="img-responsive" src="assets/images/demo/wplms_touch_points1.png" alt="screenshot" /></a>
+                                                </div><!--//screensot holder--> 
+                                            </div><!--colo-md-12-->
+                                        </div><!--//row-->
+                                </div><!--//section-block-->
+                                <div id="restart-setupwizard" class="section-block">
+                                    <h3>Re-starting setup wizard</h3>
+                                    <p>In some cases you might be required to restart the setup wizard. First you need to identify that you want to import selected components in your setup or completely clear the site and re-start the setup wizard</p>
+                                    <p><strong>To import selected components</strong> : follow below steps:</p>
+                                    <ol>
+                                        <li>Login to your WordPress Admin pabnel (WP-Admin)</li>
+                                        <li>Go to  WP admin - Appearance - Setup Wizard</li>
+                                        <li>You'll be prompted with a screen which has a blue button "Restart the setup Wizard"</li>
+                                        <li>Click on the button to restart the setup wizard</li>
+                                        <li>Make sure you "Skip the step" which you do not want to repeat</li>
+                                    </ol>
+                                    <p><strong>To clear entire site and restart setup wizard</strong> : follow below steps:</p>
+                                    <ol>
+                                        <li>Login to your WordPress dashboard</li>
+                                        <li>Go to Plugins - Add New section</li>
+                                        <li>Search for plugin : WP Reset</li>
+                                        <li>Install and activate the plugin</li>
+                                        <li>Now, go to WP admin - Tools - Reset</li>
+                                        <li>Enter the text wp-reset and click on reset.</li>
+                                        <li>This will clear all data from your site and set the starting* WP admin username and password. Starting* wp admin details which you entered while installing your wordpress site.</li>
+                                        <li>Login to your WP admin panel again with your starting credentials</li>
+                                        <li>Go to Appearnce - Themes</li>
+                                        <li>Activate the WPLMS Blank child theme (recommended) or the main WPLMS Theme</li>
+                                        <li>You'll most likely see buddypress activated screen, go to WP Admin - Install WPLMS</li>
+                                        <li>You'll see a button to start the Theme Setup Wizard</li>
+                                        <li>Click on it and the Setup wizard will run again.</li>
+                                    </ol>
+                                </div><!--//section-block-->
+                            </section>
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar hidden-xs">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu" data-spy="affix">
+                                <li>
+                                    <a class="scrollto" href="#general-section">General</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#wp-info-section">Wordpress Information</a></li>
+                                        <li><a class="scrollto" href="#requirements-section">Requirements</a></li>
+                                        <li><a class="scrollto" href="#imp-note-section">Important Notes About WPLMS <br> + PHP versions</a></li>
+                                    </ul><!--//nav-->
+                                </li>
+                                <li>
+                                    <a class="scrollto" href="#download-section">Download</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#download-purchase-code">Purchase Code</a></li>
+                                        <li><a class="scrollto" href="#download-full-package">Full Package</a></li>
+                                        <li><a class="scrollto" href="#download-theme">Theme</a></li>
+                                    </ul><!--//nav-->
+                                </li>
+                                <li>
+                                    <a class="scrollto" href="#upload-theme-section">Upload Theme</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#wp-upload">WP Upload</a></li>
+                                        <li><a class="scrollto" href="#ftp-upload">FTP Upload</a></li>
+                                        <li><a class="scrollto" href="#cpanel-upload">CPanel Upload</a></li>
+                                    </ul><!--//nav-->
+                                </li>
+                                <li>
+                                    <a class="scrollto" href="#setup-wizard-section">Setup Wizard</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#setup-wizard-config-check-section">Configuration Check</a></li>
+                                        <li><a class="scrollto" href="#setup-wizard-site-import-export">Site Import/Export</a></li>
+                                        <li><a class="scrollto" href="#setup-wizard-features-section">Features</a></li>
+                                        <li><a class="scrollto" href="#setup-wizard-plugins-section">Plugins</a></li>
+                                        <li><a class="scrollto" href="#setup-wizard-style-section">Style</a></li>
+                                        <li><a class="scrollto" href="#setup-wizard-content-section">Content</a></li>
+                                    </ul><!--//nav-->
+                                </li>
+                                <li>
+                                    <a class="scrollto" href="#getting-started-section">Getting Started</a>
+                                    <ul class="nav doc-sub-menu">
+                                        <li><a class="scrollto" href="#register-on-forum">Register On Forum</a></li>
+                                        <li><a class="scrollto" href="#multiple-site-setup"> WPLMS Multiple Site Setup</a></li>
+                                        <li><a class="scrollto" href="#creating-courses">Creating Courses</a></li>
+                                        <li><a class="scrollto" href="#testing-courses">Testing Courses</a></li>
+                                        <li><a class="scrollto" href="#student-management">Student Management</a></li>
+										<li><a class="scrollto" href="#statistics">Statistics</a></li>
+										<li><a class="scrollto" href="#activity-tracking">Activity Tracking</a></li>
+										<li><a class="scrollto" href="#instructor-commission">Instructor Commission</a></li>
+										<li><a class="scrollto" href="#quizzes">Quizzes & Assignments</a></li>
+                                        <li><a class="scrollto" href="#touch-points">Touch Points</a></li>
+                                        <li><a class="scrollto" href="#restart-setupwizard">Restarting Setup Wizard</a></li>
+                                    </ul>
+                                </li>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+        <div id="promo-block" class="promo-block promo-block-2">
+            <div class="container">
+                <div class="promo-block-inner">
+                    <h3 class="promo-title text-center"><i class="fa fa-heart"></i> <a href="" target="_blank">Like WPLMS ?</a></h3>
+                    <div class="row">
+                        <div class="figure-holder col-md-5 col-sm-6 col-xs-12">
+                            <div class="figure-holder-inner">
+                               <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/VI2g--5LFzw' frameborder='0' allowfullscreen></iframe></div>
+                            </div>
+                        </div><!--//figure-holder-->
+                        <div class="content-holder col-md-7 col-sm-6 col-xs-12">
+                            <div class="content-holder-inner">
+                                <div class="desc">
+                                    <h4 class="content-title"><strong>Rate us at Themeforest</strong></h4>
+                                    <p>Every rating counts and helps us to improve WPLMS. <a href="https://vibethemes.com/documentation/wplms/knowledge-base/how-to-rate-us-at-themeforest/">How to rate WPLMS ?</a> </p>
+                                    <h4 class="content-title"><strong>Not Happy ?</strong></h4>
+                                    <p>Send us an email at <a href="mailto:vibethemes@gmail.com" target="_blank">vibethemes@gmail.com</a> and share feedback.</p>
+                                </div> 
+                            </div><!--//content-holder-inner-->
+                        </div><!--//content-holder-->
+                    </div><!--//row-->
+                </div><!--//promo-block-inner-->  
+            </div><!--//container-->
+        </div><!--//promo-block-->
+        
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright"><a href="https://vibethemes.com/documentation/wplms/forums/" target="_blank"><b>Having an issue? Create a topic on forum
+            </b></a></small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>                                                                
+    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+

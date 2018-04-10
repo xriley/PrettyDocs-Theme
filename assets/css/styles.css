@@ -1265,3 +1265,34 @@ select {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+
+.nav.doc-menu li > .nav.doc-sub-menu{
+  display:none;
+}
+.nav.doc-menu li.active > .nav.doc-sub-menu{
+  display:block;
+}
+
+.box {
+    background-clip: padding-box;
+    background: #F88C30;
+    border: 1px solid #F88C30;
+    border-left-width: 1px !important;
+    color: #424242;
+    margin: 0 0 1.758em;
+    padding: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 10px;
+        margin-top: 10px;
+}
+div.highlight{
+    border: 1px solid #e1e4e5;
+    padding: 0px;
+    overflow-x: auto;
+    background: #fff;
+    margin: 1px 0 24px 0;
+}

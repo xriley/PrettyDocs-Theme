@@ -1,0 +1,66 @@
+*New menu items added in instructors guide
+*Revert "yeh commit reverse karna hai"
+*yeh commit reverse karna hai
+*testing live changes
+*Course admin docs improved.
+*H5P Plugin description is two times
+*updated admin guide(all courses settings, all units settings etc.)
+*updated LMS Setting in admin guide
+*FAQ added
+*corrected the description of vibe options panel settings
+*page builder settings images
+*no message
+*no message
+*Faq added for front end course creation and editing the course from front end
+*Updated LMS Settings with screenshots upto Course Home Settings
+*no message
+*no message
+*no message
+*Social Profile field group in faqs
+*no message
+*Added glossary, updated important functions in developer guide
+*no message
+*multiple site setup tutorial in installation guide
+*no message
+*no message
+*googl maps api in glossary
+*Buddypress email integration in instructor guide and about payouts section in admin guide
+*video tutorials added
+*Added Screenshots in installation guide.
+*no message
+*Plugins section added in guide
+*no message
+*no message
+*no message
+*Added course admin section in instructor guide
+*added plugins section in admin guide.
+*Added screenshots in student guide
+*Added widgets screenshots with sidebars
+*no message
+*no message
+*Added screenshots in admin and instructor guide, create glossary
+*Completed instructor and student guide
+*no message
+*faqs and customization guide completed
+*no message
+*no message
+*no message
+*no message
+*no message
+*Adding screenshots
+*no message
+*Added certificates and LMS sections
+*Added shortcodes and woocommerce guide
+*Upto shortcodes
+*no message
+*In admin guide added fonts manager, customizer, page builder section
+*no message
+*Course Manager and Buddypress option in vibe options Panel
+*no message
+*no message
+*Modify index page, added getting started section in home page
+*no message
+*completed widgets part in admin guide and installation guide
+*Add sections
+*readme tweaks
+*first commit
