@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="en"> 
 <head>
-    <title>Responsive website template for documentations</title>
+    <title>Bootstrap 4 project documentation theme for developers</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,22 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">    
     <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->    
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/plugins/prism/prism.css">
-    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.css">
     <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     
 </head> 
 
@@ -44,8 +38,8 @@
                     </h1>
                 </div><!--//branding-->
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Charts</li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Charts</li>
                 </ol>
             </div><!--//container-->
         </header><!--//header-->
@@ -53,10 +47,10 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><span aria-hidden="true" class="icon icon_datareport_alt"></span> Charts</h1>
-                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Jan 25th, 2016</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: July 18th, 2018</div>
                 </div><!--//doc-header-->
-                <div class="doc-body">
-                    <div class="doc-content">
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
                         <div class="content-inner">
                             <section id="chartjs" class="doc-section">
                                 <h2 class="section-title">Chart.js</h2>
@@ -64,13 +58,13 @@
                                     <h3 class="block-title">1. Screenshot</h3>
                                     <p>The screenshots used in this page are taken from <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">AppKit</a>. AppKit is a Bootstrap Angular admin theme.</p>
                                     <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-chartjs.jpg" alt="screenshot" /></a>
+                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-fluid" src="assets/images/demo/appkit-chart-chartjs.jpg" alt="screenshot" /></a>
                                         <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
                                     </div> 
                                 </div><!--//section-block-->
                                 <div class="section-block">
                                     <h3 class="block-title">2. Global Configurations</h3>
-                                    <p><strong><i class="fa fa-external-link-square"></i> Source:</strong> <a href="http://www.chartjs.org/docs/" target="_blank">http://www.chartjs.org/docs/</a></p>
+                                    <p><strong><i class="fas fa-external-link-square-alt"></i> Source:</strong> <a href="https://www.chartjs.org/docs/" target="_blank">https://www.chartjs.org/docs/</a></p>
                                     <div class="code-block">
                                         <pre><code class="language-javascript">Chart.defaults.global = {
     // Boolean - Whether to animate the chart
@@ -212,13 +206,13 @@
                                 <div class="section-block">
                                     <h3 class="block-title">1. Screenshot</h3>
                                     <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-flot.jpg" alt="screenshot" /></a>
+                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-fluid" src="assets/images/demo/appkit-chart-flot.jpg" alt="screenshot" /></a>
                                         <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
                                     </div> 
                                 </div><!--//section-block-->
                                 <div class="section-block">
                                     <h3 class="block-title">2. Basic Usage</h3>
-                                    <p><strong><i class="fa fa-external-link-square"></i> Source:</strong> <a href="https://github.com/flot/flot/blob/master/README.md" target="_blank">https://github.com/flot/flot/blob/master/README.md</a></p>
+                                    <p><strong><i class="fas fa-external-link-square-alt"></i> Source:</strong> <a href="https://github.com/flot/flot/blob/master/README.md" target="_blank">https://github.com/flot/flot/blob/master/README.md</a></p>
                                     <p>Create a placeholder div to put the graph in:</p>
                                     <p><pre><code class="language-markup">&#x3C;div id=&#x22;placeholder&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre></p>
                                     <p>You need to set the width and height of this div, otherwise the plot library doesn't know how to scale the graph. You can do it inline like this:</p>
@@ -240,7 +234,7 @@
                                 <div class="section-block">
                                     <h3 class="block-title">1. Screenshot</h3>
                                     <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-flot.jpg" alt="screenshot" /></a>
+                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-fluid" src="assets/images/demo/appkit-chart-flot.jpg" alt="screenshot" /></a>
                                         <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
                                     </div> 
                                 </div><!--//section-block-->
@@ -261,7 +255,7 @@ sure it has an ID so you can refer to it in your Javascript later.</p>
                                     <p><pre><code class="language-markup">&#x3C;div id=&#x22;myfirstchart&#x22; style=&#x22;height: 250px;&#x22;&#x3E;&#x3C;/div&#x3E;</code></pre></p>
                                     <div class="callout-block callout-info">
                                         <div class="icon-holder">
-                                            <i class="fa fa-info-circle"></i>
+                                            <i class="fas fa-info-circle"></i>
                                         </div><!--//icon-holder-->
                                         <div class="content">
                                             <h4 class="callout-title">Note:</h4>
@@ -301,7 +295,7 @@ javascript code:</p>
                                 <div class="section-block">
                                     <h3 class="block-title">1. Screenshot</h3>
                                     <div class="screenshot-holder">
-                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-chart-inline.jpg" alt="screenshot" /></a>
+                                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-fluid" src="assets/images/demo/appkit-chart-inline.jpg" alt="screenshot" /></a>
                                         <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-link"></i></a>
                                     </div>
                                 </div><!--//section-block-->
@@ -309,9 +303,9 @@ javascript code:</p>
                                     <h3 class="block-title">2. Charts Used</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                                     <ul class="list list-unstyled">
-                                        <li><a href="#" target="_blank"><i class="fa fa-external-link-square"></i> Peity</a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-external-link-square"></i> Easy Pie Chart</a></li>
-                                        <li><a href="#" target="_blank"><i class="fa fa-external-link-square"></i> Sparklines</a></li>
+                                        <li><a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i> Peity</a></li>
+                                        <li><a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i> Easy Pie Chart</a></li>
+                                        <li><a href="#" target="_blank"><i class="fas fa-external-link-square-alt"></i> Sparklines</a></li>
                                     </ul>
                                 </div><!--//section-block-->
                                 <div class="section-block">
@@ -319,8 +313,8 @@ javascript code:</p>
                                         <h1>Jumbotron Example</h1>
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                                         <ul class="list list-inline center-block">
-                                            <li><a class="btn btn-cta btn-pink" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="fa fa-external-link"></i> AppKit Details</a></li>
-                                            <li><a class="btn btn-cta btn-primary" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="fa fa-eye"></i> AppKit Demo</a></li>
+                                            <li class="list-inline-item"><a class="btn btn-cta btn-pink" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="fas fa-external-link-alt"></i> AppKit Details</a></li>
+                                            <li class="list-inline-item"><a class="btn btn-cta btn-primary" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="fas fa-eye"></i> AppKit Demo</a></li>
                                         </ul>
                                     </div><!--//jumbotron-->
                                 </div><!--//section-->
@@ -329,40 +323,44 @@ javascript code:</p>
                             
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
-                    <div class="doc-sidebar">
-                        <nav id="doc-nav">
-                            <ul id="doc-menu" class="nav doc-menu hidden-xs" data-spy="affix">
-                                <li><a class="scrollto" href="#chartjs">Chart.js</a></li>
-                                <li><a class="scrollto" href="#flot">Flot Charts</a></li>
-                                <li><a class="scrollto" href="#morris">Morris.js</a></li>
-                                <li><a class="scrollto" href="#inline">Inline Charts</a></li>
-                            </ul><!--//doc-menu-->
-                        </nav>
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                <a class="nav-link scrollto" href="#chartjs">Chart.js</a>
+                                <a class="nav-link scrollto" href="#flot">Flot Charts</a>
+                                <a class="nav-link scrollto" href="#morris">Morris.js</a>
+                                <a class="nav-link scrollto" href="#inline">Inline Charts</a>
+                            </nav><!--//doc-menu-->
+                        </div>
                     </div><!--//doc-sidebar-->
                 </div><!--//doc-body-->              
             </div><!--//container-->
         </div><!--//doc-wrapper-->
         
-        <div id="promo-block" class="promo-block promo-block-2">
+        <div id="promo-block" class="promo-block">
             <div class="container">
                 <div class="promo-block-inner">
-                    <h3 class="promo-title text-center"><i class="fa fa-heart"></i> <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">AppKit - Bootstrap Angular Admin Theme for Developers</a></h3>
+                    <h3 class="promo-title text-center"><i class="fas fa-heart"></i> <a href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Are you an ambitious and entrepreneurial developer?</a></h3>
                     <div class="row">
-                        <div class="figure-holder col-md-5 col-sm-6 col-xs-12">
+                        <div class="figure-holder col-lg-5 col-md-6 col-12">
                             <div class="figure-holder-inner">
-                                <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><img class="img-responsive" src="assets/images/demo/appkit-dashboard-2-thumb.jpg" alt="AppKit Theme" /></a>
-                                <a class="mask" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank"><i class="icon fa fa-heart pink"></i></a>
+                                <a href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/" target="_blank"><img class="img-fluid" src="assets/images/demo/instance-promo.jpg" alt="Instance Theme" /></a>
+                                <a class="mask" href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/"><i class="icon fa fa-heart pink"></i></a>
+                                
                             </div>
                         </div><!--//figure-holder-->
-                        <div class="content-holder col-md-7 col-sm-6 col-xs-12">
+                        <div class="content-holder col-lg-7 col-md-6 col-12">
                             <div class="content-holder-inner">
                                 <div class="desc">
-                                    <h4 class="content-title"><strong>Love this free documentation theme?</strong></h4>
-                                    <p>Check out AppKit - an Angular admin theme I created with my developer friend <a href="https://twitter.com/tnajdek">Tom Najdek</a> for developers. AppKit uses modern front-end technologies and is packed with useful components and widgets to speed up your app development.</p>
+                                    <h4 class="content-title"><strong> Instance - Bootstrap 4 Portfolio Theme for Aspiring Developers</strong></h4>
+                                    <p>Check out <a href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Instance</a> - a Bootstrap personal portfolio theme I created for developers. The UX design is focused on selling a developer’s skills and experience to potential employers or clients, and has <strong class="highlight">all the winning ingredients to get you hired</strong>. It’s not only a HTML site template but also a marketing framework for you to <strong class="highlight">build an impressive online presence with a high conversion rate</strong>. </p>
                                     <p><strong class="highlight">[Tip for developers]:</strong> If your project is Open Source, you can use this area to promote your other projects or hold third party adverts like Bootstrap and FontAwesome do!</p>
-                                    <a class="btn btn-cta" href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">View Demo</a>
+                                    <a class="btn btn-cta" href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    
                                 </div><!--//desc-->
-                                <div class="author"><a href="http://themes.3rdwavemedia.com">Xiaoying Riley</a></div>
+                                
+                                
+                                <div class="author"><a href="https://themes.3rdwavemedia.com">Xiaoying Riley</a></div>
                             </div><!--//content-holder-inner-->
                         </div><!--//content-holder-->
                     </div><!--//row-->
@@ -374,20 +372,20 @@ javascript code:</p>
     
     <footer id="footer" class="footer text-center">
         <div class="container">
-            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
             
         </div><!--//container-->
     </footer><!--//footer-->
     
      
     <!-- Main Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>  
-    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>                                                                
-    <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>       
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                            
     <script type="text/javascript" src="assets/js/main.js"></script>
     
 </body>
