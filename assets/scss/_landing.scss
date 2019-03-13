@@ -31,6 +31,9 @@
         font-size: 20px;
         p {
             margin-bottom: 5px;
+            &:last-child {
+	            margin-bottom: 0;
+            }
         }
         .text-highlight{
             color: darken($color-primary, 20%);
@@ -46,7 +49,7 @@
     }
     
     .social-container {
-        margin-top: 30px;
+
         .twitter-tweet {
             display: inline-block;
             margin-right: 5px;
@@ -222,10 +225,41 @@
 
 }
 
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	.main-search-box {
+		width: 100%;
+	}
+	.main-search-box .search-form .search-input {
+	    width: 100%;
+	}
+}
+
+
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
     .cards-section .item-inner {
         padding: 30px 15px;
     }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	.main-search-box .search-form .search-input {
+	    width: 400px;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+	.main-search-box .search-form .search-input {
+	    width: 560px;
+	}
+}
+
+
+
+
+
 

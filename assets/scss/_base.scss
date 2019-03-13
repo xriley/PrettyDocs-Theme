@@ -154,6 +154,14 @@ code {
     padding: 7px 15px;
 }
 
+.search-btn {
+	height: 40px;
+	.svg-inline--fa {
+		top: 0;
+		margin-right: 0;
+	}
+}
+
 .form-control {
    @include box-shadow(none);
     height: 40px;
@@ -185,10 +193,14 @@ select {
     a {
         color: #fff;
     }
+    .container {
+	    position: relative;
+    }
 }
 .branding {
     text-transform: uppercase;
     margin-bottom: 10px;
+    
     .logo {
         font-size: 28px;
         margin-top: 0;
@@ -270,6 +282,41 @@ select {
 }
 
 
+
+
+.search-form {
+    position: relative;
+	.search-input {
+		font-size: 14px;
+		@include border-radius(20px);
+		padding-top: 4px;
+		&:focus {
+			border-color: $text-color-secondary;
+		}
+	}
+	.search-btn {
+		color: lighten($text-color-secondary, 10%);
+		background: none;
+		border: none;
+		position: absolute;
+		right: 5px;
+		top: 0px;
+		margin-right: 0;
+		&:active, &:focus, &:hover {
+			outline: none !important;
+			color: darken($text-color, 10%);
+			
+		}
+		
+	}
+}
+
+.top-search-box {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
 /* ====== Footer ====== */
 .footer {
     background: darken($text-color, 15%);
@@ -281,4 +328,16 @@ select {
     .fa-heart {
         color: $color-pink;
     }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	.top-search-box {
+		width: 100%;
+		position: static;
+		margin-top: 15px;
+		
+	}
+
 }

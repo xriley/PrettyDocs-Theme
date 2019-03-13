@@ -180,6 +180,15 @@ code {
   padding: 7px 15px;
 }
 
+.search-btn {
+  height: 40px;
+}
+
+.search-btn .svg-inline--fa {
+  top: 0;
+  margin-right: 0;
+}
+
 .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -237,6 +246,10 @@ select {
 
 .header a {
   color: #fff;
+}
+
+.header .container {
+  position: relative;
 }
 
 .branding {
@@ -342,6 +355,48 @@ select {
   color: rgba(0, 0, 0, 0.4);
 }
 
+.search-form {
+  position: relative;
+}
+
+.search-form .search-input {
+  font-size: 14px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding-top: 4px;
+}
+
+.search-form .search-input:focus {
+  border-color: #616670;
+}
+
+.search-form .search-btn {
+  color: #797f8b;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  margin-right: 0;
+}
+
+.search-form .search-btn:active, .search-form .search-btn:focus, .search-form .search-btn:hover {
+  outline: none !important;
+  color: #31343a;
+}
+
+.top-search-box {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
 /* ====== Footer ====== */
 .footer {
   background: #26282c;
@@ -355,6 +410,14 @@ select {
 
 .footer .fa-heart {
   color: #EA5395;
+}
+
+@media (max-width: 575.98px) {
+  .top-search-box {
+    width: 100%;
+    position: static;
+    margin-top: 15px;
+  }
 }
 
 /* ======= Doc Styling ======= */
@@ -1178,6 +1241,10 @@ select {
   margin-bottom: 5px;
 }
 
+.landing-page .tagline p:last-child {
+  margin-bottom: 0;
+}
+
 .landing-page .tagline .text-highlight {
   color: #266f71;
 }
@@ -1187,10 +1254,6 @@ select {
 }
 
 .landing-page .cta-container {
-  margin-top: 30px;
-}
-
-.landing-page .social-container {
   margin-top: 30px;
 }
 
@@ -1366,8 +1429,29 @@ select {
   color: #8A40A7;
 }
 
+@media (max-width: 575.98px) {
+  .main-search-box {
+    width: 100%;
+  }
+  .main-search-box .search-form .search-input {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767.98px) {
   .cards-section .item-inner {
     padding: 30px 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-search-box .search-form .search-input {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-search-box .search-form .search-input {
+    width: 560px;
   }
 }
