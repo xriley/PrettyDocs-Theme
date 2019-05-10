@@ -29,7 +29,7 @@ If you'd like to **use the template without the attribution**, you can [buy the 
 
 
 ## Latest Version
-**v2.1** - 13 March 2019
+**v2.1.1** - 10 May 2019
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 
