@@ -23,6 +23,21 @@ Check out [the demo](http://wd.dizaina.net/en/scripts/stickyfill/) and [use case
 - doesn't work in overflowed blocks,
 - doesn't parse your CSS! Launch it manually.
 
+----
+
+<p align="center">
+    <a href="#installation">Installation</a>&nbsp;&nbsp;
+    <a href="#usage">Usage</a>&nbsp;&nbsp;
+    <a href="#pro-tips">Pro tips</a>&nbsp;&nbsp;
+    <a href="#api">API</a>&nbsp;&nbsp;
+    <a href="#feature-requests">Feature requests</a>&nbsp;&nbsp;
+    <a href="#bug-reports">Bug reports</a>&nbsp;&nbsp;
+    <a href="#contributing">Contributing</a>&nbsp;&nbsp;
+    <a href="#using-stickyfill">Buy me a beer</a>
+</p>
+
+----
+
 ## Installation
 
 ### NPM
@@ -149,6 +164,10 @@ Removes stickies associated with the elements in the list.
 
 Removes all existing stickies.
 
+#### `Stickyfill.forceSticky()`
+
+Force-enable the polyfill, even if the browser supports `position: sticky` natively.
+
 #### `Stickyfill.stickies`
 
 Array of existing [Sticky](#Stickyfill.Sticky) instances.
@@ -206,7 +225,7 @@ Ok, you are all set.
 
 ### Building and testing
 
-`cd` into the repo folder and run `grunt`. It will build the project from `/src/strickyfill.js` into `/dist` and run the watcher that will rebuild the project every time you change something in the source file.
+`cd` into the repo folder and run `grunt`. It will build the project from `/src/stickyfill.js` into `/dist` and run the watcher that will rebuild the project every time you change something in the source file.
 
 Make changes to the source file. Stick to ES6 syntax.
 
@@ -222,7 +241,7 @@ Use [Yarn](https://yarnpkg.com/), dont’t forget to commit `yarn.lock`.
 
 ## Using Stickyfill?
 
-🍻 [Buy me a beer](https://www.paypal.me/wilddeer/0usd)
+🍻 [Buy me a beer](https://www.paypal.me/wilddeer/3usd)
 
 ## License
 
