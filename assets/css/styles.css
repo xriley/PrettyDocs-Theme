@@ -1,6 +1,6 @@
 /*   
  * Template Name: PrettyDocs - Bootstrap 4 Template for documentations
- * Version: 2.0
+ * Version: 2.2
  * Author: Xiaoying Riley
  * Copyright: 3rd Wave Media
  * Twitter: @3rdwave_themes
@@ -84,16 +84,25 @@ code {
   top: -1px;
 }
 
+.btn:focus, a.btn:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 .btn-primary, a.btn-primary {
   background: #40babd;
   border: 1px solid #40babd;
   color: #fff !important;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.hover, a.btn-primary:hover, a.btn-primary:focus, a.btn-primary:active, a.btn-primary.active, a.btn-primary.hover {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.hover, .btn-primary:not(:disabled):not(.disabled):active:focus, a.btn-primary:hover, a.btn-primary:focus, a.btn-primary:active, a.btn-primary.active, a.btn-primary.hover, a.btn-primary:not(:disabled):not(.disabled):active:focus {
   background: #3aa7aa;
   color: #fff !important;
   border: 1px solid #3aa7aa;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-green, a.btn-green {
@@ -483,7 +492,7 @@ select {
   margin-bottom: 0;
   font-weight: bold;
   padding-bottom: 10px;
-  border-bottom: 1px solid #d7d6d6;
+  border-bottom: 1px solid #d7d7d7;
 }
 
 .doc-section h1 {
@@ -1337,8 +1346,6 @@ select {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: url("../images/empty.gif");
-  /* for IE8 */
 }
 
 .cards-section .item-inner:hover {

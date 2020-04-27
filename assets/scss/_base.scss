@@ -64,16 +64,20 @@ code {
 		position: relative;
 		top: -1px;
 	}
+	 &:focus {
+	    @include box-shadow(none);
+    }
 }
 
 .btn-primary, a.btn-primary {
 	background: $color-primary;
 	border: 1px solid $color-primary;
 	color: #fff !important;
-	&:hover, &:focus, &:active, &.active, &.hover {
+	&:hover, &:focus, &:active, &.active, &.hover, &:not(:disabled):not(.disabled):active:focus {
 		background: darken($color-primary, 5%);
 		color: #fff !important;
 		border: 1px solid darken($color-primary, 5%);
+		@include box-shadow(none);
 	}
 }
 
