@@ -29,7 +29,7 @@ If you'd like to **use the template without the footer attribution**, you can [b
 
 
 ## Latest Version
-**v2.2** - 27 April 2020
+**v2.3** - 12 Oct 2020
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 

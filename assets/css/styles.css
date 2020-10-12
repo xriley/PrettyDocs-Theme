@@ -1,6 +1,6 @@
 /*   
  * Template Name: PrettyDocs - Bootstrap 4 Template for documentations
- * Version: 2.2
+ * Version: 2.3
  * Author: Xiaoying Riley
  * Copyright: 3rd Wave Media
  * Twitter: @3rdwave_themes
@@ -1270,11 +1270,12 @@ select {
   display: inline-block;
   margin-right: 5px;
   position: relative;
-  top: 5px;
 }
 
-.landing-page .social-container .fab-like {
+.landing-page .social-container .fb_iframe_widget {
   display: inline-block;
+  position: relative;
+  top: 3px;
 }
 
 .cards-section {
