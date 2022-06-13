@@ -1,31 +1,32 @@
-$(document).ready(function() {
-	
-    /* ===== Stickyfill ===== */
-    /* Ref: https://github.com/wilddeer/stickyfill */
-    // Add browser support to position: sticky
-    var elements = $('.sticky');
-    Stickyfill.add(elements);
+"use strict";
 
 
-    /* Activate scrollspy menu */
-    $('body').scrollspy({target: '#doc-menu', offset: 100});
-    
-    /* Smooth scrolling */
-	$('a.scrollto').on('click', function(e){
-        //store hash
-        var target = this.hash;    
-        e.preventDefault();
-		$('body').scrollTo(target, 800, {offset: 0, 'axis':'y'});
-		
-	});
-     
-    /* Bootstrap lightbox */
-    /* Ref: http://ashleydw.github.io/lightbox/ */
+/* ===== Stickyfill ===== */
+/* Ref: https://github.com/wilddeer/stickyfill */
+// Add browser support to position: sticky
 
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(e) {
-        e.preventDefault();
-        $(this).ekkoLightbox();
-    });    
+var elements = document.querySelectorAll('.sticky');
+Stickyfill.add(elements);
 
-
+/* ===== Gumshoe SrollSpy ===== */
+/* Ref: https://github.com/cferdinandi/gumshoe  */
+// Initialize Gumshoe
+var spy = new Gumshoe('#doc-nav a', {
+	offset: 0 
 });
+
+
+
+
+/* ====== SimpleLightbox Plugin ======= */
+/*  Ref: https://github.com/andreknieriem/simplelightbox */
+var lightbox = new SimpleLightbox('.simplelightbox-gallery-1 a', { /* options */ });
+var lightbox = new SimpleLightbox('.simplelightbox-gallery-2 a', {/* options */});
+var lightbox = new SimpleLightbox('.simplelightbox-gallery-3 a', {/* options */});
+var lightbox = new SimpleLightbox('.simplelightbox-gallery-4 a', {/* options */});
+var lightbox = new SimpleLightbox('.simplelightbox-gallery-5 a', {/* options */});
+var lightbox = new SimpleLightbox('.simplelightbox-gallery-6 a', {/* options */});
+var lightbox = new SimpleLightbox('.simplelightbox-gallery-7 a', {/* options */});
+
+
+

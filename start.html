@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap 4 project documentation theme for developers</title>
+    <title>Bootstrap project documentation theme for developers</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,7 @@
     <!-- Plugins CSS -->    
     <link rel="stylesheet" href="assets/plugins/prism/prism.css">
     <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
       
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
@@ -59,7 +60,7 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: Oct 12th, 2020</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: June 13th, 2022</div>
                 </div><!--//doc-header-->
                 <div class="doc-body row">
                     <div class="doc-content col-md-9 col-12 order-1">
@@ -488,7 +489,7 @@ echo $y;
                                 </div><!--//section-block-->
                                 <div class="section-block">
                                     <h6>FontAwesome Icon Font</h6>
-                                    <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><img class="img-fluid" src="assets/images/demo/fontawesome-icons.png" alt="fontawesome" /></a>
+                                    <a href="https://fontawesome.com/" target="_blank"><img class="img-fluid" src="assets/images/demo/fontawesome-icons.png" alt="fontawesome" /></a>
                                 </div><!--//section-block-->
                                 
                             </section><!--//doc-section-->
@@ -498,31 +499,69 @@ echo $y;
                     </div><!--//doc-content-->
                     <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
                         <div id="doc-nav" class="doc-nav">
-	                        
 	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
-	                                <a class="nav-link scrollto" href="#download-section">Download</a>
-	                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
-                                    <nav class="doc-sub-menu nav flex-column">
-                                        <a class="nav-link scrollto" href="#step1">Step One</a>
-                                        <a class="nav-link scrollto" href="#step2">Step Two</a>
-                                        <a class="nav-link scrollto" href="#step3">Step Three</a>
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#download-section">Download</a>
+		                            </li>
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#installation-section">Installation</a>
+		                            </li>
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step1">Step One</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step2">Step Two</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step3">Step Three</a>
+	                                    </li>
                                     </nav><!--//nav-->
-	                                <a class="nav-link scrollto" href="#code-section">Code</a>
-                                    <nav class="doc-sub-menu nav flex-column">
-                                        <a class="nav-link scrollto" href="#html">HTML</a>
-                                        <a class="nav-link scrollto" href="#css">CSS</a>
-                                        <a class="nav-link scrollto" href="#sass">Sass</a>
-                                        <a class="nav-link scrollto" href="#less">LESS</a>
-                                        <a class="nav-link scrollto" href="#javascript">JavaScript</a>
-                                        <a class="nav-link scrollto" href="#python">Python</a>
-                                        <a class="nav-link scrollto" href="#php">PHP</a>
-                                        <a class="nav-link scrollto" href="#handlebars">Handlebars</a>
+                                    <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#code-section">Code</a>
+                                    </li>
+                                    
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#html">HTML</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#css">CSS</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#sass">Sass</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#less">LESS</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                             <a class="nav-link scrollto" href="#javascript">JavaScript</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                             <a class="nav-link scrollto" href="#python">Python</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                             <a class="nav-link scrollto" href="#php">PHP</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                             <a class="nav-link scrollto" href="#handlebars">Handlebars</a>
+	                                    </li>
                                     </nav><!--//nav-->
-	                                <a class="nav-link scrollto" href="#callouts-section">Callouts</a>
-	                                <a class="nav-link scrollto" href="#tables-section">Tables</a>
-	                                <a class="nav-link scrollto" href="#buttons-section">Buttons</a>
-	                                <a class="nav-link scrollto" href="#video-section">Video</a>
-	                                <a class="nav-link scrollto" href="#icons-section">Icons</a>
+                                    <li class="nav-item">
+	                                     <a class="nav-link scrollto" href="#callouts-section">Callouts</a>
+                                    </li>
+                                    <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#tables-section">Tables</a>
+                                    </li>
+                                    <li class="nav-item">
+	                                     <a class="nav-link scrollto" href="#buttons-section">Buttons</a>
+                                    </li>
+                                    <li class="nav-item">
+	                                     <a class="nav-link scrollto" href="#video-section">Video</a>
+                                    </li>
+                                    <li class="nav-item">
+	                                      <a class="nav-link scrollto" href="#icons-section">Icons</a>
+                                    </li>
 	                            </nav><!--//doc-menu-->
 	                        
                         </div>
@@ -546,7 +585,7 @@ echo $y;
                         <div class="content-holder col-lg-7 col-md-6 col-12">
                             <div class="content-holder-inner">
                                 <div class="desc">
-                                    <h4 class="content-title"><strong> Instance - Bootstrap 4 Portfolio Theme for Aspiring Developers</strong></h4>
+                                    <h4 class="content-title"><strong> Instance - Bootstrap Portfolio Theme for Aspiring Developers</strong></h4>
                                     <p>Check out <a href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Instance</a> - a Bootstrap personal portfolio theme I created for developers. The UX design is focused on selling a developer’s skills and experience to potential employers or clients, and has <strong class="highlight">all the winning ingredients to get you hired</strong>. It’s not only a HTML site template but also a marketing framework for you to <strong class="highlight">build an impressive online presence with a high conversion rate</strong>. </p>
                                     <p><strong class="highlight">[Tip for developers]:</strong> If your project is Open Source, you can use this area to promote your other projects or hold third party adverts like Bootstrap and FontAwesome do!</p>
                                     <a class="btn btn-cta" href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
@@ -567,19 +606,19 @@ echo $y;
     <footer id="footer" class="footer text-center">
         <div class="container">
             <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
             
         </div><!--//container-->
     </footer><!--//footer-->
     
      
     <!-- Main Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
-    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/prism/prism.js"></script>      
+    <script src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>                                                          
+    <script src="assets/js/main.js"></script>
     
 </body>
 </html> 

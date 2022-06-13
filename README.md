@@ -29,7 +29,7 @@ If you'd like to **use the template without the footer attribution**, you can [b
 
 
 ## Latest Version
-**v2.3** - 12 Oct 2020
+**BS5 v1.0** - 13 Jun 2022
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 
@@ -57,18 +57,17 @@ If you'd like to **use the template without the footer attribution**, you can [b
 
 -  Fully Responsive
 -  HTML5 + CSS3
--  Built on Bootstrap 4
+-  Built on Bootstrap 5
 -  **SCSS** source files included
 -  6 Colour Schemes
--  1000+ FontAwesome 5 icons
+-  FontAwesome 6 icons
 -  Compatible with all modern browsers
 
 ## Credits
-- [Bootstrap](http://getbootstrap.com/)
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
-- [Elegant icon font](http://www.elegantthemes.com/blog/resources/elegant-icon-font)
+- [Bootstrap](https://getbootstrap.com/)
+- [FontAwesome](https://fontawesome.com/)
+- [Elegant icon font](https://www.elegantthemes.com/blog/resources/elegant-icon-font)
 - [Google Fonts](https://fonts.google.com/)
-- [Bootstrap Lightbox](http://ashleydw.github.io/lightbox/)
-- [PrismJS](http://prismjs.com/)
-- [jQuery ScrollTo](http://flesler.blogspot.co.uk/2007/10/jqueryscrollto.html)
+- [Simple Lightbox](https://simplelightbox.com/)
+- [PrismJS](https://prismjs.com/)
 - [Stickyfill](https://github.com/wilddeer/stickyfill)

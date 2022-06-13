@@ -42,7 +42,8 @@
 }
 
 .doc-content {
-    //margin-left: 230px;
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -454,8 +455,6 @@
     list-style: none;
     
    .nav-link {
-        
-     
         margin-bottom: 5px;
         display: block;
         padding: 5px 15px;
@@ -469,41 +468,56 @@
         .nav {
 	        
         }
-        &.active {
-           
-            background: none;
-            color: $color-primary;
-            font-weight: 600;
-            .body-green & {
-                color: $color-green;
-                border-color: $color-green;
-            }
-            .body-blue & {
-                color: $color-blue;
-                border-color: $color-blue;
-            }
-            .body-orange & {
-                color: $color-orange;
-                border-color: $color-orange;
-            }
-            .body-red & {
-                color: $color-red;
-                border-color: $color-red;
-            }
-            .body-pink & {
-                color: $color-pink;
-                border-color: $color-pink;
-            }
-            .body-purple & {
-                color: $color-purple;
-                border-color: $color-purple;
-            }
-            
-            
-            
-        }
     }
+    
+    .active {
+	    .nav-link {
+		    background: none;
+	        color: $color-primary;
+	        font-weight: 600;
+	    }
+    }
+
 }
+
+
+.nav-item.active {
+	    
+	    .nav-link {
+		    background: none;
+	        color: $color-primary;
+	        font-weight: 600;
+	        .body-green & {
+	            color: $color-green;
+	            border-color: $color-green;
+	        }
+	        .body-blue & {
+	            color: $color-blue;
+	            border-color: $color-blue;
+	        }
+	        .body-orange & {
+	            color: $color-orange;
+	            border-color: $color-orange;
+	        }
+	        .body-red & {
+	            color: $color-red;
+	            border-color: $color-red;
+	        }
+	        .body-pink & {
+	            color: $color-pink;
+	            border-color: $color-pink;
+	        }
+	        .body-purple & {
+	            color: $color-purple;
+	            border-color: $color-purple;
+	        }
+        
+
+	    }
+  
+}
+
+
 .doc-sub-menu {
     list-style: none;
     padding-left: 0;
@@ -528,30 +542,7 @@
                 background: none;
             }
         
-        &.active {
-            
-                background: none;
-                color: $color-primary;
-                .body-green & {
-                    color: $color-green;
-                }
-                .body-blue & {
-                    color: $color-blue;
-                }
-                .body-orange & {
-                    color: $color-orange;
-                }
-                .body-red & {
-                    color: $color-red;
-                }
-                .body-pink & {
-                    color: $color-pink;
-                }
-                .body-purple & {
-                    color: $color-purple;
-                }
-            
-        }
+        
     }
 }
 
