@@ -2,7 +2,7 @@
 
 ## Theme Details & Demo
 
-**Demo:** http://themes.3rdwavemedia.com/demo/prettydocs/
+**Demo:** https://themes.3rdwavemedia.com/bootstrap-templates/product/prettydocs-free-bootstrap-theme-for-developers-and-startups/
 
 PrettyDocs is a free Bootstrap project documentation theme designed for developers & startups. It comes with **6 colour schemes** has many useful components. You can use the template as it is or integrate the front-end design with your own online documentation system. The **source SCSS files** are included so you can customise the design with ease.
 
