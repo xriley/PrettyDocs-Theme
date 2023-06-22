@@ -322,8 +322,17 @@
     height: 100%;
     
     .card-block {
-        padding: 15px;
+        padding: 15px 10px;
+        .card-title {
+	        font-size: 0.875rem;
+        }
+        .card-text {
+		    font-size: 0.75rem;
+		    margin-top: 0.5rem;
+		    color: $text-color-secondary;
+	    }
     }
+    
     .mask {
         display: block;
         visibility: hidden;

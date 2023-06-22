@@ -29,7 +29,7 @@ If you'd like to **use the template without the footer attribution**, you can [b
 
 
 ## Latest Version
-**BS5 v1.0** - 13 Jun 2022
+**BS5 v2.0** - 2023-06-22
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 
@@ -59,8 +59,8 @@ If you'd like to **use the template without the footer attribution**, you can [b
 -  HTML5 + CSS3
 -  Built on Bootstrap 5
 -  **SCSS** source files included
--  6 Colour Schemes
--  FontAwesome 6 icons
+-  6 Color Schemes
+-  FontAwesome icons
 -  Compatible with all modern browsers
 
 ## Credits
