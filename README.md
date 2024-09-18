@@ -17,7 +17,7 @@ If you'd like to **use the template without the footer attribution**, you can [b
 
 #### Follow Xiaoying
 
-[Twitter](https://twitter.com/3rdwave_themes)
+[X](https://x.com/3rdwave_themes)
 
 [Facebook](https://www.facebook.com/3rdwavethemes/)
 
@@ -29,7 +29,7 @@ If you'd like to **use the template without the footer attribution**, you can [b
 
 
 ## Latest Version
-**BS5 v2.0** - 2023-06-22
+**BS5 v2.1** - 2024-09-18
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 
